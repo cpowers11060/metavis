@@ -37,7 +37,7 @@ import dash_cytoscape as cyto
 el='C'
 pathway='All'
 
-model_path=sys.argv[1]
+model_path="../models/iGEM_bin526_eggnog"
 
 # First read in the base model
 mr = ModelReader.reader_from_path(model_path)
@@ -120,7 +120,7 @@ navbar = dbc.NavbarSimple(
         dbc.NavItem(
             dbc.NavLink(
                 "Source Code",
-                href="https://github.com/cpowers11060/psammWebViz",
+                href="https://github.com/cpowers11060/metavis",
             )
         ),
     ],
