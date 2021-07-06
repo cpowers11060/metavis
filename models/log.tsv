@@ -1,0 +1,531 @@
+List of invalid Kegg IDs: 
+  - R04984
+  - R08775
+  - R03106
+  - R00924
+  - R07768
+  - R05614
+  - R08781
+  - R05617
+  - R06858
+  - R04989
+  - R08773
+  - R06146
+  - R04990
+  - R04993
+  - R06859
+  - R08774
+  - C00039(n)
+  - C00039(n+m)
+  - C03541(n)
+  - C02128(m)
+  - C03541(n+1)
+
+There are 262 generic compounds in the model
+Generic compounds:
+C15811|[Enzyme]-cysteine|C4H6N2O2SR2
+C20377|3-Hydroxypimeloyl-[acp] methyl ester|C8H13O4SR
+C05759|3-Oxotetradecanoyl-[acp]|C14H25O2SR
+C11827|[GlcNAc-(1->4)-Mur2Ac(oyl-L-Ala-g-D-Glu-A2pm-D-Ala-D-Ala)]n-diphosphoundecaprenol|C95H156N8O28P2(C40H64N8O21)n-1
+C15973|Enzyme N6-(dihydrolipoyl)lysine|C8H16NOS2R
+C20375|Glutaryl-[acp] methyl ester|C6H9O3SR
+C17023|Sulfur donor|
+C00343|Thioredoxin disulfide|C10H12N4O4S2R4
+C05764|Hexadecanoyl-[acp]|C16H31OSR
+C05750|3-Oxooctanoyl-[acp]|C8H13O2SR
+C05744|Acetoacetyl-[acp]|C4H5O2SR
+C00138|Reduced ferredoxin|
+C01642|tRNA(Gly)|
+C00139|Oxidized ferredoxin|
+C19846|Pimeloyl-[acyl-carrier protein] methyl ester|C8H13O3SR
+C02988|L-Histidyl-tRNA(His)|C16H24N3O11PR2(C5H8O6PR)n
+C06020|Methyl-Co(III) corrinoid protein|C20H3CoN4R21
+C19845|Pimeloyl-[acyl-carrier protein]|C7H11O3SR
+C01209|Malonyl-[acyl-carrier protein]|C3H3O3SR
+C03892|Phosphatidylglycerophosphate|C8H14O13P2R2
+C00017|Protein|C2H4NO2R(C2H2NOR)n
+C05748|trans-Hex-2-enoyl-[acp]|C6H9OSR
+C00662|Reduced adrenal ferredoxin|
+C15603|Hydroquinone|
+C20378|Enoylpimeloyl-[acp] methyl ester|C8H11O3SR
+C02282|Glutaminyl-tRNA|C20H29N7O12PR(C5H8O6PR)n
+C01242|[Protein]-S8-aminomethyldihydrolipoyllysine|C9H19N2OS2R
+C00012|Peptide|C2H4NO2R(C2H2NOR)n
+C17322|tRNA containing 2-thiouridine|C9H13N2O8PS(C5H8O6PR)n(C5H8O6PR)n
+C01638|tRNA(Asp)|
+C00828|Menaquinone|C16H16O2(C5H8)n
+C05747|(R)-3-Hydroxyhexanoyl-[acp]|C6H11O2SR
+C05712|Cyanohydrin|C2HNOR2
+C05713|Cyanoglycoside|C8H11NO6R2
+C00125|Ferricytochrome c|C42H44FeN8O8S2R4
+C16832|[Protein]-N6-[(R)-dihydrolipoyl]-L-lysine|C8H16NOS2R
+C20858|Protein N5-methyl-L-glutamine|C7H11N3O3R2
+C03402|L-Asparaginyl-tRNA(Asn)|C14H23N2O12PR2(C5H8O6PR)n
+C19085|tRNA with a 3' CCA end|C33H45N11O24P3R(C5H8O6PR)n
+C05756|3-Oxododecanoyl-[acp]|C12H21O2SR
+C00718|Amylose|(C6H10O5)n
+C19847|Demethylmenaquinol|C15H16O2(C5H8)n
+C00060|Carboxylate|CO2R
+C01335|ROH|HOR
+C01978|tRNA queuine|C17H24N5O10P(C5H8O6PR)n(C5H8O6PR)n
+C15813|Adenylyl-[sulfur-carrier protein]|C14H19N7O9PR
+C04688|(3R)-3-Hydroxytetradecanoyl-[acyl-carrier protein]|C14H27O2SR
+C00340|Reduced rubredoxin|
+C20374|Enoylglutaryl-[acp] methyl ester|C6H7O3SR
+C00126|Ferrocytochrome c|C42H44FeN8O8S2R4
+C11478|tRNA containing 5-aminomethyl-2-thiouridine|C10H16N3O8PS(C5H8O6PR)n(C5H8O6PR)n
+C19078|tRNA with a 3' cytidine|C14H21N3O11PR(C5H8O6PR)n
+C22151|Oxidized [2Fe-2S] ferredoxin|
+C21456|L-Glutamyl-protein|C7H11N2O5R(C2H2NOR)n
+C00342|Thioredoxin|C10H14N4O4S2R4
+C00886|L-Alanyl-tRNA|C13H22NO11PR2(C5H8O6PR)n
+C15810|Sulfur-carrier protein|C4H7N2O3R
+C02492|1,4-beta-D-Mannan|(C6H10O5)n
+C05753|3-Oxodecanoyl-[acp]|C10H17O2SR
+C01931|L-Lysyl-tRNA|C16H29N2O11PR2(C5H8O6PR)n
+C20372|3-Ketoglutaryl-[acp] methyl ester|C6H7O4SR
+C01898|Cellodextrin|H2O(C6H10O5)n
+C05796|Galactan|(C12H20O11)n
+C05758|trans-Dodec-2-enoyl-[acp]|C12H21OSR
+C01645|tRNA(Leu)|
+C21455|L-Leucyl-L-glutamyl-protein|C13H22N3O6R(C2H2NOR)n
+C02320|R-S-Glutathione|C10H16N3O6SR
+C00726|Nitrile|CNR
+C01647|tRNA(Met)|
+C21158|Nucleoside 3',5'-bisphosphate|C5H11O10P2R
+C03939|Acetyl-[acyl-carrier protein]|C2H3OSR
+C17324|tRNA adenine|C10H14N5O7P(C5H8O6PR)n(C5H8O6PR)n
+C05763|trans-Hexadec-2-enoyl-[acp]|C16H29OSR
+C05312|Protein glycin-2-yl radical|C3H3N2O2R2
+C19723|[tRNA(Ile2)]-lysidine34|C15H26N5O9P(C5H8O6PR)n(C5H8O6PR)n
+C20376|3-Ketopimeloyl-[acp] methyl ester|C8H11O4SR
+C01641|tRNA(Glu)|
+C16219|3-Oxostearoyl-[acp]|C18H33O2SR
+C15804|p-Hydroxyphenyl lignin|
+C19673|Malonyl-[acp] methyl ester|C4H5O3SR
+C15806|Syringyl lignin|
+C00046|RNA|C10H18O13P2R2(C5H8O6PR)n
+C15812|[Enzyme]-S-sulfanylcysteine|C4H6N2O2S2R2
+C00681|1-Acyl-sn-glycerol 3-phosphate|C4H8O7PR
+C20751|N6-L-Threonylcarbamoyladenine in tRNA|C15H21N6O11P(C5H8O6PR)n(C5H8O6PR)n
+C05751|trans-Oct-2-enoyl-[acp]|C8H13OSR
+C21457|L-Leucyl-L-aspartyl-protein|C12H20N3O6R(C2H2NOR)n
+C05359|e-|
+C05850|Reduced Vitamin K|C11H9O2R
+C04153|rRNA containing N2-methylguanine|C11H16N5O8P(C5H8O6PR)n(C5H8O6PR)n
+C15602|Quinone|
+C05197|Protein glycine|C3H4N2O2R2
+C01651|tRNA(Thr)|
+C01643|tRNA(His)|
+C02047|L-Leucyl-tRNA|C21H32N6O11PR(C5H8O6PR)n
+C03363|5-L-Glutamyl amino acid|C7H11N2O5R
+C04261|Protein N(pi)-phospho-L-histidine|C7H9N4O5PR2
+C20863|5'-Phospho-[mRNA]|C10H18O13P2R(R1)(C5H8O6PR)n
+C21388|L-Lysyl-protein|C8H16N3O3R(C2H2NOR)n
+C00615|Protein histidine|C7H8N4O2R2
+C02211|tRNA precursor|C10H17O10PR2(C5H8O6PR)n
+C06126|Digalactosylceramide|C31H56NO13R
+C05745|Butyryl-[acp]|C4H7OSR
+C04180|cis-Dec-3-enoyl-[acp]|C10H17OSR
+C03193|(5-L-Glutamyl)-peptide|C7H11N2O5R(C2H2NOR)n
+C00390|Ubiquinol|C14H20O4(C5H8)n
+C02051|Lipoylprotein|C8H14NOS2R
+C02553|L-Seryl-tRNA(Ser)|C13H22NO12PR2(C5H8O6PR)n
+C00416|Phosphatidate|C5H7O8PR2
+C01639|tRNA(Cys)|
+C01649|tRNA(Pro)|
+C04432|tRNA containing 6-isopentenyladenosine|C15H22N5O7P(C5H8O6PR)n(C5H8O6PR)n
+C05199|Flavodoxin semiquinone|
+C03688|Apo-[acyl-carrier-protein]|
+C00461|Chitin|(C8H13NO5)n
+C01648|tRNA(Phe)|
+C05754|trans-Dec-2-enoyl-[acp]|C10H17OSR
+C05757|(R)-3-Hydroxydodecanoyl-[acp]|C12H23O2SR
+C02992|L-Threonyl-tRNA(Thr)|C14H24NO12PR2(C5H8O6PR)n
+C01650|tRNA(Ser)|
+C16255|[Dihydrolipoyllysine-residue acetyltransferase] S-acetyldihydrolipoyllysine|C10H18NO2S2R
+C04633|(3R)-3-Hydroxypalmitoyl-[acyl-carrier protein]|C16H31O2SR
+C17551|2-Polyprenyl-6-hydroxyphenol|C11H14O2(C5H8)n
+C20373|3-Hydroxyglutaryl-[acp] methyl ester|C6H9O4SR
+C00350|Phosphatidylethanolamine|C7H12NO8PR2
+C03127|L-Isoleucyl-tRNA(Ile)|C21H32N6O11PR(C5H8O6PR)n
+C02839|L-Tyrosyl-tRNA(Tyr)|C24H30N6O12PR(C5H8O6PR)n
+C00641|1,2-Diacyl-sn-glycerol|C5H6O5R2
+C02984|L-Aspartyl-tRNA(Asp)|C14H22NO13PR2(C5H8O6PR)n
+C00028|Acceptor|
+C03511|L-Phenylalanyl-tRNA(Phe)|C19H26NO11PR2(C5H8O6PR)n
+C01636|tRNA(Arg)|
+C15521|Alkanesulfonate|CH3O3SR
+C02869|Oxidized flavodoxin|
+C20648|Adenine in rRNA|C10H14N5O7P(C5H8O6PR)n(C5H8O6PR)n
+C05196|Dihydroflavodoxin|
+C05819|Menaquinol|C16H18O2(C5H8)n
+C00040|Acyl-CoA|C22H35N7O17P3SR
+C05336|Selenomethionyl-tRNA(Met)|C20H30N6O11PSeR(C5H8O6PR)n
+C00030|Reduced acceptor|
+C04154|rRNA containing N6-methyladenine|C11H16N5O7P(C5H8O6PR)n(C5H8O6PR)n
+C05746|3-Oxohexanoyl-[acp]|C6H9O2SR
+C06021|Co(I) corrinoid protein|C19CoN4R21
+C00045|Amino acid|C2H4NO2R
+C15972|Enzyme N6-(lipoyl)lysine|C8H14NOS2R
+C06249|Apo-[carboxylase]|C7H13N3O2R2
+C03125|L-Cysteinyl-tRNA(Cys)|C18H26N6O11PSR(C5H8O6PR)n
+C00787|tRNA(Tyr)|
+C04152|rRNA containing N1-methylguanine|C11H16N5O8P(C5H8O6PR)n(C5H8O6PR)n
+C05223|Dodecanoyl-[acyl-carrier protein]|C12H23OSR
+C00369|Starch|(C12H20O10)n
+C06112|L-Glutamyl-tRNA(Gln)|C20H28N6O13PR(C5H8O6PR)n
+C16239|Lipoyl-[acp]|C8H13OS3R
+C01190|Glucosylceramide|C25H46NO8R
+C20753|2-Methylthio-N6-dimethylallyladenine in tRNA|C16H24N5O7PS(C5H8O6PR)n(C5H8O6PR)n
+C00226|Primary alcohol|CH3OR
+C02987|L-Glutamyl-tRNA(Glu)|C20H28N6O13PR(C5H8O6PR)n
+C04246|But-2-enoyl-[acyl-carrier protein]|C4H5OSR
+C00399|Ubiquinone|C14H18O4(C5H8)n
+C02429|L-Leucyl-protein|C8H15N2O3R(C2H2NOR)n
+C04570|Reduced electron-transferring flavoprotein|
+C16739|L-Arginyl-protein|C8H16N5O3R(C2H2NOR)n
+C00760|Cellulose|(C6H10O5)n
+C05847|all-trans-Polyprenyl diphosphate|C5H12O7P2(C5H8)n
+C04253|Electron-transferring flavoprotein|
+C20864|5'-Triphospho-[mRNA]|C10H20O19P4R(R1)(C5H8O6PR)n
+C16254|[Dihydrolipoyllysine-residue succinyltransferase] S-succinyldihydrolipoyllysine|C12H20NO4S2R
+C04728|tRNA containing 5-methylaminomethyl-2-thiouridylate|C11H18N3O8PS(C5H8O6PR)n(C5H8O6PR)n
+C00039|DNA|C10H17O8PR2(C5H8O5PR)n
+C04618|(3R)-3-Hydroxybutanoyl-[acyl-carrier protein]|C4H7O2SR
+C22155|[Fe-S] cluster scaffold protein|
+C16237|Protein N6-(lipoyl)lysine|C8H14NOS2R
+C02583|Protein glutamine|C6H9N3O3R2
+C05729|R-S-Cysteinylglycine|C5H9N2O3SR
+C02745|Reduced flavodoxin|
+C01628|Vitamin K|C11H7O2R
+C17552|2-Polyprenyl-6-methoxyphenol|C12H16O2(C5H8)n
+C00195|N-Acylsphingosine|C19H36NO3R
+C02430|L-Methionyl-tRNA|C20H30N6O11PSR(C5H8O6PR)n
+C00162|Fatty acid|CHO2R
+C15814|Thiocarboxy-[sulfur-carrier protein]|C4H7N2O2SR
+C19722|[tRNA(Ile2)]-cytidine34|C9H14N3O8P(C5H8O6PR)n(C5H8O6PR)n
+C06037|Digalactosyl-diacylglycerol|C17H26O15R2
+C01653|tRNA(Val)|
+C21440|[Protein]-S-sulfanyl-L-cysteine|C4H6N2O2S2R2
+C21458|L-Aspartyl-protein|C6H9N2O5R(C2H2NOR)n
+C00868|tRNA uridine|C9H13N2O9P(C5H8O6PR)n(C5H8O6PR)n
+C21386|L-Leucyl-L-arginyl-protein|C14H27N6O4R(C2H2NOR)n
+C02412|Glycyl-tRNA(Gly)|C12H20NO11PR2(C5H8O6PR)n
+C16240|[Lipoyl-carrier protein]-L-lysine|NH2R
+C01322|RX|XR
+C02269|Deoxynucleoside|C5H9O3R
+C00963|beta-D-Glucoside|C6H11O6R
+C00344|Phosphatidylglycerol|C8H13O10PR2
+C06157|[Dihydrolipoyllysine-residue succinyltransferase] S-glutaryldihydrolipoyllysine|C13H22NO4S2R
+C00676|Deoxynucleoside 5'-phosphate|C5H10O6PR
+C05749|Hexanoyl-[acp]|C6H11OSR
+C00435|Oxidized rubredoxin|
+C00161|2-Oxo acid|C2HO3R
+C16220|(R)-3-Hydroxyoctadecanoyl-[acp]|C18H35O2SR
+C20446|tRNA 7-aminomethyl-7-carbaguanine|C12H18N5O8P(C5H8O6PR)n(C5H8O6PR)n
+C04619|(3R)-3-Hydroxydecanoyl-[acyl-carrier protein]|C10H19O2SR
+C15807|5-Hydroxy-guaiacyl lignin|
+C01640|tRNA(Gln)|
+C02743|[Protein]-L-cysteine|C4H6N2O2SR2
+C05755|Decanoyl-[acp]|C10H19OSR
+C05761|Tetradecanoyl-[acp]|C14H27OSR
+C00071|Aldehyde|CHOR
+C01977|tRNA guanine|C10H14N5O8P(C5H8O6PR)n(C5H8O6PR)n
+C06481|L-Seryl-tRNA(Sec)|C13H22NO12PR2(C5H8O6PR)n
+C04620|(3R)-3-Hydroxyoctanoyl-[acyl-carrier protein]|C8H15O2SR
+C00973|Cyclomaltodextrin|(C6H10O5)n
+C03692|1,2-Diacyl-3-beta-D-galactosyl-sn-glycerol|C11H16O10R2
+C00229|Acyl-carrier protein|HSR
+C00173|Acyl-[acyl-carrier protein]|C3H4OSR2
+C00269|CDP-diacylglycerol|C14H19N3O15P2R2
+C16221|(2E)-Octadecenoyl-[acp]|C18H33OSR
+C06250|Holo-[carboxylase]|C17H27N5O4SR2
+C04419|Carboxybiotin-carboxyl-carrier protein|C18H26N5O6SR2
+C03740|(5-L-Glutamyl)-L-amino acid|C7H11N2O5R
+C00151|L-Amino acid|C2H4NO2R
+C02702|L-Prolyl-tRNA(Pro)|C15H24NO11PR2(C5H8O6PR)n
+C00454|NDP|C5H11O10P2R
+C02554|L-Valyl-tRNA(Val)|C20H30N6O11PR(C5H8O6PR)n
+C04157|tRNA containing N1-methylguanine|C11H16N5O8P(C5H8O6PR)n(C5H8O6PR)n
+C06400|1-alpha-D-[(1->4)-alpha-D-Glucosyl](n-1)-alpha-D-glucopyranoside|C12H22O11(C6H10O5)n
+C17323|tRNA containing 5-carboxymethylaminomethyl-2-thiouridine|C12H18N3O10PS(C5H8O6PR)n(C5H8O6PR)n
+C03294|N-Formylmethionyl-tRNA|C21H30N6O12PSR(C5H8O6PR)n
+C02972|Dihydrolipoylprotein|C8H16NOS2R
+C01117|Nucleoside 5'-phosphate|C5H10O7PR
+C22150|Reduced [2Fe-2S] ferredoxin|
+C05752|Octanoyl-[acp]|C8H15OSR
+C21758|Hepatotoxins|
+C22154|[Fe-S] cluster scaffold protein carrying a [4Fe-4S]2+ cluster|
+C01635|tRNA(Ala)|
+C19080|tRNA with a 3' CC end|C23H33N6O18P2R(C5H8O6PR)n
+C05848|4-Hydroxy-3-polyprenylbenzoate|C12H14O3(C5H8)n
+C05980|Cardiolipin|C13H18O17P2R4
+C21387|L-Leucyl-L-lysyl-protein|C14H27N4O4R(C2H2NOR)n
+C01935|Maltodextrin|H2O(C6H10O5)n
+C00667|Oxidized adrenal ferredoxin|
+C06113|L-Aspartyl-tRNA(Asn)|C14H22NO13PR2(C5H8O6PR)n
+C02163|L-Arginyl-tRNA(Arg)|C21H33N9O11PR(C5H8O6PR)n
+C05807|2-Polyprenylphenol|C11H14O(C5H8)n
+C01290|Lactosylceramide|C31H56NO13R
+C20755|2-Thio-N6-dimethylallyladenine in tRNA|C15H22N5O7PS(C5H8O6PR)n(C5H8O6PR)n
+C02737|Phosphatidylserine|C8H12NO10PR2
+C16236|[Protein]-N6-(octanoyl)-L-lysine|C8H16NOR
+C03512|L-Tryptophanyl-tRNA(Trp)|C26H31N7O11PR(C5H8O6PR)n
+C16636|tRNA(Sec)|
+C00240|rRNA|C15H25O16P2R3
+C05726|S-Substituted L-cysteine|C3H6NO2SR
+C00405|D-Amino acid|C2H4NO2R
+C05762|3-Oxohexadecanoyl-[acp]|C16H29O2SR
+C15805|Guaiacyl lignin|
+C02686|Galactosylceramide|C25H46NO8R
+C00721|Dextrin|(C12H20O10)n
+C05760|trans-Tetradec-2-enoyl-[acp]|C14H25OSR
+C01652|tRNA(Trp)|
+C00201|Nucleoside triphosphate|C5H12O13P3R
+C01646|tRNA(Lys)|
+C01644|tRNA(Ile)|
+
+The reactions containing these generic compounds are: 
+R10204|alpha-D-ribose-1-methylphosphonate-5-phosphate C-P-lyase (methane forming)|C20423 + C00019 + C00030 <=> C20440 + C01438 + C00073 + C05198 + C00028
+R01332|beta-D-mannan hydrolases|C02492 + (n-1) C00001 <=> n C00159
+R03663|L-Threonine:tRNA(Thr) ligase (AMP-forming)|C00002 + C00188 + C01651 <=> C00020 + C00013 + C02992
+R02111|1,4-alpha-D-Glucan:orthophosphate alpha-D-glucosyltransferase|C00369 + C00009 <=> C00718 + C00103
+R03105|3-mercaptopyruvate:sulfide sulfurtransferase|C00957 + C00342 <=> C00283 + C00022 + C00343
+R04519|[poly-N-acetyl-D-glucosaminyl-(1->4)-(N-acetyl-D-muramoylpentapeptide)]-diphosphoundecaprenol:[N-acetyl-D-glucosaminyl-(1->4)-N-acetyl-D-muramoylpentapeptide]-diphosphoundecaprenol polysaccharidetransferase|C05898 + C11827 <=> C04574 + C11827
+R02661|2-methylpropanoyl-CoA:(acceptor) 2,3-oxidoreductase|C00630 + C00028 <=> C03460 + C00030
+R03172|(S)-2-methylbutanoyl-CoA:acceptor 2,3-oxidoreductase|C15980 + C00028 <=> C03345 + C00030
+R04432|propanoyl-CoA:electron-transfer flavoprotein 2,3-oxidoreductase|C04253 + C00100 <=> C04570 + C00894
+R02055|Phsophatidyl-L-serine carboxy-lyase|C02737 <=> C00350 + C00011
+R10648|L-threonylcarbamoyladenylate:adenine in tRNA N6-L-threonylcarbamoyltransferase|C20641 + C17324 <=> C00020 + C20751
+R01791|Dextrin 6-alpha-D-glucanohydrolase|C00721 + C00001 <=> C00031 + C00721
+R00375|Deoxyadenosine 5'-triphosphate:DNA deoxynucleotidyltransferase (DNA-directed)|C00131 + C00039 <=> C00013 + C00039
+R00376|Deoxyguanosine 5'-triphosphate:DNA deoxynucleotidyltransferase (DNA-directed)|C00286 + C00039 <=> C00013 + C00039
+R00377|Deoxycytidine triphosphate:DNA deoxynucleotidyltransferase (DNA-directed)|C00458 + C00039 <=> C00013 + C00039
+R00378|deoxythymidine triphosphate:DNA deoxynucleotidyltransferase (DNA-directed)|C00459 + C00039 <=> C00013 + C00039
+R03657|L-Leucine:tRNA(Leu) ligase (AMP-forming)|C00002 + C00123 + C01645 <=> C00020 + C00013 + C02047
+R07232|S-adenosyl-L-methionine:rRNA (adenine-N6-)-methyltransferase|C00019 + C20648 <=> C00021 + C04154
+R04428|(3R)-3-hydroxybutanoyl-[acyl-carrier-protein] hydro-lyase|C04618 <=> C04246 + C00001
+R04535|(3R)-3-hydroxydecanoyl-[acyl-carrier-protein] hydro-lyase|C04619 <=> C05754 + C00001
+R04537|(3R)-3-hydroxyoctanoyl-[acyl-carrier-protein] hydro-lyase|C04620 <=> C05751 + C00001
+R04544|(3R)-3-hydroxypalmitoyl-[acyl-carrier-protein] hydro-lyase|C04633 <=> C05763 + C00001
+R04568|(3R)-3-hydroxytetradecanoyl-[acyl-carrier-protein] hydro-lyase|C04688 <=> C05760 + C00001
+R04954|(3R)-3-hydroxybutanoyl-[acyl-carrier-protein] hydro-lyase|C05747 <=> C05748 + C00001
+R04965|(3R)-3-hydroxydodecanoyl-[acyl-carrier-protein] hydro-lyase|C05757 <=> C05758 + C00001
+R04859|O3-acetyl-L-serine:thiosulfate 2-amino-2-carboxyethyltransferase (reducing, L-cysteine-forming)|C00979 + C00320 + C00342 + C00080 <=> C00097 + C00094 + C00343 + C00033
+R02017|2'-deoxyadenosine 5'-diphosphate:oxidized-thioredoxin 2'-oxidoreductase|C00206 + C00343 + C00001 <=> C00342 + C00008
+R02018|2'-deoxyuridine 5'-diphosphate:oxidized-thioredoxin 2'-oxidoreductase|C01346 + C00343 + C00001 <=> C00342 + C00015
+R02019|2'-deoxyguanosine 5'-diphosphate:oxidized-thioredoxin 2'-oxidoreductase|C00361 + C00343 + C00001 <=> C00035 + C00342
+R02024|2'-deoxycytidine diphosphate:oxidized-thioredoxin 2'-oxidoreductase|C00705 + C00343 + C00001 <=> C00342 + C00112
+R04985|4-hydroxy-3-polyprenylbenzoate carboxy-lyase|C05807 + C00011 <=> C05848
+R00631|aldehyde:NAD+ oxidoreductase|C00071 + C00003 + C00001 <=> C00162 + C00004 + C00080
+R05578|L-glutamate:tRNA(Glu) ligase (AMP-forming)|C01641 + C00025 + C00002 <=> C02987 + C00013 + C00020
+R03599|L-selenocysteine selenide-lyase (L-alanine-forming)|C05688 + C00030 <=> C01528 + C00041 + C00028
+R11528|L-cysteine:sulfur-acceptor sulfurtransferase|C00097 + C02743 <=> C00041 + C21440
+R07459|ATP:[sulfur-carrier protein] adenylyltransferase|C15810 + C00002 <=> C15813 + C00013
+R07461|[enzyme]-S-sulfanyl-L-cysteine:adenylyl-[sulfur-carrier protein] sulfurtransferase|C15812 + C15813 + C00030 <=> C00020 + C15814 + C15811 + C00028
+R00790|Ammonia:ferredoxin oxidoreductase|C00014 + 2 C00001 + 6 C00139 <=> C00088 + 6 C00138 + 6 C00080
+R02021|adenosine 3',5'-bisphosphate,sulfite:oxidized-thioredoxin oxidoreductase (3'-phosphoadenosine-5'-phosphosulfate -forming)|C00342 + C00053 <=> C00343 + C00094 + C00054
+R01801|CDP-diacylglycerol:sn-glycerol-3-phosphate 3-phosphatidyltransferase|C00269 + C00093 <=> C00055 + C03892
+R02030|CDP-diacylglycerol:phosphatidylglycerol 3-phosphatidyltransferase|C00344 + C00269 <=> C05980 + C00055
+R01374|D-phenylalanine:quinone oxidoreductase (deaminating)|C02265 + C00001 + C15602 <=> C00166 + C00014 + C15603
+R09493|D-amino acid:quinone oxidoreductase (deaminating)|C00405 + C00001 + C15602 <=> C00161 + C00014 + C15603
+R00859|Hydrogen-sulfide:ferredoxin oxidoreductase|C00283 + 6 C00139 + 3 C00001 <=> C00094 + 6 C00138 + 6 C00080
+R03600|Hydrogen-sulfide:ferredoxin oxidoreductase|C01528 + 6 C00139 + 3 C00001 <=> C05684 + 6 C00138 + 8 C00080
+R01868|(S)-dihydroorotate:quinone oxidoreductase|C00337 + C15602 <=> C00295 + C15603
+R07234|S-adenosyl-L-methionine:rRNA (guanine-N2-)-methyltransferase|C00019 + C00240 <=> C00021 + C04153
+R07767|[protein]-N6-(octanoyl)-L-lysine:an [Fe-S] cluster scaffold protein carrying a [4Fe-4S]2+ cluster sulfurtransferase|C16236 + C22154 + 2 C00019 + 2 C22150 + 8 C00080 <=> C16832 + C22155 + 2 C00283 + 4 C14818 + 2 C00073 + 2 C05198 + 2 C22151
+R02164|succinate:quinone oxidoreductase|C15602 + C00042 <=> C15603 + C00122
+R02887|1,4-beta-D-Glucan glucohydrolase|C01898 + (n-2) C00001 <=> (n-2) C00031 + C00185
+R03527|D-Glucoside glucohydrolase|C00963 + C00001 <=> C00031 + C01335
+R04949|Cyanoglycoside glucohydrolase|C05713 + C00001 <=> C05712 + C00031
+R03164|1,4,5,6-Tetrahydro-6-oxonicotinate:ferredoxin oxidoreductase|C01020 + C00138 <=> C04226 + C00139
+R09597|L-lysine:[tRNA(Ile2)]-cytidine34 ligase (AMP-forming)|C19722 + C00047 + C00002 <=> C19723 + C00020 + C00013 + C00001
+R00623|primary_alcohol:NAD+ oxidoreductase|C00226 + C00003 <=> C00071 + C00004 + C00080
+R05146|dodecanoyl-[acyl-carrier protein]:KDO2-lipid-IVA O-dodecanoyltransferase|C05223 + C06025 <=> C06251 + C00229
+R00196|(S)-Lactate:ferricytochrome-c 2-oxidoreductase|C00186 + 2 C00125 <=> C00022 + 2 C00126 + 2 C00080
+R03656|L-Isoleucine:tRNA(Ile) ligase (AMP-forming)|C00002 + C00407 + C01644 <=> C00020 + C00013 + C03127
+R05884|isopentenyl-diphosphate:ferredoxin oxidoreductase|C11811 + 2 C00138 + 2 C00080 <=> C00129 + 2 C00139 + C00001
+R08210|dimethylallyl diphosphate:ferredoxin oxidoreductase|C00235 + 2 C00139 + C00001 <=> C11811 + 2 C00138 + 2 C00080
+R10151||C00320 + 5 C00001 + 8 C00125 <=> 2 C00059 + 8 C00126 + 10 C00080
+R03038|L-Alanine:tRNA(Ala) ligase (AMP-forming)|C00002 + C00041 + C01635 <=> C00020 + C00013 + C00886
+R02569|acetyl-CoA:enzyme N6-(dihydrolipoyl)lysine S-acetyltransferase|C00024 + C15973 <=> C00010 + C16255
+R00382|(deoxyribonucleotide)n:5'-phospho-(deoxyribonucleotide)m ligase (AMP-forming, NMN-forming)|C00003 + C00039(n) + C02128(m) <=> C00020 + C00455 + C00039(n+m)
+R04385|biotin-carboxyl-carrier-protein:carbon-dioxide ligase (ADP-forming)|C00002 + C06250 + C00288 <=> C00008 + C00009 + C04419
+R01206|[1,4-(N-Acetyl-beta-D-glucosaminyl)]n glycanohydrolase|C00461 + C00001 <=> C00140 + C00461
+R02334|[1,4-(N-Acetyl-beta-D-glucosaminyl)]n glycanohydrolase|C00461 + C00001 <=> C01674 + C00461
+R10159|adrenodoxin:NADP+ oxidoreductase|2 C00662 + C00006 + C00080 <=> 2 C00667 + C00005
+R07233|S-adenosyl-L-methionine:rRNA (guanine-N1-)-methyltransferase|C00019 + C00240 <=> C00021 + C04152
+R00435|ATP:polynucleotide adenylyltransferase|C00002 + C00046 <=> C00013 + C00046
+R00441|GTP:RNA guanylyltransferase (DNA-directed)|C00044 + C00046 <=> C00013 + C00046
+R00442|CTP:RNA cytidylyltransferase (DNA-directed)|C00063 + C00046 <=> C00013 + C00046
+R00443|UTP:RNA uridylyltransferase|C00075 + C00046 <=> C00013 + C00046
+R07390||2 C00344 <=> C05980 + C00116
+R01025|choline:acceptor 1-oxidoreductase|C00114 + C00028 <=> C00576 + C00030
+R00798|nitrite:acceptor oxidoreductase|C00088 + C00028 + C00001 <=> C00244 + C00030
+R01106|nitrite:(acceptor) oxidoreductase|2 C00125 + C00088 + C00001 <=> C00244 + 2 C00126 + 2 C00080
+R05712|ammonia:ferricytochrome-c oxidoreductase|C00014 + 2 C00001 + 6 C00125 <=> C00088 + 6 C00126 + 6 C00080
+R03658|L-lysine:tRNALys ligase (AMP-forming)|C00002 + C00047 + C01646 <=> C00020 + C00013 + C01931
+R00597|S-adenosyl-L-methionine:tRNA guanine N1-methyltransferase|C00019 + C01977 <=> C00021 + C04157
+R00791|nitrite:ferredoxin oxidoreductase|C00088 + C00001 + 2 C00139 <=> C00244 + 2 C00138
+R02029|Phosphatidylglycerophosphate phosphohydrolase|C03892 + C00001 <=> C00344 + C00009
+R08701|tRNA uridine 5-carboxymethylaminomethyl modification|C17322 + C00037 + C03479 + C00030 <=> C17323 + C00101 + C00028 + C00001
+R03815|dihydrolipoylprotein:NAD+ oxidoreductase|C02972 + C00003 <=> C02051 + C00004 + C00080
+R07618|enzyme N6-(dihydrolipoyl)lysine:NAD+ oxidoreductase|C15973 + C00003 <=> C15972 + C00004 + C00080
+R10816|5'-triphospho-[mRNA] diphosphatase|C20864 + C00001 <=> C20863 + C00013
+R02596|Donor:hydrogen-peroxide oxidoreductase|C00590 <=> C15805
+R03919|Donor:hydrogen-peroxide oxidoreductase|C02325 <=> C15806
+R04007|Donor:hydrogen-peroxide oxidoreductase|C02646 <=> C15804
+R07443|donor:hydrogen-peroxide oxidoreductase|C12205 <=> C15807
+R08769|S-adenosyl-L-methionine:2-polyprenyl-6-hydroxyphenol 6-O-methyltransferase|C17551 + C00019 <=> C17552 + C00021
+R04355|Acyl-[acyl-carrier-protein]:malonyl-[acyl-carrier-protein] C-acyltransferase (decarboxylating)|C03939 + C01209 <=> C05744 + C00011 + C00229
+R04726|dodecanoyl-[acyl-carrier-protein]:malonyl-[acyl-carrier-protein] C-acyltransferase (decarboxylating)|C05223 + C01209 <=> C05759 + C00011 + C00229
+R04952|butyryl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein] C-acyltransferase (decarboxylating)|C05745 + C01209 <=> C05746 + C00011 + C00229
+R04957|hexanoyl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein] C-acyltransferase (decarboxylating)|C05749 + C01209 <=> C05750 + C00011 + C00229
+R04960|Octanoyl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein] C-acyltransferase (decarboxylating)|C05752 + C01209 <=> C05753 + C00011 + C00229
+R04963|Decanoyl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein] C-acyltransferase (decarboxylating)|C05755 + C01209 <=> C05756 + C00011 + C00229
+R04968|Tetradecanoyl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein] C-acyltransferase (decarboxylating)|C05761 + C01209 <=> C05762 + C00011 + C00229
+R07762||C05764 + C01209 <=> C16219 + C00229 + C00011
+R10115|malonyl-[acyl-carrier protein]-methyl-ester:malonyl-[acyl-carrier protein] C-acyltransferase|C19673 + C01209 <=> C20372 + C00011 + C00229
+R10119|glutaryl-[acp]-methyl-ester:malonyl-[acyl-carrier protein] C-acyltransferase (decarboxylating)|C20375 + C01209 <=> C20376 + C00011 + C00229
+R01626|Malonyl-CoA:[acyl-carrier-protein] S-malonyltransferase|C00083 + C00229 <=> C00010 + C01209
+R11671||C00083 + C00024 <=> C05223
+R00851|acyl-CoA:sn-glycerol-3-phosphate 1-O-acyltransferase|C00093 + C00040 <=> C00681 + C00010
+R09380|acyl-ACP:sn-glycerol-3-phosphate 1-O-acyltransferase|C00173 + C00093 <=> C00681 + C00229
+R00135||C00012 + C00001 <=> C00148 + C00012
+R07412|ferroheme o:acceptor C-81-oxidoreductase (heme a-forming)|C15672 + C00001 + 2 C00028 <=> C15670 + 2 C00030
+R00081|ferrocytochrome-c:oxygen oxidoreductase|C00007 + 4 C00126 + 4 C00080 <=> 4 C00125 + 2 C00001
+R10806|S-adenosyl-L-methionine:[protein]-L-glutamine (N5-glutamine)-methyltransferase|C02583 + C00019 <=> C20858 + C00021
+R10757|all-trans-polyprenyl-diphosphate:1,4-dihydroxy-2-naphthoate polyprenyltransferase|C05847 + C03657 <=> C19847 + C00013 + C00011
+R04386|carboxybiotin-carboxyl-carrier-protein:acetyl-CoA carboxytransferase|C00024 + C04419 <=> C00083 + C06250
+R01625|CoA:apo-[acyl-carrier-protein] pantetheinephosphotransferase|C00010 + C03688 <=> C00054 + C00229
+R02000|rubredoxin:NAD+ oxidoreductase|2 C00340 + C00003 + C00080 <=> 2 C00435 + C00004
+R01262|glutathione:L-amino-acid 5-glutamyltransferase|C00051 + C00151 <=> C01419 + C03740
+R01687|(5-L-glutamyl)-peptide:taurine 5-glutamyltransferase|C03193 + C00245 <=> C00012 + C05844
+R03867|(5-Glutamyl)-peptide:amino-acid 5-glutamyltransferase|C02166 + C00045 <=> C05951 + C03363
+R03916|(5-glutamyl)-peptide:amino-acid 5-glutamyltransferase|C02320 + C00001 <=> C05729 + C00025
+R04935|(5-L-glutamyl)-peptide:Se-Methylselenocysteine 5-glutamyltransferase|C03193 + C05689 <=> C00012 + C05695
+R02964|NADH:menaquinone oxidoreductase|C00828 + C00080 + C00004 <=> C05819 + C00003
+R03643|NADH:(quinone-acceptor) oxidoreductase|C01628 + C00004 + C00080 <=> C05850 + C00003
+R10707|acetyl-CoA:malonyl-[acyl-carrier protein] C-acetyltransferase (decarboxylating)|C00024 + C01209 <=> C05744 + C00010 + C00011
+R01800|CDP-diacylglycerol:L-serine 3-phosphatidyltransferase|C00269 + C00065 <=> C00055 + C02737
+R04710|Protein-glycine,dihydroflavodoxin:S-adenosyl-L-methionine oxidoreductase (S-adenosyl-L-methionine cleaving)|C00019 + C05196 + C05197 <=> C05198 + C00073 + C05199 + C05312
+R02320|NTP:pyruvate O2-phosphotransferase|C00201 + C00022 <=> C00454 + C00074
+R04125|[protein]-S8-aminomethyldihydrolipoyllysine:tetrahydrofolate aminomethyltransferase (ammonia-forming)|C01242 + C00101 <=> C02972 + C00143 + C00014
+R03425|glycine:lipoylprotein oxidoreductase (decarboxylating and acceptor-aminomethylating)|C00037 + C02051 <=> C01242 + C00011
+R03650|L-Cysteine:tRNA(Cys) ligase (AMP-forming)|C00002 + C00097 + C01639 <=> C00020 + C00013 + C03125
+R07460|L-cysteine:[enzyme]-cysteine sulfurtransferase|C15811 + C00097 <=> C15812 + C00041
+R11529|[enzyme]-S-sulfanylcysteine:sulfur-acceptor sulfurtransferase|C15812 + C02743 <=> C15811 + C21440
+R04109|L-glutamate-semialdehyde: NADP+ oxidoreductase(L-glutamyl-tRNA(Glu)-forming)|C02987 + C00005 + C00080 <=> C03741 + C01641 + C00006
+R07766|octanoyl-[acp]:protein N6-octanoyltransferase|C05752 + C16240 <=> C16236 + C00229
+R07769|lipoyl-[acp]:protein N6-lipoyltransferase|C16239 + C16240 <=> C16237 + C00229
+R10152|sulfide:quinone oxidoreductase|n C00283 + n C15602 <=> C19692 + n C15603
+R03232|protein-N(pi)-phosphohistidine:D-fructose 1-phosphotransferase|C04261 + C00095 <=> C00615 + C01094
+R10645|tRNA (N6-dimethylallyladenosine):sulfur-donor,S-adenosyl-L-methionine C2-methylthiotransferase|C04432 + C17023 + 2 C00019 <=> C20753 + C00021 + C00073 + C05198
+R10646||C04432 + C17023 + C00019 <=> C20755 + C00073 + C05198
+R10647||C20755 + C00019 <=> C20753 + C00021
+R04951||C05729 + C00001 <=> C05726 + C00037
+R02289|5-methyltetrahydrofolate:corrinoid/iron-sulfur protein methyltransferase|C00440 + C06021 + C00080 <=> C06020 + C00101
+R03661|L-proline:tRNA(Pro) ligase (AMP-forming)|C00002 + C00148 + C01649 <=> C00020 + C00013 + C02702
+R09395|thiocarboxylated molybdopterin synthase:cyclic pyranopterin phosphate sulfurtransferase|C18239 + 2 C15814 <=> C05924 + 2 C15810
+R01253|L-proline:quinone oxidoreductase|C00148 + C15602 <=> C03912 + C15603
+R11260||C00369 <=> C00973
+R01122|delta2-isopentenyl-diphosphate:tRNA isopentenyltransferase|C00235 + C17324 <=> C00013 + C04432
+R03655|L-Histidine:tRNA(His) ligase (AMP-forming)|C00002 + C00135 + C01643 <=> C00020 + C00013 + C02988
+R05145|Biotinyl-5'-AMP:apo-[carboxylase] ligase (AMP-forming)|C05921 + C06249 <=> C00020 + C06250
+R02110|1,4-alpha-D-Glucan:1,4-alpha-D-glucan 6-alpha-D-(1,4-alpha-D-glucano)-transferase|C00718 <=> C00369
+R09995||C00369 <=> C01083
+R11261||C00369 + n C00001 <=> (n+1) C01935
+R02704|protein-N(pi)-phosphohistidine:mannitol 1-phosphotransferase|C04261 + C00392 <=> C00615 + C00644
+R03662|L-Serine:tRNA(Ser) ligase (AMP-forming)|C00002 + C00065 + C01650 <=> C00020 + C00013 + C02553
+R08218|L-serine:tRNASec ligase (AMP-forming)|C00002 + C00065 + C16636 <=> C00020 + C00013 + C06481
+R03813|L-leucyl-tRNA(Leu):protein leucyltransferase|C02047 + C00017 <=> C01645 + C02429
+R11443|L-leucyl-tRNA(Leu):[protein] N-terminal L-lysine leucyltransferase|C02047 + C21388 <=> C01645 + C21387
+R11444|L-leucyl-tRNA(Leu):[protein] N-terminal L-arginine leucyltransferase|C02047 + C16739 <=> C01645 + C21386
+R11547|L-leucyl-tRNA(Leu):[protein] N-terminal L-glutamate leucyltransferase|C02047 + C21456 <=> C01645 + C21455
+R11548|L-leucyl-tRNA(Leu):[protein] N-terminal L-aspartate leucyltransferase|C02047 + C21458 <=> C01645 + C21457
+R04429|butyryl-[acp]:NAD+ trans-2-oxidoreductase|C05745 + C00003 <=> C04246 + C00004 + C00080
+R04724|dodecanoyl-[acp]:NAD+ trans-2-oxidoreductase|C05223 + C00003 <=> C05758 + C00004 + C00080
+R04955|hexanoyl-[acp]:NAD+ trans-2-oxidoreductase|C05749 + C00003 <=> C05748 + C00004 + C00080
+R04958|octanoyl-[acp]:NAD+ trans-2-oxidoreductase|C05752 + C00003 <=> C05751 + C00004 + C00080
+R04961|decanoyl-[acp]:NAD+ trans-2-oxidoreductase|C05755 + C00003 <=> C05754 + C00004 + C00080
+R04966|tetradecanoyl-[acp]:NAD+ trans-2-oxidoreductase|C05761 + C00003 <=> C05760 + C00004 + C00080
+R04969|hexadecanoyl-[acp]:NAD+ trans-2-oxidoreductase|C05764 + C00003 <=> C05763 + C00004 + C00080
+R08700|[enzyme]-S-sulfanylcysteine:tRNA-uridine sulfurtransferase (ATP-hydrolysing)|C00868 + C15812 + C00002 <=> C17322 + C15811 + C00020 + C00013
+R03659|L-Methionine:tRNAMet ligase (AMP-forming)|C00002 + C00073 + C01647 <=> C00020 + C00013 + C02430
+R04773|Selenomethionine:tRNAMet ligase (AMP-forming)|C00002 + C05335 + C01647 <=> C00020 + C00013 + C05336
+R01078|dethiobiotin:sulfur sulfurtransferase|C01909 + C17023 + 2 C00019 + 2 C05359 + 2 C00080 <=> C00120 + 2 C00073 + 2 C05198
+R10124|pimeloyl-[acyl-carrier protein]:L-alanine C-pimeloyltransferase (decarboxylating)|C19845 + C00041 <=> C01092 + C00229 + C00011
+R09725|pimeloyl-[acyl-carrier protein]-methyl-ester hydrolase|C19846 + C00001 <=> C19845 + C00132
+R09543|S-adenosyl-L-methionine:malonyl-[acyl-carrier protein] O-methyltransferase|C00019 + C01209 <=> C00021 + C19673
+R02570|succinyl-CoA:enzyme N6-(dihydrolipoyl)lysine S-succinyltransferase|C00091 + C15973 <=> C00010 + C16254
+R02571|Glutaryl-CoA:dihydrolipoamide S-succinyltransferase|C00527 + C15973 <=> C00010 + C06157
+R01940|2-Oxoadipate:lipoamde 2-oxidoreductase(decarboxylating and acceptor-succinylating)|C00322 + C15972 <=> C06157 + C00011
+R03316||C05381 + C15972 <=> C16254 + C00068
+R01824|maltodextrin 1-alpha-D-glucosylmutase|C01935 <=> C06400
+R05196|1,4-alpha-D-Glucan:1,4-alpha-D-glucan 4-alpha-D-glycosyltransferase|C00718 + n C00031 <=> n C00208
+R08768|2-(all-trans-polyprenyl)phenol,NADPH:oxygen oxidoreductase (6-hydroxylating)|C05807 + C00005 + C00080 + C00007 <=> C17551 + C00006 + C00001
+R11945|NADH:ubiquinone oxidoreductase|C00399 + C00004 + 6 C00080 <=> C00390 + C00003 + 5 C00080
+R02918|L-Tyrosine:tRNA(Tyr) ligase (AMP-forming)|C00002 + C00082 + C00787 <=> C00020 + C00013 + C02839
+R02016|NADPH:oxidized-thioredoxin oxidoreductase|C00342 + C00006 <=> C00343 + C00005 + C00080
+R03654|glycine:tRNA(Gly) ligase (AMP-forming)|C00002 + C00037 + C01642 <=> C00020 + C00013 + C02412
+R07210|alkanesulfonate, reduced-FMN:oxygen oxidoreductase|C15521 + C01847 + C00007 <=> C00071 + C00061 + C00094 + C00001
+R04019|Digalactosylceramide galactohydrolase|C06126 + C00001 <=> C02686 + C00124
+R04470|Digalactosyl-diacylglycerol galactohydrolase|C06037 + C00001 <=> C03692 + C00124
+R04567|(R)-3-Hydroxytetradecanoly-[acyl-carrier-protein]:UDP-N-acetyl-glucosamine 3-O-(3-hydroxytetradecanoyl)transferase|C04688 + C00043 <=> C00229 + C04738
+R07764||C16220 <=> C16221 + C00001
+R10117|3-hydroxyglutaryl-[acp]-methyl-ester hydro-lyase|C20373 <=> C20374 + C00001
+R10121|3-hydroxypimeloyl-[acp]-methyl-ester hydro-lyase|C20377 <=> C20378 + C00001
+R04550|(3R)-3-hydroxymyristoyl-[acyl-carrier protein]:UDP-3-O-[(3R)-3-hydroxymyristoyl]-alpha-D-glucosamine N-acetyltransferase|C06022 + C04688 <=> C04652 + C00229
+R01799|CTP:phosphatidate cytidyltransferase|C00063 + C00416 <=> C00013 + C00269
+R00021|L-glutamate:ferredoxin oxidoreductase (transaminating)|2 C00025 + 2 C00139 <=> C00064 + C00026 + 2 C00138 + 2 C00080
+R10086|L-glutamate:ferredoxin oxidoreductase (deaminating)|C00025 + 2 C00139 + C00001 <=> C00014 + C00026 + 2 C00138 + 2 C00080
+R07639|decenoyl-[acyl-carrier-protein] Delta2-trans-Delta3-cis-isomerase|C05754 <=> C04180
+R10776|2'-deoxyribonucleoside 5'-monophosphate phosphohydrolase|C00676 + C00001 <=> C02269 + C00009
+R03665|L-Valine:tRNAVal ligase (AMP-forming)|C00002 + C00183 + C01653 <=> C00020 + C00013 + C02554
+R02240|ATP:1,2-diacylglycerol 3-phosphotransferase|C00002 + C00641 <=> C00008 + C00416
+R00361|(S)-malate:quinone oxidoreductase|C00149 + C15602 <=> C00036 + C15603
+R01699|pyruvate:[dihydrolipoyllysine-residue acetyltransferase]-lipoyllysine 2-oxidoreductase (decarboxylating, acceptor-acetylating)|C00022 + C15972 <=> C16255 + C00011
+R03270||C05125 + C15972 <=> C16255 + C00068
+R01105|Galactan galactohydrolase|C05796 + C00001 <=> C00124 + C05796
+R03355|beta-D-Galactosyl-1,4-beta-D-glucosylceramide galactohydrolase|C01290 + C00001 <=> C01190 + C00124
+R03664|L-Tryptophan -tRNA(Trp) ligase (AMP-forming)|C00002 + C00078 + C01652 <=> C00020 + C00013 + C03512
+R03522|RX:glutathione R-transferase|C01322 + C00051 <=> C00462 + C02320
+R11905||C21758 + C00051 <=> C02320
+R02108|1,4-alpha-D-Glucan glucanohydrolase|C00369 + C00001 <=> C00721 + C00369
+R02112|1,4-alpha-D-Glucan maltohydrolase|C00369 <=> C00721 + C00208
+R11262|maltodextrin maltohydrolase|C01935 + C00001 <=> C00208
+R11307||C00760 + C00001 <=> C00760 + C01898
+R11308||C01898 <=> C00185
+R03940|10-Formyltetrahydrofolate:L-methionyl-tRNA N-formyltransferase|C02430 + C00234 <=> C00101 + C03294
+R08689|(E)-4-hydroxy-3-methylbut-2-en-1-yl-diphosphate:oxidized ferredoxin oxidoreductase (hydrating)|C11453 + 2 C00138 <=> C11811 + C00001 + 2 C00139
+R10859|(E)-4-hydroxy-3-methylbut-2-en-1-yl-diphosphate:oxidized flavodoxin oxidoreductase|C11811 + C00001 + C02869 <=> C11453 + C02745
+R00437|polyribonucleotide:phosphate adenylyltransferase|C00046 + C00009 <=> C00046 + C00008
+R00438|polyribonucleotide:phosphate uridylyltransferase|C00046 + C00009 <=> C00046 + C00015
+R00439|polyribonucleotide:phosphate guanylyltransferase|C00046 + C00009 <=> C00046 + C00035
+R00440|polyribonucleotide:phosphate cytidylyltransferase|C00046 + C00009 <=> C00046 + C00112
+R01623|[Acyl-carrier-protein] 4'-pantetheine-phosphohydrolase|C00229 + C00001 <=> C01134 + C03688
+R02025|L-methionine:oxidized-thioredoxin S-oxidoreductase|C00073 + C00343 + C00001 <=> C02989 + C00342
+R00282|NADPH:acceptor oxidoreductase|C00028 + C00005 + C00080 <=> C00030 + C00006
+R05577|L-Aspartate:tRNA(Asp) ligase (AMP-forming)|C01638 + C00049 + C00002 <=> C02984 + C00013 + C00020
+R03660|L-Phenylalanine:tRNA(Ala) ligase (AMP-forming)|C00002 + C00079 + C01648 <=> C00020 + C00013 + C03511
+R03652|L-Glutamine:tRNA(Gln) ligase (AMP-forming)|C00002 + C00064 + C01640 <=> C00020 + C00013 + C02282
+R03646|L-Arginine:tRNA(Arg) ligase (AMP-forming)|C00002 + C00062 + C01636 <=> C00020 + C00013 + C02163
+R11188|nucleoside-3',5'-bisphosphate 3'-phosphohydrolase|C21158 + C00001 <=> C01117 + C00009
+R00601|S-adenosyl-L-methionine:tRNA 5-methylaminomethyl-2-thiouridine methyltransferase|C00019 + C11478 <=> C00021 + C04728
+R03789|tRNA-guanosine34:queuine tRNA-D-ribosyltransferase|C01977 + C01449 <=> C01978 + C00242
+R08702|tRNA containing 5-carboxymethylaminomethyl-2-thiouridine:oxygen oxidoreductase|C17323 + C00007 + C00001 <=> C11478 + C00048 + C00027
+R10209|tRNA-guanosine34:7-aminomethyl-7-carbaguanine tRNA-D-ribosyltransferase|C01977 + C16675 <=> C20446 + C00242
+R09382|CTP,CTP,ATP:tRNA cytidylyl,cytidylyl,adenylyltransferase|C02211 + 2 C00063 + C00002 <=> C19085 + 3 C00013
+R09383|CTP:tRNA cytidylyltransferase|C02211 + C00063 <=> C19078 + C00013
+R09384|CTP:tRNA cytidylyltransferase|C19078 + C00063 <=> C19080 + C00013
+R09386|ATP:tRNA adenylyltransferase|C19080 + C00002 <=> C19085 + C00013
+R07063|Linoleoyl-CoA,hydrogen-donor:oxygen oxidoreductase|C01595 + C00030 + C00007 <=> C06426 + C00028 + 2 C00001
+R03905|Glu-tRNA(Gln):L-glutamine amido-ligase(ADP-forming)|C02282 + C00025 + C00009 + C00008 <=> C06112 + C00064 + C00002 + C00001
+R04212|Asp-tRNA(Asn):L-glutamine amido-ligase (ADP-forming)|C03402 + C00025 + C00009 + C00008 <=> C06113 + C00064 + C00002 + C00001
+R00540|Nitrile aminohydrolase|C00726 + 2 C00001 <=> C00060 + C00014
+R01498|D-Glucosyl-N-acylsphingosine glucohydrolase|C01190 + C00001 <=> C00031 + C00195
+R09736|S-adenosyl-L-methione:demethylmenaquinol methyltransferase|C19847 + C00019 <=> C05819 + C00021
+
+There are 935 reactions in the model
+There are 1281 compounds in the model

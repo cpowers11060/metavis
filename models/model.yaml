@@ -1,0 +1,12 @@
+default_flux_limit: 100
+default_compartment: c
+extracellular: null
+biomass: null
+compounds:
+- include: ./compounds.yaml
+reactions:
+- include: ./reactions.yaml
+- include: ./gene-association.tsv
+  format: tsv
+model:
+- include: model_def.tsv

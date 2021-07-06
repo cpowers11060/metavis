@@ -1,0 +1,5110 @@
+- id: R10204
+  name: alpha-D-ribose-1-methylphosphonate-5-phosphate C-P-lyase (methane forming)
+  names:
+  - alpha-D-ribose-1-methylphosphonate-5-phosphate C-P-lyase (methane forming)
+  equation: C20423 + C00019 + C00030 <=> C20440 + C01438 + C00073 + C05198 + C00028
+  enzymes:
+  - 4.7.1.1
+  pathways:
+  - Phosphonate and phosphinate metabolism
+  - Metabolic pathways
+  orthology:
+  - K06163
+  rpairs:
+  - &id001
+    RC03078:
+    - C20423
+    - C20440
+    RC03079:
+    - C01438
+    - C20423
+  - *id001
+- id: R01332
+  name: beta-D-mannan hydrolases
+  names:
+  - beta-D-mannan hydrolases
+  equation: C02492 + (n-1) C00001 <=> n C00159
+  enzymes:
+  - 3.2.1.25
+  - 3.2.1.78
+  pathways:
+  - Fructose and mannose metabolism
+  - Metabolic pathways
+  comment: 'multi-step reaction
+
+    endo-hydrolysis (ec 3.2.1.78, see R08612)
+
+    exo-hydrolysis (ec 3.2.1.25, see R08614)'
+  orthology:
+  - K01218
+  - K19355
+  rpairs:
+  - RC00467:
+    - C00159
+    - C02492
+- id: R03663
+  name: L-Threonine:tRNA(Thr) ligase (AMP-forming)
+  names:
+  - L-Threonine:tRNA(Thr) ligase (AMP-forming)
+  equation: C00002 + C00188 + C01651 <=> C00020 + C00013 + C02992
+  enzymes:
+  - 6.1.1.3
+  pathways:
+  - Aminoacyl-tRNA biosynthesis
+  orthology:
+  - K01868
+  rpairs:
+  - &id002
+    RC00055:
+    - C01651
+    - C02992
+    RC00523:
+    - C00188
+    - C02992
+  - *id002
+- id: R02111
+  name: 1,4-alpha-D-Glucan:orthophosphate alpha-D-glucosyltransferase
+  names:
+  - 1,4-alpha-D-Glucan:orthophosphate alpha-D-glucosyltransferase
+  equation: C00369 + C00009 <=> C00718 + C00103
+  enzymes:
+  - 2.4.1.1
+  pathways:
+  - Starch and sucrose metabolism
+  - Metabolic pathways
+  - Biosynthesis of secondary metabolites
+  comment: Any one of debranching enzymes ([KO:K01196 K02438 K01200 K00705 K22451])
+    is required.
+  orthology:
+  - K00688
+  - K00705
+  - K01196
+  - K01200
+  - K02438
+  - K16153
+  - K22451
+  rpairs: []
+- id: R03105
+  name: 3-mercaptopyruvate:sulfide sulfurtransferase
+  names:
+  - 3-mercaptopyruvate:sulfide sulfurtransferase
+  equation: C00957 + C00342 <=> C00283 + C00022 + C00343
+  enzymes:
+  - 2.8.1.2
+  pathways:
+  - Cysteine and methionine metabolism
+  - Metabolic pathways
+  comment: two-step reaction (see R12689+R12690)
+  orthology:
+  - K01011
+  rpairs:
+  - RC00214:
+    - C00022
+    - C00957
+- id: R04519
+  name: '[poly-N-acetyl-D-glucosaminyl-(1->4)-(N-acetyl-D-muramoylpentapeptide)]-diphosphoundecaprenol:[N-acetyl-D-glucosaminyl-(1->4)-N-acetyl-D-muramoylpentapeptide]-diphosphoundecaprenol
+    polysaccharidetransferase'
+  names:
+  - '[poly-N-acetyl-D-glucosaminyl-(1->4)-(N-acetyl-D-muramoylpentapeptide)]-diphosphoundecaprenol:[N-acetyl-D-glucosaminyl-(1->4)-N-acetyl-D-muramoylpentapeptide]-diphosphoundecaprenol
+    polysaccharidetransferase'
+  - bactoprenyldiphospho-N-acetylmuramoyl-(N-acetyl-D-glucosaminyl)-pentapeptide:peptidoglycan
+    N-acetylmuranoyl-N-acetyl-D-glucosaminyltransferase
+  equation: C05898 + C11827 <=> C04574 + C11827
+  enzymes:
+  - 2.4.1.129
+  pathways: null
+  orthology:
+  - K05364
+  - K05365
+  rpairs:
+  - &id003
+    RC00005:
+    - C04574
+    - C11827
+    RC00049:
+    - C05898
+    - C11827
+  - *id003
+- id: R02661
+  name: 2-methylpropanoyl-CoA:(acceptor) 2,3-oxidoreductase
+  names:
+  - 2-methylpropanoyl-CoA:(acceptor) 2,3-oxidoreductase
+  equation: C00630 + C00028 <=> C03460 + C00030
+  enzymes:
+  - 1.3.8.1
+  - 1.3.8.5
+  - 1.3.8.7
+  - 1.3.99.-
+  pathways:
+  - Valine, leucine and isoleucine degradation
+  - Metabolic pathways
+  orthology:
+  - K00248
+  - K00249
+  - K09478
+  - K11410
+  - K11538
+  rpairs:
+  - RC00148:
+    - C00630
+    - C03460
+- id: R03172
+  name: (S)-2-methylbutanoyl-CoA:acceptor 2,3-oxidoreductase
+  names:
+  - (S)-2-methylbutanoyl-CoA:acceptor 2,3-oxidoreductase
+  equation: C15980 + C00028 <=> C03345 + C00030
+  enzymes:
+  - 1.3.8.1
+  - 1.3.8.5
+  - 1.3.8.7
+  pathways:
+  - Valine, leucine and isoleucine degradation
+  - Metabolic pathways
+  - Biosynthesis of secondary metabolites
+  orthology:
+  - K00248
+  - K00249
+  - K09478
+  - K11410
+  rpairs:
+  - RC00068:
+    - C03345
+    - C15980
+- id: R04432
+  name: propanoyl-CoA:electron-transfer flavoprotein 2,3-oxidoreductase
+  names:
+  - propanoyl-CoA:electron-transfer flavoprotein 2,3-oxidoreductase
+  equation: C04253 + C00100 <=> C04570 + C00894
+  enzymes:
+  - 1.3.8.1
+  pathways:
+  - beta-Alanine metabolism
+  - Propanoate metabolism
+  - Metabolic pathways
+  - Carbon metabolism
+  orthology:
+  - K00248
+  rpairs:
+  - RC00095:
+    - C00100
+    - C00894
+- id: R02055
+  name: Phsophatidyl-L-serine carboxy-lyase
+  names:
+  - Phsophatidyl-L-serine carboxy-lyase
+  equation: C02737 <=> C00350 + C00011
+  enzymes:
+  - 4.1.1.65
+  pathways:
+  - Glycerophospholipid metabolism
+  - Metabolic pathways
+  - Biosynthesis of secondary metabolites
+  orthology:
+  - K01613
+  rpairs:
+  - RC00299:
+    - C00350
+    - C02737
+- id: R10648
+  name: L-threonylcarbamoyladenylate:adenine in tRNA N6-L-threonylcarbamoyltransferase
+  names:
+  - L-threonylcarbamoyladenylate:adenine in tRNA N6-L-threonylcarbamoyltransferase
+  equation: C20641 + C17324 <=> C00020 + C20751
+  enzymes:
+  - 2.3.1.234
+  pathways: null
+  orthology:
+  - K01409
+  - K15904
+  rpairs:
+  - &id004
+    RC00070:
+    - C00020
+    - C20641
+    RC00416:
+    - C17324
+    - C20751
+  - *id004
+- id: R01791
+  name: Dextrin 6-alpha-D-glucanohydrolase
+  names:
+  - Dextrin 6-alpha-D-glucanohydrolase
+  equation: C00721 + C00001 <=> C00031 + C00721
+  enzymes:
+  - 3.2.1.3
+  - 3.2.1.10
+  pathways:
+  - Starch and sucrose metabolism
+  - Metabolic pathways
+  orthology:
+  - K01178
+  - K01182
+  - K01203
+  - K12047
+  - K21574
+  rpairs: []
+- id: R00375
+  name: Deoxyadenosine 5'-triphosphate:DNA deoxynucleotidyltransferase (DNA-directed)
+  names:
+  - Deoxyadenosine 5'-triphosphate:DNA deoxynucleotidyltransferase (DNA-directed)
+  equation: C00131 + C00039 <=> C00013 + C00039
+  enzymes:
+  - 2.7.7.7
+  pathways: null
+  orthology: null
+  rpairs:
+  - RC02795:
+    - C00039
+    - C00131
+- id: R00376
+  name: Deoxyguanosine 5'-triphosphate:DNA deoxynucleotidyltransferase (DNA-directed)
+  names:
+  - Deoxyguanosine 5'-triphosphate:DNA deoxynucleotidyltransferase (DNA-directed)
+  equation: C00286 + C00039 <=> C00013 + C00039
+  enzymes:
+  - 2.7.7.7
+  pathways: null
+  orthology: null
+  rpairs:
+  - RC02795:
+    - C00039
+    - C00286
+- id: R00377
+  name: Deoxycytidine triphosphate:DNA deoxynucleotidyltransferase (DNA-directed)
+  names:
+  - Deoxycytidine triphosphate:DNA deoxynucleotidyltransferase (DNA-directed)
+  equation: C00458 + C00039 <=> C00013 + C00039
+  enzymes:
+  - 2.7.7.7
+  pathways: null
+  orthology: null
+  rpairs:
+  - RC02795:
+    - C00039
+    - C00458
+- id: R00378
+  name: deoxythymidine triphosphate:DNA deoxynucleotidyltransferase (DNA-directed)
+  names:
+  - deoxythymidine triphosphate:DNA deoxynucleotidyltransferase (DNA-directed)
+  equation: C00459 + C00039 <=> C00013 + C00039
+  enzymes:
+  - 2.7.7.7
+  pathways: null
+  orthology: null
+  rpairs:
+  - RC02795:
+    - C00039
+    - C00459
+- id: R03657
+  name: L-Leucine:tRNA(Leu) ligase (AMP-forming)
+  names:
+  - L-Leucine:tRNA(Leu) ligase (AMP-forming)
+  equation: C00002 + C00123 + C01645 <=> C00020 + C00013 + C02047
+  enzymes:
+  - 6.1.1.4
+  pathways:
+  - Aminoacyl-tRNA biosynthesis
+  orthology:
+  - K01869
+  rpairs:
+  - &id005
+    RC00055:
+    - C01645
+    - C02047
+    RC00523:
+    - C00123
+    - C02047
+  - *id005
+- id: R07232
+  name: S-adenosyl-L-methionine:rRNA (adenine-N6-)-methyltransferase
+  names:
+  - S-adenosyl-L-methionine:rRNA (adenine-N6-)-methyltransferase
+  equation: C00019 + C20648 <=> C00021 + C04154
+  enzymes:
+  - 2.1.1.181
+  pathways: null
+  comment: 'general reaction
+
+    The enzyme ec 2.1.1.181 methylates adenine1618 at N6 in 23S rRNA.'
+  orthology:
+  - K06970
+  rpairs:
+  - &id006
+    RC00003:
+    - C00019
+    - C00021
+    RC00335:
+    - C04154
+    - C20648
+  - *id006
+- id: R04428
+  name: (3R)-3-hydroxybutanoyl-[acyl-carrier-protein] hydro-lyase
+  names:
+  - (3R)-3-hydroxybutanoyl-[acyl-carrier-protein] hydro-lyase
+  equation: C04618 <=> C04246 + C00001
+  enzymes:
+  - 2.3.1.85
+  - 2.3.1.86
+  - 2.3.1.-
+  - 4.2.1.59
+  - 4.2.1.-
+  pathways:
+  - Fatty acid biosynthesis
+  - Metabolic pathways
+  - Fatty acid metabolism
+  orthology:
+  - K00665
+  - K00668
+  - K01716
+  - K02372
+  - K11533
+  - K16363
+  - K22540
+  - K22541
+  rpairs:
+  - RC00831:
+    - C04246
+    - C04618
+- id: R04535
+  name: (3R)-3-hydroxydecanoyl-[acyl-carrier-protein] hydro-lyase
+  names:
+  - (3R)-3-hydroxydecanoyl-[acyl-carrier-protein] hydro-lyase
+  equation: C04619 <=> C05754 + C00001
+  enzymes:
+  - 2.3.1.85
+  - 2.3.1.86
+  - 2.3.1.-
+  - 4.2.1.59
+  - 4.2.1.-
+  pathways:
+  - Fatty acid biosynthesis
+  - Metabolic pathways
+  - Fatty acid metabolism
+  orthology:
+  - K00665
+  - K00668
+  - K01716
+  - K02372
+  - K11533
+  - K16363
+  - K22540
+  - K22541
+  rpairs:
+  - RC01095:
+    - C04619
+    - C05754
+- id: R04537
+  name: (3R)-3-hydroxyoctanoyl-[acyl-carrier-protein] hydro-lyase
+  names:
+  - (3R)-3-hydroxyoctanoyl-[acyl-carrier-protein] hydro-lyase
+  equation: C04620 <=> C05751 + C00001
+  enzymes:
+  - 2.3.1.85
+  - 2.3.1.86
+  - 2.3.1.-
+  - 4.2.1.59
+  - 4.2.1.-
+  pathways:
+  - Fatty acid biosynthesis
+  - Metabolic pathways
+  - Fatty acid metabolism
+  orthology:
+  - K00665
+  - K00668
+  - K01716
+  - K02372
+  - K11533
+  - K16363
+  - K22540
+  - K22541
+  rpairs:
+  - RC01095:
+    - C04620
+    - C05751
+- id: R04544
+  name: (3R)-3-hydroxypalmitoyl-[acyl-carrier-protein] hydro-lyase
+  names:
+  - (3R)-3-hydroxypalmitoyl-[acyl-carrier-protein] hydro-lyase
+  equation: C04633 <=> C05763 + C00001
+  enzymes:
+  - 2.3.1.85
+  - 2.3.1.86
+  - 2.3.1.-
+  - 4.2.1.59
+  - 4.2.1.-
+  pathways:
+  - Fatty acid biosynthesis
+  - Metabolic pathways
+  - Fatty acid metabolism
+  orthology:
+  - K00665
+  - K00668
+  - K01716
+  - K02372
+  - K11533
+  - K16363
+  - K22540
+  - K22541
+  rpairs:
+  - RC01095:
+    - C04633
+    - C05763
+- id: R04568
+  name: (3R)-3-hydroxytetradecanoyl-[acyl-carrier-protein] hydro-lyase
+  names:
+  - (3R)-3-hydroxytetradecanoyl-[acyl-carrier-protein] hydro-lyase
+  equation: C04688 <=> C05760 + C00001
+  enzymes:
+  - 2.3.1.85
+  - 2.3.1.86
+  - 2.3.1.-
+  - 4.2.1.59
+  - 4.2.1.-
+  pathways:
+  - Fatty acid biosynthesis
+  - Metabolic pathways
+  - Fatty acid metabolism
+  orthology:
+  - K00665
+  - K00668
+  - K01716
+  - K02372
+  - K11533
+  - K16363
+  - K22540
+  - K22541
+  rpairs:
+  - RC01095:
+    - C04688
+    - C05760
+- id: R04954
+  name: (3R)-3-hydroxybutanoyl-[acyl-carrier-protein] hydro-lyase
+  names:
+  - (3R)-3-hydroxybutanoyl-[acyl-carrier-protein] hydro-lyase
+  equation: C05747 <=> C05748 + C00001
+  enzymes:
+  - 2.3.1.85
+  - 2.3.1.86
+  - 2.3.1.-
+  - 4.2.1.59
+  - 4.2.1.-
+  pathways:
+  - Fatty acid biosynthesis
+  - Metabolic pathways
+  - Fatty acid metabolism
+  orthology:
+  - K00665
+  - K00668
+  - K01716
+  - K02372
+  - K11533
+  - K16363
+  - K22540
+  - K22541
+  rpairs:
+  - RC01095:
+    - C05747
+    - C05748
+- id: R04965
+  name: (3R)-3-hydroxydodecanoyl-[acyl-carrier-protein] hydro-lyase
+  names:
+  - (3R)-3-hydroxydodecanoyl-[acyl-carrier-protein] hydro-lyase
+  equation: C05757 <=> C05758 + C00001
+  enzymes:
+  - 2.3.1.85
+  - 2.3.1.86
+  - 2.3.1.-
+  - 4.2.1.59
+  - 4.2.1.-
+  pathways:
+  - Fatty acid biosynthesis
+  - Metabolic pathways
+  - Fatty acid metabolism
+  orthology:
+  - K00665
+  - K00668
+  - K01716
+  - K02372
+  - K11533
+  - K16363
+  - K22540
+  - K22541
+  rpairs:
+  - RC01095:
+    - C05757
+    - C05758
+- id: R04859
+  name: O3-acetyl-L-serine:thiosulfate 2-amino-2-carboxyethyltransferase (reducing,
+    L-cysteine-forming)
+  names:
+  - O3-acetyl-L-serine:thiosulfate 2-amino-2-carboxyethyltransferase (reducing, L-cysteine-forming)
+  - O3-acetyl-L-serine acetate-lyase (thiosulfate-reducing, L-cysteine-forming)
+  equation: C00979 + C00320 + C00342 + C00080 <=> C00097 + C00094 + C00343 + C00033
+  enzymes:
+  - 2.5.1.47
+  - 2.5.1.49
+  pathways: null
+  orthology:
+  - K01738
+  - K01740
+  - K10150
+  - K13034
+  - K17069
+  rpairs:
+  - &id007
+    RC00013:
+    - C00342
+    - C00343
+    RC00020:
+    - C00033
+    - C00979
+    RC02813:
+    - C00094
+    - C00320
+    RC02821:
+    - C00097
+    - C00979
+  - *id007
+  - *id007
+  - *id007
+- id: R02017
+  name: 2'-deoxyadenosine 5'-diphosphate:oxidized-thioredoxin 2'-oxidoreductase
+  names:
+  - 2'-deoxyadenosine 5'-diphosphate:oxidized-thioredoxin 2'-oxidoreductase
+  equation: C00206 + C00343 + C00001 <=> C00342 + C00008
+  enzymes:
+  - 1.17.4.1
+  pathways:
+  - Purine metabolism
+  - Metabolic pathways
+  orthology:
+  - K00525
+  - K00526
+  - K10807
+  - K10808
+  rpairs:
+  - &id008
+    RC00013:
+    - C00342
+    - C00343
+    RC00613:
+    - C00008
+    - C00206
+  - *id008
+- id: R02018
+  name: 2'-deoxyuridine 5'-diphosphate:oxidized-thioredoxin 2'-oxidoreductase
+  names:
+  - 2'-deoxyuridine 5'-diphosphate:oxidized-thioredoxin 2'-oxidoreductase
+  equation: C01346 + C00343 + C00001 <=> C00342 + C00015
+  enzymes:
+  - 1.17.4.1
+  pathways:
+  - Pyrimidine metabolism
+  - Metabolic pathways
+  orthology:
+  - K00525
+  - K00526
+  rpairs:
+  - &id009
+    RC00013:
+    - C00342
+    - C00343
+    RC00613:
+    - C00015
+    - C01346
+  - *id009
+- id: R02019
+  name: 2'-deoxyguanosine 5'-diphosphate:oxidized-thioredoxin 2'-oxidoreductase
+  names:
+  - 2'-deoxyguanosine 5'-diphosphate:oxidized-thioredoxin 2'-oxidoreductase
+  equation: C00361 + C00343 + C00001 <=> C00035 + C00342
+  enzymes:
+  - 1.17.4.1
+  pathways:
+  - Purine metabolism
+  - Metabolic pathways
+  orthology:
+  - K00525
+  - K00526
+  - K10807
+  - K10808
+  rpairs:
+  - &id010
+    RC00013:
+    - C00342
+    - C00343
+    RC00613:
+    - C00035
+    - C00361
+  - *id010
+- id: R02024
+  name: 2'-deoxycytidine diphosphate:oxidized-thioredoxin 2'-oxidoreductase
+  names:
+  - 2'-deoxycytidine diphosphate:oxidized-thioredoxin 2'-oxidoreductase
+  equation: C00705 + C00343 + C00001 <=> C00342 + C00112
+  enzymes:
+  - 1.17.4.1
+  pathways:
+  - Pyrimidine metabolism
+  - Metabolic pathways
+  orthology:
+  - K00525
+  - K00526
+  - K10807
+  - K10808
+  rpairs:
+  - &id011
+    RC00013:
+    - C00342
+    - C00343
+    RC00613:
+    - C00112
+    - C00705
+  - *id011
+- id: R04985
+  name: 4-hydroxy-3-polyprenylbenzoate carboxy-lyase
+  names:
+  - 4-hydroxy-3-polyprenylbenzoate carboxy-lyase
+  equation: C05807 + C00011 <=> C05848
+  enzymes:
+  - 4.1.1.98
+  pathways:
+  - Ubiquinone and other terpenoid-quinone biosynthesis
+  - Metabolic pathways
+  - Biosynthesis of secondary metabolites
+  - Biosynthesis of cofactors
+  comment: general reaction (see R04986)
+  orthology:
+  - K03182
+  - K03186
+  rpairs:
+  - RC00391:
+    - C05807
+    - C05848
+- id: R00631
+  name: aldehyde:NAD+ oxidoreductase
+  names:
+  - aldehyde:NAD+ oxidoreductase
+  equation: C00071 + C00003 + C00001 <=> C00162 + C00004 + C00080
+  enzymes:
+  - 1.2.1.3
+  - 1.2.1.5
+  pathways:
+  - Fatty acid degradation
+  comment: general reaction
+  orthology:
+  - K00128
+  - K00149
+  - K14085
+  rpairs:
+  - &id012
+    RC00001:
+    - C00003
+    - C00004
+    RC00071:
+    - C00071
+    - C00162
+  - *id012
+- id: R05578
+  name: L-glutamate:tRNA(Glu) ligase (AMP-forming)
+  names:
+  - L-glutamate:tRNA(Glu) ligase (AMP-forming)
+  equation: C01641 + C00025 + C00002 <=> C02987 + C00013 + C00020
+  enzymes:
+  - 6.1.1.17
+  - 6.1.1.24
+  pathways:
+  - Porphyrin and chlorophyll metabolism
+  - Aminoacyl-tRNA biosynthesis
+  - Metabolic pathways
+  - Biosynthesis of secondary metabolites
+  - Microbial metabolism in diverse environments
+  - Biosynthesis of cofactors
+  orthology:
+  - K01885
+  - K09698
+  - K14163
+  rpairs:
+  - &id013
+    RC00055:
+    - C01641
+    - C02987
+    RC00523:
+    - C00025
+    - C02987
+  - *id013
+- id: R03599
+  name: L-selenocysteine selenide-lyase (L-alanine-forming)
+  names:
+  - L-selenocysteine selenide-lyase (L-alanine-forming)
+  equation: C05688 + C00030 <=> C01528 + C00041 + C00028
+  enzymes:
+  - 4.4.1.16
+  pathways:
+  - Selenocompound metabolism
+  - Metabolic pathways
+  orthology:
+  - K01763
+  - K11717
+  rpairs:
+  - RC00961:
+    - C00041
+    - C05688
+- id: R11528
+  name: L-cysteine:sulfur-acceptor sulfurtransferase
+  names:
+  - L-cysteine:sulfur-acceptor sulfurtransferase
+  equation: C00097 + C02743 <=> C00041 + C21440
+  enzymes:
+  - 2.8.1.7
+  pathways: null
+  orthology:
+  - K04487
+  - K11717
+  rpairs:
+  - &id014
+    RC01789:
+    - C00041
+    - C00097
+    RC02313:
+    - C02743
+    - C21440
+  - *id014
+- id: R07459
+  name: ATP:[sulfur-carrier protein] adenylyltransferase
+  names:
+  - ATP:[sulfur-carrier protein] adenylyltransferase
+  equation: C15810 + C00002 <=> C15813 + C00013
+  enzymes:
+  - 2.7.7.73
+  - 2.7.7.80
+  pathways:
+  - Thiamine metabolism
+  - Metabolic pathways
+  - Biosynthesis of cofactors
+  orthology:
+  - K03148
+  - K11996
+  - K21029
+  - K21147
+  rpairs:
+  - RC00043:
+    - C15810
+    - C15813
+- id: R07461
+  name: '[enzyme]-S-sulfanyl-L-cysteine:adenylyl-[sulfur-carrier protein] sulfurtransferase'
+  names:
+  - '[enzyme]-S-sulfanyl-L-cysteine:adenylyl-[sulfur-carrier protein] sulfurtransferase'
+  equation: C15812 + C15813 + C00030 <=> C00020 + C15814 + C15811 + C00028
+  enzymes:
+  - 2.8.1.4
+  - 2.8.1.11
+  pathways:
+  - Thiamine metabolism
+  - Metabolic pathways
+  - Biosynthesis of cofactors
+  orthology:
+  - K03151
+  - K11996
+  - K21028
+  - K21147
+  rpairs: []
+- id: R00790
+  name: Ammonia:ferredoxin oxidoreductase
+  names:
+  - Ammonia:ferredoxin oxidoreductase
+  equation: C00014 + 2 C00001 + 6 C00139 <=> C00088 + 6 C00138 + 6 C00080
+  enzymes:
+  - 1.7.7.1
+  pathways:
+  - Nitrogen metabolism
+  - Metabolic pathways
+  - Microbial metabolism in diverse environments
+  orthology:
+  - K00366
+  rpairs:
+  - RC00176:
+    - C00014
+    - C00088
+- id: R02021
+  name: adenosine 3',5'-bisphosphate,sulfite:oxidized-thioredoxin oxidoreductase (3'-phosphoadenosine-5'-phosphosulfate
+    -forming)
+  names:
+  - adenosine 3',5'-bisphosphate,sulfite:oxidized-thioredoxin oxidoreductase (3'-phosphoadenosine-5'-phosphosulfate
+    -forming)
+  equation: C00342 + C00053 <=> C00343 + C00094 + C00054
+  enzymes:
+  - 1.8.4.8
+  pathways:
+  - Sulfur metabolism
+  - Metabolic pathways
+  - Microbial metabolism in diverse environments
+  orthology:
+  - K00390
+  rpairs:
+  - &id015
+    RC00007:
+    - C00053
+    - C00054
+    RC00013:
+    - C00342
+    - C00343
+    RC02862:
+    - C00053
+    - C00094
+  - *id015
+  - *id015
+- id: R01801
+  name: CDP-diacylglycerol:sn-glycerol-3-phosphate 3-phosphatidyltransferase
+  names:
+  - CDP-diacylglycerol:sn-glycerol-3-phosphate 3-phosphatidyltransferase
+  equation: C00269 + C00093 <=> C00055 + C03892
+  enzymes:
+  - 2.7.8.5
+  pathways:
+  - Glycerophospholipid metabolism
+  - Metabolic pathways
+  orthology:
+  - K00995
+  rpairs:
+  - &id016
+    RC00002:
+    - C00055
+    - C00269
+    RC00017:
+    - C00093
+    - C03892
+    RC02795:
+    - C00269
+    - C03892
+  - *id016
+  - *id016
+- id: R02030
+  name: CDP-diacylglycerol:phosphatidylglycerol 3-phosphatidyltransferase
+  names:
+  - CDP-diacylglycerol:phosphatidylglycerol 3-phosphatidyltransferase
+  equation: C00344 + C00269 <=> C05980 + C00055
+  enzymes:
+  - 2.7.8.41
+  pathways:
+  - Glycerophospholipid metabolism
+  - Metabolic pathways
+  orthology:
+  - K08744
+  rpairs:
+  - &id017
+    RC00002:
+    - C00055
+    - C00269
+    RC00017:
+    - C00344
+    - C05980
+  - *id017
+- id: R01374
+  name: D-phenylalanine:quinone oxidoreductase (deaminating)
+  names:
+  - D-phenylalanine:quinone oxidoreductase (deaminating)
+  equation: C02265 + C00001 + C15602 <=> C00166 + C00014 + C15603
+  enzymes:
+  - 1.4.5.1
+  pathways:
+  - Phenylalanine metabolism
+  - Metabolic pathways
+  orthology:
+  - K00285
+  rpairs:
+  - RC00006:
+    - C00166
+    - C02265
+- id: R09493
+  name: D-amino acid:quinone oxidoreductase (deaminating)
+  names:
+  - D-amino acid:quinone oxidoreductase (deaminating)
+  equation: C00405 + C00001 + C15602 <=> C00161 + C00014 + C15603
+  enzymes:
+  - 1.4.5.1
+  pathways: null
+  orthology:
+  - K00285
+  rpairs:
+  - RC00025:
+    - C00161
+    - C00405
+- id: R00859
+  name: Hydrogen-sulfide:ferredoxin oxidoreductase
+  names:
+  - Hydrogen-sulfide:ferredoxin oxidoreductase
+  equation: C00283 + 6 C00139 + 3 C00001 <=> C00094 + 6 C00138 + 6 C00080
+  enzymes:
+  - 1.8.7.1
+  pathways:
+  - Sulfur metabolism
+  - Metabolic pathways
+  - Microbial metabolism in diverse environments
+  orthology:
+  - K00392
+  rpairs:
+  - RC00065:
+    - C00094
+    - C00283
+- id: R03600
+  name: Hydrogen-sulfide:ferredoxin oxidoreductase
+  names:
+  - Hydrogen-sulfide:ferredoxin oxidoreductase
+  equation: C01528 + 6 C00139 + 3 C00001 <=> C05684 + 6 C00138 + 8 C00080
+  enzymes:
+  - 1.8.7.1
+  pathways: null
+  orthology:
+  - K00392
+  rpairs:
+  - RC02873:
+    - C01528
+    - C05684
+- id: R01868
+  name: (S)-dihydroorotate:quinone oxidoreductase
+  names:
+  - (S)-dihydroorotate:quinone oxidoreductase
+  equation: C00337 + C15602 <=> C00295 + C15603
+  enzymes:
+  - 1.3.5.2
+  pathways:
+  - Pyrimidine metabolism
+  - Metabolic pathways
+  - Biosynthesis of cofactors
+  orthology:
+  - K00254
+  rpairs:
+  - RC00051:
+    - C00295
+    - C00337
+- id: R07234
+  name: S-adenosyl-L-methionine:rRNA (guanine-N2-)-methyltransferase
+  names:
+  - S-adenosyl-L-methionine:rRNA (guanine-N2-)-methyltransferase
+  equation: C00019 + C00240 <=> C00021 + C04153
+  enzymes:
+  - 2.1.1.171
+  - 2.1.1.172
+  - 2.1.1.173
+  - 2.1.1.174
+  pathways: null
+  comment: 'general reaction
+
+    The enzyme ec 2.1.1.171 specifically methylates guanine966 at N2 in 16S rRNA.
+
+    The enzyme ec 2.1.1.172 specifically methylates guanine1207 at N2 in 16S rRNA.
+
+    The enzyme ec 2.1.1.173 specifically methylates guanine2445 at N2 in 23S rRNA.
+
+    The enzyme ec 2.1.1.174 specifically methylates guanine1835 at N2 in 23S rRNA.'
+  orthology:
+  - K00564
+  - K08316
+  - K11391
+  - K12297
+  rpairs:
+  - RC00003:
+    - C00019
+    - C00021
+- id: R07767
+  name: '[protein]-N6-(octanoyl)-L-lysine:an [Fe-S] cluster scaffold protein carrying
+    a [4Fe-4S]2+ cluster sulfurtransferase'
+  names:
+  - '[protein]-N6-(octanoyl)-L-lysine:an [Fe-S] cluster scaffold protein carrying
+    a [4Fe-4S]2+ cluster sulfurtransferase'
+  equation: C16236 + C22154 + 2 C00019 + 2 C22150 + 8 C00080 <=> C16832 + C22155 +
+    2 C00283 + 4 C14818 + 2 C00073 + 2 C05198 + 2 C22151
+  enzymes:
+  - 2.8.1.8
+  pathways: null
+  orthology:
+  - K03644
+  rpairs:
+  - RC00021:
+    - C00019
+    - C00073
+- id: R02164
+  name: succinate:quinone oxidoreductase
+  names:
+  - succinate:quinone oxidoreductase
+  equation: C15602 + C00042 <=> C15603 + C00122
+  enzymes:
+  - 1.3.5.1
+  - 1.3.5.4
+  pathways:
+  - Citrate cycle (TCA cycle)
+  - Pyruvate metabolism
+  - Butanoate metabolism
+  - Carbon fixation pathways in prokaryotes
+  - Metabolic pathways
+  - Biosynthesis of secondary metabolites
+  - Microbial metabolism in diverse environments
+  - Carbon metabolism
+  comment: electron transport complex II
+  orthology:
+  - K00234
+  - K00235
+  - K00236
+  - K00237
+  - K00239
+  - K00240
+  - K00241
+  - K00242
+  - K00244
+  - K00245
+  - K00246
+  - K00247
+  - K18859
+  - K18860
+  rpairs:
+  - RC00045:
+    - C00042
+    - C00122
+- id: R02887
+  name: 1,4-beta-D-Glucan glucohydrolase
+  names:
+  - 1,4-beta-D-Glucan glucohydrolase
+  equation: C01898 + (n-2) C00001 <=> (n-2) C00031 + C00185
+  enzymes:
+  - 3.2.1.21
+  - 3.2.1.74
+  pathways:
+  - Starch and sucrose metabolism
+  - Metabolic pathways
+  orthology:
+  - K01188
+  - K05349
+  - K05350
+  rpairs: []
+- id: R03527
+  name: D-Glucoside glucohydrolase
+  names:
+  - D-Glucoside glucohydrolase
+  equation: C00963 + C00001 <=> C00031 + C01335
+  enzymes:
+  - 3.2.1.21
+  pathways:
+  - Starch and sucrose metabolism
+  - Metabolic pathways
+  orthology:
+  - K01188
+  - K05349
+  - K05350
+  rpairs: []
+- id: R04949
+  name: Cyanoglycoside glucohydrolase
+  names:
+  - Cyanoglycoside glucohydrolase
+  equation: C05713 + C00001 <=> C05712 + C00031
+  enzymes:
+  - 3.2.1.21
+  pathways: null
+  orthology:
+  - K01188
+  - K05349
+  - K05350
+  rpairs:
+  - &id018
+    RC00262:
+    - C05712
+    - C05713
+    RC01248:
+    - C00031
+    - C05713
+  - *id018
+- id: R03164
+  name: 1,4,5,6-Tetrahydro-6-oxonicotinate:ferredoxin oxidoreductase
+  names:
+  - 1,4,5,6-Tetrahydro-6-oxonicotinate:ferredoxin oxidoreductase
+  equation: C01020 + C00138 <=> C04226 + C00139
+  enzymes:
+  - 1.3.7.1
+  pathways:
+  - Nicotinate and nicotinamide metabolism
+  - Microbial metabolism in diverse environments
+  orthology:
+  - K20449
+  rpairs:
+  - RC02422:
+    - C01020
+    - C04226
+- id: R09597
+  name: L-lysine:[tRNA(Ile2)]-cytidine34 ligase (AMP-forming)
+  names:
+  - L-lysine:[tRNA(Ile2)]-cytidine34 ligase (AMP-forming)
+  equation: C19722 + C00047 + C00002 <=> C19723 + C00020 + C00013 + C00001
+  enzymes:
+  - 6.3.4.19
+  pathways: null
+  orthology:
+  - K04075
+  rpairs:
+  - &id019
+    RC02633:
+    - C19722
+    - C19723
+    RC02634:
+    - C00047
+    - C19723
+  - *id019
+- id: R00623
+  name: primary_alcohol:NAD+ oxidoreductase
+  names:
+  - primary_alcohol:NAD+ oxidoreductase
+  equation: C00226 + C00003 <=> C00071 + C00004 + C00080
+  enzymes:
+  - 1.1.1.1
+  - 1.1.1.71
+  pathways:
+  - Fatty acid degradation
+  comment: 'general reaction
+
+    NADP+ (ec 1.1.1.71, see R00625)'
+  orthology:
+  - K00001
+  - K00121
+  - K04072
+  - K13951
+  - K13952
+  - K13953
+  - K13954
+  - K13980
+  - K18857
+  rpairs:
+  - &id020
+    RC00001:
+    - C00003
+    - C00004
+    RC00050:
+    - C00071
+    - C00226
+  - *id020
+- id: R05146
+  name: dodecanoyl-[acyl-carrier protein]:KDO2-lipid-IVA O-dodecanoyltransferase
+  names:
+  - dodecanoyl-[acyl-carrier protein]:KDO2-lipid-IVA O-dodecanoyltransferase
+  equation: C05223 + C06025 <=> C06251 + C00229
+  enzymes:
+  - 2.3.1.241
+  pathways:
+  - Lipopolysaccharide biosynthesis
+  - Metabolic pathways
+  orthology:
+  - K02517
+  rpairs:
+  - &id021
+    RC00037:
+    - C06025
+    - C06251
+    RC00039:
+    - C00229
+    - C05223
+  - *id021
+- id: R00196
+  name: (S)-Lactate:ferricytochrome-c 2-oxidoreductase
+  names:
+  - (S)-Lactate:ferricytochrome-c 2-oxidoreductase
+  equation: C00186 + 2 C00125 <=> C00022 + 2 C00126 + 2 C00080
+  enzymes:
+  - 1.1.2.3
+  pathways:
+  - Pyruvate metabolism
+  - Metabolic pathways
+  orthology:
+  - K00101
+  rpairs:
+  - &id022
+    RC00016:
+    - C00125
+    - C00126
+    RC00044:
+    - C00022
+    - C00186
+  - *id022
+- id: R03656
+  name: L-Isoleucine:tRNA(Ile) ligase (AMP-forming)
+  names:
+  - L-Isoleucine:tRNA(Ile) ligase (AMP-forming)
+  equation: C00002 + C00407 + C01644 <=> C00020 + C00013 + C03127
+  enzymes:
+  - 6.1.1.5
+  pathways:
+  - Aminoacyl-tRNA biosynthesis
+  orthology:
+  - K01870
+  rpairs:
+  - &id023
+    RC00055:
+    - C01644
+    - C03127
+    RC00523:
+    - C00407
+    - C03127
+  - *id023
+- id: R05884
+  name: isopentenyl-diphosphate:ferredoxin oxidoreductase
+  names:
+  - isopentenyl-diphosphate:ferredoxin oxidoreductase
+  equation: C11811 + 2 C00138 + 2 C00080 <=> C00129 + 2 C00139 + C00001
+  enzymes:
+  - 1.17.7.4
+  pathways:
+  - Terpenoid backbone biosynthesis
+  - Metabolic pathways
+  - Biosynthesis of secondary metabolites
+  orthology:
+  - K03527
+  rpairs:
+  - RC01487:
+    - C00129
+    - C11811
+- id: R08210
+  name: dimethylallyl diphosphate:ferredoxin oxidoreductase
+  names:
+  - dimethylallyl diphosphate:ferredoxin oxidoreductase
+  equation: C00235 + 2 C00139 + C00001 <=> C11811 + 2 C00138 + 2 C00080
+  enzymes:
+  - 1.17.7.4
+  pathways:
+  - Terpenoid backbone biosynthesis
+  - Biosynthesis of secondary metabolites
+  orthology:
+  - K03527
+  rpairs:
+  - RC01137:
+    - C00235
+    - C11811
+- id: R10151
+  names: []
+  equation: C00320 + 5 C00001 + 8 C00125 <=> 2 C00059 + 8 C00126 + 10 C00080
+  enzymes: []
+  pathways:
+  - Sulfur metabolism
+  - Metabolic pathways
+  - Microbial metabolism in diverse environments
+  comment: Sox enzyme system
+  orthology:
+  - K17222
+  - K17223
+  - K17224
+  - K17225
+  - K17226
+  - K17227
+  - K22622
+  rpairs:
+  - &id024
+    RC00016:
+    - C00125
+    - C00126
+    RC03151:
+    - C00059
+    - C00320
+    RC03152:
+    - C00059
+    - C00320
+  - *id024
+  - *id024
+- id: R03038
+  name: L-Alanine:tRNA(Ala) ligase (AMP-forming)
+  names:
+  - L-Alanine:tRNA(Ala) ligase (AMP-forming)
+  equation: C00002 + C00041 + C01635 <=> C00020 + C00013 + C00886
+  enzymes:
+  - 6.1.1.7
+  pathways:
+  - Aminoacyl-tRNA biosynthesis
+  orthology:
+  - K01872
+  rpairs:
+  - &id025
+    RC00055:
+    - C00886
+    - C01635
+    RC00523:
+    - C00041
+    - C00886
+  - *id025
+- id: R02569
+  name: acetyl-CoA:enzyme N6-(dihydrolipoyl)lysine S-acetyltransferase
+  names:
+  - acetyl-CoA:enzyme N6-(dihydrolipoyl)lysine S-acetyltransferase
+  equation: C00024 + C15973 <=> C00010 + C16255
+  enzymes:
+  - 2.3.1.12
+  pathways:
+  - Glycolysis / Gluconeogenesis
+  - Citrate cycle (TCA cycle)
+  - Pyruvate metabolism
+  comment: 'pyruvate dehydrogenase complex:dihydrolipoyllysine-residue acetyltransferase
+
+    a part of multi-step reaction (see R00209, R01699+R02569+R07618)
+
+    following after R01699'
+  orthology:
+  - K00627
+  rpairs:
+  - &id026
+    RC00004:
+    - C15973
+    - C16255
+    RC02857:
+    - C00024
+    - C16255
+  - *id026
+  - *id026
+- id: R00382
+  name: (deoxyribonucleotide)n:5'-phospho-(deoxyribonucleotide)m ligase (AMP-forming,
+    NMN-forming)
+  names:
+  - (deoxyribonucleotide)n:5'-phospho-(deoxyribonucleotide)m ligase (AMP-forming,
+    NMN-forming)
+  equation: C00003 + C00039(n) + C02128(m) <=> C00020 + C00455 + C00039(n+m)
+  enzymes:
+  - 6.5.1.2
+  - 6.5.1.6
+  pathways: null
+  orthology:
+  - K01972
+  - K10747
+  rpairs:
+  - &id027
+    RC00002:
+    - C00003
+    - C00455
+    RC00005:
+    - C00039
+    - C02128
+  - *id027
+  - *id027
+- id: R04385
+  name: biotin-carboxyl-carrier-protein:carbon-dioxide ligase (ADP-forming)
+  names:
+  - biotin-carboxyl-carrier-protein:carbon-dioxide ligase (ADP-forming)
+  equation: C00002 + C06250 + C00288 <=> C00008 + C00009 + C04419
+  enzymes:
+  - 6.3.4.14
+  pathways: null
+  comment: 'The first step of two-step reaction (R00742)
+
+    subsequently R04386'
+  orthology:
+  - K01961
+  - K11262
+  - K11263
+  rpairs:
+  - &id028
+    RC00002:
+    - C00002
+    - C00008
+    RC00253:
+    - C04419
+    - C06250
+  - *id028
+- id: R01206
+  name: '[1,4-(N-Acetyl-beta-D-glucosaminyl)]n glycanohydrolase'
+  names:
+  - '[1,4-(N-Acetyl-beta-D-glucosaminyl)]n glycanohydrolase'
+  equation: C00461 + C00001 <=> C00140 + C00461
+  enzymes:
+  - 3.2.1.14
+  pathways:
+  - Amino sugar and nucleotide sugar metabolism
+  - Metabolic pathways
+  orthology:
+  - K01183
+  - K13381
+  - K20547
+  rpairs:
+  - RC00467:
+    - C00140
+    - C00461
+- id: R02334
+  name: '[1,4-(N-Acetyl-beta-D-glucosaminyl)]n glycanohydrolase'
+  names:
+  - '[1,4-(N-Acetyl-beta-D-glucosaminyl)]n glycanohydrolase'
+  equation: C00461 + C00001 <=> C01674 + C00461
+  enzymes:
+  - 3.2.1.14
+  pathways:
+  - Amino sugar and nucleotide sugar metabolism
+  - Metabolic pathways
+  orthology:
+  - K01183
+  - K13381
+  - K20547
+  rpairs: []
+- id: R10159
+  name: adrenodoxin:NADP+ oxidoreductase
+  names:
+  - adrenodoxin:NADP+ oxidoreductase
+  equation: 2 C00662 + C00006 + C00080 <=> 2 C00667 + C00005
+  enzymes:
+  - 1.18.1.2
+  - 1.18.1.6
+  pathways: null
+  orthology:
+  - K00528
+  rpairs:
+  - RC00001:
+    - C00005
+    - C00006
+- id: R07233
+  name: S-adenosyl-L-methionine:rRNA (guanine-N1-)-methyltransferase
+  names:
+  - S-adenosyl-L-methionine:rRNA (guanine-N1-)-methyltransferase
+  equation: C00019 + C00240 <=> C00021 + C04152
+  enzymes:
+  - 2.1.1.187
+  - 2.1.1.188
+  pathways: null
+  comment: 'general reaction
+
+    The enzyme ec 2.1.1.187 specifically methylates guanine745 at N1 in 23S rRNA.
+
+    The enzyme ec 2.1.1.188 specifically methylates guanine748 at N1 in 23S rRNA.'
+  orthology:
+  - K00563
+  - K14336
+  rpairs:
+  - RC00003:
+    - C00019
+    - C00021
+- id: R00435
+  name: ATP:polynucleotide adenylyltransferase
+  names:
+  - ATP:polynucleotide adenylyltransferase
+  - ATP:RNA adenylyltransferase
+  equation: C00002 + C00046 <=> C00013 + C00046
+  enzymes:
+  - 2.7.7.6
+  - 2.7.7.19
+  - 2.7.7.48
+  pathways: null
+  comment: 'DNA-directed (ec 2.7.7.6)
+
+    RNA-directed (ec 2.7.7.48)
+
+    non-template (ec 2.7.7.19)'
+  orthology: null
+  rpairs:
+  - RC02795:
+    - C00002
+    - C00046
+- id: R00441
+  name: GTP:RNA guanylyltransferase (DNA-directed)
+  names:
+  - GTP:RNA guanylyltransferase (DNA-directed)
+  - GTP:RNA guanylyltransferase (RNA-directed)
+  equation: C00044 + C00046 <=> C00013 + C00046
+  enzymes:
+  - 2.7.7.6
+  - 2.7.7.48
+  pathways: null
+  comment: 'DNA-directed (ec 2.7.7.6)
+
+    RNA-directed (ec 2.7.7.48)'
+  orthology: null
+  rpairs:
+  - RC02795:
+    - C00044
+    - C00046
+- id: R00442
+  name: CTP:RNA cytidylyltransferase (DNA-directed)
+  names:
+  - CTP:RNA cytidylyltransferase (DNA-directed)
+  - CTP:RNA cytidylyltransferase (RNA-directed)
+  equation: C00063 + C00046 <=> C00013 + C00046
+  enzymes:
+  - 2.7.7.6
+  - 2.7.7.48
+  pathways: null
+  comment: 'DNA-directed (ec 2.7.7.6)
+
+    RNA-directed (ec 2.7.7.48)'
+  orthology: null
+  rpairs:
+  - RC02795:
+    - C00046
+    - C00063
+- id: R00443
+  name: UTP:RNA uridylyltransferase
+  names:
+  - UTP:RNA uridylyltransferase
+  equation: C00075 + C00046 <=> C00013 + C00046
+  enzymes:
+  - 2.7.7.6
+  - 2.7.7.48
+  - 2.7.7.52
+  pathways: null
+  comment: 'DNA-directed (ec 2.7.7.6)
+
+    RNA-directed (ec 2.7.7.48)
+
+    non-template (ec 2.7.7.52)'
+  orthology: null
+  rpairs:
+  - RC02795:
+    - C00046
+    - C00075
+- id: R07390
+  names: []
+  equation: 2 C00344 <=> C05980 + C00116
+  enzymes:
+  - 2.7.8.-
+  pathways:
+  - Glycerophospholipid metabolism
+  - Metabolic pathways
+  orthology:
+  - K06131
+  rpairs:
+  - &id029
+    RC00017:
+    - C00344
+    - C05980
+  - *id029
+- id: R01025
+  name: choline:acceptor 1-oxidoreductase
+  names:
+  - choline:acceptor 1-oxidoreductase
+  equation: C00114 + C00028 <=> C00576 + C00030
+  enzymes:
+  - 1.1.99.1
+  pathways:
+  - Glycine, serine and threonine metabolism
+  orthology:
+  - K00108
+  rpairs:
+  - RC00087:
+    - C00114
+    - C00576
+- id: R00798
+  name: nitrite:acceptor oxidoreductase
+  names:
+  - nitrite:acceptor oxidoreductase
+  equation: C00088 + C00028 + C00001 <=> C00244 + C00030
+  enzymes:
+  - 1.7.99.-
+  pathways:
+  - Nitrogen metabolism
+  - Metabolic pathways
+  - Microbial metabolism in diverse environments
+  orthology:
+  - K00360
+  - K00370
+  - K00371
+  - K00372
+  - K00374
+  - K02567
+  - K02568
+  rpairs:
+  - RC02812:
+    - C00088
+    - C00244
+- id: R01106
+  name: nitrite:(acceptor) oxidoreductase
+  names:
+  - nitrite:(acceptor) oxidoreductase
+  equation: 2 C00125 + C00088 + C00001 <=> C00244 + 2 C00126 + 2 C00080
+  enzymes:
+  - 1.7.99.-
+  pathways: null
+  orthology:
+  - K00370
+  - K00371
+  - K00372
+  - K00374
+  - K02567
+  rpairs:
+  - &id030
+    RC00016:
+    - C00125
+    - C00126
+    RC02812:
+    - C00088
+    - C00244
+  - *id030
+- id: R05712
+  name: ammonia:ferricytochrome-c oxidoreductase
+  names:
+  - ammonia:ferricytochrome-c oxidoreductase
+  equation: C00014 + 2 C00001 + 6 C00125 <=> C00088 + 6 C00126 + 6 C00080
+  enzymes:
+  - 1.7.2.2
+  pathways:
+  - Nitrogen metabolism
+  - Metabolic pathways
+  - Microbial metabolism in diverse environments
+  orthology:
+  - K03385
+  - K04016
+  - K15876
+  rpairs:
+  - &id031
+    RC00016:
+    - C00125
+    - C00126
+    RC00176:
+    - C00014
+    - C00088
+  - *id031
+- id: R03658
+  name: L-lysine:tRNALys ligase (AMP-forming)
+  names:
+  - L-lysine:tRNALys ligase (AMP-forming)
+  equation: C00002 + C00047 + C01646 <=> C00020 + C00013 + C01931
+  enzymes:
+  - 6.1.1.6
+  pathways:
+  - Aminoacyl-tRNA biosynthesis
+  orthology:
+  - K04566
+  - K04567
+  rpairs:
+  - &id032
+    RC00055:
+    - C01646
+    - C01931
+    RC00523:
+    - C00047
+    - C01931
+  - *id032
+- id: R00597
+  name: S-adenosyl-L-methionine:tRNA guanine N1-methyltransferase
+  names:
+  - S-adenosyl-L-methionine:tRNA guanine N1-methyltransferase
+  - S-adenosyl-L-methionine:tRNA (guanine-N1-)-methyltransferase
+  equation: C00019 + C01977 <=> C00021 + C04157
+  enzymes:
+  - 2.1.1.228
+  pathways: null
+  orthology:
+  - K00554
+  - K15429
+  rpairs:
+  - &id033
+    RC00003:
+    - C00019
+    - C00021
+    RC00334:
+    - C01977
+    - C04157
+  - *id033
+- id: R00791
+  name: nitrite:ferredoxin oxidoreductase
+  names:
+  - nitrite:ferredoxin oxidoreductase
+  equation: C00088 + C00001 + 2 C00139 <=> C00244 + 2 C00138
+  enzymes:
+  - 1.7.7.2
+  pathways:
+  - Nitrogen metabolism
+  - Metabolic pathways
+  - Microbial metabolism in diverse environments
+  orthology:
+  - K00367
+  rpairs:
+  - RC02812:
+    - C00088
+    - C00244
+- id: R02029
+  name: Phosphatidylglycerophosphate phosphohydrolase
+  names:
+  - Phosphatidylglycerophosphate phosphohydrolase
+  equation: C03892 + C00001 <=> C00344 + C00009
+  enzymes:
+  - 3.1.3.27
+  pathways:
+  - Glycerophospholipid metabolism
+  - Metabolic pathways
+  orthology:
+  - K01094
+  - K01095
+  - K01096
+  - K18697
+  rpairs:
+  - RC00017:
+    - C00344
+    - C03892
+- id: R08701
+  name: tRNA uridine 5-carboxymethylaminomethyl modification
+  names:
+  - tRNA uridine 5-carboxymethylaminomethyl modification
+  equation: C17322 + C00037 + C03479 + C00030 <=> C17323 + C00101 + C00028 + C00001
+  enzymes: []
+  pathways: null
+  comment: 'multi-step reaction
+
+    unclear reaction'
+  orthology:
+  - K03495
+  - K03650
+  rpairs:
+  - &id034
+    RC00053:
+    - C00037
+    - C17323
+    RC00209:
+    - C17322
+    - C17323
+    RC00870:
+    - C00101
+    - C03479
+  - *id034
+  - *id034
+- id: R03815
+  name: dihydrolipoylprotein:NAD+ oxidoreductase
+  names:
+  - dihydrolipoylprotein:NAD+ oxidoreductase
+  equation: C02972 + C00003 <=> C02051 + C00004 + C00080
+  enzymes:
+  - 1.8.1.4
+  pathways:
+  - Glycine, serine and threonine metabolism
+  comment: a part step of glycine cleavage system (see R01221, R03425+R04125+R03815)
+  orthology:
+  - K00382
+  rpairs:
+  - &id035
+    RC00001:
+    - C00003
+    - C00004
+    RC00583:
+    - C02051
+    - C02972
+  - *id035
+- id: R07618
+  name: enzyme N6-(dihydrolipoyl)lysine:NAD+ oxidoreductase
+  names:
+  - enzyme N6-(dihydrolipoyl)lysine:NAD+ oxidoreductase
+  equation: C15973 + C00003 <=> C15972 + C00004 + C00080
+  enzymes:
+  - 1.8.1.4
+  pathways:
+  - Glycolysis / Gluconeogenesis
+  - Citrate cycle (TCA cycle)
+  - Valine, leucine and isoleucine degradation
+  - Pyruvate metabolism
+  - Propanoate metabolism
+  - Metabolic pathways
+  - Biosynthesis of secondary metabolites
+  - Biosynthesis of cofactors
+  comment: Oxo-acid dehydrogenase complexes, dihydrolipoyl dehydrogenase
+  orthology:
+  - K00382
+  rpairs:
+  - &id036
+    RC00001:
+    - C00003
+    - C00004
+    RC00583:
+    - C15972
+    - C15973
+  - *id036
+- id: R10816
+  name: 5'-triphospho-[mRNA] diphosphatase
+  names:
+  - 5'-triphospho-[mRNA] diphosphatase
+  equation: C20864 + C00001 <=> C20863 + C00013
+  enzymes:
+  - 3.6.1.-
+  pathways: null
+  comment: RNA pyrophosphohydrolase
+  orthology:
+  - K08311
+  rpairs:
+  - RC00002:
+    - C20863
+    - C20864
+- id: R02596
+  name: Donor:hydrogen-peroxide oxidoreductase
+  names:
+  - Donor:hydrogen-peroxide oxidoreductase
+  equation: C00590 <=> C15805
+  enzymes:
+  - 1.11.1.7
+  - 1.11.1.21
+  pathways:
+  - Phenylpropanoid biosynthesis
+  - Metabolic pathways
+  - Biosynthesis of secondary metabolites
+  comment: oxidative polymerization (see R03919 R04007 R07443)
+  orthology:
+  - K00430
+  - K03782
+  - K11188
+  rpairs: []
+- id: R03919
+  name: Donor:hydrogen-peroxide oxidoreductase
+  names:
+  - Donor:hydrogen-peroxide oxidoreductase
+  equation: C02325 <=> C15806
+  enzymes:
+  - 1.11.1.7
+  - 1.11.1.21
+  pathways:
+  - Phenylpropanoid biosynthesis
+  - Metabolic pathways
+  - Biosynthesis of secondary metabolites
+  comment: oxidative polymerization (see R02596, R04007, R07443)
+  orthology:
+  - K00430
+  - K03782
+  - K11188
+  rpairs: []
+- id: R04007
+  name: Donor:hydrogen-peroxide oxidoreductase
+  names:
+  - Donor:hydrogen-peroxide oxidoreductase
+  equation: C02646 <=> C15804
+  enzymes:
+  - 1.11.1.7
+  - 1.11.1.21
+  pathways:
+  - Phenylpropanoid biosynthesis
+  - Metabolic pathways
+  - Biosynthesis of secondary metabolites
+  comment: oxidative polymerization (see R02596, R03919, R07443)
+  orthology:
+  - K00430
+  - K03782
+  - K11188
+  rpairs: []
+- id: R07443
+  name: donor:hydrogen-peroxide oxidoreductase
+  names:
+  - donor:hydrogen-peroxide oxidoreductase
+  equation: C12205 <=> C15807
+  enzymes:
+  - 1.11.1.7
+  - 1.11.1.21
+  pathways:
+  - Phenylpropanoid biosynthesis
+  comment: oxidative polymerization (see R02596, R03919, R04007)
+  orthology:
+  - K00430
+  - K03782
+  - K11188
+  rpairs: []
+- id: R08769
+  name: S-adenosyl-L-methionine:2-polyprenyl-6-hydroxyphenol 6-O-methyltransferase
+  names:
+  - S-adenosyl-L-methionine:2-polyprenyl-6-hydroxyphenol 6-O-methyltransferase
+  - S-adenosyl-L-methionine:3-(all-trans-polyprenyl)benzene-1,2-diol 2-O-methyltransferase
+  equation: C17551 + C00019 <=> C17552 + C00021
+  enzymes:
+  - 2.1.1.222
+  pathways:
+  - Ubiquinone and other terpenoid-quinone biosynthesis
+  - Metabolic pathways
+  - Biosynthesis of secondary metabolites
+  - Biosynthesis of cofactors
+  comment: general reaction (see R04988, n=5-9)
+  orthology:
+  - K00568
+  rpairs:
+  - &id037
+    RC00003:
+    - C00019
+    - C00021
+    RC00392:
+    - C17551
+    - C17552
+  - *id037
+- id: R04355
+  name: Acyl-[acyl-carrier-protein]:malonyl-[acyl-carrier-protein] C-acyltransferase
+    (decarboxylating)
+  names:
+  - Acyl-[acyl-carrier-protein]:malonyl-[acyl-carrier-protein] C-acyltransferase (decarboxylating)
+  equation: C03939 + C01209 <=> C05744 + C00011 + C00229
+  enzymes:
+  - 2.3.1.41
+  - 2.3.1.85
+  - 2.3.1.86
+  - 2.3.1.179
+  - 2.3.1.-
+  pathways:
+  - Fatty acid biosynthesis
+  - Metabolic pathways
+  - Fatty acid metabolism
+  orthology:
+  - K00647
+  - K00665
+  - K00667
+  - K09458
+  - K11533
+  rpairs:
+  - &id038
+    RC00039:
+    - C00229
+    - C03939
+    RC02729:
+    - C03939
+    - C05744
+    RC02888:
+    - C01209
+    - C05744
+  - *id038
+  - *id038
+- id: R04726
+  name: dodecanoyl-[acyl-carrier-protein]:malonyl-[acyl-carrier-protein] C-acyltransferase
+    (decarboxylating)
+  names:
+  - dodecanoyl-[acyl-carrier-protein]:malonyl-[acyl-carrier-protein] C-acyltransferase
+    (decarboxylating)
+  equation: C05223 + C01209 <=> C05759 + C00011 + C00229
+  enzymes:
+  - 2.3.1.41
+  - 2.3.1.85
+  - 2.3.1.86
+  - 2.3.1.179
+  - 2.3.1.-
+  pathways:
+  - Fatty acid biosynthesis
+  - Metabolic pathways
+  - Fatty acid metabolism
+  orthology:
+  - K00647
+  - K00665
+  - K00667
+  - K09458
+  - K11533
+  rpairs:
+  - &id039
+    RC00039:
+    - C00229
+    - C05223
+    RC02728:
+    - C05223
+    - C05759
+    RC02888:
+    - C01209
+    - C05759
+  - *id039
+  - *id039
+- id: R04952
+  name: butyryl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein] C-acyltransferase
+    (decarboxylating)
+  names:
+  - butyryl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein] C-acyltransferase
+    (decarboxylating)
+  equation: C05745 + C01209 <=> C05746 + C00011 + C00229
+  enzymes:
+  - 2.3.1.41
+  - 2.3.1.85
+  - 2.3.1.86
+  - 2.3.1.179
+  - 2.3.1.-
+  pathways:
+  - Fatty acid biosynthesis
+  - Metabolic pathways
+  - Fatty acid metabolism
+  orthology:
+  - K00647
+  - K00665
+  - K00667
+  - K09458
+  - K11533
+  rpairs:
+  - &id040
+    RC00039:
+    - C00229
+    - C05745
+    RC02728:
+    - C05745
+    - C05746
+    RC02888:
+    - C01209
+    - C05746
+  - *id040
+  - *id040
+- id: R04957
+  name: hexanoyl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein] C-acyltransferase
+    (decarboxylating)
+  names:
+  - hexanoyl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein] C-acyltransferase
+    (decarboxylating)
+  equation: C05749 + C01209 <=> C05750 + C00011 + C00229
+  enzymes:
+  - 2.3.1.41
+  - 2.3.1.85
+  - 2.3.1.86
+  - 2.3.1.179
+  - 2.3.1.-
+  pathways:
+  - Fatty acid biosynthesis
+  - Metabolic pathways
+  - Fatty acid metabolism
+  orthology:
+  - K00647
+  - K00665
+  - K00667
+  - K09458
+  - K11533
+  rpairs:
+  - &id041
+    RC00039:
+    - C00229
+    - C05749
+    RC02728:
+    - C05749
+    - C05750
+    RC02888:
+    - C01209
+    - C05750
+  - *id041
+  - *id041
+- id: R04960
+  name: Octanoyl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein] C-acyltransferase
+    (decarboxylating)
+  names:
+  - Octanoyl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein] C-acyltransferase
+    (decarboxylating)
+  equation: C05752 + C01209 <=> C05753 + C00011 + C00229
+  enzymes:
+  - 2.3.1.41
+  - 2.3.1.85
+  - 2.3.1.86
+  - 2.3.1.179
+  - 2.3.1.-
+  pathways:
+  - Fatty acid biosynthesis
+  - Metabolic pathways
+  - Fatty acid metabolism
+  orthology:
+  - K00647
+  - K00665
+  - K00667
+  - K09458
+  - K11533
+  rpairs:
+  - &id042
+    RC00039:
+    - C00229
+    - C05752
+    RC02728:
+    - C05752
+    - C05753
+    RC02888:
+    - C01209
+    - C05753
+  - *id042
+  - *id042
+- id: R04963
+  name: Decanoyl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein] C-acyltransferase
+    (decarboxylating)
+  names:
+  - Decanoyl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein] C-acyltransferase
+    (decarboxylating)
+  equation: C05755 + C01209 <=> C05756 + C00011 + C00229
+  enzymes:
+  - 2.3.1.41
+  - 2.3.1.85
+  - 2.3.1.86
+  - 2.3.1.179
+  - 2.3.1.-
+  pathways:
+  - Fatty acid biosynthesis
+  - Metabolic pathways
+  - Fatty acid metabolism
+  orthology:
+  - K00647
+  - K00665
+  - K00667
+  - K09458
+  - K11533
+  rpairs:
+  - &id043
+    RC00039:
+    - C00229
+    - C05755
+    RC02728:
+    - C05755
+    - C05756
+    RC02888:
+    - C01209
+    - C05756
+  - *id043
+  - *id043
+- id: R04968
+  name: Tetradecanoyl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein] C-acyltransferase
+    (decarboxylating)
+  names:
+  - Tetradecanoyl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein] C-acyltransferase
+    (decarboxylating)
+  equation: C05761 + C01209 <=> C05762 + C00011 + C00229
+  enzymes:
+  - 2.3.1.41
+  - 2.3.1.85
+  - 2.3.1.86
+  - 2.3.1.179
+  - 2.3.1.-
+  pathways:
+  - Fatty acid biosynthesis
+  - Metabolic pathways
+  - Fatty acid metabolism
+  orthology:
+  - K00647
+  - K00665
+  - K00667
+  - K09458
+  - K11533
+  rpairs:
+  - &id044
+    RC00039:
+    - C00229
+    - C05761
+    RC02728:
+    - C05761
+    - C05762
+    RC02888:
+    - C01209
+    - C05762
+  - *id044
+  - *id044
+- id: R07762
+  names: []
+  equation: C05764 + C01209 <=> C16219 + C00229 + C00011
+  enzymes:
+  - 2.3.1.41
+  - 2.3.1.179
+  - 2.3.1.199
+  - 2.3.1.-
+  pathways:
+  - Fatty acid biosynthesis
+  - Fatty acid metabolism
+  orthology:
+  - K00647
+  - K09458
+  - K10203
+  - K10245
+  - K10246
+  - K11533
+  rpairs:
+  - &id045
+    RC00039:
+    - C00229
+    - C05764
+    RC02728:
+    - C05764
+    - C16219
+    RC02888:
+    - C01209
+    - C16219
+  - *id045
+  - *id045
+- id: R10115
+  name: malonyl-[acyl-carrier protein]-methyl-ester:malonyl-[acyl-carrier protein]
+    C-acyltransferase
+  names:
+  - malonyl-[acyl-carrier protein]-methyl-ester:malonyl-[acyl-carrier protein] C-acyltransferase
+  equation: C19673 + C01209 <=> C20372 + C00011 + C00229
+  enzymes:
+  - 2.3.1.41
+  - 2.3.1.179
+  pathways:
+  - Biotin metabolism
+  - Metabolic pathways
+  - Biosynthesis of cofactors
+  orthology:
+  - K00647
+  - K09458
+  rpairs:
+  - &id046
+    RC00039:
+    - C00229
+    - C19673
+    RC02728:
+    - C19673
+    - C20372
+    RC02888:
+    - C01209
+    - C20372
+  - *id046
+  - *id046
+- id: R10119
+  name: glutaryl-[acp]-methyl-ester:malonyl-[acyl-carrier protein] C-acyltransferase
+    (decarboxylating)
+  names:
+  - glutaryl-[acp]-methyl-ester:malonyl-[acyl-carrier protein] C-acyltransferase (decarboxylating)
+  equation: C20375 + C01209 <=> C20376 + C00011 + C00229
+  enzymes:
+  - 2.3.1.41
+  - 2.3.1.179
+  pathways:
+  - Biotin metabolism
+  - Metabolic pathways
+  - Biosynthesis of cofactors
+  orthology:
+  - K00647
+  - K09458
+  rpairs:
+  - &id047
+    RC00039:
+    - C00229
+    - C20375
+    RC02728:
+    - C20375
+    - C20376
+    RC02888:
+    - C01209
+    - C20376
+  - *id047
+  - *id047
+- id: R01626
+  name: Malonyl-CoA:[acyl-carrier-protein] S-malonyltransferase
+  names:
+  - Malonyl-CoA:[acyl-carrier-protein] S-malonyltransferase
+  equation: C00083 + C00229 <=> C00010 + C01209
+  enzymes:
+  - 2.3.1.39
+  - 2.3.1.85
+  - 2.3.1.86
+  - 2.3.1.-
+  pathways:
+  - Fatty acid biosynthesis
+  - Metabolic pathways
+  - Fatty acid metabolism
+  orthology:
+  - K00645
+  - K00665
+  - K00668
+  - K11533
+  - K13935
+  rpairs:
+  - &id048
+    RC00004:
+    - C00010
+    - C00083
+    RC00039:
+    - C00229
+    - C01209
+    RC02727:
+    - C00083
+    - C01209
+  - *id048
+  - *id048
+- id: R11671
+  names: []
+  equation: C00083 + C00024 <=> C05223
+  enzymes: []
+  pathways:
+  - Prodigiosin biosynthesis
+  - Biosynthesis of secondary metabolites
+  comment: 'multi-step reaction
+
+    fatty acid synthesis'
+  orthology:
+  - K00059
+  - K00208
+  - K00645
+  - K21788
+  - K21789
+  - K21790
+  rpairs: []
+- id: R00851
+  name: acyl-CoA:sn-glycerol-3-phosphate 1-O-acyltransferase
+  names:
+  - acyl-CoA:sn-glycerol-3-phosphate 1-O-acyltransferase
+  equation: C00093 + C00040 <=> C00681 + C00010
+  enzymes:
+  - 2.3.1.15
+  pathways:
+  - Glycerolipid metabolism
+  - Glycerophospholipid metabolism
+  - Metabolic pathways
+  - Biosynthesis of secondary metabolites
+  orthology:
+  - K00629
+  - K00630
+  - K00631
+  - K13506
+  - K13507
+  - K13508
+  rpairs:
+  - &id049
+    RC00004:
+    - C00010
+    - C00040
+    RC00041:
+    - C00093
+    - C00681
+  - *id049
+- id: R09380
+  name: acyl-ACP:sn-glycerol-3-phosphate 1-O-acyltransferase
+  names:
+  - acyl-ACP:sn-glycerol-3-phosphate 1-O-acyltransferase
+  equation: C00173 + C00093 <=> C00681 + C00229
+  enzymes:
+  - 2.3.1.15
+  pathways: null
+  orthology:
+  - K00629
+  - K00630
+  - K00631
+  - K13506
+  - K13507
+  - K13508
+  rpairs:
+  - &id050
+    RC00039:
+    - C00173
+    - C00229
+    RC00041:
+    - C00093
+    - C00681
+  - *id050
+- id: R00135
+  names: []
+  equation: C00012 + C00001 <=> C00148 + C00012
+  enzymes:
+  - 3.4.11.5
+  pathways:
+  - Arginine and proline metabolism
+  - Metabolic pathways
+  orthology:
+  - K01259
+  - K11142
+  rpairs: []
+- id: R07412
+  name: ferroheme o:acceptor C-81-oxidoreductase (heme a-forming)
+  names:
+  - ferroheme o:acceptor C-81-oxidoreductase (heme a-forming)
+  equation: C15672 + C00001 + 2 C00028 <=> C15670 + 2 C00030
+  enzymes:
+  - 1.17.99.9
+  pathways:
+  - Porphyrin and chlorophyll metabolism
+  - Metabolic pathways
+  - Biosynthesis of secondary metabolites
+  - Biosynthesis of cofactors
+  comment: three-step reaction (see R12681+R12682+R12683)
+  orthology:
+  - K02259
+  rpairs:
+  - RC00769:
+    - C15670
+    - C15672
+- id: R00081
+  name: ferrocytochrome-c:oxygen oxidoreductase
+  names:
+  - ferrocytochrome-c:oxygen oxidoreductase
+  equation: C00007 + 4 C00126 + 4 C00080 <=> 4 C00125 + 2 C00001
+  enzymes:
+  - 1.7.2.1
+  - 7.1.1.9
+  pathways: null
+  orthology:
+  - K02274
+  - K02275
+  - K02276
+  rpairs:
+  - RC00016:
+    - C00125
+    - C00126
+- id: R10806
+  name: S-adenosyl-L-methionine:[protein]-L-glutamine (N5-glutamine)-methyltransferase
+  names:
+  - S-adenosyl-L-methionine:[protein]-L-glutamine (N5-glutamine)-methyltransferase
+  equation: C02583 + C00019 <=> C20858 + C00021
+  enzymes:
+  - 2.1.1.297
+  - 2.1.1.298
+  pathways: null
+  comment: 'The enzyme ec 2.1.1.297 methylates peptide chain release factor 1 or 2
+    [KO:K02835 K02836].
+
+    The enzyme ec 2.1.1.298 methylates ribosomal protein L3 [KO:K02906].'
+  orthology:
+  - K02493
+  - K07320
+  rpairs:
+  - &id051
+    RC00003:
+    - C00019
+    - C00021
+    RC03279:
+    - C02583
+    - C20858
+  - *id051
+- id: R10757
+  name: all-trans-polyprenyl-diphosphate:1,4-dihydroxy-2-naphthoate polyprenyltransferase
+  names:
+  - all-trans-polyprenyl-diphosphate:1,4-dihydroxy-2-naphthoate polyprenyltransferase
+  equation: C05847 + C03657 <=> C19847 + C00013 + C00011
+  enzymes:
+  - 2.5.1.74
+  pathways:
+  - Ubiquinone and other terpenoid-quinone biosynthesis
+  - Metabolic pathways
+  - Biosynthesis of secondary metabolites
+  - Biosynthesis of cofactors
+  orthology:
+  - K02548
+  rpairs:
+  - RC03264:
+    - C03657
+    - C19847
+- id: R04386
+  name: carboxybiotin-carboxyl-carrier-protein:acetyl-CoA carboxytransferase
+  names:
+  - carboxybiotin-carboxyl-carrier-protein:acetyl-CoA carboxytransferase
+  equation: C00024 + C04419 <=> C00083 + C06250
+  enzymes:
+  - 2.1.3.15
+  pathways: null
+  comment: 'The second step of two-step reaction (R00742)
+
+    following after R04385'
+  orthology:
+  - K01962
+  - K01963
+  - K11262
+  - K15036
+  - K18472
+  rpairs:
+  - &id052
+    RC00040:
+    - C00024
+    - C00083
+    RC00253:
+    - C04419
+    - C06250
+  - *id052
+- id: R01625
+  name: CoA:apo-[acyl-carrier-protein] pantetheinephosphotransferase
+  names:
+  - CoA:apo-[acyl-carrier-protein] pantetheinephosphotransferase
+  equation: C00010 + C03688 <=> C00054 + C00229
+  enzymes:
+  - 2.7.8.7
+  - 2.7.8.-
+  pathways:
+  - Pantothenate and CoA biosynthesis
+  orthology:
+  - K00997
+  - K06133
+  rpairs:
+  - RC00002:
+    - C00010
+    - C00054
+- id: R02000
+  name: rubredoxin:NAD+ oxidoreductase
+  names:
+  - rubredoxin:NAD+ oxidoreductase
+  equation: 2 C00340 + C00003 + C00080 <=> 2 C00435 + C00004
+  enzymes:
+  - 1.18.1.1
+  - 1.18.1.3
+  - 1.18.1.4
+  pathways:
+  - Fatty acid degradation
+  orthology:
+  - K00529
+  - K05297
+  - K21738
+  - K22567
+  rpairs:
+  - RC00001:
+    - C00003
+    - C00004
+- id: R01262
+  name: glutathione:L-amino-acid 5-glutamyltransferase
+  names:
+  - glutathione:L-amino-acid 5-glutamyltransferase
+  equation: C00051 + C00151 <=> C01419 + C03740
+  enzymes:
+  - 2.3.2.2
+  pathways:
+  - Glutathione metabolism
+  - Metabolic pathways
+  orthology:
+  - K00681
+  - K18592
+  rpairs:
+  - &id053
+    RC00064:
+    - C00151
+    - C03740
+  - *id053
+- id: R01687
+  name: (5-L-glutamyl)-peptide:taurine 5-glutamyltransferase
+  names:
+  - (5-L-glutamyl)-peptide:taurine 5-glutamyltransferase
+  equation: C03193 + C00245 <=> C00012 + C05844
+  enzymes:
+  - 2.3.2.2
+  pathways:
+  - Taurine and hypotaurine metabolism
+  orthology:
+  - K00681
+  - K18592
+  rpairs:
+  - &id054
+    RC00064:
+    - C00012
+    - C03193
+    RC00096:
+    - C00245
+    - C05844
+  - *id054
+- id: R03867
+  name: (5-Glutamyl)-peptide:amino-acid 5-glutamyltransferase
+  names:
+  - (5-Glutamyl)-peptide:amino-acid 5-glutamyltransferase
+  equation: C02166 + C00045 <=> C05951 + C03363
+  enzymes:
+  - 2.3.2.2
+  pathways: null
+  orthology:
+  - K00681
+  rpairs:
+  - &id055
+    RC00064:
+    - C02166
+    - C05951
+  - *id055
+- id: R03916
+  name: (5-glutamyl)-peptide:amino-acid 5-glutamyltransferase
+  names:
+  - (5-glutamyl)-peptide:amino-acid 5-glutamyltransferase
+  equation: C02320 + C00001 <=> C05729 + C00025
+  enzymes:
+  - 2.3.2.2
+  pathways:
+  - Glutathione metabolism
+  - Metabolic pathways
+  orthology:
+  - K00681
+  - K18592
+  rpairs:
+  - &id056
+    RC00064:
+    - C02320
+    - C05729
+    RC00090:
+    - C00025
+    - C02320
+  - *id056
+- id: R04935
+  name: (5-L-glutamyl)-peptide:Se-Methylselenocysteine 5-glutamyltransferase
+  names:
+  - (5-L-glutamyl)-peptide:Se-Methylselenocysteine 5-glutamyltransferase
+  equation: C03193 + C05689 <=> C00012 + C05695
+  enzymes:
+  - 2.3.2.2
+  pathways: null
+  orthology:
+  - K00681
+  rpairs:
+  - &id057
+    RC00064:
+    - C05689
+    - C05695
+  - *id057
+- id: R02964
+  name: NADH:menaquinone oxidoreductase
+  names:
+  - NADH:menaquinone oxidoreductase
+  equation: C00828 + C00080 + C00004 <=> C05819 + C00003
+  enzymes:
+  - 1.6.5.2
+  pathways:
+  - Ubiquinone and other terpenoid-quinone biosynthesis
+  - Metabolic pathways
+  - Biosynthesis of secondary metabolites
+  - Biosynthesis of cofactors
+  orthology:
+  - K00355
+  - K03809
+  - K19267
+  rpairs:
+  - &id058
+    RC00001:
+    - C00003
+    - C00004
+    RC00819:
+    - C00828
+    - C05819
+  - *id058
+- id: R03643
+  name: NADH:(quinone-acceptor) oxidoreductase
+  names:
+  - NADH:(quinone-acceptor) oxidoreductase
+  equation: C01628 + C00004 + C00080 <=> C05850 + C00003
+  enzymes:
+  - 1.6.5.2
+  pathways: null
+  orthology:
+  - K00355
+  - K03809
+  - K19267
+  rpairs:
+  - &id059
+    RC00001:
+    - C00003
+    - C00004
+    RC00819:
+    - C01628
+    - C05850
+  - *id059
+- id: R10707
+  name: acetyl-CoA:malonyl-[acyl-carrier protein] C-acetyltransferase (decarboxylating)
+  names:
+  - acetyl-CoA:malonyl-[acyl-carrier protein] C-acetyltransferase (decarboxylating)
+  equation: C00024 + C01209 <=> C05744 + C00010 + C00011
+  enzymes:
+  - 2.3.1.180
+  pathways:
+  - Fatty acid biosynthesis
+  - Metabolic pathways
+  - Fatty acid metabolism
+  orthology:
+  - K00648
+  - K18473
+  rpairs:
+  - &id060
+    RC00004:
+    - C00010
+    - C00024
+    RC02729:
+    - C00024
+    - C05744
+    RC02888:
+    - C01209
+    - C05744
+  - *id060
+  - *id060
+- id: R01800
+  name: CDP-diacylglycerol:L-serine 3-phosphatidyltransferase
+  names:
+  - CDP-diacylglycerol:L-serine 3-phosphatidyltransferase
+  equation: C00269 + C00065 <=> C00055 + C02737
+  enzymes:
+  - 2.7.8.8
+  pathways:
+  - Glycine, serine and threonine metabolism
+  - Glycerophospholipid metabolism
+  - Metabolic pathways
+  - Biosynthesis of secondary metabolites
+  orthology:
+  - K00998
+  - K17103
+  rpairs:
+  - &id061
+    RC00002:
+    - C00055
+    - C00269
+    RC00017:
+    - C00065
+    - C02737
+    RC02795:
+    - C00269
+    - C02737
+  - *id061
+  - *id061
+- id: R04710
+  name: Protein-glycine,dihydroflavodoxin:S-adenosyl-L-methionine oxidoreductase (S-adenosyl-L-methionine
+    cleaving)
+  names:
+  - Protein-glycine,dihydroflavodoxin:S-adenosyl-L-methionine oxidoreductase (S-adenosyl-L-methionine
+    cleaving)
+  equation: C00019 + C05196 + C05197 <=> C05198 + C00073 + C05199 + C05312
+  enzymes:
+  - 1.97.1.4
+  pathways: null
+  orthology:
+  - K04068
+  - K04069
+  rpairs:
+  - RC00021:
+    - C00019
+    - C00073
+- id: R02320
+  name: NTP:pyruvate O2-phosphotransferase
+  names:
+  - NTP:pyruvate O2-phosphotransferase
+  equation: C00201 + C00022 <=> C00454 + C00074
+  enzymes:
+  - 2.7.1.40
+  pathways:
+  - Pyruvate metabolism
+  - Metabolic pathways
+  - Microbial metabolism in diverse environments
+  orthology:
+  - K00873
+  - K12406
+  rpairs:
+  - &id062
+    RC00002:
+    - C00201
+    - C00454
+    RC00015:
+    - C00022
+    - C00074
+  - *id062
+- id: R04125
+  name: '[protein]-S8-aminomethyldihydrolipoyllysine:tetrahydrofolate aminomethyltransferase
+    (ammonia-forming)'
+  names:
+  - '[protein]-S8-aminomethyldihydrolipoyllysine:tetrahydrofolate aminomethyltransferase
+    (ammonia-forming)'
+  equation: C01242 + C00101 <=> C02972 + C00143 + C00014
+  enzymes:
+  - 2.1.2.10
+  pathways:
+  - Glycine, serine and threonine metabolism
+  - One carbon pool by folate
+  - Metabolic pathways
+  comment: a part step of glycine cleavage system (see R01221, R03425+R04125+R03815)
+  orthology:
+  - K00605
+  rpairs:
+  - &id063
+    RC00022:
+    - C00101
+    - C00143
+    RC00069:
+    - C01242
+    - C02972
+  - *id063
+- id: R03425
+  name: glycine:lipoylprotein oxidoreductase (decarboxylating and acceptor-aminomethylating)
+  names:
+  - glycine:lipoylprotein oxidoreductase (decarboxylating and acceptor-aminomethylating)
+  equation: C00037 + C02051 <=> C01242 + C00011
+  enzymes:
+  - 1.4.4.2
+  pathways:
+  - Glycine, serine and threonine metabolism
+  - Metabolic pathways
+  comment: a part step of glycine cleavage system (see R01221, R03425+R04125+R03815)
+  orthology:
+  - K00281
+  - K00282
+  - K00283
+  rpairs:
+  - &id064
+    RC00929:
+    - C01242
+    - C02051
+    RC02880:
+    - C00037
+    - C01242
+  - *id064
+- id: R03650
+  name: L-Cysteine:tRNA(Cys) ligase (AMP-forming)
+  names:
+  - L-Cysteine:tRNA(Cys) ligase (AMP-forming)
+  equation: C00002 + C00097 + C01639 <=> C00020 + C00013 + C03125
+  enzymes:
+  - 6.1.1.16
+  pathways:
+  - Aminoacyl-tRNA biosynthesis
+  orthology:
+  - K01883
+  - K01884
+  rpairs:
+  - &id065
+    RC00055:
+    - C01639
+    - C03125
+    RC00523:
+    - C00097
+    - C03125
+  - *id065
+- id: R07460
+  name: L-cysteine:[enzyme]-cysteine sulfurtransferase
+  names:
+  - L-cysteine:[enzyme]-cysteine sulfurtransferase
+  equation: C15811 + C00097 <=> C15812 + C00041
+  enzymes:
+  - 2.8.1.7
+  pathways:
+  - Thiamine metabolism
+  - Metabolic pathways
+  - Biosynthesis of cofactors
+  comment: '[Enzyme] is the enzyme itself [KO:K04487].'
+  orthology:
+  - K04487
+  rpairs:
+  - &id066
+    RC01789:
+    - C00041
+    - C00097
+    RC02313:
+    - C15811
+    - C15812
+  - *id066
+- id: R11529
+  name: '[enzyme]-S-sulfanylcysteine:sulfur-acceptor sulfurtransferase'
+  names:
+  - '[enzyme]-S-sulfanylcysteine:sulfur-acceptor sulfurtransferase'
+  equation: C15812 + C02743 <=> C15811 + C21440
+  enzymes:
+  - 2.8.1.7
+  pathways: null
+  comment: '[Enzyme] is the enzyme itself [KO:K04487].
+
+    [Protein] is sulfur-carrier protein sulfurtransferases.'
+  orthology:
+  - K04487
+  rpairs:
+  - &id067
+    RC02313:
+    - C15811
+    - C15812
+  - *id067
+- id: R04109
+  name: 'L-glutamate-semialdehyde: NADP+ oxidoreductase(L-glutamyl-tRNA(Glu)-forming)'
+  names:
+  - 'L-glutamate-semialdehyde: NADP+ oxidoreductase(L-glutamyl-tRNA(Glu)-forming)'
+  equation: C02987 + C00005 + C00080 <=> C03741 + C01641 + C00006
+  enzymes:
+  - 1.2.1.70
+  pathways:
+  - Porphyrin and chlorophyll metabolism
+  - Metabolic pathways
+  - Biosynthesis of secondary metabolites
+  - Microbial metabolism in diverse environments
+  - Biosynthesis of cofactors
+  orthology:
+  - K02492
+  rpairs:
+  - &id068
+    RC00001:
+    - C00005
+    - C00006
+    RC00055:
+    - C01641
+    - C02987
+    RC00149:
+    - C02987
+    - C03741
+  - *id068
+  - *id068
+- id: R07766
+  name: octanoyl-[acp]:protein N6-octanoyltransferase
+  names:
+  - octanoyl-[acp]:protein N6-octanoyltransferase
+  equation: C05752 + C16240 <=> C16236 + C00229
+  enzymes:
+  - 2.3.1.181
+  pathways: null
+  orthology:
+  - K03801
+  rpairs:
+  - &id069
+    RC00039:
+    - C00229
+    - C05752
+    RC00992:
+    - C16236
+    - C16240
+    RC02867:
+    - C05752
+    - C16236
+  - *id069
+  - *id069
+- id: R07769
+  name: lipoyl-[acp]:protein N6-lipoyltransferase
+  names:
+  - lipoyl-[acp]:protein N6-lipoyltransferase
+  equation: C16239 + C16240 <=> C16237 + C00229
+  enzymes:
+  - 2.3.1.181
+  pathways: null
+  orthology:
+  - K03801
+  rpairs:
+  - &id070
+    RC00039:
+    - C00229
+    - C16239
+    RC00992:
+    - C16237
+    - C16240
+    RC02867:
+    - C16237
+    - C16239
+  - *id070
+  - *id070
+- id: R10152
+  name: sulfide:quinone oxidoreductase
+  names:
+  - sulfide:quinone oxidoreductase
+  equation: n C00283 + n C15602 <=> C19692 + n C15603
+  enzymes:
+  - 1.8.5.4
+  pathways:
+  - Sulfur metabolism
+  orthology:
+  - K17218
+  rpairs:
+  - RC03155:
+    - C00283
+    - C19692
+- id: R03232
+  name: protein-N(pi)-phosphohistidine:D-fructose 1-phosphotransferase
+  names:
+  - protein-N(pi)-phosphohistidine:D-fructose 1-phosphotransferase
+  equation: C04261 + C00095 <=> C00615 + C01094
+  enzymes:
+  - 2.7.1.202
+  pathways:
+  - Fructose and mannose metabolism
+  - Metabolic pathways
+  - Microbial metabolism in diverse environments
+  orthology:
+  - K02768
+  - K02769
+  - K02770
+  - K02771
+  - K11194
+  - K11195
+  - K11196
+  rpairs:
+  - &id071
+    RC00017:
+    - C00095
+    - C01094
+    RC03206:
+    - C00615
+    - C04261
+  - *id071
+- id: R10645
+  name: tRNA (N6-dimethylallyladenosine):sulfur-donor,S-adenosyl-L-methionine C2-methylthiotransferase
+  names:
+  - tRNA (N6-dimethylallyladenosine):sulfur-donor,S-adenosyl-L-methionine C2-methylthiotransferase
+  equation: C04432 + C17023 + 2 C00019 <=> C20753 + C00021 + C00073 + C05198
+  enzymes:
+  - 2.8.4.3
+  pathways: null
+  orthology:
+  - K06168
+  rpairs:
+  - &id072
+    RC00003:
+    - C00019
+    - C00021
+    RC00021:
+    - C00019
+    - C00073
+    RC03221:
+    - C04432
+    - C20753
+  - *id072
+  - *id072
+- id: R10646
+  names: []
+  equation: C04432 + C17023 + C00019 <=> C20755 + C00073 + C05198
+  enzymes:
+  - 2.8.4.3
+  pathways: null
+  orthology:
+  - K06168
+  rpairs:
+  - &id073
+    RC00021:
+    - C00019
+    - C00073
+    RC03222:
+    - C04432
+    - C20755
+  - *id073
+- id: R10647
+  names: []
+  equation: C20755 + C00019 <=> C20753 + C00021
+  enzymes:
+  - 2.8.4.3
+  pathways: null
+  orthology:
+  - K06168
+  rpairs:
+  - &id074
+    RC00003:
+    - C00019
+    - C00021
+    RC00980:
+    - C20753
+    - C20755
+  - *id074
+- id: R04951
+  names: []
+  equation: C05729 + C00001 <=> C05726 + C00037
+  enzymes:
+  - 3.4.11.1
+  - 3.4.11.2
+  - 3.4.11.23
+  - 3.4.13.-
+  pathways:
+  - Glutathione metabolism
+  - Metabolic pathways
+  orthology:
+  - K01255
+  - K01256
+  - K01270
+  - K07751
+  - K11140
+  - K11142
+  - K15428
+  rpairs:
+  - &id075
+    RC00096:
+    - C00037
+    - C05729
+    RC00141:
+    - C05726
+    - C05729
+  - *id075
+- id: R02289
+  name: 5-methyltetrahydrofolate:corrinoid/iron-sulfur protein methyltransferase
+  names:
+  - 5-methyltetrahydrofolate:corrinoid/iron-sulfur protein methyltransferase
+  equation: C00440 + C06021 + C00080 <=> C06020 + C00101
+  enzymes:
+  - 2.1.1.258
+  pathways:
+  - Carbon fixation pathways in prokaryotes
+  - Metabolic pathways
+  - Microbial metabolism in diverse environments
+  orthology:
+  - K15023
+  rpairs:
+  - &id076
+    RC00113:
+    - C00101
+    - C00440
+    RC01144:
+    - C06020
+    - C06021
+    RC02871:
+    - C00440
+    - C06020
+  - *id076
+  - *id076
+- id: R03661
+  name: L-proline:tRNA(Pro) ligase (AMP-forming)
+  names:
+  - L-proline:tRNA(Pro) ligase (AMP-forming)
+  equation: C00002 + C00148 + C01649 <=> C00020 + C00013 + C02702
+  enzymes:
+  - 6.1.1.15
+  pathways:
+  - Aminoacyl-tRNA biosynthesis
+  orthology:
+  - K01881
+  - K14163
+  rpairs:
+  - &id077
+    RC00055:
+    - C01649
+    - C02702
+    RC00523:
+    - C00148
+    - C02702
+  - *id077
+- id: R09395
+  name: thiocarboxylated molybdopterin synthase:cyclic pyranopterin phosphate sulfurtransferase
+  names:
+  - thiocarboxylated molybdopterin synthase:cyclic pyranopterin phosphate sulfurtransferase
+  equation: C18239 + 2 C15814 <=> C05924 + 2 C15810
+  enzymes:
+  - 2.8.1.12
+  pathways:
+  - Folate biosynthesis
+  - Metabolic pathways
+  - Biosynthesis of cofactors
+  comment: Sulfur-carrier protein is MOCS2A [KO:K21232] or MoaD [KO:K03636].
+  orthology:
+  - K03635
+  - K21142
+  rpairs:
+  - RC02507:
+    - C05924
+    - C18239
+- id: R01253
+  name: L-proline:quinone oxidoreductase
+  names:
+  - L-proline:quinone oxidoreductase
+  equation: C00148 + C15602 <=> C03912 + C15603
+  enzymes:
+  - 1.5.5.2
+  pathways:
+  - Arginine and proline metabolism
+  - Metabolic pathways
+  - Biosynthesis of secondary metabolites
+  orthology:
+  - K13821
+  rpairs:
+  - RC00083:
+    - C00148
+    - C03912
+- id: R11260
+  names: []
+  equation: C00369 <=> C00973
+  enzymes:
+  - 2.4.1.19
+  pathways:
+  - Starch and sucrose metabolism
+  - Metabolic pathways
+  orthology:
+  - K00701
+  rpairs: []
+- id: R01122
+  name: delta2-isopentenyl-diphosphate:tRNA isopentenyltransferase
+  names:
+  - delta2-isopentenyl-diphosphate:tRNA isopentenyltransferase
+  equation: C00235 + C17324 <=> C00013 + C04432
+  enzymes:
+  - 2.5.1.75
+  pathways:
+  - Zeatin biosynthesis
+  - Metabolic pathways
+  - Biosynthesis of secondary metabolites
+  orthology:
+  - K00791
+  rpairs:
+  - &id078
+    RC00121:
+    - C04432
+    - C17324
+    RC02820:
+    - C00235
+    - C04432
+  - *id078
+- id: R03655
+  name: L-Histidine:tRNA(His) ligase (AMP-forming)
+  names:
+  - L-Histidine:tRNA(His) ligase (AMP-forming)
+  equation: C00002 + C00135 + C01643 <=> C00020 + C00013 + C02988
+  enzymes:
+  - 6.1.1.21
+  pathways:
+  - Aminoacyl-tRNA biosynthesis
+  orthology:
+  - K01892
+  rpairs:
+  - &id079
+    RC00055:
+    - C01643
+    - C02988
+    RC00523:
+    - C00135
+    - C02988
+  - *id079
+- id: R05145
+  name: Biotinyl-5'-AMP:apo-[carboxylase] ligase (AMP-forming)
+  names:
+  - Biotinyl-5'-AMP:apo-[carboxylase] ligase (AMP-forming)
+  equation: C05921 + C06249 <=> C00020 + C06250
+  enzymes:
+  - 6.3.4.9
+  - 6.3.4.10
+  - 6.3.4.11
+  - 6.3.4.15
+  pathways:
+  - Biotin metabolism
+  - Metabolic pathways
+  comment: 'general reaction (see R04562, R04563, R04582 and R04604)
+
+    following after R01074'
+  orthology:
+  - K01942
+  - K01947
+  - K03524
+  rpairs:
+  - &id080
+    RC00070:
+    - C00020
+    - C05921
+    RC00096:
+    - C06249
+    - C06250
+    RC02896:
+    - C05921
+    - C06250
+  - *id080
+  - *id080
+- id: R02110
+  name: 1,4-alpha-D-Glucan:1,4-alpha-D-glucan 6-alpha-D-(1,4-alpha-D-glucano)-transferase
+  names:
+  - 1,4-alpha-D-Glucan:1,4-alpha-D-glucan 6-alpha-D-(1,4-alpha-D-glucano)-transferase
+  equation: C00718 <=> C00369
+  enzymes:
+  - 2.4.1.18
+  pathways:
+  - Starch and sucrose metabolism
+  - Metabolic pathways
+  - Biosynthesis of secondary metabolites
+  orthology:
+  - K00700
+  - K16149
+  rpairs: []
+- id: R09995
+  names: []
+  equation: C00369 <=> C01083
+  enzymes: []
+  pathways: null
+  comment: multi-step reaction (see R11261+R01824+R11256)
+  orthology:
+  - K01214
+  - K01236
+  - K06044
+  rpairs: []
+- id: R11261
+  names: []
+  equation: C00369 + n C00001 <=> (n+1) C01935
+  enzymes:
+  - 3.2.1.68
+  pathways:
+  - Starch and sucrose metabolism
+  - Metabolic pathways
+  - Biosynthesis of secondary metabolites
+  orthology:
+  - K01214
+  rpairs: []
+- id: R02704
+  name: protein-N(pi)-phosphohistidine:mannitol 1-phosphotransferase
+  names:
+  - protein-N(pi)-phosphohistidine:mannitol 1-phosphotransferase
+  equation: C04261 + C00392 <=> C00615 + C00644
+  enzymes:
+  - 2.7.1.197
+  pathways:
+  - Fructose and mannose metabolism
+  - Metabolic pathways
+  orthology:
+  - K02798
+  - K02800
+  rpairs:
+  - &id081
+    RC00017:
+    - C00392
+    - C00644
+    RC03206:
+    - C00615
+    - C04261
+  - *id081
+- id: R03662
+  name: L-Serine:tRNA(Ser) ligase (AMP-forming)
+  names:
+  - L-Serine:tRNA(Ser) ligase (AMP-forming)
+  equation: C00002 + C00065 + C01650 <=> C00020 + C00013 + C02553
+  enzymes:
+  - 6.1.1.11
+  pathways:
+  - Aminoacyl-tRNA biosynthesis
+  orthology:
+  - K01875
+  rpairs:
+  - &id082
+    RC00055:
+    - C01650
+    - C02553
+    RC00523:
+    - C00065
+    - C02553
+  - *id082
+- id: R08218
+  name: L-serine:tRNASec ligase (AMP-forming)
+  names:
+  - L-serine:tRNASec ligase (AMP-forming)
+  equation: C00002 + C00065 + C16636 <=> C00020 + C00013 + C06481
+  enzymes:
+  - 6.1.1.11
+  pathways:
+  - Aminoacyl-tRNA biosynthesis
+  orthology:
+  - K01875
+  rpairs:
+  - &id083
+    RC00055:
+    - C06481
+    - C16636
+    RC00523:
+    - C00065
+    - C06481
+  - *id083
+- id: R03813
+  name: L-leucyl-tRNA(Leu):protein leucyltransferase
+  names:
+  - L-leucyl-tRNA(Leu):protein leucyltransferase
+  equation: C02047 + C00017 <=> C01645 + C02429
+  enzymes:
+  - 2.3.2.6
+  pathways: null
+  orthology:
+  - K00684
+  rpairs:
+  - &id084
+    RC00055:
+    - C01645
+    - C02047
+    RC00064:
+    - C00017
+    - C02429
+  - *id084
+- id: R11443
+  name: L-leucyl-tRNA(Leu):[protein] N-terminal L-lysine leucyltransferase
+  names:
+  - L-leucyl-tRNA(Leu):[protein] N-terminal L-lysine leucyltransferase
+  equation: C02047 + C21388 <=> C01645 + C21387
+  enzymes:
+  - 2.3.2.6
+  pathways: null
+  orthology:
+  - K00684
+  rpairs:
+  - RC00064:
+    - C21387
+    - C21388
+- id: R11444
+  name: L-leucyl-tRNA(Leu):[protein] N-terminal L-arginine leucyltransferase
+  names:
+  - L-leucyl-tRNA(Leu):[protein] N-terminal L-arginine leucyltransferase
+  equation: C02047 + C16739 <=> C01645 + C21386
+  enzymes:
+  - 2.3.2.6
+  pathways: null
+  orthology:
+  - K00684
+  rpairs:
+  - RC00064:
+    - C16739
+    - C21386
+- id: R11547
+  name: L-leucyl-tRNA(Leu):[protein] N-terminal L-glutamate leucyltransferase
+  names:
+  - L-leucyl-tRNA(Leu):[protein] N-terminal L-glutamate leucyltransferase
+  equation: C02047 + C21456 <=> C01645 + C21455
+  enzymes:
+  - 2.3.2.29
+  pathways: null
+  orthology:
+  - K21420
+  rpairs:
+  - RC00064:
+    - C21455
+    - C21456
+- id: R11548
+  name: L-leucyl-tRNA(Leu):[protein] N-terminal L-aspartate leucyltransferase
+  names:
+  - L-leucyl-tRNA(Leu):[protein] N-terminal L-aspartate leucyltransferase
+  equation: C02047 + C21458 <=> C01645 + C21457
+  enzymes:
+  - 2.3.2.29
+  pathways: null
+  orthology:
+  - K21420
+  rpairs:
+  - RC00064:
+    - C21457
+    - C21458
+- id: R04429
+  name: butyryl-[acp]:NAD+ trans-2-oxidoreductase
+  names:
+  - butyryl-[acp]:NAD+ trans-2-oxidoreductase
+  equation: C05745 + C00003 <=> C04246 + C00004 + C00080
+  enzymes:
+  - 1.3.1.9
+  - 2.3.1.-
+  pathways:
+  - Fatty acid biosynthesis
+  - Metabolic pathways
+  - Fatty acid metabolism
+  orthology:
+  - K00208
+  - K00209
+  - K02371
+  - K11533
+  rpairs:
+  - &id085
+    RC00001:
+    - C00003
+    - C00004
+    RC00076:
+    - C04246
+    - C05745
+  - *id085
+- id: R04724
+  name: dodecanoyl-[acp]:NAD+ trans-2-oxidoreductase
+  names:
+  - dodecanoyl-[acp]:NAD+ trans-2-oxidoreductase
+  equation: C05223 + C00003 <=> C05758 + C00004 + C00080
+  enzymes:
+  - 1.3.1.9
+  - 2.3.1.-
+  pathways:
+  - Fatty acid biosynthesis
+  - Metabolic pathways
+  - Fatty acid metabolism
+  orthology:
+  - K00208
+  - K00209
+  - K02371
+  - K11533
+  rpairs:
+  - &id086
+    RC00001:
+    - C00003
+    - C00004
+    RC00052:
+    - C05223
+    - C05758
+  - *id086
+- id: R04955
+  name: hexanoyl-[acp]:NAD+ trans-2-oxidoreductase
+  names:
+  - hexanoyl-[acp]:NAD+ trans-2-oxidoreductase
+  equation: C05749 + C00003 <=> C05748 + C00004 + C00080
+  enzymes:
+  - 1.3.1.9
+  - 2.3.1.-
+  pathways:
+  - Fatty acid biosynthesis
+  - Metabolic pathways
+  - Fatty acid metabolism
+  orthology:
+  - K00208
+  - K00209
+  - K02371
+  - K11533
+  rpairs:
+  - &id087
+    RC00001:
+    - C00003
+    - C00004
+    RC00052:
+    - C05748
+    - C05749
+  - *id087
+- id: R04958
+  name: octanoyl-[acp]:NAD+ trans-2-oxidoreductase
+  names:
+  - octanoyl-[acp]:NAD+ trans-2-oxidoreductase
+  equation: C05752 + C00003 <=> C05751 + C00004 + C00080
+  enzymes:
+  - 1.3.1.9
+  - 2.3.1.-
+  pathways:
+  - Fatty acid biosynthesis
+  - Metabolic pathways
+  - Fatty acid metabolism
+  orthology:
+  - K00208
+  - K00209
+  - K02371
+  - K11533
+  rpairs:
+  - &id088
+    RC00001:
+    - C00003
+    - C00004
+    RC00052:
+    - C05751
+    - C05752
+  - *id088
+- id: R04961
+  name: decanoyl-[acp]:NAD+ trans-2-oxidoreductase
+  names:
+  - decanoyl-[acp]:NAD+ trans-2-oxidoreductase
+  equation: C05755 + C00003 <=> C05754 + C00004 + C00080
+  enzymes:
+  - 1.3.1.9
+  - 2.3.1.-
+  pathways:
+  - Fatty acid biosynthesis
+  - Metabolic pathways
+  - Fatty acid metabolism
+  orthology:
+  - K00208
+  - K00209
+  - K02371
+  - K11533
+  rpairs:
+  - &id089
+    RC00001:
+    - C00003
+    - C00004
+    RC00052:
+    - C05754
+    - C05755
+  - *id089
+- id: R04966
+  name: tetradecanoyl-[acp]:NAD+ trans-2-oxidoreductase
+  names:
+  - tetradecanoyl-[acp]:NAD+ trans-2-oxidoreductase
+  equation: C05761 + C00003 <=> C05760 + C00004 + C00080
+  enzymes:
+  - 1.3.1.9
+  - 2.3.1.-
+  pathways:
+  - Fatty acid biosynthesis
+  - Metabolic pathways
+  - Fatty acid metabolism
+  orthology:
+  - K00208
+  - K00209
+  - K02371
+  - K11533
+  rpairs:
+  - &id090
+    RC00001:
+    - C00003
+    - C00004
+    RC00052:
+    - C05760
+    - C05761
+  - *id090
+- id: R04969
+  name: hexadecanoyl-[acp]:NAD+ trans-2-oxidoreductase
+  names:
+  - hexadecanoyl-[acp]:NAD+ trans-2-oxidoreductase
+  equation: C05764 + C00003 <=> C05763 + C00004 + C00080
+  enzymes:
+  - 1.3.1.9
+  - 2.3.1.-
+  pathways:
+  - Fatty acid biosynthesis
+  - Metabolic pathways
+  - Fatty acid metabolism
+  orthology:
+  - K00208
+  - K00209
+  - K02371
+  - K11533
+  rpairs:
+  - &id091
+    RC00001:
+    - C00003
+    - C00004
+    RC00052:
+    - C05763
+    - C05764
+  - *id091
+- id: R08700
+  name: '[enzyme]-S-sulfanylcysteine:tRNA-uridine sulfurtransferase (ATP-hydrolysing)'
+  names:
+  - '[enzyme]-S-sulfanylcysteine:tRNA-uridine sulfurtransferase (ATP-hydrolysing)'
+  equation: C00868 + C15812 + C00002 <=> C17322 + C15811 + C00020 + C00013
+  enzymes:
+  - 2.8.1.13
+  pathways: null
+  comment: 'multi-step reaction
+
+    incomplete reaction (donor is unidentified in vivo, dithiothreitol[CPD:C00265]
+    in vitro)'
+  orthology:
+  - K00566
+  rpairs:
+  - &id092
+    RC02313:
+    - C15811
+    - C15812
+    RC02315:
+    - C00868
+    - C17322
+  - *id092
+- id: R03659
+  name: L-Methionine:tRNAMet ligase (AMP-forming)
+  names:
+  - L-Methionine:tRNAMet ligase (AMP-forming)
+  equation: C00002 + C00073 + C01647 <=> C00020 + C00013 + C02430
+  enzymes:
+  - 6.1.1.10
+  pathways:
+  - Aminoacyl-tRNA biosynthesis
+  orthology:
+  - K01874
+  rpairs:
+  - &id093
+    RC00055:
+    - C01647
+    - C02430
+    RC00523:
+    - C00073
+    - C02430
+  - *id093
+- id: R04773
+  name: Selenomethionine:tRNAMet ligase (AMP-forming)
+  names:
+  - Selenomethionine:tRNAMet ligase (AMP-forming)
+  equation: C00002 + C05335 + C01647 <=> C00020 + C00013 + C05336
+  enzymes:
+  - 6.1.1.10
+  pathways:
+  - Selenocompound metabolism
+  - Metabolic pathways
+  orthology:
+  - K01874
+  rpairs:
+  - &id094
+    RC00055:
+    - C01647
+    - C05336
+    RC00523:
+    - C05335
+    - C05336
+  - *id094
+- id: R01078
+  name: dethiobiotin:sulfur sulfurtransferase
+  names:
+  - dethiobiotin:sulfur sulfurtransferase
+  equation: C01909 + C17023 + 2 C00019 + 2 C05359 + 2 C00080 <=> C00120 + 2 C00073
+    + 2 C05198
+  enzymes:
+  - 2.8.1.6
+  pathways:
+  - Biotin metabolism
+  - Metabolic pathways
+  - Biosynthesis of cofactors
+  comment: 'the reactant sulfur is not elemental sulfur, but it may be from the enzyme
+    itself ([2Fe-2S] iron-sulfur centre)
+
+    multi-step reaction'
+  orthology:
+  - K01012
+  rpairs:
+  - &id095
+    RC00021:
+    - C00019
+    - C00073
+    RC00441:
+    - C00120
+    - C01909
+  - *id095
+- id: R10124
+  name: pimeloyl-[acyl-carrier protein]:L-alanine C-pimeloyltransferase (decarboxylating)
+  names:
+  - pimeloyl-[acyl-carrier protein]:L-alanine C-pimeloyltransferase (decarboxylating)
+  equation: C19845 + C00041 <=> C01092 + C00229 + C00011
+  enzymes:
+  - 2.3.1.47
+  pathways:
+  - Biotin metabolism
+  - Metabolic pathways
+  - Biosynthesis of cofactors
+  orthology:
+  - K00652
+  rpairs:
+  - &id096
+    RC00039:
+    - C00229
+    - C19845
+    RC02725:
+    - C01092
+    - C19845
+  - *id096
+- id: R09725
+  name: pimeloyl-[acyl-carrier protein]-methyl-ester hydrolase
+  names:
+  - pimeloyl-[acyl-carrier protein]-methyl-ester hydrolase
+  equation: C19846 + C00001 <=> C19845 + C00132
+  enzymes:
+  - 3.1.1.85
+  pathways:
+  - Biotin metabolism
+  - Metabolic pathways
+  - Biosynthesis of cofactors
+  orthology:
+  - K02170
+  - K09789
+  - K19560
+  - K19561
+  rpairs:
+  - &id097
+    RC00460:
+    - C19845
+    - C19846
+    RC00461:
+    - C00132
+    - C19846
+  - *id097
+- id: R09543
+  name: S-adenosyl-L-methionine:malonyl-[acyl-carrier protein] O-methyltransferase
+  names:
+  - S-adenosyl-L-methionine:malonyl-[acyl-carrier protein] O-methyltransferase
+  equation: C00019 + C01209 <=> C00021 + C19673
+  enzymes:
+  - 2.1.1.197
+  pathways:
+  - Biotin metabolism
+  - Metabolic pathways
+  - Biosynthesis of cofactors
+  comment: Malonyl-[acp] is a far better acceptor of methyl groups from S-adenosyl-L-methionine
+    than was malonyl-CoA.
+  orthology:
+  - K02169
+  rpairs:
+  - &id098
+    RC00003:
+    - C00019
+    - C00021
+    RC00460:
+    - C01209
+    - C19673
+  - *id098
+- id: R02570
+  name: succinyl-CoA:enzyme N6-(dihydrolipoyl)lysine S-succinyltransferase
+  names:
+  - succinyl-CoA:enzyme N6-(dihydrolipoyl)lysine S-succinyltransferase
+  equation: C00091 + C15973 <=> C00010 + C16254
+  enzymes:
+  - 2.3.1.61
+  pathways:
+  - Citrate cycle (TCA cycle)
+  comment: '2-oxoglutarate dehydrogenase complex:dihydrolipoyllysine-residue succinyltransferase
+
+    a part of multi-step reaction (see R08549, R01700+R02570+R07618)
+
+    following after R01700'
+  orthology:
+  - K00658
+  - K01616
+  rpairs:
+  - &id099
+    RC00004:
+    - C15973
+    - C16254
+    RC02727:
+    - C00091
+    - C16254
+  - *id099
+  - *id099
+- id: R02571
+  name: Glutaryl-CoA:dihydrolipoamide S-succinyltransferase
+  names:
+  - Glutaryl-CoA:dihydrolipoamide S-succinyltransferase
+  equation: C00527 + C15973 <=> C00010 + C06157
+  enzymes:
+  - 2.3.1.61
+  pathways: null
+  comment: '2-oxoglutarate dehydrogenase complex:dihydrolipoyllysine-residue succinyltransferase
+
+    a part of multi-step reaction (see R01933, R01940+R02571+R07618)
+
+    following after R01940'
+  orthology:
+  - K00658
+  rpairs:
+  - &id100
+    RC00004:
+    - C06157
+    - C15973
+    RC02727:
+    - C00527
+    - C06157
+  - *id100
+  - *id100
+- id: R01940
+  name: 2-Oxoadipate:lipoamde 2-oxidoreductase(decarboxylating and acceptor-succinylating)
+  names:
+  - 2-Oxoadipate:lipoamde 2-oxidoreductase(decarboxylating and acceptor-succinylating)
+  equation: C00322 + C15972 <=> C06157 + C00011
+  enzymes:
+  - 1.2.4.2
+  pathways: null
+  comment: '2-oxoglutarate dehydrogenase complex:dihydrolipoyllysine-residue succinyltransferase
+
+    a part of multi-step reaction (see R01933, R01940+R02571+R07618)
+
+    subsequently R02571'
+  orthology:
+  - K15791
+  rpairs:
+  - &id101
+    RC00627:
+    - C06157
+    - C15972
+    RC02833:
+    - C00322
+    - C06157
+  - *id101
+- id: R03316
+  names: []
+  equation: C05381 + C15972 <=> C16254 + C00068
+  enzymes:
+  - 1.2.4.2
+  pathways:
+  - Citrate cycle (TCA cycle)
+  comment: '2-oxoglutarate dehydrogenase complex: oxoglutarate dehydrogenase (see
+    R01700)
+
+    TPP-dependent enzymatic reaction (see R00621+R03316)
+
+    following after R00621'
+  orthology:
+  - K00164
+  - K01616
+  rpairs:
+  - &id102
+    RC00027:
+    - C00068
+    - C05381
+    RC00627:
+    - C15972
+    - C16254
+    RC02883:
+    - C05381
+    - C16254
+  - *id102
+  - *id102
+- id: R01824
+  name: maltodextrin 1-alpha-D-glucosylmutase
+  names:
+  - maltodextrin 1-alpha-D-glucosylmutase
+  equation: C01935 <=> C06400
+  enzymes:
+  - 5.4.99.15
+  pathways:
+  - Starch and sucrose metabolism
+  - Metabolic pathways
+  - Biosynthesis of secondary metabolites
+  orthology:
+  - K06044
+  rpairs: []
+- id: R05196
+  name: 1,4-alpha-D-Glucan:1,4-alpha-D-glucan 4-alpha-D-glycosyltransferase
+  names:
+  - 1,4-alpha-D-Glucan:1,4-alpha-D-glucan 4-alpha-D-glycosyltransferase
+  equation: C00718 + n C00031 <=> n C00208
+  enzymes:
+  - 2.4.1.25
+  pathways:
+  - Starch and sucrose metabolism
+  - Metabolic pathways
+  orthology:
+  - K00705
+  - K22451
+  rpairs:
+  - RC00049:
+    - C00031
+    - C00208
+- id: R08768
+  name: 2-(all-trans-polyprenyl)phenol,NADPH:oxygen oxidoreductase (6-hydroxylating)
+  names:
+  - 2-(all-trans-polyprenyl)phenol,NADPH:oxygen oxidoreductase (6-hydroxylating)
+  equation: C05807 + C00005 + C00080 + C00007 <=> C17551 + C00006 + C00001
+  enzymes:
+  - 1.14.13.240
+  pathways:
+  - Ubiquinone and other terpenoid-quinone biosynthesis
+  - Metabolic pathways
+  - Biosynthesis of secondary metabolites
+  - Biosynthesis of cofactors
+  comment: general reaction (see R04987, n=5-9)
+  orthology:
+  - K18800
+  rpairs:
+  - &id103
+    RC00001:
+    - C00005
+    - C00006
+    RC00046:
+    - C05807
+    - C17551
+  - *id103
+- id: R11945
+  name: NADH:ubiquinone oxidoreductase
+  names:
+  - NADH:ubiquinone oxidoreductase
+  equation: C00399 + C00004 + 6 C00080 <=> C00390 + C00003 + 5 C00080
+  enzymes:
+  - 7.1.1.2
+  pathways: null
+  comment: electron transport complex I
+  orthology:
+  - K00330
+  - K00331
+  - K00332
+  - K00333
+  - K00334
+  - K00335
+  - K00336
+  - K00337
+  - K00338
+  - K00339
+  - K00340
+  - K00341
+  - K00342
+  - K00343
+  - K03878
+  - K03879
+  - K03880
+  - K03881
+  - K03882
+  - K03883
+  - K03884
+  - K03934
+  - K03935
+  - K03936
+  - K03940
+  - K03941
+  - K03942
+  - K03943
+  - K05572
+  - K05573
+  - K05574
+  - K05575
+  - K05576
+  - K05577
+  - K05578
+  - K05579
+  - K05580
+  - K05581
+  - K05582
+  - K05583
+  - K05584
+  - K05585
+  - K05586
+  - K05587
+  - K05588
+  - K13378
+  - K13380
+  - K15863
+  rpairs:
+  - RC00061:
+    - C00390
+    - C00399
+- id: R02918
+  name: L-Tyrosine:tRNA(Tyr) ligase (AMP-forming)
+  names:
+  - L-Tyrosine:tRNA(Tyr) ligase (AMP-forming)
+  equation: C00002 + C00082 + C00787 <=> C00020 + C00013 + C02839
+  enzymes:
+  - 6.1.1.1
+  pathways:
+  - Aminoacyl-tRNA biosynthesis
+  orthology:
+  - K01866
+  rpairs:
+  - &id104
+    RC00055:
+    - C00787
+    - C02839
+    RC00523:
+    - C00082
+    - C02839
+  - *id104
+- id: R02016
+  name: NADPH:oxidized-thioredoxin oxidoreductase
+  names:
+  - NADPH:oxidized-thioredoxin oxidoreductase
+  equation: C00342 + C00006 <=> C00343 + C00005 + C00080
+  enzymes:
+  - 1.8.1.9
+  pathways: null
+  orthology:
+  - K00384
+  rpairs:
+  - &id105
+    RC00001:
+    - C00005
+    - C00006
+    RC00013:
+    - C00342
+    - C00343
+  - *id105
+- id: R03654
+  name: glycine:tRNA(Gly) ligase (AMP-forming)
+  names:
+  - glycine:tRNA(Gly) ligase (AMP-forming)
+  equation: C00002 + C00037 + C01642 <=> C00020 + C00013 + C02412
+  enzymes:
+  - 6.1.1.14
+  pathways:
+  - Aminoacyl-tRNA biosynthesis
+  orthology:
+  - K01878
+  - K01879
+  - K01880
+  - K14164
+  rpairs:
+  - &id106
+    RC00055:
+    - C01642
+    - C02412
+    RC00523:
+    - C00037
+    - C02412
+  - *id106
+- id: R07210
+  name: alkanesulfonate, reduced-FMN:oxygen oxidoreductase
+  names:
+  - alkanesulfonate, reduced-FMN:oxygen oxidoreductase
+  equation: C15521 + C01847 + C00007 <=> C00071 + C00061 + C00094 + C00001
+  enzymes:
+  - 1.14.14.5
+  pathways:
+  - Sulfur metabolism
+  orthology:
+  - K00299
+  - K04091
+  rpairs:
+  - &id107
+    RC00126:
+    - C00061
+    - C01847
+    RC01779:
+    - C00071
+    - C15521
+  - *id107
+- id: R04019
+  name: Digalactosylceramide galactohydrolase
+  names:
+  - Digalactosylceramide galactohydrolase
+  equation: C06126 + C00001 <=> C02686 + C00124
+  enzymes:
+  - 3.2.1.22
+  pathways:
+  - Sphingolipid metabolism
+  orthology:
+  - K01189
+  - K07406
+  - K07407
+  rpairs:
+  - &id108
+    RC00049:
+    - C02686
+    - C06126
+  - *id108
+- id: R04470
+  name: Digalactosyl-diacylglycerol galactohydrolase
+  names:
+  - Digalactosyl-diacylglycerol galactohydrolase
+  equation: C06037 + C00001 <=> C03692 + C00124
+  enzymes:
+  - 3.2.1.22
+  pathways:
+  - Glycerolipid metabolism
+  orthology:
+  - K01189
+  - K07406
+  - K07407
+  rpairs:
+  - &id109
+    RC00059:
+    - C03692
+    - C06037
+    RC00451:
+    - C00124
+    - C06037
+  - *id109
+- id: R04567
+  name: (R)-3-Hydroxytetradecanoly-[acyl-carrier-protein]:UDP-N-acetyl-glucosamine
+    3-O-(3-hydroxytetradecanoyl)transferase
+  names:
+  - (R)-3-Hydroxytetradecanoly-[acyl-carrier-protein]:UDP-N-acetyl-glucosamine 3-O-(3-hydroxytetradecanoyl)transferase
+  equation: C04688 + C00043 <=> C00229 + C04738
+  enzymes:
+  - 2.3.1.129
+  pathways:
+  - Lipopolysaccharide biosynthesis
+  - Metabolic pathways
+  orthology:
+  - K00677
+  rpairs:
+  - &id110
+    RC00039:
+    - C00229
+    - C04688
+    RC00055:
+    - C00043
+    - C04738
+  - *id110
+- id: R07764
+  names: []
+  equation: C16220 <=> C16221 + C00001
+  enzymes:
+  - 2.3.1.-
+  - 4.2.1.-
+  pathways:
+  - Fatty acid biosynthesis
+  - Fatty acid metabolism
+  orthology:
+  - K02372
+  - K11533
+  rpairs:
+  - RC01095:
+    - C16220
+    - C16221
+- id: R10117
+  name: 3-hydroxyglutaryl-[acp]-methyl-ester hydro-lyase
+  names:
+  - 3-hydroxyglutaryl-[acp]-methyl-ester hydro-lyase
+  equation: C20373 <=> C20374 + C00001
+  enzymes:
+  - 4.2.1.59
+  pathways:
+  - Biotin metabolism
+  - Metabolic pathways
+  - Biosynthesis of cofactors
+  orthology:
+  - K02372
+  rpairs:
+  - RC01095:
+    - C20373
+    - C20374
+- id: R10121
+  name: 3-hydroxypimeloyl-[acp]-methyl-ester hydro-lyase
+  names:
+  - 3-hydroxypimeloyl-[acp]-methyl-ester hydro-lyase
+  equation: C20377 <=> C20378 + C00001
+  enzymes:
+  - 4.2.1.59
+  pathways:
+  - Biotin metabolism
+  - Metabolic pathways
+  - Biosynthesis of cofactors
+  orthology:
+  - K02372
+  rpairs:
+  - RC01095:
+    - C20377
+    - C20378
+- id: R04550
+  name: (3R)-3-hydroxymyristoyl-[acyl-carrier protein]:UDP-3-O-[(3R)-3-hydroxymyristoyl]-alpha-D-glucosamine
+    N-acetyltransferase
+  names:
+  - (3R)-3-hydroxymyristoyl-[acyl-carrier protein]:UDP-3-O-[(3R)-3-hydroxymyristoyl]-alpha-D-glucosamine
+    N-acetyltransferase
+  equation: C06022 + C04688 <=> C04652 + C00229
+  enzymes:
+  - 2.3.1.191
+  pathways:
+  - Lipopolysaccharide biosynthesis
+  - Metabolic pathways
+  orthology:
+  - K02536
+  rpairs:
+  - &id111
+    RC00039:
+    - C00229
+    - C04688
+    RC00166:
+    - C04652
+    - C06022
+  - *id111
+- id: R01799
+  name: CTP:phosphatidate cytidyltransferase
+  names:
+  - CTP:phosphatidate cytidyltransferase
+  equation: C00063 + C00416 <=> C00013 + C00269
+  enzymes:
+  - 2.7.7.41
+  pathways:
+  - Glycerophospholipid metabolism
+  - Metabolic pathways
+  - Biosynthesis of secondary metabolites
+  orthology:
+  - K00981
+  rpairs:
+  - RC00002:
+    - C00269
+    - C00416
+- id: R00021
+  name: L-glutamate:ferredoxin oxidoreductase (transaminating)
+  names:
+  - L-glutamate:ferredoxin oxidoreductase (transaminating)
+  equation: 2 C00025 + 2 C00139 <=> C00064 + C00026 + 2 C00138 + 2 C00080
+  enzymes:
+  - 1.4.7.1
+  pathways:
+  - Glyoxylate and dicarboxylate metabolism
+  - Nitrogen metabolism
+  - Microbial metabolism in diverse environments
+  comment: two-step reaction (see R00256+R10086)
+  orthology:
+  - K00284
+  rpairs:
+  - &id112
+    RC00006:
+    - C00025
+    - C00026
+    RC00010:
+    - C00025
+    - C00064
+  - *id112
+- id: R10086
+  name: L-glutamate:ferredoxin oxidoreductase (deaminating)
+  names:
+  - L-glutamate:ferredoxin oxidoreductase (deaminating)
+  equation: C00025 + 2 C00139 + C00001 <=> C00014 + C00026 + 2 C00138 + 2 C00080
+  enzymes:
+  - 1.4.7.1
+  pathways: null
+  comment: second step of two-step reaction (see R00021, R00256+R10086)
+  orthology:
+  - K00284
+  rpairs:
+  - &id113
+    RC00006:
+    - C00025
+    - C00026
+    RC02799:
+    - C00014
+    - C00025
+  - *id113
+- id: R07639
+  name: decenoyl-[acyl-carrier-protein] Delta2-trans-Delta3-cis-isomerase
+  names:
+  - decenoyl-[acyl-carrier-protein] Delta2-trans-Delta3-cis-isomerase
+  equation: C05754 <=> C04180
+  enzymes:
+  - 5.3.3.14
+  pathways:
+  - Fatty acid biosynthesis
+  orthology:
+  - K01716
+  - K18474
+  rpairs:
+  - RC01078:
+    - C04180
+    - C05754
+- id: R10776
+  name: 2'-deoxyribonucleoside 5'-monophosphate phosphohydrolase
+  names:
+  - 2'-deoxyribonucleoside 5'-monophosphate phosphohydrolase
+  equation: C00676 + C00001 <=> C02269 + C00009
+  enzymes:
+  - 3.1.3.89
+  pathways: null
+  orthology:
+  - K08722
+  rpairs:
+  - RC00017:
+    - C00676
+    - C02269
+- id: R03665
+  name: L-Valine:tRNAVal ligase (AMP-forming)
+  names:
+  - L-Valine:tRNAVal ligase (AMP-forming)
+  equation: C00002 + C00183 + C01653 <=> C00020 + C00013 + C02554
+  enzymes:
+  - 6.1.1.9
+  pathways:
+  - Aminoacyl-tRNA biosynthesis
+  orthology:
+  - K01873
+  rpairs:
+  - &id114
+    RC00055:
+    - C01653
+    - C02554
+    RC00523:
+    - C00183
+    - C02554
+  - *id114
+- id: R02240
+  name: ATP:1,2-diacylglycerol 3-phosphotransferase
+  names:
+  - ATP:1,2-diacylglycerol 3-phosphotransferase
+  equation: C00002 + C00641 <=> C00008 + C00416
+  enzymes:
+  - 2.7.1.107
+  pathways:
+  - Glycerolipid metabolism
+  - Glycerophospholipid metabolism
+  - Metabolic pathways
+  - Biosynthesis of secondary metabolites
+  orthology:
+  - K00901
+  - K07029
+  rpairs:
+  - &id115
+    RC00002:
+    - C00002
+    - C00008
+    RC00017:
+    - C00416
+    - C00641
+  - *id115
+- id: R00361
+  name: (S)-malate:quinone oxidoreductase
+  names:
+  - (S)-malate:quinone oxidoreductase
+  equation: C00149 + C15602 <=> C00036 + C15603
+  enzymes:
+  - 1.1.5.4
+  pathways:
+  - Citrate cycle (TCA cycle)
+  - Metabolic pathways
+  - Biosynthesis of secondary metabolites
+  - Microbial metabolism in diverse environments
+  - Carbon metabolism
+  orthology:
+  - K00116
+  rpairs:
+  - RC00031:
+    - C00036
+    - C00149
+- id: R01699
+  name: pyruvate:[dihydrolipoyllysine-residue acetyltransferase]-lipoyllysine 2-oxidoreductase
+    (decarboxylating, acceptor-acetylating)
+  names:
+  - pyruvate:[dihydrolipoyllysine-residue acetyltransferase]-lipoyllysine 2-oxidoreductase
+    (decarboxylating, acceptor-acetylating)
+  equation: C00022 + C15972 <=> C16255 + C00011
+  enzymes:
+  - 1.2.4.1
+  pathways: null
+  comment: 'pyruvate dehydrogenase complex: pyruvate dehydrogenase
+
+    a part of multi-step reaction (see R00209, R01699+R02569+R07618)
+
+    subsequently R02569
+
+    TPP-dependent enzyme (see R00014+R03270)'
+  orthology:
+  - K00161
+  - K00162
+  - K00163
+  rpairs:
+  - RC00627:
+    - C15972
+    - C16255
+- id: R03270
+  names: []
+  equation: C05125 + C15972 <=> C16255 + C00068
+  enzymes:
+  - 1.2.4.1
+  pathways:
+  - Glycolysis / Gluconeogenesis
+  - Citrate cycle (TCA cycle)
+  - Pyruvate metabolism
+  comment: '2-oxoglutarate dehydrogenase complex: pyruvate dehydrogenase (see R01699)
+
+    second step of two-step reaction (R01699 or R00014+R03270)
+
+    following after R00014'
+  orthology:
+  - K00161
+  - K00162
+  - K00163
+  rpairs:
+  - &id116
+    RC00027:
+    - C00068
+    - C05125
+    RC00627:
+    - C15972
+    - C16255
+    RC02882:
+    - C05125
+    - C16255
+  - *id116
+  - *id116
+- id: R01105
+  name: Galactan galactohydrolase
+  names:
+  - Galactan galactohydrolase
+  equation: C05796 + C00001 <=> C00124 + C05796
+  enzymes:
+  - 3.2.1.23
+  pathways:
+  - Galactose metabolism
+  orthology:
+  - K01190
+  - K12308
+  rpairs:
+  - RC00452:
+    - C00124
+    - C05796
+- id: R03355
+  name: beta-D-Galactosyl-1,4-beta-D-glucosylceramide galactohydrolase
+  names:
+  - beta-D-Galactosyl-1,4-beta-D-glucosylceramide galactohydrolase
+  equation: C01290 + C00001 <=> C01190 + C00124
+  enzymes:
+  - 3.2.1.23
+  pathways:
+  - Sphingolipid metabolism
+  - Metabolic pathways
+  orthology:
+  - K01190
+  - K12309
+  rpairs:
+  - &id117
+    RC00049:
+    - C01190
+    - C01290
+  - *id117
+- id: R03664
+  name: L-Tryptophan -tRNA(Trp) ligase (AMP-forming)
+  names:
+  - L-Tryptophan -tRNA(Trp) ligase (AMP-forming)
+  equation: C00002 + C00078 + C01652 <=> C00020 + C00013 + C03512
+  enzymes:
+  - 6.1.1.2
+  pathways:
+  - Aminoacyl-tRNA biosynthesis
+  orthology:
+  - K01867
+  rpairs:
+  - &id118
+    RC00055:
+    - C01652
+    - C03512
+    RC00523:
+    - C00078
+    - C03512
+  - *id118
+- id: R03522
+  name: RX:glutathione R-transferase
+  names:
+  - RX:glutathione R-transferase
+  equation: C01322 + C00051 <=> C00462 + C02320
+  enzymes:
+  - 2.5.1.18
+  pathways:
+  - Glutathione metabolism
+  - Metabolic pathways
+  orthology:
+  - K00799
+  - K04097
+  - K13299
+  - K21888
+  - K23790
+  rpairs:
+  - RC00948:
+    - C00051
+    - C02320
+- id: R11905
+  names: []
+  equation: C21758 + C00051 <=> C02320
+  enzymes:
+  - 2.5.1.18
+  pathways:
+  - Drug metabolism - other enzymes
+  comment: 'detoxification
+
+    unclear reaction'
+  orthology:
+  - K00799
+  - K23790
+  rpairs:
+  - RC00948:
+    - C00051
+    - C02320
+- id: R02108
+  name: 1,4-alpha-D-Glucan glucanohydrolase
+  names:
+  - 1,4-alpha-D-Glucan glucanohydrolase
+  equation: C00369 + C00001 <=> C00721 + C00369
+  enzymes:
+  - 3.2.1.1
+  pathways: null
+  orthology:
+  - K01176
+  - K05343
+  - K07405
+  rpairs: []
+- id: R02112
+  name: 1,4-alpha-D-Glucan maltohydrolase
+  names:
+  - 1,4-alpha-D-Glucan maltohydrolase
+  equation: C00369 <=> C00721 + C00208
+  enzymes:
+  - 3.2.1.1
+  - 3.2.1.2
+  - 3.2.1.133
+  pathways:
+  - Starch and sucrose metabolism
+  - Metabolic pathways
+  - Biosynthesis of secondary metabolites
+  comment: 'ec 3.2.1.1 and 3.2.1.133 form alpha-maltose [CPD:C00897]
+
+    ec 3.2.1.2 forms beta-maltose [CPD:C01971]'
+  orthology:
+  - K01176
+  - K01177
+  - K01208
+  - K05343
+  - K05992
+  - K07405
+  rpairs: []
+- id: R11262
+  name: maltodextrin maltohydrolase
+  names:
+  - maltodextrin maltohydrolase
+  equation: C01935 + C00001 <=> C00208
+  enzymes:
+  - 3.2.1.1
+  - 3.2.1.2
+  - 3.2.1.133
+  pathways:
+  - Starch and sucrose metabolism
+  - Metabolic pathways
+  - Biosynthesis of secondary metabolites
+  comment: 'ec 3.2.1.1 and 3.2.1.133 form alpha-maltose [CPD:C00897]
+
+    ec 3.2.1.2 forms beta-maltose [CPD:C01971]'
+  orthology:
+  - K01176
+  - K01177
+  - K01208
+  - K05343
+  - K05992
+  - K07405
+  rpairs: []
+- id: R11307
+  names: []
+  equation: C00760 + C00001 <=> C00760 + C01898
+  enzymes:
+  - 3.2.1.4
+  pathways:
+  - Starch and sucrose metabolism
+  - Metabolic pathways
+  orthology:
+  - K01179
+  - K19357
+  rpairs: []
+- id: R11308
+  names: []
+  equation: C01898 <=> C00185
+  enzymes:
+  - 3.2.1.4
+  - 3.2.1.91
+  pathways:
+  - Starch and sucrose metabolism
+  - Metabolic pathways
+  comment: 'endo-type cleavage (ec 3.2.1.4)
+
+    exo-type cleavage (ec 3.2.1.91)'
+  orthology:
+  - K01179
+  - K01225
+  - K19357
+  - K19668
+  rpairs: []
+- id: R03940
+  name: 10-Formyltetrahydrofolate:L-methionyl-tRNA N-formyltransferase
+  names:
+  - 10-Formyltetrahydrofolate:L-methionyl-tRNA N-formyltransferase
+  equation: C02430 + C00234 <=> C00101 + C03294
+  enzymes:
+  - 2.1.2.9
+  pathways:
+  - One carbon pool by folate
+  - Aminoacyl-tRNA biosynthesis
+  orthology:
+  - K00604
+  rpairs:
+  - &id119
+    RC00026:
+    - C00101
+    - C00234
+    RC00165:
+    - C02430
+    - C03294
+  - *id119
+- id: R08689
+  name: (E)-4-hydroxy-3-methylbut-2-en-1-yl-diphosphate:oxidized ferredoxin oxidoreductase
+    (hydrating)
+  names:
+  - (E)-4-hydroxy-3-methylbut-2-en-1-yl-diphosphate:oxidized ferredoxin oxidoreductase
+    (hydrating)
+  equation: C11453 + 2 C00138 <=> C11811 + C00001 + 2 C00139
+  enzymes:
+  - 1.17.7.1
+  pathways:
+  - Terpenoid backbone biosynthesis
+  - Metabolic pathways
+  - Biosynthesis of secondary metabolites
+  orthology:
+  - K03526
+  rpairs:
+  - RC01486:
+    - C11453
+    - C11811
+- id: R10859
+  name: (E)-4-hydroxy-3-methylbut-2-en-1-yl-diphosphate:oxidized flavodoxin oxidoreductase
+  names:
+  - (E)-4-hydroxy-3-methylbut-2-en-1-yl-diphosphate:oxidized flavodoxin oxidoreductase
+  equation: C11811 + C00001 + C02869 <=> C11453 + C02745
+  enzymes:
+  - 1.17.7.3
+  pathways:
+  - Terpenoid backbone biosynthesis
+  - Metabolic pathways
+  orthology:
+  - K03526
+  rpairs:
+  - RC01486:
+    - C11453
+    - C11811
+- id: R00437
+  name: polyribonucleotide:phosphate adenylyltransferase
+  names:
+  - polyribonucleotide:phosphate adenylyltransferase
+  equation: C00046 + C00009 <=> C00046 + C00008
+  enzymes:
+  - 2.7.7.8
+  pathways: null
+  orthology: null
+  rpairs:
+  - RC02795:
+    - C00008
+    - C00046
+- id: R00438
+  name: polyribonucleotide:phosphate uridylyltransferase
+  names:
+  - polyribonucleotide:phosphate uridylyltransferase
+  equation: C00046 + C00009 <=> C00046 + C00015
+  enzymes:
+  - 2.7.7.8
+  pathways: null
+  orthology: null
+  rpairs:
+  - RC02795:
+    - C00015
+    - C00046
+- id: R00439
+  name: polyribonucleotide:phosphate guanylyltransferase
+  names:
+  - polyribonucleotide:phosphate guanylyltransferase
+  equation: C00046 + C00009 <=> C00046 + C00035
+  enzymes:
+  - 2.7.7.8
+  pathways: null
+  orthology: null
+  rpairs:
+  - RC02795:
+    - C00035
+    - C00046
+- id: R00440
+  name: polyribonucleotide:phosphate cytidylyltransferase
+  names:
+  - polyribonucleotide:phosphate cytidylyltransferase
+  equation: C00046 + C00009 <=> C00046 + C00112
+  enzymes:
+  - 2.7.7.8
+  pathways: null
+  orthology: null
+  rpairs:
+  - RC02795:
+    - C00046
+    - C00112
+- id: R01623
+  name: '[Acyl-carrier-protein] 4''-pantetheine-phosphohydrolase'
+  names:
+  - '[Acyl-carrier-protein] 4''-pantetheine-phosphohydrolase'
+  equation: C00229 + C00001 <=> C01134 + C03688
+  enzymes:
+  - 3.1.4.14
+  pathways:
+  - Pantothenate and CoA biosynthesis
+  orthology:
+  - K08682
+  rpairs: []
+- id: R02025
+  name: L-methionine:oxidized-thioredoxin S-oxidoreductase
+  names:
+  - L-methionine:oxidized-thioredoxin S-oxidoreductase
+  equation: C00073 + C00343 + C00001 <=> C02989 + C00342
+  enzymes:
+  - 1.8.4.13
+  - 1.8.4.14
+  pathways:
+  - Cysteine and methionine metabolism
+  comment: 'two distinct enzymes
+
+    L-methionine (S)-S-oxide specific (ec 1.8.4.13, see R07606)
+
+    L-methionine (R)-S-oxide specific (ec 1.8.4.14, see R07608)'
+  orthology:
+  - K08968
+  rpairs:
+  - &id120
+    RC00013:
+    - C00342
+    - C00343
+    RC00639:
+    - C00073
+    - C02989
+  - *id120
+- id: R00282
+  name: NADPH:acceptor oxidoreductase
+  names:
+  - NADPH:acceptor oxidoreductase
+  equation: C00028 + C00005 + C00080 <=> C00030 + C00006
+  enzymes:
+  - 1.6.99.1
+  pathways: null
+  orthology:
+  - K00354
+  rpairs:
+  - RC00001:
+    - C00005
+    - C00006
+- id: R05577
+  name: L-Aspartate:tRNA(Asp) ligase (AMP-forming)
+  names:
+  - L-Aspartate:tRNA(Asp) ligase (AMP-forming)
+  equation: C01638 + C00049 + C00002 <=> C02984 + C00013 + C00020
+  enzymes:
+  - 6.1.1.12
+  - 6.1.1.23
+  pathways:
+  - Aminoacyl-tRNA biosynthesis
+  orthology:
+  - K01876
+  - K09759
+  - K22503
+  - K24278
+  rpairs:
+  - &id121
+    RC00055:
+    - C01638
+    - C02984
+    RC00523:
+    - C00049
+    - C02984
+  - *id121
+- id: R03660
+  name: L-Phenylalanine:tRNA(Ala) ligase (AMP-forming)
+  names:
+  - L-Phenylalanine:tRNA(Ala) ligase (AMP-forming)
+  equation: C00002 + C00079 + C01648 <=> C00020 + C00013 + C03511
+  enzymes:
+  - 6.1.1.20
+  pathways:
+  - Aminoacyl-tRNA biosynthesis
+  orthology:
+  - K01889
+  - K01890
+  rpairs:
+  - &id122
+    RC00055:
+    - C01648
+    - C03511
+    RC00523:
+    - C00079
+    - C03511
+  - *id122
+- id: R03652
+  name: L-Glutamine:tRNA(Gln) ligase (AMP-forming)
+  names:
+  - L-Glutamine:tRNA(Gln) ligase (AMP-forming)
+  equation: C00002 + C00064 + C01640 <=> C00020 + C00013 + C02282
+  enzymes:
+  - 6.1.1.18
+  pathways:
+  - Aminoacyl-tRNA biosynthesis
+  - Metabolic pathways
+  orthology:
+  - K01886
+  rpairs:
+  - &id123
+    RC00055:
+    - C01640
+    - C02282
+    RC00523:
+    - C00064
+    - C02282
+  - *id123
+- id: R03646
+  name: L-Arginine:tRNA(Arg) ligase (AMP-forming)
+  names:
+  - L-Arginine:tRNA(Arg) ligase (AMP-forming)
+  equation: C00002 + C00062 + C01636 <=> C00020 + C00013 + C02163
+  enzymes:
+  - 6.1.1.19
+  pathways:
+  - Aminoacyl-tRNA biosynthesis
+  orthology:
+  - K01887
+  rpairs:
+  - &id124
+    RC00055:
+    - C01636
+    - C02163
+    RC00523:
+    - C00062
+    - C02163
+  - *id124
+- id: R11188
+  name: nucleoside-3',5'-bisphosphate 3'-phosphohydrolase
+  names:
+  - nucleoside-3',5'-bisphosphate 3'-phosphohydrolase
+  equation: C21158 + C00001 <=> C01117 + C00009
+  enzymes:
+  - 3.1.3.97
+  pathways: null
+  orthology:
+  - K07053
+  rpairs:
+  - RC00078:
+    - C01117
+    - C21158
+- id: R00601
+  name: S-adenosyl-L-methionine:tRNA 5-methylaminomethyl-2-thiouridine methyltransferase
+  names:
+  - S-adenosyl-L-methionine:tRNA 5-methylaminomethyl-2-thiouridine methyltransferase
+  - S-adenosyl-L-methionine:tRNA (5-methylaminomethyl-2-thiouridylate)-methyltransferase
+  equation: C00019 + C11478 <=> C00021 + C04728
+  enzymes:
+  - 2.1.1.61
+  pathways: null
+  orthology:
+  - K15461
+  rpairs:
+  - &id125
+    RC00003:
+    - C00019
+    - C00021
+    RC00060:
+    - C04728
+    - C11478
+  - *id125
+- id: R03789
+  name: tRNA-guanosine34:queuine tRNA-D-ribosyltransferase
+  names:
+  - tRNA-guanosine34:queuine tRNA-D-ribosyltransferase
+  equation: C01977 + C01449 <=> C01978 + C00242
+  enzymes:
+  - 2.4.2.64
+  pathways: null
+  orthology:
+  - K00777
+  rpairs:
+  - &id126
+    RC00063:
+    - C01449
+    - C01978
+  - *id126
+- id: R08702
+  name: tRNA containing 5-carboxymethylaminomethyl-2-thiouridine:oxygen oxidoreductase
+  names:
+  - tRNA containing 5-carboxymethylaminomethyl-2-thiouridine:oxygen oxidoreductase
+  equation: C17323 + C00007 + C00001 <=> C11478 + C00048 + C00027
+  enzymes:
+  - 1.5.3.-
+  pathways: null
+  orthology:
+  - K15461
+  rpairs:
+  - &id127
+    RC00053:
+    - C11478
+    - C17323
+    RC01483:
+    - C00048
+    - C17323
+    RC02755:
+    - C00007
+    - C00027
+  - *id127
+  - *id127
+- id: R10209
+  name: tRNA-guanosine34:7-aminomethyl-7-carbaguanine tRNA-D-ribosyltransferase
+  names:
+  - tRNA-guanosine34:7-aminomethyl-7-carbaguanine tRNA-D-ribosyltransferase
+  equation: C01977 + C16675 <=> C20446 + C00242
+  enzymes:
+  - 2.4.2.29
+  pathways: null
+  orthology:
+  - K00773
+  rpairs:
+  - &id128
+    RC00063:
+    - C16675
+    - C20446
+  - *id128
+- id: R09382
+  name: CTP,CTP,ATP:tRNA cytidylyl,cytidylyl,adenylyltransferase
+  names:
+  - CTP,CTP,ATP:tRNA cytidylyl,cytidylyl,adenylyltransferase
+  equation: C02211 + 2 C00063 + C00002 <=> C19085 + 3 C00013
+  enzymes:
+  - 2.7.7.72
+  pathways: null
+  comment: three-step reaction (see R09383+R09384+R09386)
+  orthology:
+  - K00974
+  - K07558
+  rpairs: []
+- id: R09383
+  name: CTP:tRNA cytidylyltransferase
+  names:
+  - CTP:tRNA cytidylyltransferase
+  equation: C02211 + C00063 <=> C19078 + C00013
+  enzymes:
+  - 2.7.7.72
+  pathways: null
+  orthology:
+  - K00974
+  - K07558
+  rpairs:
+  - RC00078:
+    - C02211
+    - C19078
+- id: R09384
+  name: CTP:tRNA cytidylyltransferase
+  names:
+  - CTP:tRNA cytidylyltransferase
+  equation: C19078 + C00063 <=> C19080 + C00013
+  enzymes:
+  - 2.7.7.72
+  pathways: null
+  orthology:
+  - K00974
+  - K07558
+  rpairs:
+  - RC00078:
+    - C19078
+    - C19080
+- id: R09386
+  name: ATP:tRNA adenylyltransferase
+  names:
+  - ATP:tRNA adenylyltransferase
+  equation: C19080 + C00002 <=> C19085 + C00013
+  enzymes:
+  - 2.7.7.72
+  pathways: null
+  orthology:
+  - K00974
+  - K07558
+  rpairs:
+  - RC00078:
+    - C19080
+    - C19085
+- id: R07063
+  name: Linoleoyl-CoA,hydrogen-donor:oxygen oxidoreductase
+  names:
+  - Linoleoyl-CoA,hydrogen-donor:oxygen oxidoreductase
+  equation: C01595 + C00030 + C00007 <=> C06426 + C00028 + 2 C00001
+  enzymes:
+  - 1.14.19.3
+  pathways:
+  - Linoleic acid metabolism
+  - Metabolic pathways
+  orthology:
+  - K00508
+  rpairs:
+  - RC00917:
+    - C01595
+    - C06426
+- id: R03905
+  name: Glu-tRNA(Gln):L-glutamine amido-ligase(ADP-forming)
+  names:
+  - Glu-tRNA(Gln):L-glutamine amido-ligase(ADP-forming)
+  equation: C02282 + C00025 + C00009 + C00008 <=> C06112 + C00064 + C00002 + C00001
+  enzymes:
+  - 6.3.5.7
+  pathways:
+  - Aminoacyl-tRNA biosynthesis
+  - Metabolic pathways
+  orthology:
+  - K02433
+  - K02434
+  - K02435
+  - K03330
+  - K03865
+  - K09482
+  rpairs:
+  - &id129
+    RC00002:
+    - C00002
+    - C00008
+    RC00010:
+    - C02282
+    - C06112
+  - *id129
+  - *id129
+- id: R04212
+  name: Asp-tRNA(Asn):L-glutamine amido-ligase (ADP-forming)
+  names:
+  - Asp-tRNA(Asn):L-glutamine amido-ligase (ADP-forming)
+  equation: C03402 + C00025 + C00009 + C00008 <=> C06113 + C00064 + C00002 + C00001
+  enzymes:
+  - 6.3.5.6
+  pathways:
+  - Aminoacyl-tRNA biosynthesis
+  orthology:
+  - K02433
+  - K02434
+  - K02435
+  rpairs:
+  - &id130
+    RC00002:
+    - C00002
+    - C00008
+    RC00010:
+    - C03402
+    - C06113
+  - *id130
+  - *id130
+- id: R00540
+  name: Nitrile aminohydrolase
+  names:
+  - Nitrile aminohydrolase
+  equation: C00726 + 2 C00001 <=> C00060 + C00014
+  enzymes:
+  - 3.5.5.1
+  - 3.5.5.2
+  - 3.5.5.5
+  - 3.5.5.7
+  pathways:
+  - Nitrogen metabolism
+  - Metabolic pathways
+  comment: general reaction
+  orthology:
+  - K01501
+  rpairs:
+  - &id131
+    RC00325:
+    - C00060
+    - C00726
+    RC02811:
+    - C00014
+    - C00726
+  - *id131
+- id: R01498
+  name: D-Glucosyl-N-acylsphingosine glucohydrolase
+  names:
+  - D-Glucosyl-N-acylsphingosine glucohydrolase
+  equation: C01190 + C00001 <=> C00031 + C00195
+  enzymes:
+  - 3.2.1.45
+  - 3.2.1.62
+  pathways:
+  - Sphingolipid metabolism
+  - Metabolic pathways
+  orthology:
+  - K01201
+  - K17108
+  rpairs:
+  - &id132
+    RC00059:
+    - C00195
+    - C01190
+    RC00451:
+    - C00031
+    - C01190
+  - *id132
+- id: R09736
+  name: S-adenosyl-L-methione:demethylmenaquinol methyltransferase
+  names:
+  - S-adenosyl-L-methione:demethylmenaquinol methyltransferase
+  equation: C19847 + C00019 <=> C05819 + C00021
+  enzymes:
+  - 2.1.1.163
+  pathways:
+  - Ubiquinone and other terpenoid-quinone biosynthesis
+  - Metabolic pathways
+  - Biosynthesis of secondary metabolites
+  - Biosynthesis of cofactors
+  orthology:
+  - K03183
+  rpairs:
+  - &id133
+    RC00003:
+    - C00019
+    - C00021
+    RC01662:
+    - C05819
+    - C19847
+  - *id133

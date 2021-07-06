@@ -1,0 +1,2442 @@
+- id: C15811
+  name: '[Enzyme]-cysteine'
+  names:
+  - '[Enzyme]-cysteine'
+  formula: C4H6N2O2SR2
+  comment: Generic compound in reaction hierarchy
+  PubChem: '47205136'
+- id: C20377
+  name: 3-Hydroxypimeloyl-[acp] methyl ester
+  names:
+  - 3-Hydroxypimeloyl-[acp] methyl ester
+  - 3-Hydroxypimeloyl-[acyl-carrier protein] methyl ester
+  formula: C8H13O4SR
+  PubChem: '163312115'
+- id: C05759
+  name: 3-Oxotetradecanoyl-[acp]
+  names:
+  - 3-Oxotetradecanoyl-[acp]
+  - 3-Oxotetradecanoyl-[acyl-carrier protein]
+  formula: C14H25O2SR
+  comment: Generic compound in reaction hierarchy
+  PubChem: '8054'
+  ChEBI: '1655'
+  LIPIDMAPS: LMFA07060017
+- id: C15973
+  name: Enzyme N6-(dihydrolipoyl)lysine
+  names:
+  - Enzyme N6-(dihydrolipoyl)lysine
+  - Dihydrolipoamide-E
+  - '[E2 protein]-N6-[(R)-dihydrolipoyl]-L-lysine'
+  - '[Lipoyl-carrier protein E2]-N6-[(R)-dihydrolipoyl]-L-lysine'
+  formula: C8H16NOS2R
+  comment: 'Generic compound in reaction hierarchy
+
+    The reduced lipoyllysine residue in EC 2.3.1.12, dihydrolipoyllysine-residue acetyltransferase
+    ( EC 2.3.1.61, dihydrolipoyllysine-residue succinyltransferase or EC 2.3.1.168,
+    dihydrolipoyllysine-residue (2-methylpropanoyl)transferase ).'
+  PubChem: '47205286'
+  ChEBI: '80219'
+- id: C20375
+  name: Glutaryl-[acp] methyl ester
+  names:
+  - Glutaryl-[acp] methyl ester
+  - Glutaryl-[acyl-carrier protein] methyl ester
+  formula: C6H9O3SR
+  PubChem: '163312113'
+- id: C17023
+  name: Sulfur donor
+  names:
+  - Sulfur donor
+  - S-donor
+  comment: Generic compound in reaction hierarchy
+  PubChem: '96023504'
+  ChEBI: '80867'
+- id: C00343
+  name: Thioredoxin disulfide
+  names:
+  - Thioredoxin disulfide
+  - Oxidized thioredoxin
+  - Thioredoxin sulfide
+  formula: C10H12N4O4S2R4
+  comment: Generic compound in reaction hierarchy
+  PubChem: '3636'
+  ChEBI: '18191'
+- id: C05764
+  name: Hexadecanoyl-[acp]
+  names:
+  - Hexadecanoyl-[acp]
+  - Hexadecanoyl-[acyl-carrier protein]
+  - Palmitoyl-[acyl-carrier protein]
+  formula: C16H31OSR
+  comment: Generic compound in reaction hierarchy
+  PubChem: '8059'
+  ChEBI: '5697'
+  LIPIDMAPS: LMFA07060040
+- id: C05750
+  name: 3-Oxooctanoyl-[acp]
+  names:
+  - 3-Oxooctanoyl-[acp]
+  - 3-Oxooctanoyl-[acyl-carrier protein]
+  formula: C8H13O2SR
+  comment: Generic compound in reaction hierarchy
+  PubChem: '8045'
+  ChEBI: '1646'
+  LIPIDMAPS: LMFA07060008
+- id: C05744
+  name: Acetoacetyl-[acp]
+  names:
+  - Acetoacetyl-[acp]
+  - Acetoacetyl-[acyl-carrier protein]
+  formula: C4H5O2SR
+  comment: Generic compound in reaction hierarchy
+  PubChem: '8039'
+  ChEBI: '2393'
+- id: C00138
+  name: Reduced ferredoxin
+  names:
+  - Reduced ferredoxin
+  - Reduced ferredoxin [iron-sulfur] cluster
+  PubChem: '3438'
+  ChEBI: '17513'
+- id: C01642
+  name: tRNA(Gly)
+  names:
+  - tRNA(Gly)
+  comment: Generic compound in reaction hierarchy
+  PubChem: '4791'
+  ChEBI: '29176'
+- id: C00139
+  name: Oxidized ferredoxin
+  names:
+  - Oxidized ferredoxin
+  - Oxidized ferredoxin [iron-sulfur] cluster
+  PubChem: '3439'
+  ChEBI: '17908'
+- id: C19846
+  name: Pimeloyl-[acyl-carrier protein] methyl ester
+  names:
+  - Pimeloyl-[acyl-carrier protein] methyl ester
+  - Pimeloyl-[acp] methyl ester
+  - Pimelyl-[acyl-carrier protein] methyl ester
+  - Pimelyl-[acp] methyl ester
+  formula: C8H13O3SR
+  PubChem: '135626313'
+- id: C02988
+  name: L-Histidyl-tRNA(His)
+  names:
+  - L-Histidyl-tRNA(His)
+  formula: C16H24N3O11PR2(C5H8O6PR)n
+  comment: Generic compound in reaction hierarchy
+  PubChem: '5897'
+  ChEBI: '29155'
+- id: C06020
+  name: Methyl-Co(III) corrinoid protein
+  names:
+  - Methyl-Co(III) corrinoid protein
+  - Methylcorrinoid
+  - Methylcorrinoid protein
+  - Corrinoid protein Co2+-CH3
+  formula: C20H3CoN4R21
+  comment: Generic compound in reaction hierarchy
+  PubChem: '8292'
+- id: C19845
+  name: Pimeloyl-[acyl-carrier protein]
+  names:
+  - Pimeloyl-[acyl-carrier protein]
+  - Pimeloyl-[acp]
+  - Pimelyl-[acyl-carrier protein]
+  - Pimelyl-[acp]
+  - 7-Hydroxy-7-oxoheptanoyl-[acyl-carrier protein]
+  formula: C7H11O3SR
+  PubChem: '135626312'
+- id: C01209
+  name: Malonyl-[acyl-carrier protein]
+  names:
+  - Malonyl-[acyl-carrier protein]
+  - Malonyl-[acp]
+  formula: C3H3O3SR
+  comment: 'Generic compound in reaction hierarchy
+
+    R = acyl-carrier protein'
+  PubChem: '4431'
+  ChEBI: '17330'
+- id: C03892
+  name: Phosphatidylglycerophosphate
+  names:
+  - Phosphatidylglycerophosphate
+  - 1-(3-sn-Phosphatidyl)-sn-glycerol 3-phosphate
+  - 3-(3-Phosphatidyl)-D-glycerol 1-phosphate
+  - 1,2-Diacyl-sn-glycero-3-phospho-sn-glycerol 3'-phosphate
+  formula: C8H14O13P2R2
+  comment: Generic compound in reaction hierarchy
+  PubChem: '6624'
+  ChEBI: '37393'
+  LIPIDMAPS: LMGP05010000
+- id: C00017
+  name: Protein
+  names:
+  - Protein
+  formula: C2H4NO2R(C2H2NOR)n
+  comment: Generic compound in reaction hierarchy
+  PubChem: '3319'
+  ChEBI: '16541'
+- id: C05748
+  name: trans-Hex-2-enoyl-[acp]
+  names:
+  - trans-Hex-2-enoyl-[acp]
+  - trans-Hex-2-enoyl-[acyl-carrier protein]
+  - (2E)-Hexenoyl-[acp]
+  formula: C6H9OSR
+  comment: Generic compound in reaction hierarchy
+  PubChem: '8043'
+  ChEBI: '10727'
+  LIPIDMAPS: LMFA07060007
+- id: C00662
+  name: Reduced adrenal ferredoxin
+  names:
+  - Reduced adrenal ferredoxin
+  - Reduced adrenodoxin
+  PubChem: '3931'
+  ChEBI: '16906'
+- id: C15603
+  name: Hydroquinone
+  names:
+  - Hydroquinone
+  - p-Hydroquinone
+  - Quinol
+  - Reduced quinone
+  comment: 'Generic compound in reaction hierarchy
+
+    Hydroquinone (non-generic) [CPD:C00530]'
+  PubChem: '17396595'
+  ChEBI: '17594'
+- id: C20378
+  name: Enoylpimeloyl-[acp] methyl ester
+  names:
+  - Enoylpimeloyl-[acp] methyl ester
+  - Enoylpimeloyl-[acyl-carrier protein] methyl ester
+  formula: C8H11O3SR
+  PubChem: '163312116'
+- id: C02282
+  name: Glutaminyl-tRNA
+  names:
+  - Glutaminyl-tRNA
+  - L-Glutaminyl-tRNA(Gln)
+  - Glutaminyl-tRNA(Gln)
+  - Gln-tRNA(Gln)
+  formula: C20H29N7O12PR(C5H8O6PR)n
+  PubChem: '5339'
+  ChEBI: '29166'
+- id: C01242
+  name: '[Protein]-S8-aminomethyldihydrolipoyllysine'
+  names:
+  - '[Protein]-S8-aminomethyldihydrolipoyllysine'
+  - H-protein-S-aminomethyldihydrolipoyllysine
+  - S-Aminomethyldihydrolipoylprotein
+  - '[Glycine-cleavage complex H protein]-S-aminomethyl-N6-dihydrolipoyl-L-lysine'
+  formula: C9H19N2OS2R
+  comment: 'Generic compound in reaction hierarchy
+
+    The lipoyl-bearing H protein'
+  PubChem: '4463'
+  ChEBI: '16882'
+- id: C00012
+  name: Peptide
+  names:
+  - Peptide
+  formula: C2H4NO2R(C2H2NOR)n
+  comment: Generic compound in reaction hierarchy
+  PubChem: '3314'
+  ChEBI: '16670'
+- id: C17322
+  name: tRNA containing 2-thiouridine
+  names:
+  - tRNA containing 2-thiouridine
+  - tRNA containing s2U
+  formula: C9H13N2O8PS(C5H8O6PR)n(C5H8O6PR)n
+  PubChem: '96023686'
+  ChEBI: '81006'
+- id: C01638
+  name: tRNA(Asp)
+  names:
+  - tRNA(Asp)
+  comment: Generic compound in reaction hierarchy
+  PubChem: '4787'
+  ChEBI: '29186'
+- id: C00828
+  name: Menaquinone
+  names:
+  - Menaquinone
+  - Vitamin K2
+  formula: C16H16O2(C5H8)n
+  comment: Menatetrenone (n=3) [DR:D00100]
+  CAS: 11032-49-8 1182-68-9
+  PubChem: '4086'
+  ChEBI: '16374'
+  LipidBank: VVK0003 VVK0004 VVK0005 VVK0006 VVK0007 VVK0008 VVK0009 VVK0010 VVK0011
+    VVK0012 VVK0013 VVK0014 VVK0015
+  NIKKAJI: J10.613E
+- id: C05747
+  name: (R)-3-Hydroxyhexanoyl-[acp]
+  names:
+  - (R)-3-Hydroxyhexanoyl-[acp]
+  - (R)-3-Hydroxyhexanoyl-[acyl-carrier protein]
+  - D-3-Hydroxyhexanoyl-[acp]
+  - D-3-Hydroxyhexanoyl-[acyl-carrier protein]
+  formula: C6H11O2SR
+  comment: Generic compound in reaction hierarchy
+  PubChem: '8042'
+  ChEBI: '326'
+  LIPIDMAPS: LMFA07060006
+- id: C05712
+  name: Cyanohydrin
+  names:
+  - Cyanohydrin
+  formula: C2HNOR2
+  comment: Generic compound in reaction hierarchy
+  PubChem: '8019'
+  ChEBI: '23437'
+- id: C05713
+  name: Cyanoglycoside
+  names:
+  - Cyanoglycoside
+  - Cyanoglucoside
+  formula: C8H11NO6R2
+  comment: Generic compound in reaction hierarchy
+  PubChem: '8020'
+  ChEBI: '3980'
+- id: C00125
+  name: Ferricytochrome c
+  names:
+  - Ferricytochrome c
+  - Cytochrome c3+
+  formula: C42H44FeN8O8S2R4
+  comment: 'Heme type: Heme C [CPD:C15817]'
+  PubChem: '3425'
+  ChEBI: '15991'
+  NIKKAJI: J209.145C
+- id: C16832
+  name: '[Protein]-N6-[(R)-dihydrolipoyl]-L-lysine'
+  names:
+  - '[Protein]-N6-[(R)-dihydrolipoyl]-L-lysine'
+  - '[Lipoyl-carrier protein]-N6-[(R)-dihydrolipoyl]-L-lysine'
+  - Protein N6-(dihydrolipoyl)lysine
+  formula: C8H16NOS2R
+  comment: 'Generic compound in reaction hierarchy
+
+    R = E2 subunit of oxo-acid dehydrogenase complexes [CPD:C15973] or H protein [CPD:C02972]'
+  PubChem: '96023356'
+  ChEBI: '80760'
+- id: C20858
+  name: Protein N5-methyl-L-glutamine
+  names:
+  - Protein N5-methyl-L-glutamine
+  formula: C7H11N3O3R2
+  PubChem: '254741324'
+- id: C03402
+  name: L-Asparaginyl-tRNA(Asn)
+  names:
+  - L-Asparaginyl-tRNA(Asn)
+  - Asn-tRNA(Asn)
+  - Asparaginyl-tRNA(Asn)
+  formula: C14H23N2O12PR2(C5H8O6PR)n
+  PubChem: '6232'
+  ChEBI: '29265'
+- id: C19085
+  name: tRNA with a 3' CCA end
+  names:
+  - tRNA with a 3' CCA end
+  formula: C33H45N11O24P3R(C5H8O6PR)n
+  PubChem: '124489757'
+  ChEBI: '82208'
+- id: C05756
+  name: 3-Oxododecanoyl-[acp]
+  names:
+  - 3-Oxododecanoyl-[acp]
+  - 3-Oxododecanoyl-[acyl-carrier protein]
+  formula: C12H21O2SR
+  comment: Generic compound in reaction hierarchy
+  PubChem: '8051'
+  ChEBI: '1637'
+  LIPIDMAPS: LMFA07060014
+- id: C00718
+  name: Amylose
+  names:
+  - Amylose
+  - Amylose chain
+  - (1,4-alpha-D-Glucosyl)n
+  - (1,4-alpha-D-Glucosyl)n+1
+  - (1,4-alpha-D-Glucosyl)n-1
+  - 4-{(1,4)-alpha-D-Glucosyl}(n-1)-D-glucose
+  - 1,4-alpha-D-Glucan
+  formula: (C6H10O5)n
+  CAS: 9005-82-7
+  PubChem: '3984'
+  ChEBI: '28102'
+  NIKKAJI: J209.104F
+- id: C19847
+  name: Demethylmenaquinol
+  names:
+  - Demethylmenaquinol
+  formula: C15H16O2(C5H8)n
+  PubChem: '135626314'
+  ChEBI: '55437'
+- id: C00060
+  name: Carboxylate
+  names:
+  - Carboxylate
+  - R-COOH
+  - Monocarboxylate
+  - Carboxylic acid
+  formula: CO2R
+  comment: Generic compound in reaction hierarchy
+  PubChem: '3360'
+  ChEBI: '35757'
+- id: C01335
+  name: ROH
+  names:
+  - ROH
+  formula: HOR
+  comment: 'Generic compound in reaction hierarchy
+
+    R = alkyl group [CPD:C00069]
+
+    R = aromatic group [CPD:C15584]'
+  PubChem: '4543'
+- id: C01978
+  name: tRNA queuine
+  names:
+  - tRNA queuine
+  - Queuine in tRNA
+  formula: C17H24N5O10P(C5H8O6PR)n(C5H8O6PR)n
+  comment: Generic compound in reaction hierarchy
+  PubChem: '5078'
+- id: C15813
+  name: Adenylyl-[sulfur-carrier protein]
+  names:
+  - Adenylyl-[sulfur-carrier protein]
+  - '[Sulfur-carrier protein]-Gly-Gly-AMP'
+  formula: C14H19N7O9PR
+  comment: Generic compound in reaction hierarchy
+  PubChem: '47205138'
+  ChEBI: '80101'
+- id: C04688
+  name: (3R)-3-Hydroxytetradecanoyl-[acyl-carrier protein]
+  names:
+  - (3R)-3-Hydroxytetradecanoyl-[acyl-carrier protein]
+  - (R)-3-Hydroxytetradecanoyl-[acyl-carrier protein]
+  - beta-Hydroxymyristyl-[acyl-carrier protein]
+  - HMA
+  formula: C14H27O2SR
+  comment: Generic compound in reaction hierarchy
+  PubChem: '7269'
+- id: C00340
+  name: Reduced rubredoxin
+  names:
+  - Reduced rubredoxin
+  PubChem: '3633'
+- id: C20374
+  name: Enoylglutaryl-[acp] methyl ester
+  names:
+  - Enoylglutaryl-[acp] methyl ester
+  - Enoylglutaryl-[acyl-carrier protein] methyl ester
+  formula: C6H7O3SR
+  PubChem: '163312112'
+- id: C00126
+  name: Ferrocytochrome c
+  names:
+  - Ferrocytochrome c
+  - Cytochrome c2+
+  - Reduced cytochrome c
+  formula: C42H44FeN8O8S2R4
+  comment: 'Heme type: Heme C [CPD:C15817]'
+  PubChem: '3426'
+  ChEBI: '16928'
+  NIKKAJI: J209.145C
+- id: C11478
+  name: tRNA containing 5-aminomethyl-2-thiouridine
+  names:
+  - tRNA containing 5-aminomethyl-2-thiouridine
+  - tRNA containing nm5s2U
+  formula: C10H16N3O8PS(C5H8O6PR)n(C5H8O6PR)n
+  comment: 'Generic compound in reaction hierarchy
+
+    wobble position in the anticodon (position 34) in tRNA'
+  PubChem: '13648'
+  ChEBI: '10656'
+- id: C19078
+  name: tRNA with a 3' cytidine
+  names:
+  - tRNA with a 3' cytidine
+  formula: C14H21N3O11PR(C5H8O6PR)n
+  PubChem: '124489750'
+  ChEBI: '82203'
+- id: C22151
+  name: Oxidized [2Fe-2S] ferredoxin
+  names:
+  - Oxidized [2Fe-2S] ferredoxin
+  PubChem: '405226342'
+- id: C21456
+  name: L-Glutamyl-protein
+  names:
+  - L-Glutamyl-protein
+  - N-Terminal L-glutamyl-[protein]
+  formula: C7H11N2O5R(C2H2NOR)n
+  PubChem: '329728079'
+- id: C00342
+  name: Thioredoxin
+  names:
+  - Thioredoxin
+  - Reduced thioredoxin
+  formula: C10H14N4O4S2R4
+  comment: 'Generic compound in reaction hierarchy
+
+    Thioredoxin motif (CXXC)'
+  CAS: 52500-60-4
+  PubChem: '3635'
+  ChEBI: 15033 15967
+- id: C00886
+  name: L-Alanyl-tRNA
+  names:
+  - L-Alanyl-tRNA
+  - L-Alanyl-tRNA(Ala)
+  formula: C13H22NO11PR2(C5H8O6PR)n
+  comment: Generic compound in reaction hierarchy
+  PubChem: '4142'
+  ChEBI: '17732'
+- id: C15810
+  name: Sulfur-carrier protein
+  names:
+  - Sulfur-carrier protein
+  - '[Sulfur-carrier protein]'
+  - '[Sulfur-carrier protein]-Gly-Gly'
+  formula: C4H7N2O3R
+  comment: Generic compound in reaction hierarchy
+  PubChem: '47205135'
+  ChEBI: '80100'
+- id: C02492
+  name: 1,4-beta-D-Mannan
+  names:
+  - 1,4-beta-D-Mannan
+  formula: (C6H10O5)n
+  PubChem: '5504'
+  ChEBI: '27857'
+- id: C05753
+  name: 3-Oxodecanoyl-[acp]
+  names:
+  - 3-Oxodecanoyl-[acp]
+  - 3-Oxodecanoyl-[acyl-carrier protein]
+  formula: C10H17O2SR
+  comment: Generic compound in reaction hierarchy
+  PubChem: '8048'
+  ChEBI: '1634'
+  LIPIDMAPS: LMFA07060011
+- id: C01931
+  name: L-Lysyl-tRNA
+  names:
+  - L-Lysyl-tRNA
+  - L-Lysyl-tRNA(Lys)
+  formula: C16H29N2O11PR2(C5H8O6PR)n
+  comment: Generic compound in reaction hierarchy
+  PubChem: '5037'
+  ChEBI: '16047'
+- id: C20372
+  name: 3-Ketoglutaryl-[acp] methyl ester
+  names:
+  - 3-Ketoglutaryl-[acp] methyl ester
+  - 3-Ketoglutaryl-[acyl-carrier protein] methyl ester
+  formula: C6H7O4SR
+  PubChem: '163312110'
+- id: C01898
+  name: Cellodextrin
+  names:
+  - Cellodextrin
+  - Cellooligosaccharide
+  formula: H2O(C6H10O5)n
+  comment: 'Generic compound in reaction hierarchy
+
+    Cellotriose (n=3) [CPD:C06219]
+
+    Cellotetraose (n=4) [CPD:C02013]
+
+    Cellopentaose (n=5) [CPD:C06218]
+
+    Cellohexaose (n=6) [CPD:C06217]
+
+    Celloheptaose (n=7) [CPD:C06216]'
+  CAS: 9061-30-7
+  PubChem: '5010'
+  ChEBI: '3523'
+- id: C05796
+  name: Galactan
+  names:
+  - Galactan
+  formula: (C12H20O11)n
+  PubChem: '8091'
+  ChEBI: '37165'
+- id: C05758
+  name: trans-Dodec-2-enoyl-[acp]
+  names:
+  - trans-Dodec-2-enoyl-[acp]
+  - trans-Dodec-2-enoyl-[acyl-carrier protein]
+  - (2E)-Dodecenoyl-[acp]
+  formula: C12H21OSR
+  comment: Generic compound in reaction hierarchy
+  PubChem: '8053'
+  ChEBI: '10725'
+  LIPIDMAPS: LMFA07060016
+- id: C01645
+  name: tRNA(Leu)
+  names:
+  - tRNA(Leu)
+  comment: Generic compound in reaction hierarchy
+  PubChem: '4794'
+  ChEBI: '29169'
+- id: C21455
+  name: L-Leucyl-L-glutamyl-protein
+  names:
+  - L-Leucyl-L-glutamyl-protein
+  - N-Terminal L-leucyl-L-glutamyl-[protein]
+  formula: C13H22N3O6R(C2H2NOR)n
+  PubChem: '329728078'
+- id: C02320
+  name: R-S-Glutathione
+  names:
+  - R-S-Glutathione
+  formula: C10H16N3O6SR
+  comment: Generic compound in reaction hierarchy
+  PubChem: '5373'
+  ChEBI: '17021'
+- id: C00726
+  name: Nitrile
+  names:
+  - Nitrile
+  - R-CN
+  formula: CNR
+  comment: Generic compound in reaction hierarchy
+  PubChem: '3991'
+  ChEBI: '18379'
+- id: C01647
+  name: tRNA(Met)
+  names:
+  - tRNA(Met)
+  comment: Generic compound in reaction hierarchy
+  PubChem: '4796'
+  ChEBI: '29173'
+- id: C21158
+  name: Nucleoside 3',5'-bisphosphate
+  names:
+  - Nucleoside 3',5'-bisphosphate
+  formula: C5H11O10P2R
+  comment: Generic compound in reaction hierarchy
+  PubChem: '313369418'
+- id: C03939
+  name: Acetyl-[acyl-carrier protein]
+  names:
+  - Acetyl-[acyl-carrier protein]
+  formula: C2H3OSR
+  comment: Generic compound in reaction hierarchy
+  PubChem: '6663'
+  ChEBI: '17093'
+- id: C17324
+  name: tRNA adenine
+  names:
+  - tRNA adenine
+  - Adenosine in tRNA
+  formula: C10H14N5O7P(C5H8O6PR)n(C5H8O6PR)n
+  PubChem: '96023688'
+  ChEBI: '81008'
+- id: C05763
+  name: trans-Hexadec-2-enoyl-[acp]
+  names:
+  - trans-Hexadec-2-enoyl-[acp]
+  - trans-Hexadec-2-enoyl-[acyl-carrier protein]
+  - (2E)-Hexadecenoyl-[acp]
+  formula: C16H29OSR
+  comment: Generic compound in reaction hierarchy
+  PubChem: '8058'
+  ChEBI: '10729'
+  LIPIDMAPS: LMFA07060020
+- id: C05312
+  name: Protein glycin-2-yl radical
+  names:
+  - Protein glycin-2-yl radical
+  - '[Enzyme]-glycin-2-yl radical'
+  formula: C3H3N2O2R2
+  comment: 'Generic compound in reaction hierarchy
+
+    Active form of glycyl radical enzymes'
+  PubChem: '7694'
+  ChEBI: '10175'
+- id: C19723
+  name: '[tRNA(Ile2)]-lysidine34'
+  names:
+  - '[tRNA(Ile2)]-lysidine34'
+  formula: C15H26N5O9P(C5H8O6PR)n(C5H8O6PR)n
+  PubChem: '135626190'
+- id: C20376
+  name: 3-Ketopimeloyl-[acp] methyl ester
+  names:
+  - 3-Ketopimeloyl-[acp] methyl ester
+  - 3-Ketopimeloyl-[acyl-carrier protein] methyl ester
+  formula: C8H11O4SR
+  PubChem: '163312114'
+- id: C01641
+  name: tRNA(Glu)
+  names:
+  - tRNA(Glu)
+  comment: Generic compound in reaction hierarchy
+  PubChem: '4790'
+  ChEBI: '29175'
+- id: C16219
+  name: 3-Oxostearoyl-[acp]
+  names:
+  - 3-Oxostearoyl-[acp]
+  - 3-Oxooctadecanoyl-[acp]
+  - beta-Ketostearoyl-[acp]
+  - 3-Ketostearoyl-[acp]
+  formula: C18H33O2SR
+  PubChem: '47205527'
+  ChEBI: '80386'
+- id: C15804
+  name: p-Hydroxyphenyl lignin
+  names:
+  - p-Hydroxyphenyl lignin
+  PubChem: '47205129'
+- id: C19673
+  name: Malonyl-[acp] methyl ester
+  names:
+  - Malonyl-[acp] methyl ester
+  - Malonyl-[acyl-carrier protein] methyl ester
+  formula: C4H5O3SR
+  PubChem: '135626141'
+- id: C15806
+  name: Syringyl lignin
+  names:
+  - Syringyl lignin
+  PubChem: '47205131'
+  ChEBI: '64476'
+- id: C00046
+  name: RNA
+  names:
+  - RNA
+  - RNAn
+  - RNAn+1
+  - RNA(linear)
+  - (Ribonucleotide)n
+  - (Ribonucleotide)m
+  - (Ribonucleotide)n+m
+  - Ribonucleic acid
+  formula: C10H18O13P2R2(C5H8O6PR)n
+  comment: Generic compound in reaction hierarchy
+  PubChem: '3348'
+- id: C15812
+  name: '[Enzyme]-S-sulfanylcysteine'
+  names:
+  - '[Enzyme]-S-sulfanylcysteine'
+  formula: C4H6N2O2S2R2
+  comment: Generic compound in reaction hierarchy
+  PubChem: '47205137'
+- id: C00681
+  name: 1-Acyl-sn-glycerol 3-phosphate
+  names:
+  - 1-Acyl-sn-glycerol 3-phosphate
+  - 2-Lysophosphatidate
+  - Lysophosphatidate
+  - Lysophosphatidic acid
+  formula: C4H8O7PR
+  comment: Generic compound in reaction hierarchy
+  PubChem: '3950'
+  ChEBI: '16975'
+  LIPIDMAPS: LMGP10050000
+- id: C20751
+  name: N6-L-Threonylcarbamoyladenine in tRNA
+  names:
+  - N6-L-Threonylcarbamoyladenine in tRNA
+  - t6A in tRNA
+  formula: C15H21N6O11P(C5H8O6PR)n(C5H8O6PR)n
+  comment: Generic compound in reaction hierarchy
+  PubChem: '254741219'
+- id: C05751
+  name: trans-Oct-2-enoyl-[acp]
+  names:
+  - trans-Oct-2-enoyl-[acp]
+  - trans-Oct-2-enoyl-[acyl-carrier protein]
+  - Oct-2-enoyl-[acyl-carrier protein]
+  - 2-Octenoyl-[acyl-carrier protein]
+  - (2E)-Octenoyl-[acp]
+  formula: C8H13OSR
+  comment: Generic compound in reaction hierarchy
+  PubChem: '8046'
+  LIPIDMAPS: LMFA07060009
+- id: C21457
+  name: L-Leucyl-L-aspartyl-protein
+  names:
+  - L-Leucyl-L-aspartyl-protein
+  - N-Terminal L-leucyl-L-aspartyl-[protein]
+  formula: C12H20N3O6R(C2H2NOR)n
+  PubChem: '329728080'
+- id: C05359
+  name: e-
+  names:
+  - e-
+  - Electron
+  PubChem: '7736'
+  ChEBI: '10545'
+- id: C05850
+  name: Reduced Vitamin K
+  names:
+  - Reduced Vitamin K
+  - Vitamin K hydroquinone
+  formula: C11H9O2R
+  comment: Generic compound in reaction hierarchy
+  PubChem: '8143'
+  ChEBI: '8784'
+- id: C04153
+  name: rRNA containing N2-methylguanine
+  names:
+  - rRNA containing N2-methylguanine
+  formula: C11H16N5O8P(C5H8O6PR)n(C5H8O6PR)n
+  comment: Generic compound in reaction hierarchy
+  PubChem: '6837'
+  ChEBI: '18143'
+- id: C15602
+  name: Quinone
+  names:
+  - Quinone
+  comment: 'Generic compound in reaction hierarchy
+
+    Including p-Benzoquinone [CPD:C00472], o-Benzoquinone [CPD:C02351] and related
+    compounds'
+  PubChem: '17396594'
+  ChEBI: '16509'
+- id: C05197
+  name: Protein glycine
+  names:
+  - Protein glycine
+  - '[Enzyme]-glycine'
+  formula: C3H4N2O2R2
+  comment: 'Generic compound in reaction hierarchy
+
+    Unactivated form of glycyl radical enzymes'
+  PubChem: '7602'
+  ChEBI: '10174'
+- id: C01651
+  name: tRNA(Thr)
+  names:
+  - tRNA(Thr)
+  comment: Generic compound in reaction hierarchy
+  PubChem: '4800'
+  ChEBI: '29180'
+- id: C01643
+  name: tRNA(His)
+  names:
+  - tRNA(His)
+  comment: Generic compound in reaction hierarchy
+  PubChem: '4792'
+  ChEBI: '29178'
+- id: C02047
+  name: L-Leucyl-tRNA
+  names:
+  - L-Leucyl-tRNA
+  - L-Leucyl-tRNA(Leu)
+  formula: C21H32N6O11PR(C5H8O6PR)n
+  PubChem: '5136'
+  ChEBI: '16624'
+- id: C03363
+  name: 5-L-Glutamyl amino acid
+  names:
+  - 5-L-Glutamyl amino acid
+  - L-gamma-Glutamyl amino acid
+  formula: C7H11N2O5R
+  comment: Generic compound in reaction hierarchy
+  PubChem: '6200'
+  ChEBI: '15857'
+- id: C04261
+  name: Protein N(pi)-phospho-L-histidine
+  names:
+  - Protein N(pi)-phospho-L-histidine
+  - Protein N-pros-phospho-L-histidine
+  - Protein N-pros-phosphohistidine
+  - Protein Npi-phospho-L-histidine
+  formula: C7H9N4O5PR2
+  comment: Generic compound in reaction hierarchy
+  PubChem: '6926'
+- id: C20863
+  name: 5'-Phospho-[mRNA]
+  names:
+  - 5'-Phospho-[mRNA]
+  - (5')pPur-mRNA
+  formula: C10H18O13P2R(R1)(C5H8O6PR)n
+  comment: 'Generic compound in reaction hierarchy
+
+    R1 = adenine or guanine base'
+  PubChem: '254741329'
+- id: C21388
+  name: L-Lysyl-protein
+  names:
+  - L-Lysyl-protein
+  - N-Terminal L-lysyl-[protein]
+  formula: C8H16N3O3R(C2H2NOR)n
+  comment: Generic compound in reaction hierarchy
+  PubChem: '328082931'
+- id: C00615
+  name: Protein histidine
+  names:
+  - Protein histidine
+  - Protein L-histidine
+  - '[Protein]-L-histidine'
+  formula: C7H8N4O2R2
+  comment: Generic compound in reaction hierarchy
+  PubChem: '3889'
+- id: C02211
+  name: tRNA precursor
+  names:
+  - tRNA precursor
+  formula: C10H17O10PR2(C5H8O6PR)n
+  PubChem: '5279'
+  ChEBI: '10668'
+- id: C06126
+  name: Digalactosylceramide
+  names:
+  - Digalactosylceramide
+  - Galabiosylceramide
+  - Gal-alpha1->4Gal-beta1->1'Cer
+  formula: C31H56NO13R
+  comment: Generic compound in reaction hierarchy
+  PubChem: '8383'
+  ChEBI: '143595'
+  LIPIDMAPS: LMSP0509AA00
+  LipidBank: GSG1148
+- id: C05745
+  name: Butyryl-[acp]
+  names:
+  - Butyryl-[acp]
+  - Butyryl-[acyl-carrier protein]
+  - Butanoyl-[acp]
+  formula: C4H7OSR
+  comment: Generic compound in reaction hierarchy
+  PubChem: '8040'
+  ChEBI: '3247'
+  LIPIDMAPS: LMFA07060004
+- id: C04180
+  name: cis-Dec-3-enoyl-[acp]
+  names:
+  - cis-Dec-3-enoyl-[acp]
+  - cis-Dec-3-enoyl-[acyl-carrier protein]
+  - cis-3-Decenoyl-[acyl-carrier protein]
+  formula: C10H17OSR
+  comment: Generic compound in reaction hierarchy
+  PubChem: '6857'
+  ChEBI: '1480'
+- id: C03193
+  name: (5-L-Glutamyl)-peptide
+  names:
+  - (5-L-Glutamyl)-peptide
+  formula: C7H11N2O5R(C2H2NOR)n
+  comment: Generic compound in reaction hierarchy
+  PubChem: '6070'
+- id: C00390
+  name: Ubiquinol
+  names:
+  - Ubiquinol
+  - QH2
+  - CoQH2
+  - Ubiquinol-n
+  formula: C14H20O4(C5H8)n
+  comment: 'Generic compound in reaction hierarchy
+
+    n=5-9'
+  CAS: 56275-39-9
+  PubChem: '3680'
+  ChEBI: '17976'
+  NIKKAJI: J28.660E J424.032D J747.427J J981.293H
+- id: C02051
+  name: Lipoylprotein
+  names:
+  - Lipoylprotein
+  - H-Protein-lipoyllysine
+  - '[GCSH]-N6-lipoyl-L-lysine'
+  - '[GcvH]-N6-lipoyl-L-lysine'
+  - '[Glycine cleavage system H]-N6-lipoyl-L-lysine'
+  - '[Glycine-cleavage complex H protein]-N6-lipoyl-L-lysine'
+  formula: C8H14NOS2R
+  comment: 'Generic compound in reaction hierarchy
+
+    The lipoyl-bearing H protein'
+  PubChem: '5140'
+  ChEBI: '15804'
+- id: C02553
+  name: L-Seryl-tRNA(Ser)
+  names:
+  - L-Seryl-tRNA(Ser)
+  formula: C13H22NO12PR2(C5H8O6PR)n
+  comment: Generic compound in reaction hierarchy
+  PubChem: '5554'
+  ChEBI: '29162'
+- id: C00416
+  name: Phosphatidate
+  names:
+  - Phosphatidate
+  - Phosphatidic acid
+  - 1,2-Diacyl-sn-glycerol 3-phosphate
+  - 3-sn-Phosphatidate
+  formula: C5H7O8PR2
+  comment: Generic compound in reaction hierarchy
+  PubChem: '3706'
+  ChEBI: '16337'
+  LIPIDMAPS: LMGP10010000 LMGP10050042 LMGP10050043 LMGP10050044
+- id: C01639
+  name: tRNA(Cys)
+  names:
+  - tRNA(Cys)
+  comment: Generic compound in reaction hierarchy
+  PubChem: '4788'
+  ChEBI: '29167'
+- id: C01649
+  name: tRNA(Pro)
+  names:
+  - tRNA(Pro)
+  comment: Generic compound in reaction hierarchy
+  PubChem: '4798'
+  ChEBI: '29177'
+- id: C04432
+  name: tRNA containing 6-isopentenyladenosine
+  names:
+  - tRNA containing 6-isopentenyladenosine
+  - N6-(3-Methylbut-2-en-1-yl)-adenosine in tRNA
+  - N6-(3-Methylbut-2-en-1-yl)-adenine in tRNA
+  - N6-Dimethylallyladenine in tRNA
+  formula: C15H22N5O7P(C5H8O6PR)n(C5H8O6PR)n
+  comment: Generic compound in reaction hierarchy
+  PubChem: '7063'
+- id: C05199
+  name: Flavodoxin semiquinone
+  names:
+  - Flavodoxin semiquinone
+  PubChem: '7604'
+- id: C03688
+  name: Apo-[acyl-carrier-protein]
+  names:
+  - Apo-[acyl-carrier-protein]
+  comment: Generic compound in reaction hierarchy
+  PubChem: '6463'
+  ChEBI: '16139'
+- id: C00461
+  name: Chitin
+  names:
+  - Chitin
+  - beta-1,4-Poly-N-acetyl-D-glucosamine
+  - '[1,4-(N-Acetyl-beta-D-glucosaminyl)]n'
+  - '[1,4-(N-Acetyl-beta-D-glucosaminyl)]n+1'
+  formula: (C8H13NO5)n
+  CAS: 1398-61-4
+  PubChem: '3745'
+  ChEBI: '17029'
+  NIKKAJI: J209.135F
+- id: C01648
+  name: tRNA(Phe)
+  names:
+  - tRNA(Phe)
+  comment: Generic compound in reaction hierarchy
+  PubChem: '4797'
+  ChEBI: '29184'
+- id: C05754
+  name: trans-Dec-2-enoyl-[acp]
+  names:
+  - trans-Dec-2-enoyl-[acp]
+  - trans-Dec-2-enoyl-[acyl-carrier protein]
+  - trans-2-Decenoyl-[acyl-carrier protein]
+  - (2E)-Decenoyl-[acp]
+  formula: C10H17OSR
+  comment: Generic compound in reaction hierarchy
+  PubChem: '8049'
+  ChEBI: '10724'
+  LIPIDMAPS: LMFA07060012
+- id: C05757
+  name: (R)-3-Hydroxydodecanoyl-[acp]
+  names:
+  - (R)-3-Hydroxydodecanoyl-[acp]
+  - (R)-3-Hydroxydodecanoyl-[acyl-carrier protein]
+  - D-3-Hydroxydodecanoyl-[acp]
+  - D-3-Hydroxydodecanoyl-[acyl-carrier protein]
+  formula: C12H23O2SR
+  comment: Generic compound in reaction hierarchy
+  PubChem: '8052'
+  ChEBI: '325'
+  LIPIDMAPS: LMFA07060015
+- id: C02992
+  name: L-Threonyl-tRNA(Thr)
+  names:
+  - L-Threonyl-tRNA(Thr)
+  formula: C14H24NO12PR2(C5H8O6PR)n
+  PubChem: '5901'
+  ChEBI: '29163'
+- id: C01650
+  name: tRNA(Ser)
+  names:
+  - tRNA(Ser)
+  comment: Generic compound in reaction hierarchy
+  PubChem: '4799'
+  ChEBI: '29179'
+- id: C16255
+  name: '[Dihydrolipoyllysine-residue acetyltransferase] S-acetyldihydrolipoyllysine'
+  names:
+  - '[Dihydrolipoyllysine-residue acetyltransferase] S-acetyldihydrolipoyllysine'
+  - S-Acetyldihydrolipoamide-E
+  - Enzyme N6-(S-acetyldihydrolipoyl)lysine
+  formula: C10H18NO2S2R
+  comment: 'Generic compound in reaction hierarchy
+
+    The acetyl thioester of the reduced lipoyllysine residue in dihydrolipoyllysine-residue
+    acetyltransferase [EC:2.3.1.12].'
+  PubChem: '47205563'
+  ChEBI: '80404'
+  LIPIDMAPS: LMFA08020202
+- id: C04633
+  name: (3R)-3-Hydroxypalmitoyl-[acyl-carrier protein]
+  names:
+  - (3R)-3-Hydroxypalmitoyl-[acyl-carrier protein]
+  - (R)-3-Hydroxypalmitoyl-[acyl-carrier protein]
+  - (3R)-3-Hydroxyhexadecanoyl-[acyl-carrier protein]
+  - (R)-3-Hydroxyhexadecanoyl-[acyl-carrier protein]
+  formula: C16H31O2SR
+  comment: Generic compound in reaction hierarchy
+  PubChem: '7222'
+- id: C17551
+  name: 2-Polyprenyl-6-hydroxyphenol
+  names:
+  - 2-Polyprenyl-6-hydroxyphenol
+  - 3-Polyprenylcatechol
+  - 3-(all-trans-Polyprenyl)benzene-1,2-diol
+  formula: C11H14O2(C5H8)n
+  comment: 'Generic compound in reaction hierarchy
+
+    n=5-9
+
+    3-Hexaprenylcatechol [CPD:C05801]'
+  PubChem: '96023896'
+  ChEBI: '81178'
+- id: C20373
+  name: 3-Hydroxyglutaryl-[acp] methyl ester
+  names:
+  - 3-Hydroxyglutaryl-[acp] methyl ester
+  - 3-Hydroxyglutaryl-[acyl-carrier protein] methyl ester
+  formula: C6H9O4SR
+  PubChem: '163312111'
+- id: C00350
+  name: Phosphatidylethanolamine
+  names:
+  - Phosphatidylethanolamine
+  - (3-Phosphatidyl)ethanolamine
+  - (3-Phosphatidyl)-ethanolamine
+  - Cephalin
+  - O-(1-beta-Acyl-2-acyl-sn-glycero-3-phospho)ethanolamine
+  - 1-Acyl-2-acyl-sn-glycero-3-phosphoethanolamine
+  - L-1-Phosphatidylethanolamine
+  formula: C7H12NO8PR2
+  comment: Generic compound in reaction hierarchy
+  CAS: 39382-08-6
+  PubChem: '3643'
+  ChEBI: '16038'
+  LIPIDMAPS: LMGP02010000
+- id: C03127
+  name: L-Isoleucyl-tRNA(Ile)
+  names:
+  - L-Isoleucyl-tRNA(Ile)
+  formula: C21H32N6O11PR(C5H8O6PR)n
+  PubChem: '6020'
+  ChEBI: '29160'
+- id: C02839
+  name: L-Tyrosyl-tRNA(Tyr)
+  names:
+  - L-Tyrosyl-tRNA(Tyr)
+  formula: C24H30N6O12PR(C5H8O6PR)n
+  comment: Generic compound in reaction hierarchy
+  PubChem: '5781'
+  ChEBI: '29161'
+- id: C00641
+  name: 1,2-Diacyl-sn-glycerol
+  names:
+  - 1,2-Diacyl-sn-glycerol
+  - 1,2-Diacylglycerol
+  - L-1,2-Diacylglycerol
+  formula: C5H6O5R2
+  comment: Generic compound in reaction hierarchy
+  PubChem: '3914'
+  ChEBI: '17815'
+  LIPIDMAPS: LMGL02010000
+- id: C02984
+  name: L-Aspartyl-tRNA(Asp)
+  names:
+  - L-Aspartyl-tRNA(Asp)
+  formula: C14H22NO13PR2(C5H8O6PR)n
+  comment: Generic compound in reaction hierarchy
+  PubChem: '5893'
+  ChEBI: '29158'
+- id: C00028
+  name: Acceptor
+  names:
+  - Acceptor
+  - Hydrogen-acceptor
+  - A
+  - Oxidized donor
+  comment: Generic compound in reaction hierarchy
+  PubChem: '3330'
+  ChEBI: '15339'
+- id: C03511
+  name: L-Phenylalanyl-tRNA(Phe)
+  names:
+  - L-Phenylalanyl-tRNA(Phe)
+  formula: C19H26NO11PR2(C5H8O6PR)n
+  comment: Generic compound in reaction hierarchy
+  PubChem: '6321'
+  ChEBI: '29153'
+- id: C01636
+  name: tRNA(Arg)
+  names:
+  - tRNA(Arg)
+  comment: Generic compound in reaction hierarchy
+  PubChem: '4785'
+  ChEBI: '29171'
+- id: C15521
+  name: Alkanesulfonate
+  names:
+  - Alkanesulfonate
+  formula: CH3O3SR
+  PubChem: '17396513'
+  ChEBI: '62081'
+- id: C02869
+  name: Oxidized flavodoxin
+  names:
+  - Oxidized flavodoxin
+  PubChem: '5805'
+- id: C20648
+  name: Adenine in rRNA
+  names:
+  - Adenine in rRNA
+  formula: C10H14N5O7P(C5H8O6PR)n(C5H8O6PR)n
+  comment: Generic compound in reaction hierarchy
+  PubChem: '172232372'
+- id: C05196
+  name: Dihydroflavodoxin
+  names:
+  - Dihydroflavodoxin
+  PubChem: '7601'
+- id: C05819
+  name: Menaquinol
+  names:
+  - Menaquinol
+  - Reduced menaquinone
+  - Vitamin K2 hydroquinone
+  - Reduced vitamin K2
+  formula: C16H18O2(C5H8)n
+  PubChem: '8114'
+  ChEBI: '18151'
+- id: C00040
+  name: Acyl-CoA
+  names:
+  - Acyl-CoA
+  - Acyl coenzyme A
+  formula: C22H35N7O17P3SR
+  comment: Generic compound in reaction hierarchy
+  CAS: 9029-97-4
+  PubChem: '3342'
+  ChEBI: '17984'
+  LIPIDMAPS: LMFA07050000
+- id: C05336
+  name: Selenomethionyl-tRNA(Met)
+  names:
+  - Selenomethionyl-tRNA(Met)
+  formula: C20H30N6O11PSeR(C5H8O6PR)n
+  PubChem: '7714'
+  ChEBI: '9100'
+- id: C00030
+  name: Reduced acceptor
+  names:
+  - Reduced acceptor
+  - AH2
+  - Hydrogen-donor
+  - Donor
+  PubChem: '3332'
+  ChEBI: '17499'
+- id: C04154
+  name: rRNA containing N6-methyladenine
+  names:
+  - rRNA containing N6-methyladenine
+  - rRNA(N6-methyladenine)
+  - N6-Methyladenine in rRNA
+  formula: C11H16N5O7P(C5H8O6PR)n(C5H8O6PR)n
+  comment: Generic compound in reaction hierarchy
+  PubChem: '6838'
+- id: C05746
+  name: 3-Oxohexanoyl-[acp]
+  names:
+  - 3-Oxohexanoyl-[acp]
+  - 3-Oxohexanoyl-[acyl-carrier protein]
+  formula: C6H9O2SR
+  comment: Generic compound in reaction hierarchy
+  PubChem: '8041'
+  ChEBI: '1642'
+  LIPIDMAPS: LMFA07060005
+- id: C06021
+  name: Co(I) corrinoid protein
+  names:
+  - Co(I) corrinoid protein
+  - Corrinoid
+  - Corrinoid protein
+  - Corrinoid protein Co+
+  formula: C19CoN4R21
+  comment: Generic compound in reaction hierarchy
+  PubChem: '8293'
+  ChEBI: '33913'
+- id: C00045
+  name: Amino acid
+  names:
+  - Amino acid
+  - Amino acids
+  formula: C2H4NO2R
+  comment: Generic compound in reaction hierarchy
+  PubChem: '3347'
+  ChEBI: '33704'
+- id: C15972
+  name: Enzyme N6-(lipoyl)lysine
+  names:
+  - Enzyme N6-(lipoyl)lysine
+  - Lipoamide-E
+  - '[E2 protein]-N6-lipoyl-L-lysine'
+  - '[Lipoyl-carrier protein E2]-N6-lipoyl-L-lysine'
+  formula: C8H14NOS2R
+  comment: 'Generic compound in reaction hierarchy
+
+    The oxidized lipoyllysine residue in EC 2.3.1.12, dihydrolipoyllysine-residue
+    acetyltransferase ( EC 2.3.1.61, dihydrolipoyllysine-residue succinyltransferase
+    or EC 2.3.1.168, dihydrolipoyllysine-residue (2-methylpropanoyl)transferase ).'
+  PubChem: '47205285'
+  ChEBI: '80218'
+- id: C06249
+  name: Apo-[carboxylase]
+  names:
+  - Apo-[carboxylase]
+  - '[Biotin carboxyl-carrier protein]-L-lysine'
+  formula: C7H13N3O2R2
+  comment: Generic compound in reaction hierarchy
+  PubChem: '8488'
+  ChEBI: '2777'
+- id: C03125
+  name: L-Cysteinyl-tRNA(Cys)
+  names:
+  - L-Cysteinyl-tRNA(Cys)
+  formula: C18H26N6O11PSR(C5H8O6PR)n
+  comment: Generic compound in reaction hierarchy
+  PubChem: '6018'
+  ChEBI: '29152'
+- id: C00787
+  name: tRNA(Tyr)
+  names:
+  - tRNA(Tyr)
+  comment: Generic compound in reaction hierarchy
+  PubChem: '4045'
+  ChEBI: '29182'
+- id: C04152
+  name: rRNA containing N1-methylguanine
+  names:
+  - rRNA containing N1-methylguanine
+  formula: C11H16N5O8P(C5H8O6PR)n(C5H8O6PR)n
+  comment: Generic compound in reaction hierarchy
+  PubChem: '6836'
+- id: C05223
+  name: Dodecanoyl-[acyl-carrier protein]
+  names:
+  - Dodecanoyl-[acyl-carrier protein]
+  - Dodecanoyl-[acp]
+  - Lauroyl-[acyl-carrier protein]
+  formula: C12H23OSR
+  comment: Generic compound in reaction hierarchy
+  PubChem: '7620'
+- id: C00369
+  name: Starch
+  names:
+  - Starch
+  - Glycogen
+  formula: (C12H20O10)n
+  CAS: 9005-25-8
+  PubChem: '3659'
+  ChEBI: '28017'
+  NIKKAJI: J203.726B J203.727K J203.739D J203.741F
+- id: C06112
+  name: L-Glutamyl-tRNA(Gln)
+  names:
+  - L-Glutamyl-tRNA(Gln)
+  - Glu-tRNA(Gln)
+  - Glutamyl-tRNA(Gln)
+  formula: C20H28N6O13PR(C5H8O6PR)n
+  PubChem: '8374'
+  ChEBI: '29165'
+- id: C16239
+  name: Lipoyl-[acp]
+  names:
+  - Lipoyl-[acp]
+  - Lipoyl-[acyl carrier protein]
+  - Lipoyl-ACP
+  formula: C8H13OS3R
+  comment: Generic compound in reaction hierarchy
+  PubChem: '47205547'
+  ChEBI: '80400'
+- id: C01190
+  name: Glucosylceramide
+  names:
+  - Glucosylceramide
+  - Glucocerebroside
+  - beta-D-Glucosyl-(1<->1)-ceramide
+  - D-Glucosyl-N-acylsphingosine
+  formula: C25H46NO8R
+  comment: Generic compound in reaction hierarchy
+  PubChem: '4416'
+  ChEBI: '18368'
+  LIPIDMAPS: LMSP0501AA00
+- id: C20753
+  name: 2-Methylthio-N6-dimethylallyladenine in tRNA
+  names:
+  - 2-Methylthio-N6-dimethylallyladenine in tRNA
+  - 2-Methylthio-N6-isopentenyladenine in tRNA
+  - 2-(Methylsulfanyl)-N6-dimethylallyladenine in tRNA
+  - N6-(3-Methylbut-2-en-1-yl)-2-(methylsulfanyl)adenine in tRNA
+  - ms2i6A in tRNA
+  formula: C16H24N5O7PS(C5H8O6PR)n(C5H8O6PR)n
+  comment: Generic compound in reaction hierarchy
+  PubChem: '254741221'
+- id: C00226
+  name: Primary alcohol
+  names:
+  - Primary alcohol
+  - 1-Alcohol
+  formula: CH3OR
+  comment: Generic compound in reaction hierarchy
+  PubChem: '3526'
+  ChEBI: '15734'
+- id: C02987
+  name: L-Glutamyl-tRNA(Glu)
+  names:
+  - L-Glutamyl-tRNA(Glu)
+  formula: C20H28N6O13PR(C5H8O6PR)n
+  PubChem: '5896'
+  ChEBI: '29157'
+- id: C04246
+  name: But-2-enoyl-[acyl-carrier protein]
+  names:
+  - But-2-enoyl-[acyl-carrier protein]
+  formula: C4H5OSR
+  comment: Generic compound in reaction hierarchy
+  PubChem: '6911'
+- id: C00399
+  name: Ubiquinone
+  names:
+  - Ubiquinone
+  - Coenzyme Q
+  - CoQ
+  - Q
+  formula: C14H18O4(C5H8)n
+  comment: 'Generic compound in reaction hierarchy
+
+    n=5-9
+
+    Ubiquinone-6 [CPD:C17568]
+
+    Ubiquinone-8 [CPD:C17569]
+
+    Ubiquinone-9 [CPD:C01967]
+
+    Ubiquinone-10 [CPD:C11378] [DR:D01065]'
+  CAS: 1339-63-5
+  PubChem: '3689'
+  ChEBI: '16389'
+  LIPIDMAPS: LMPR02010001 LMPR02010002 LMPR02010004 LMPR02010005
+  LipidBank: VCQ0001 VCQ0002 VCQ0003 VCQ0004 VCQ0005 VCQ0006 VCQ0007 VCQ0008 VCQ0009
+    VCQ0012
+  NIKKAJI: J11.403K J11.405G J14.035J J28.580C J34.208D J492.361H
+- id: C02429
+  name: L-Leucyl-protein
+  names:
+  - L-Leucyl-protein
+  formula: C8H15N2O3R(C2H2NOR)n
+  comment: Generic compound in reaction hierarchy
+  PubChem: '5456'
+- id: C04570
+  name: Reduced electron-transferring flavoprotein
+  names:
+  - Reduced electron-transferring flavoprotein
+  - Reduced electron-transfer flavoprotein
+  comment: Generic compound in reaction hierarchy
+  PubChem: '7171'
+- id: C16739
+  name: L-Arginyl-protein
+  names:
+  - L-Arginyl-protein
+  - N-Terminal L-arginyl-[protein]
+  formula: C8H16N5O3R(C2H2NOR)n
+  comment: Generic compound in reaction hierarchy
+  PubChem: '96023263'
+- id: C00760
+  name: Cellulose
+  names:
+  - Cellulose
+  - (1,4-beta-D-Glucosyl)n
+  - (1,4-beta-D-Glucosyl)n+1
+  - (1,4-beta-D-Glucosyl)n-1
+  - 1,4-beta-D-Glucan
+  - Microcrystalline cellulose
+  formula: (C6H10O5)n
+  CAS: 9004-34-6
+  PubChem: '4022'
+  ChEBI: 167580 18246
+  NIKKAJI: J203.734C J335.626D
+- id: C05847
+  name: all-trans-Polyprenyl diphosphate
+  names:
+  - all-trans-Polyprenyl diphosphate
+  - Polyisopentenylpyrophosphate
+  - Polyisopentenyldiphosphate
+  - trans-Polyisopentenyldiphosphate
+  - Polyprenyl diphosphate
+  formula: C5H12O7P2(C5H8)n
+  comment: Generic compound in reaction hierarchy
+  PubChem: '8140'
+  ChEBI: 37531 55337
+  LipidBank: IIP0012 IIP0014 IIP0016 IIP0019 IIP0023
+- id: C04253
+  name: Electron-transferring flavoprotein
+  names:
+  - Electron-transferring flavoprotein
+  - Electron-transfer flavoprotein
+  comment: Generic compound in reaction hierarchy
+  PubChem: '6918'
+- id: C20864
+  name: 5'-Triphospho-[mRNA]
+  names:
+  - 5'-Triphospho-[mRNA]
+  - (5')pppPur-mRNA
+  formula: C10H20O19P4R(R1)(C5H8O6PR)n
+  comment: 'Generic compound in reaction hierarchy
+
+    R1 = adenine or guanine base'
+  PubChem: '254741330'
+- id: C16254
+  name: '[Dihydrolipoyllysine-residue succinyltransferase] S-succinyldihydrolipoyllysine'
+  names:
+  - '[Dihydrolipoyllysine-residue succinyltransferase] S-succinyldihydrolipoyllysine'
+  - S-Succinyldihydrolipoamide-E
+  - Enzyme N6-(S-succinyldihydrolipoyl)lysine
+  formula: C12H20NO4S2R
+  comment: 'Generic compound in reaction hierarchy
+
+    The succinyl thioester of the reduced lipoyllysine residue in dihydrolipoyllysine-residue
+    succinyltransferase [EC:2.3.1.61].'
+  PubChem: '47205562'
+  ChEBI: '80403'
+- id: C04728
+  name: tRNA containing 5-methylaminomethyl-2-thiouridylate
+  names:
+  - tRNA containing 5-methylaminomethyl-2-thiouridylate
+  - tRNA containing mnm5s2U
+  formula: C11H18N3O8PS(C5H8O6PR)n(C5H8O6PR)n
+  comment: 'Generic compound in reaction hierarchy
+
+    wobble position in the anticodon (position 34) in tRNA'
+  PubChem: '7299'
+- id: C00039
+  name: DNA
+  names:
+  - DNA
+  - DNAn
+  - DNAn+1
+  - (Deoxyribonucleotide)n
+  - (Deoxyribonucleotide)m
+  - (Deoxyribonucleotide)n+m
+  - Deoxyribonucleic acid
+  formula: C10H17O8PR2(C5H8O5PR)n
+  comment: Generic compound in reaction hierarchy
+  CAS: 9007-49-2
+  PubChem: '3341'
+  ChEBI: '16991'
+  NIKKAJI: J209.154B
+- id: C04618
+  name: (3R)-3-Hydroxybutanoyl-[acyl-carrier protein]
+  names:
+  - (3R)-3-Hydroxybutanoyl-[acyl-carrier protein]
+  - (R)-3-Hydroxybutanoyl-[acyl-carrier protein]
+  formula: C4H7O2SR
+  comment: Generic compound in reaction hierarchy
+  PubChem: '7208'
+- id: C22155
+  name: '[Fe-S] cluster scaffold protein'
+  names:
+  - '[Fe-S] cluster scaffold protein'
+  comment: Generic compound in reaction hierarchy
+  PubChem: '405226346'
+- id: C16237
+  name: Protein N6-(lipoyl)lysine
+  names:
+  - Protein N6-(lipoyl)lysine
+  - '[Lipoyl-carrier protein]-N6-(lipoyl)lysine'
+  formula: C8H14NOS2R
+  comment: 'Generic compound in reaction hierarchy
+
+    R = E2 subunit of oxo-acid dehydrogenase complexes [CPD:C15972] or H protein [CPD:C02051]'
+  PubChem: '47205545'
+  ChEBI: '80399'
+- id: C02583
+  name: Protein glutamine
+  names:
+  - Protein glutamine
+  - Protein L-glutamine
+  formula: C6H9N3O3R2
+  comment: Generic compound in reaction hierarchy
+  PubChem: '5578'
+- id: C05729
+  name: R-S-Cysteinylglycine
+  names:
+  - R-S-Cysteinylglycine
+  - '[L-Cysteinylglycine]-S-conjugate'
+  formula: C5H9N2O3SR
+  comment: Generic compound in reaction hierarchy
+  PubChem: '8031'
+  ChEBI: '8744'
+- id: C02745
+  name: Reduced flavodoxin
+  names:
+  - Reduced flavodoxin
+  PubChem: '5705'
+- id: C01628
+  name: Vitamin K
+  names:
+  - Vitamin K
+  formula: C11H7O2R
+  comment: 'Generic compound in reaction hierarchy
+
+    Vitamin K1 (R = phytyl group) [CPD:C02059]
+
+    Vitamin K2 (R = all-trans-polyprenyl group) [CPD:C00828]
+
+    Vitamin K3 (R = H) [CPD:C05377]'
+  CAS: 12001-79-5
+  PubChem: '4778'
+  ChEBI: '28384'
+- id: C17552
+  name: 2-Polyprenyl-6-methoxyphenol
+  names:
+  - 2-Polyprenyl-6-methoxyphenol
+  - 2-Methoxy-6-(all-trans-polyprenyl)phenol
+  formula: C12H16O2(C5H8)n
+  comment: 'Generic compound in reaction hierarchy
+
+    n=5-9
+
+    2-Hexaprenyl-6-methoxyphenol [CPD:C05802]'
+  PubChem: '96023897'
+  ChEBI: '81179'
+- id: C00195
+  name: N-Acylsphingosine
+  names:
+  - N-Acylsphingosine
+  - Ceramide
+  - N-Acylsphing-4-enine
+  - (4E)-Sphing-4-enine ceramide
+  formula: C19H36NO3R
+  comment: Generic compound in reaction hierarchy
+  PubChem: '3495'
+  ChEBI: 17761 52639
+  LIPIDMAPS: LMSP02010000
+- id: C02430
+  name: L-Methionyl-tRNA
+  names:
+  - L-Methionyl-tRNA
+  - L-Methionyl-tRNA(Met)
+  formula: C20H30N6O11PSR(C5H8O6PR)n
+  PubChem: '5457'
+  ChEBI: '16635'
+- id: C00162
+  name: Fatty acid
+  names:
+  - Fatty acid
+  formula: CHO2R
+  comment: Generic compound in reaction hierarchy
+  PubChem: '3462'
+  ChEBI: '35366'
+  LIPIDMAPS: LMFA01010000
+- id: C15814
+  name: Thiocarboxy-[sulfur-carrier protein]
+  names:
+  - Thiocarboxy-[sulfur-carrier protein]
+  - '[Sulfur-carrier protein]-Gly-NH-CH2-C(O)SH'
+  formula: C4H7N2O2SR
+  comment: Generic compound in reaction hierarchy
+  PubChem: '47205139'
+  ChEBI: '80102'
+- id: C19722
+  name: '[tRNA(Ile2)]-cytidine34'
+  names:
+  - '[tRNA(Ile2)]-cytidine34'
+  formula: C9H14N3O8P(C5H8O6PR)n(C5H8O6PR)n
+  PubChem: '135626189'
+- id: C06037
+  name: Digalactosyl-diacylglycerol
+  names:
+  - Digalactosyl-diacylglycerol
+  - DGDG
+  - Gal-alpha1->6Gal-beta1->3acyl2Gro
+  - Galalpha1->6Galbeta1->3acyl2Gro
+  - 1,2-Diacyl-3-O-[alpha-D-galactosyl-(1->6)-beta-D-galactosyl]-sn-glycerol
+  - 3-[alpha-D-Galactosyl-(1->6)-beta-D-galactosyl]-1,2-diacyl-sn-glycerol
+  - 2,3-Di-O-acyl-1-O-(6-O-alpha-D-galactosyl-beta-D-galactosyl)-D-glycerol
+  formula: C17H26O15R2
+  comment: Generic compound in reaction hierarchy
+  PubChem: '8309'
+  ChEBI: '28396'
+  LIPIDMAPS: LMGL0501AD00
+- id: C01653
+  name: tRNA(Val)
+  names:
+  - tRNA(Val)
+  comment: Generic compound in reaction hierarchy
+  PubChem: '4802'
+  ChEBI: '29183'
+- id: C21440
+  name: '[Protein]-S-sulfanyl-L-cysteine'
+  names:
+  - '[Protein]-S-sulfanyl-L-cysteine'
+  formula: C4H6N2O2S2R2
+  comment: Generic compound in reaction hierarchy
+  PubChem: '329728063'
+- id: C21458
+  name: L-Aspartyl-protein
+  names:
+  - L-Aspartyl-protein
+  - N-Terminal L-aspartyl-[protein]
+  formula: C6H9N2O5R(C2H2NOR)n
+  PubChem: '329728081'
+- id: C00868
+  name: tRNA uridine
+  names:
+  - tRNA uridine
+  - Uracil in tRNA
+  formula: C9H13N2O9P(C5H8O6PR)n(C5H8O6PR)n
+  PubChem: '4125'
+- id: C21386
+  name: L-Leucyl-L-arginyl-protein
+  names:
+  - L-Leucyl-L-arginyl-protein
+  - N-Terminal L-leucyl-L-arginyl-[protein]
+  formula: C14H27N6O4R(C2H2NOR)n
+  comment: Generic compound in reaction hierarchy
+  PubChem: '328082929'
+- id: C02412
+  name: Glycyl-tRNA(Gly)
+  names:
+  - Glycyl-tRNA(Gly)
+  formula: C12H20NO11PR2(C5H8O6PR)n
+  comment: Generic compound in reaction hierarchy
+  PubChem: '5445'
+  ChEBI: '29156'
+- id: C16240
+  name: '[Lipoyl-carrier protein]-L-lysine'
+  names:
+  - '[Lipoyl-carrier protein]-L-lysine'
+  - Apoprotein
+  formula: NH2R
+  comment: 'Generic compound in reaction hierarchy
+
+    R = E2 subunit of oxo-acid dehydrogenase complexes [CPD:C22158] or H protein [CPD:C22157]'
+  PubChem: '47205548'
+  ChEBI: '13850'
+- id: C01322
+  name: RX
+  names:
+  - RX
+  - Organic halide
+  formula: XR
+  comment: Generic compound in reaction hierarchy
+  PubChem: '4535'
+  ChEBI: '17792'
+- id: C02269
+  name: Deoxynucleoside
+  names:
+  - Deoxynucleoside
+  - 2'-Deoxynucleoside
+  - 2-Deoxy-D-ribosyl-base
+  - 2-Deoxy-D-ribosyl-base1
+  - 2-Deoxy-D-ribosyl-base2
+  - 2'-Deoxyribonucleoside
+  formula: C5H9O3R
+  comment: Generic compound in reaction hierarchy
+  PubChem: '5329'
+  ChEBI: '18274'
+- id: C00963
+  name: beta-D-Glucoside
+  names:
+  - beta-D-Glucoside
+  formula: C6H11O6R
+  PubChem: '4214'
+  ChEBI: '22798'
+- id: C00344
+  name: Phosphatidylglycerol
+  names:
+  - Phosphatidylglycerol
+  - 3-(3-sn-Phosphatidyl)glycerol
+  - 3(3-Phosphatidyl-)glycerol
+  - PtdGro
+  formula: C8H13O10PR2
+  comment: Generic compound in reaction hierarchy
+  PubChem: '3637'
+  ChEBI: '17517'
+  LIPIDMAPS: LMGP04010000
+  NIKKAJI: J453.835H
+- id: C06157
+  name: '[Dihydrolipoyllysine-residue succinyltransferase] S-glutaryldihydrolipoyllysine'
+  names:
+  - '[Dihydrolipoyllysine-residue succinyltransferase] S-glutaryldihydrolipoyllysine'
+  - S-Glutaryldihydrolipoamide-E
+  formula: C13H22NO4S2R
+  comment: Generic compound in reaction hierarchy
+  PubChem: '8413'
+  ChEBI: '28391'
+  3DMET: B05168
+- id: C00676
+  name: Deoxynucleoside 5'-phosphate
+  names:
+  - Deoxynucleoside 5'-phosphate
+  - 2'-Deoxynucleoside 5'-phosphate
+  - 2'-Deoxyribonucleoside 5'-phosphate
+  - 2'-Deoxynucleoside 5'-monophosphate
+  - 2'-Deoxyribonucleoside 5'-monophosphate
+  formula: C5H10O6PR
+  comment: Generic compound in reaction hierarchy
+  PubChem: '3945'
+  ChEBI: '18241'
+- id: C05749
+  name: Hexanoyl-[acp]
+  names:
+  - Hexanoyl-[acp]
+  - Hexanoyl-[acyl-carrier protein]
+  formula: C6H11OSR
+  comment: Generic compound in reaction hierarchy
+  PubChem: '8044'
+  ChEBI: '5704'
+  LIPIDMAPS: LMFA07060039
+- id: C00435
+  name: Oxidized rubredoxin
+  names:
+  - Oxidized rubredoxin
+  comment: Generic compound in reaction hierarchy
+  PubChem: '3724'
+- id: C00161
+  name: 2-Oxo acid
+  names:
+  - 2-Oxo acid
+  - 2-Oxocarboxylate
+  - 2-Oxocarboxylic acid
+  - 2-Oxo carboxylate
+  formula: C2HO3R
+  comment: Generic compound in reaction hierarchy
+  PubChem: '3461'
+  ChEBI: '35910'
+- id: C16220
+  name: (R)-3-Hydroxyoctadecanoyl-[acp]
+  names:
+  - (R)-3-Hydroxyoctadecanoyl-[acp]
+  - (R)-3-Hydroxyoctadecanoyl-[acyl-carrier protein]
+  - (R)-3-Hydroxystearoyl-[acp]
+  - (R)-3-Hydroxystearoyl-[acyl-carrier protein]
+  formula: C18H35O2SR
+  PubChem: '47205528'
+  ChEBI: '80387'
+- id: C20446
+  name: tRNA 7-aminomethyl-7-carbaguanine
+  names:
+  - tRNA 7-aminomethyl-7-carbaguanine
+  - tRNA preQ1
+  - 7-Aminomethyl-7-carbaguanine in tRNA
+  formula: C12H18N5O8P(C5H8O6PR)n(C5H8O6PR)n
+  comment: Generic compound in reaction hierarchy
+  PubChem: '163312183'
+- id: C04619
+  name: (3R)-3-Hydroxydecanoyl-[acyl-carrier protein]
+  names:
+  - (3R)-3-Hydroxydecanoyl-[acyl-carrier protein]
+  - (R)-3-Hydroxydecanoyl-[acyl-carrier protein]
+  formula: C10H19O2SR
+  comment: Generic compound in reaction hierarchy
+  PubChem: '7209'
+- id: C15807
+  name: 5-Hydroxy-guaiacyl lignin
+  names:
+  - 5-Hydroxy-guaiacyl lignin
+  PubChem: '47205132'
+  ChEBI: '80099'
+- id: C01640
+  name: tRNA(Gln)
+  names:
+  - tRNA(Gln)
+  comment: Generic compound in reaction hierarchy
+  PubChem: '4789'
+  ChEBI: '29168'
+- id: C02743
+  name: '[Protein]-L-cysteine'
+  names:
+  - '[Protein]-L-cysteine'
+  - Protein L-cysteine
+  formula: C4H6N2O2SR2
+  comment: Generic compound in reaction hierarchy
+  PubChem: '5703'
+- id: C05755
+  name: Decanoyl-[acp]
+  names:
+  - Decanoyl-[acp]
+  - Decanoyl-[acyl-carrier protein]
+  formula: C10H19OSR
+  comment: Generic compound in reaction hierarchy
+  PubChem: '8050'
+  ChEBI: '4349'
+  LIPIDMAPS: LMFA07060013
+- id: C05761
+  name: Tetradecanoyl-[acp]
+  names:
+  - Tetradecanoyl-[acp]
+  - Tetradecanoyl-[acyl-carrier protein]
+  - Myristoyl-[acyl-carrier protein]
+  formula: C14H27OSR
+  comment: Generic compound in reaction hierarchy
+  PubChem: '8056'
+  ChEBI: '50651'
+- id: C00071
+  name: Aldehyde
+  names:
+  - Aldehyde
+  - RCHO
+  formula: CHOR
+  comment: Generic compound in reaction hierarchy
+  PubChem: '3371'
+  ChEBI: '17478'
+- id: C01977
+  name: tRNA guanine
+  names:
+  - tRNA guanine
+  - Guanine in tRNA
+  formula: C10H14N5O8P(C5H8O6PR)n(C5H8O6PR)n
+  comment: Generic compound in reaction hierarchy
+  PubChem: '5077'
+- id: C06481
+  name: L-Seryl-tRNA(Sec)
+  names:
+  - L-Seryl-tRNA(Sec)
+  formula: C13H22NO12PR2(C5H8O6PR)n
+  comment: 'Generic compound in reaction hierarchy
+
+    Sec = selenocysteine [CPD:C05688]'
+  PubChem: '8712'
+  ChEBI: 13170 74589
+- id: C04620
+  name: (3R)-3-Hydroxyoctanoyl-[acyl-carrier protein]
+  names:
+  - (3R)-3-Hydroxyoctanoyl-[acyl-carrier protein]
+  - (R)-3-Hydroxyoctanoyl-[acyl-carrier protein]
+  formula: C8H15O2SR
+  comment: Generic compound in reaction hierarchy
+  PubChem: '7210'
+- id: C00973
+  name: Cyclomaltodextrin
+  names:
+  - Cyclomaltodextrin
+  - Cyclodextrin
+  formula: (C6H10O5)n
+  comment: 'n=6-8
+
+    alpha-Cyclodextrin (n=6)
+
+    beta-Cyclodextrin (n=7) [CPD:C13183]
+
+    gamma-Cyclodextrin (n=8)'
+  PubChem: '4222'
+  ChEBI: '17623'
+- id: C03692
+  name: 1,2-Diacyl-3-beta-D-galactosyl-sn-glycerol
+  names:
+  - 1,2-Diacyl-3-beta-D-galactosyl-sn-glycerol
+  - D-Galactosyldiacylglycerol
+  - 3-beta-D-Galactosyl-1,2-diacylglycerol
+  - Monogalactosyldiglyceride
+  - Monogalactosyl-diacylglycerol
+  - MGDG
+  - Galbeta1->3acyl2Gro
+  - 3-(beta-D-Galactosyl)-1,2-diacyl-sn-glycerol
+  - 1,2-Diacyl-3-O-(beta-D-galactopyranosyl)-sn-glycerol
+  formula: C11H16O10R2
+  comment: Generic compound in reaction hierarchy
+  PubChem: '6466'
+  ChEBI: '17615'
+  LIPIDMAPS: LMGL0501AA00
+- id: C00229
+  name: Acyl-carrier protein
+  names:
+  - Acyl-carrier protein
+  - ACP
+  - '[Acyl-carrier protein]'
+  - Holo-[acyl-carrier protein]
+  formula: HSR
+  comment: 'Generic compound in reaction hierarchy
+
+    R = 4''-phosphopantetheine or 2''-(5-phosphoribosyl)-3''-dephospho-CoA group attached
+    to protein serine
+
+    Including peptidyl-carrier proteins and ACP domains of enzymes'
+  PubChem: '3528'
+  ChEBI: '18359'
+- id: C00173
+  name: Acyl-[acyl-carrier protein]
+  names:
+  - Acyl-[acyl-carrier protein]
+  formula: C3H4OSR2
+  comment: 'Generic compound in reaction hierarchy
+
+    S-R= acyl-carrier protein'
+  PubChem: '3473'
+  ChEBI: '16018'
+- id: C00269
+  name: CDP-diacylglycerol
+  names:
+  - CDP-diacylglycerol
+  - CDP-1,2-diacylglycerol
+  - 1,2-Diacyl-sn-glycero-3-cytidine-5'-diphosphate
+  formula: C14H19N3O15P2R2
+  comment: Generic compound in reaction hierarchy
+  PubChem: '3567'
+  ChEBI: '17962'
+  LIPIDMAPS: LMGP13010000
+- id: C16221
+  name: (2E)-Octadecenoyl-[acp]
+  names:
+  - (2E)-Octadecenoyl-[acp]
+  - trans-Octadec-2-enoyl-[acp]
+  formula: C18H33OSR
+  PubChem: '47205529'
+  ChEBI: '80388'
+- id: C06250
+  name: Holo-[carboxylase]
+  names:
+  - Holo-[carboxylase]
+  - Biotin-carboxyl-carrier protein
+  - '[Biotin carboxyl-carrier protein]-biotin-N6-L-lysine'
+  - '[Biotin carboxyl-carrier protein]-N6-biotinyl-L-lysine'
+  formula: C17H27N5O4SR2
+  comment: Generic compound in reaction hierarchy
+  PubChem: '8489'
+- id: C04419
+  name: Carboxybiotin-carboxyl-carrier protein
+  names:
+  - Carboxybiotin-carboxyl-carrier protein
+  - '[Biotin carboxyl-carrier protein]-carboxybiotin-N6-L-lysine'
+  - '[Biotin carboxyl-carrier protein]-N6-carboxybiotinyl-L-lysine'
+  formula: C18H26N5O6SR2
+  comment: Generic compound in reaction hierarchy
+  PubChem: '7051'
+- id: C03740
+  name: (5-L-Glutamyl)-L-amino acid
+  names:
+  - (5-L-Glutamyl)-L-amino acid
+  - L-gamma-Glutamyl-L-amino acid
+  - alpha-(gamma-L-Glutamyl)-L-amino acid
+  formula: C7H11N2O5R
+  comment: Generic compound in reaction hierarchy
+  PubChem: '6503'
+- id: C00151
+  name: L-Amino acid
+  names:
+  - L-Amino acid
+  - L-2-Amino acid
+  formula: C2H4NO2R
+  comment: Generic compound in reaction hierarchy
+  PubChem: '3451'
+  ChEBI: '15705'
+- id: C02702
+  name: L-Prolyl-tRNA(Pro)
+  names:
+  - L-Prolyl-tRNA(Pro)
+  formula: C15H24NO11PR2(C5H8O6PR)n
+  PubChem: '5665'
+  ChEBI: '29154'
+- id: C00454
+  name: NDP
+  names:
+  - NDP
+  - Nucleoside diphosphate
+  - Nucleoside 5'-diphosphate
+  formula: C5H11O10P2R
+  comment: 'Generic compound in reaction hierarchy
+
+    see the classified Nucleotide'
+  PubChem: '3740'
+  ChEBI: '16862'
+- id: C02554
+  name: L-Valyl-tRNA(Val)
+  names:
+  - L-Valyl-tRNA(Val)
+  formula: C20H30N6O11PR(C5H8O6PR)n
+  comment: Generic compound in reaction hierarchy
+  PubChem: '5555'
+  ChEBI: '29164'
+- id: C04157
+  name: tRNA containing N1-methylguanine
+  names:
+  - tRNA containing N1-methylguanine
+  - N1-Methylguanine in tRNA
+  formula: C11H16N5O8P(C5H8O6PR)n(C5H8O6PR)n
+  comment: 'Generic compound in reaction hierarchy
+
+    3''-adjacent to the anticodon (position 37) in tRNA
+
+    N1-Methylguanine in tRNA(Phe) [CPD:C20688]'
+  PubChem: '6841'
+- id: C06400
+  name: 1-alpha-D-[(1->4)-alpha-D-Glucosyl](n-1)-alpha-D-glucopyranoside
+  names:
+  - 1-alpha-D-[(1->4)-alpha-D-Glucosyl](n-1)-alpha-D-glucopyranoside
+  - 4-alpha-D-(1,4-alpha-D-Glucanosyl)n trehalose
+  - Maltooligosyltrehalose
+  formula: C12H22O11(C6H10O5)n
+  PubChem: '8636'
+- id: C17323
+  name: tRNA containing 5-carboxymethylaminomethyl-2-thiouridine
+  names:
+  - tRNA containing 5-carboxymethylaminomethyl-2-thiouridine
+  - tRNA containing cmnm5s2U
+  formula: C12H18N3O10PS(C5H8O6PR)n(C5H8O6PR)n
+  comment: 'Generic compound in reaction hierarchy
+
+    wobble position in the anticodon (position 34) in tRNA'
+  PubChem: '96023687'
+  ChEBI: '81007'
+- id: C03294
+  name: N-Formylmethionyl-tRNA
+  names:
+  - N-Formylmethionyl-tRNA
+  formula: C21H30N6O12PSR(C5H8O6PR)n
+  comment: Generic compound in reaction hierarchy
+  PubChem: '6151'
+  ChEBI: '17119'
+- id: C02972
+  name: Dihydrolipoylprotein
+  names:
+  - Dihydrolipoylprotein
+  - '[H protein]-dihydrolipoyllysine'
+  - '[GCSH]-N6-[(R)-dihydrolipoyl]-L-lysine'
+  - '[GcvH]-N6-[(R)-dihydrolipoyl]-L-lysine'
+  - '[Glycine cleavage system H]-N6-[(R)-dihydrolipoyl]-L-lysine'
+  formula: C8H16NOS2R
+  comment: 'Generic compound in reaction hierarchy
+
+    The lipoyl-bearing H protein'
+  PubChem: '5884'
+  ChEBI: '16194'
+- id: C01117
+  name: Nucleoside 5'-phosphate
+  names:
+  - Nucleoside 5'-phosphate
+  formula: C5H10O7PR
+  comment: Generic compound in reaction hierarchy
+  PubChem: '4348'
+  ChEBI: '16701'
+- id: C22150
+  name: Reduced [2Fe-2S] ferredoxin
+  names:
+  - Reduced [2Fe-2S] ferredoxin
+  PubChem: '405226341'
+- id: C05752
+  name: Octanoyl-[acp]
+  names:
+  - Octanoyl-[acp]
+  - Octanoyl-[acyl-carrier protein]
+  formula: C8H15OSR
+  comment: Generic compound in reaction hierarchy
+  PubChem: '8047'
+  ChEBI: '7725'
+  LIPIDMAPS: LMFA07060010
+- id: C21758
+  name: Hepatotoxins
+  names:
+  - Hepatotoxins
+  comment: Generic compound
+  PubChem: '354264352'
+- id: C22154
+  name: '[Fe-S] cluster scaffold protein carrying a [4Fe-4S]2+ cluster'
+  names:
+  - '[Fe-S] cluster scaffold protein carrying a [4Fe-4S]2+ cluster'
+  comment: Generic compound in reaction hierarchy
+  PubChem: '405226345'
+- id: C01635
+  name: tRNA(Ala)
+  names:
+  - tRNA(Ala)
+  comment: Generic compound in reaction hierarchy
+  PubChem: '4784'
+  ChEBI: '29170'
+- id: C19080
+  name: tRNA with a 3' CC end
+  names:
+  - tRNA with a 3' CC end
+  - tRNA with a 3' CC
+  formula: C23H33N6O18P2R(C5H8O6PR)n
+  PubChem: '124489752'
+  ChEBI: '82205'
+- id: C05848
+  name: 4-Hydroxy-3-polyprenylbenzoate
+  names:
+  - 4-Hydroxy-3-polyprenylbenzoate
+  - 4-Hydroxy-3-all-trans-polyprenylbenzoate
+  - 3-Polyprenyl-4-hydroxybenzoate
+  formula: C12H14O3(C5H8)n
+  PubChem: '8141'
+  ChEBI: 1845 78396
+- id: C05980
+  name: Cardiolipin
+  names:
+  - Cardiolipin
+  - Diphosphatidylglycerol
+  - 1',3'-Bis(1,2-diacyl-sn-glycero-3-phospho)-sn-glycerol
+  formula: C13H18O17P2R4
+  comment: Generic compound in reaction hierarchy
+  PubChem: '8259'
+  ChEBI: '28494'
+  LIPIDMAPS: LMGP12010000
+  NIKKAJI: J294.528B
+- id: C21387
+  name: L-Leucyl-L-lysyl-protein
+  names:
+  - L-Leucyl-L-lysyl-protein
+  - N-Terminal L-leucyl-L-lysyl-[protein]
+  formula: C14H27N4O4R(C2H2NOR)n
+  comment: Generic compound in reaction hierarchy
+  PubChem: '328082930'
+- id: C01935
+  name: Maltodextrin
+  names:
+  - Maltodextrin
+  - Maltodextrin(n)
+  - Maltodextrin(n-2)
+  - n+2 Maltodextrin
+  - Linear maltodextrin
+  - Maltooligosaccharide
+  formula: H2O(C6H10O5)n
+  CAS: 9050-36-6
+  PubChem: '5040'
+  ChEBI: '18398'
+- id: C00667
+  name: Oxidized adrenal ferredoxin
+  names:
+  - Oxidized adrenal ferredoxin
+  - Oxidized adrenodoxin
+  PubChem: '3936'
+- id: C06113
+  name: L-Aspartyl-tRNA(Asn)
+  names:
+  - L-Aspartyl-tRNA(Asn)
+  - Asp-tRNA(Asn)
+  - Aspartyl-tRNA(Asn)
+  formula: C14H22NO13PR2(C5H8O6PR)n
+  PubChem: '8375'
+  ChEBI: '29151'
+- id: C02163
+  name: L-Arginyl-tRNA(Arg)
+  names:
+  - L-Arginyl-tRNA(Arg)
+  - L-Arginyl-tRNA
+  formula: C21H33N9O11PR(C5H8O6PR)n
+  comment: Generic compound in reaction hierarchy
+  PubChem: '5239'
+  ChEBI: '18366'
+- id: C05807
+  name: 2-Polyprenylphenol
+  names:
+  - 2-Polyprenylphenol
+  - 2-(all-trans-Polyprenyl)phenol
+  formula: C11H14O(C5H8)n
+  comment: Generic compound in reaction hierarchy
+  PubChem: '8102'
+  ChEBI: '1269'
+- id: C01290
+  name: Lactosylceramide
+  names:
+  - Lactosylceramide
+  - beta-D-Galactosyl-(1->4)-beta-D-glucosyl-(1<->1)-ceramide
+  - beta-D-Galactosyl-1,4-beta-D-glucosylceramide
+  - Gal-beta1->4Glc-beta1->1'Cer
+  - LacCer
+  - Lactosyl-N-acylsphingosine
+  - D-Galactosyl-1,4-beta-D-glucosylceramide
+  formula: C31H56NO13R
+  comment: Generic compound in reaction hierarchy
+  PubChem: '4509'
+  ChEBI: '17950'
+  LIPIDMAPS: LMSP0501AB00
+  LipidBank: GSG1147
+- id: C20755
+  name: 2-Thio-N6-dimethylallyladenine in tRNA
+  names:
+  - 2-Thio-N6-dimethylallyladenine in tRNA
+  - 2-Sulfanyl-N6-dimethylallyladenine in tRNA
+  - N6-(3-Methylbut-2-en-1-yl)-2-thioadenine in tRNA
+  formula: C15H22N5O7PS(C5H8O6PR)n(C5H8O6PR)n
+  comment: Generic compound in reaction hierarchy
+  PubChem: '254741223'
+- id: C02737
+  name: Phosphatidylserine
+  names:
+  - Phosphatidylserine
+  - Phosphatidyl-L-serine
+  - 1,2-Diacyl-sn-glycerol 3-phospho-L-serine
+  - 3-O-sn-Phosphatidyl-L-serine
+  - O3-Phosphatidyl-L-serine
+  - L-1-Phosphatidylserine
+  formula: C8H12NO10PR2
+  comment: Generic compound in reaction hierarchy
+  PubChem: '5698'
+  ChEBI: 11750 18303
+  LIPIDMAPS: LMGP03010000
+- id: C16236
+  name: '[Protein]-N6-(octanoyl)-L-lysine'
+  names:
+  - '[Protein]-N6-(octanoyl)-L-lysine'
+  - Protein N6-(octanoyl)lysine
+  formula: C8H16NOR
+  comment: 'Generic compound in reaction hierarchy
+
+    R = E2 subunit of oxo-acid dehydrogenase complexes [CPD:C22160] or H protein [CPD:C22159]'
+  PubChem: '47205544'
+  ChEBI: '80398'
+- id: C03512
+  name: L-Tryptophanyl-tRNA(Trp)
+  names:
+  - L-Tryptophanyl-tRNA(Trp)
+  formula: C26H31N7O11PR(C5H8O6PR)n
+  comment: Generic compound in reaction hierarchy
+  PubChem: '6322'
+  ChEBI: '29159'
+- id: C16636
+  name: tRNA(Sec)
+  names:
+  - tRNA(Sec)
+  comment: 'Generic compound in reaction hierarchy
+
+    Sec = selenocysteine [CPD:C05688]'
+  PubChem: '51090962'
+- id: C00240
+  name: rRNA
+  names:
+  - rRNA
+  - Ribosomal RNA
+  formula: C15H25O16P2R3
+  comment: Generic compound in reaction hierarchy
+  PubChem: '3539'
+  ChEBI: '18111'
+- id: C05726
+  name: S-Substituted L-cysteine
+  names:
+  - S-Substituted L-cysteine
+  - R-S-Cysteine
+  - L-Cysteine S-conjugate
+  formula: C3H6NO2SR
+  comment: 'Generic compound in reaction hierarchy
+
+    R = alkyl group [CPD:C02749]
+
+    R = aromatic group [CPD:C02882]'
+  PubChem: '8029'
+  ChEBI: '47910'
+- id: C00405
+  name: D-Amino acid
+  names:
+  - D-Amino acid
+  formula: C2H4NO2R
+  comment: Generic compound in reaction hierarchy
+  PubChem: '3695'
+  ChEBI: '16733'
+- id: C05762
+  name: 3-Oxohexadecanoyl-[acp]
+  names:
+  - 3-Oxohexadecanoyl-[acp]
+  - 3-Oxohexadecanoyl-[acyl-carrier protein]
+  formula: C16H29O2SR
+  comment: Generic compound in reaction hierarchy
+  PubChem: '8057'
+  ChEBI: '1639'
+  LIPIDMAPS: LMFA07060019
+- id: C15805
+  name: Guaiacyl lignin
+  names:
+  - Guaiacyl lignin
+  PubChem: '47205130'
+  ChEBI: '64475'
+- id: C02686
+  name: Galactosylceramide
+  names:
+  - Galactosylceramide
+  - Galactocerebroside
+  - Cerebroside
+  - D-Galactosyl-N-acylsphingosine
+  - D-Galactosylceramide
+  formula: C25H46NO8R
+  comment: Generic compound in reaction hierarchy
+  PubChem: '5655'
+  ChEBI: 18390 36498
+  LIPIDMAPS: LMSP0501AC00
+  NIKKAJI: J1.883.144I
+- id: C00721
+  name: Dextrin
+  names:
+  - Dextrin
+  formula: (C12H20O10)n
+  CAS: 9004-53-9
+  PubChem: '3987'
+  NIKKAJI: J578.995H
+- id: C05760
+  name: trans-Tetradec-2-enoyl-[acp]
+  names:
+  - trans-Tetradec-2-enoyl-[acp]
+  - trans-Tetradec-2-enoyl-[acyl-carrier protein]
+  - (2E)-Tetradecenoyl-[acp]
+  formula: C14H25OSR
+  comment: Generic compound in reaction hierarchy
+  PubChem: '8055'
+  ChEBI: '10735'
+  LIPIDMAPS: LMFA07060018
+- id: C01652
+  name: tRNA(Trp)
+  names:
+  - tRNA(Trp)
+  comment: Generic compound in reaction hierarchy
+  PubChem: '4801'
+  ChEBI: '29181'
+- id: C00201
+  name: Nucleoside triphosphate
+  names:
+  - Nucleoside triphosphate
+  - NTP
+  - Nucleoside 5'-triphosphate
+  formula: C5H12O13P3R
+  comment: Generic compound in reaction hierarchy
+  PubChem: '3501'
+  ChEBI: '17326'
+- id: C01646
+  name: tRNA(Lys)
+  names:
+  - tRNA(Lys)
+  comment: Generic compound in reaction hierarchy
+  PubChem: '4795'
+  ChEBI: '29185'
+- id: C01644
+  name: tRNA(Ile)
+  names:
+  - tRNA(Ile)
+  comment: Generic compound in reaction hierarchy
+  PubChem: '4793'
+  ChEBI: '29174'
