@@ -1,6 +1,14 @@
+'''
+Authors: Christopher Powers and Marvens Laporte
+Institution: The University of Rhode Island
+
+
+This code is the base for the app visualizing metabolic models and
+allowing for the
+'''
+
 
 import logging
-
 #===== START LOGGER =====
 logger = logging.getLogger(__name__)
 root_logger = logging.getLogger()
@@ -37,8 +45,8 @@ import dash_cytoscape as cyto
 el='C'
 pathway='All'
 
-
-def read_model(model_path):
+# Generates the model and the findprimarypairs network
+def read_model(model_path, el):
     model_path="./models/iGEM_bin526_eggnog/"
 
     # First read in the base model
@@ -50,8 +58,9 @@ def read_model(model_path):
                                 element=el, excluded_reactions=[],
                                 reaction_dict={}, analysis=None)
     return nm, network
-nm, network = read_model("./models/iGEM_bin526_eggnog/")
 
+
+# Builds a reaction set from a model based on a pathway of interest
 def get_pathway_list(nm, pathway):
     pathway_list=set()
     if pathway != "All":
@@ -71,16 +80,16 @@ def get_pathway_list(nm, pathway):
         rxn_set.add(i.id)
     pathway_list=["All"] + list(pathway_list)
     return pathway_list, rxn_set
-pathway_list, rxn_set = get_pathway_list(nm, "All")
 
 
+# Useful function to build the subset network. Returns nodes and edges
+# from the network associated with the rxn_set of interest
 def build_network(nm, rxn_set, network):
     name={}
     formula={}
     for i in nm.compounds:
       name[i.id]=i.name
       formula[i.id]=i.formula
-
     nodes=[]
     edges=[]
     for rxn in network[0]:
@@ -103,19 +112,25 @@ def build_network(nm, rxn_set, network):
 #              'equation':rxn.equation
               }})
     return nodes, edges
+
+
+
+# Generates all initial data for building the app
+nm, network = read_model("./models/iGEM_bin526_eggnog/", "C")
+pathway_list, rxn_set = get_pathway_list(nm, "All")
 nodes, edges = build_network(nm, rxn_set, network)
 
+# Initialize the app
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
-
 server = app.server
 
+# Set styles for the app
 styles = {
     'pre': {
         'border': 'thin lightgrey solid',
         'overflowX': 'scroll'
     }
 }
-
 col_swatch = px.colors.qualitative.Dark24
 default_stylesheet = [
     {
@@ -130,6 +145,7 @@ default_stylesheet = [
             "curve-style": "bezier"}}
 ]
 
+# Set the navigation bar for the app
 navbar = dbc.NavbarSimple(
     children=[
         dbc.NavItem(
@@ -145,6 +161,7 @@ navbar = dbc.NavbarSimple(
     dark=True,
 )
 
+# Define the body of the app
 body_layout = dbc.Container(
     [
         dbc.Row(
@@ -216,6 +233,26 @@ body_layout = dbc.Container(
                                         for i in pathway_list
                                     ],
                                     value=pathway_list,
+                                    multi=False,
+                                    style={"width": "100%"},
+                                ),
+                            ]
+                        ),
+                        dbc.Badge(
+                            "Element Transfer Network:", color="info", className="mr-1"
+                        ),
+                        dbc.FormGroup(
+                            [
+                                dcc.Dropdown(
+                                    id="element_dropdown",
+                                    options=[
+                                        {
+                                            "label": i,
+                                            "value": i,
+                                        }
+                                        for i in ["C","N","S","P"]
+                                    ],
+                                    value=["C","N","S","P"],
                                     multi=False,
                                     style={"width": "100%"},
                                 ),
@@ -326,21 +363,22 @@ def display_nodedata(datalist):
     Output("net", "elements"),
     [
         Input("pathways_dropdown", "value"),
+        Input("element_dropdown", "value"),
     ],
 )
-def filter_nodes(dropdown):
-
-    nm, network = read_model("./models/iGEM_bin526_eggnog/")
-    pathway_list, rxn_set = get_pathway_list(nm, dropdown)
+def filter_nodes(pathways_dropdown, element_dropdown):
+    
+    nm, network = read_model("./models/iGEM_bin526_eggnog/", element_dropdown)
+    pathway_list, rxn_set = get_pathway_list(nm, pathways_dropdown)
     nodes, edges = build_network(nm, rxn_set, network)
     elements=nodes+edges
 
     return elements
 
+
+
 if __name__ == '__main__':
   app.run_server(debug=True)
-
-
 
 #dashvis('Pyruvate metabolism' , 'C')
 
