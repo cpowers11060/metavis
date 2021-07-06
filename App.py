@@ -37,7 +37,7 @@ import dash_cytoscape as cyto
 el='C'
 pathway='All'
 
-model_path="../models/iGEM_bin526_eggnog"
+model_path="./models/iGEM_bin526_eggnog/"
 
 # First read in the base model
 mr = ModelReader.reader_from_path(model_path)
