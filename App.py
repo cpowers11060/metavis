@@ -1,14 +1,14 @@
 
 import logging
 
-# ===== START LOGGER =====
-# logger = logging.getLogger(__name__)
-# root_logger = logging.getLogger()
-# root_logger.setLevel(logging.INFO)
-# sh = logging.StreamHandler()
-# formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
-# sh.setFormatter(formatter)
-# root_logger.addHandler(sh)
+#===== START LOGGER =====
+logger = logging.getLogger(__name__)
+root_logger = logging.getLogger()
+root_logger.setLevel(logging.INFO)
+sh = logging.StreamHandler()
+formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+sh.setFormatter(formatter)
+root_logger.addHandler(sh)
 
 from collections import defaultdict
 from psamm.datasource.native import NativeModel, ModelReader, ModelWriter
@@ -95,8 +95,12 @@ def build_network(nm, rxn_set, network):
                         'formula': formula[str(cpd[0])[0:-3]]
                         }})
           edges.append({'data':{
+              'id':rxn.id,
               'source':str(cpd[0]),
               'target':str(cpd[1]),
+              'label': rxn.name,
+              'pathways':rxn.properties['pathways']
+#              'equation':rxn.equation
               }})
     return nodes, edges
 nodes, edges = build_network(nm, rxn_set, network)
@@ -188,6 +192,15 @@ body_layout = dbc.Container(
                                 )
                             ]
                         ),
+                        dbc.Row(
+                            [
+                                dbc.Alert(
+                                    id="edge-data",
+                                    children="Click on an edge to see its details here",
+                                    color="secondary",
+                                )
+                            ]
+                        ),
                         dbc.Badge(
                             "Pathways:", color="info", className="mr-1"
                         ),
@@ -273,6 +286,37 @@ def display_nodedata(datalist):
                 html.P(
                     "Formula: "
                     + str(data["formula"])
+                )
+            )
+
+    return contents
+
+@app.callback(
+    Output("edge-data", "children"), [Input("net", "selectedEdgeData")]
+)
+def display_nodedata(datalist):
+    contents = "Click on an edge to see its details here"
+    if datalist is not None:
+        if len(datalist) > 0:
+            data = datalist[-1]
+            contents = []
+            contents.append(html.H5("ID: " + data["id"].title()))
+            contents.append(
+                html.P(
+                    "Name: "
+                    + data["label"]
+                )
+            )
+            # contents.append(
+            #     html.P(
+            #         "Equation: "
+            #         + str(data["equation"])
+            #     )
+            # )
+            contents.append(
+                html.P(
+                    "Pathways: "
+                    + str(', '.join(list(data["pathways"])))
                 )
             )
 
