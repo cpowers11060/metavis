@@ -315,11 +315,14 @@ def display_nodedata(datalist):
         if len(datalist) > 0:
             data = datalist[-1]
             contents = []
-            contents.append(html.H5("ID: " + data["id"].title()))
+            contents.append(
+                html.H5(
+                        "ID: " + data["id"].title()
+                )
+            )
             contents.append(
                 html.P(
-                    "Name: "
-                    + data["label"]
+                    "Name: " + data["label"]
                 )
             )
             contents.append(
