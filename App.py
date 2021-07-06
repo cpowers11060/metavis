@@ -101,7 +101,7 @@ def build_network(nm, rxn_set, network):
                         }})
           nodes.append({'data':{'id':str(cpd[1]),
                         'label': name[str(cpd[1])[0:-3]],
-                        'formula': formula[str(cpd[0])[0:-3]]
+                        'formula': formula[str(cpd[1])[0:-3]]
                         }})
           edges.append({'data':{
               'id':rxn.id,
@@ -367,7 +367,7 @@ def display_nodedata(datalist):
     ],
 )
 def filter_nodes(pathways_dropdown, element_dropdown):
-    
+
     nm, network = read_model("./models/iGEM_bin526_eggnog/", element_dropdown)
     pathway_list, rxn_set = get_pathway_list(nm, pathways_dropdown)
     nodes, edges = build_network(nm, rxn_set, network)
