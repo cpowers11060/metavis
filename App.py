@@ -118,7 +118,10 @@ def build_network(nm, rxn_set, network):
 # Generates all initial data for building the app
 nm, network = read_model("./models/iGEM_bin526_eggnog/", "C")
 pathway_list, rxn_set = get_pathway_list(nm, "All")
-nodes, edges = build_network(nm, rxn_set, network)
+# nodes, edges = build_network(nm, rxn_set, network)
+# initialize an empty list. the full is messy
+nodes, edges = [], []
+
 
 # Initialize the app
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
