@@ -184,7 +184,7 @@ body_layout = dbc.Container(
                         dbc.Row(
                             [
                               cyto.Cytoscape(id = 'net',
-                              layout={'name':'random'},
+                              layout={'name':'cose'},
                               style={'width': '500px', 'height': '500px'},
                               elements=nodes+edges,
                               stylesheet=default_stylesheet,
