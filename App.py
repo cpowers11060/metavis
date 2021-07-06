@@ -37,58 +37,69 @@ import dash_cytoscape as cyto
 el='C'
 pathway='All'
 
-model_path="./models/iGEM_bin526_eggnog/"
 
-# First read in the base model
-mr = ModelReader.reader_from_path(model_path)
-nm = mr.create_model()
-mm = nm.create_metabolic_model()
+def read_model(model_path):
+    model_path="./models/iGEM_bin526_eggnog/"
 
-network = make_network_dict(nm, mm, subset=None, method='fpp',
-                            element=el, excluded_reactions=[],
-                            reaction_dict={}, analysis=None)
+    # First read in the base model
+    mr = ModelReader.reader_from_path(model_path)
+    nm = mr.create_model()
+    mm = nm.create_metabolic_model()
 
-pathway_list=set()
-if pathway != "All":
-  rxn_set=set()
-  for i in nm.reactions:
-    if i.properties['pathways'] is not None:
-      for j in i.properties['pathways']:
-        pathway_list.add(j)
-      if pathway in i.properties['pathways']:
+    network = make_network_dict(nm, mm, subset=None, method='fpp',
+                                element=el, excluded_reactions=[],
+                                reaction_dict={}, analysis=None)
+    return nm, network
+nm, network = read_model("./models/iGEM_bin526_eggnog/")
+
+def get_pathway_list(nm, pathway):
+    pathway_list=set()
+    if pathway != "All":
+      rxn_set=set()
+      for i in nm.reactions:
+        if i.properties['pathways'] is not None:
+          for j in i.properties['pathways']:
+            pathway_list.add(j)
+          if pathway in i.properties['pathways']:
+            rxn_set.add(i.id)
+    else:
+      rxn_set=set()
+      for i in nm.reactions:
+        if i.properties['pathways'] is not None:
+          for j in i.properties['pathways']:
+            pathway_list.add(j)
         rxn_set.add(i.id)
-else:
-  rxn_set=set()
-  for i in nm.reactions:
-    if i.properties['pathways'] is not None:
-      for j in i.properties['pathways']:
-        pathway_list.add(j)
-    rxn_set.add(i.id)
-pathway_list=["All"] + list(pathway_list)
+    pathway_list=["All"] + list(pathway_list)
+    return pathway_list, rxn_set
+pathway_list, rxn_set = get_pathway_list(nm, "All")
 
-name={}
-formula={}
-for i in nm.compounds:
-  name[i.id]=i.name
-  formula[i.id]=i.formula
 
-nodes=[]
-edges=[]
-for rxn in network[0]:
-  if rxn.id in rxn_set:
-    for cpd in network[0][rxn][0]:
-      nodes.append({'data':{'id':str(cpd[0]),
-                    'label': name[str(cpd[0])[0:-3]],
-                    'formula': formula[str(cpd[0])[0:-3]]
-                    }})
-      nodes.append({'data':{'id':str(cpd[1]),
-                    'label': name[str(cpd[1])[0:-3]],
-                    'formula': formula[str(cpd[0])[0:-3]]
-                    }})
-      edges.append({'data':{
-          'source':str(cpd[0]),
-          'target':str(cpd[1]),
-          }})
+def build_network(nm, rxn_set, network):
+    name={}
+    formula={}
+    for i in nm.compounds:
+      name[i.id]=i.name
+      formula[i.id]=i.formula
+
+    nodes=[]
+    edges=[]
+    for rxn in network[0]:
+      if rxn.id in rxn_set:
+        for cpd in network[0][rxn][0]:
+          nodes.append({'data':{'id':str(cpd[0]),
+                        'label': name[str(cpd[0])[0:-3]],
+                        'formula': formula[str(cpd[0])[0:-3]]
+                        }})
+          nodes.append({'data':{'id':str(cpd[1]),
+                        'label': name[str(cpd[1])[0:-3]],
+                        'formula': formula[str(cpd[0])[0:-3]]
+                        }})
+          edges.append({'data':{
+              'source':str(cpd[0]),
+              'target':str(cpd[1]),
+              }})
+    return nodes, edges
+nodes, edges = build_network(nm, rxn_set, network)
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
@@ -137,13 +148,9 @@ body_layout = dbc.Container(
                 dcc.Markdown(
                     """
             -----
-            ##### Filter / Explore node data
-            Node size indicates number of citations from this collection, and color indicates its
-            main topic group.
-            Use these filters to highlight papers with:
-            * certain numbers of citations from this collection, and
-            * by journal title
-            Try showing or hiding citation connections with the toggle button, and explore different visualisation options.
+            ##### Filter / Explore metabolic model of _Reinekea_ MAG from NB
+            Use these filters to highlight reactions and compounds associated with different reactions
+            Try exploring different visualisation options.
             -----
             """
                 ),
@@ -196,7 +203,7 @@ body_layout = dbc.Container(
                                         for i in pathway_list
                                     ],
                                     value=pathway_list,
-                                    multi=True,
+                                    multi=False,
                                     style={"width": "100%"},
                                 ),
                             ]
@@ -277,24 +284,14 @@ def display_nodedata(datalist):
         Input("pathways_dropdown", "value"),
     ],
 )
-def filter_nodes(pathways_dropdown_cites, model):
+def filter_nodes(dropdown):
 
-    # Use pre-calculated nodes/edges if default values are used
-    pathway_list=set()
-    if pathway != "All":
-        rxn_set=set()
-        for i in nm.reactions:
-            if i.properties['pathways'] is not None:
-                if pathway in i.properties['pathways']:
-                    rxn_set.add(i.id)
-    else:
-        rxn_set=set()
-        for i in nm.reactions:
-            if i.properties['pathways'] is not None:
-                rxn_set.add(i.id)
+    nm, network = read_model("./models/iGEM_bin526_eggnog/")
+    pathway_list, rxn_set = get_pathway_list(nm, dropdown)
+    nodes, edges = build_network(nm, rxn_set, network)
+    elements=nodes+edges
 
-
-    return rxn_set
+    return elements
 
 if __name__ == '__main__':
   app.run_server(debug=True)
