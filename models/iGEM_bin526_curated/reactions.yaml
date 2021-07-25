@@ -1,0 +1,1872 @@
+- id: AACPS1
+  name: acyl-[acyl-carrier-protein] synthetase (n-C14:0)
+  genes: (k249_531167_18 and k249_578838_31)
+  equation: ACP[c] + atp[c] + ttdca[c] => amp[c] + myrsACP[c] + ppi[c]
+  subsystem: Cell Envelope Biosynthesis
+  ec: 6.2.1.20
+- id: AACPS2
+  name: acyl-[acyl-carrier-protein] synthetase  (n-C14:1)
+  genes: (k249_531167_18 and k249_578838_31)
+  equation: ACP[c] + atp[c] + ttdcea[c] => amp[c] + ppi[c] + tdeACP[c]
+  subsystem: Cell Envelope Biosynthesis
+  ec: 6.2.1.20
+- id: AACPS3
+  name: acyl-[acyl-carrier-protein] synthetase  (n-C16:0)
+  genes: (k249_531167_18 and k249_578838_31)
+  equation: ACP[c] + atp[c] + hdca[c] => amp[c] + palmACP[c] + ppi[c]
+  subsystem: Cell Envelope Biosynthesis
+  ec: 6.2.1.20
+- id: AACPS4
+  name: acyl-[acyl-carrier-protein] synthetase  (n-C16:1)
+  genes: (k249_531167_18 and k249_578838_31)
+  equation: ACP[c] + atp[c] + hdcea[c] => amp[c] + hdeACP[c] + ppi[c]
+  subsystem: Cell Envelope Biosynthesis
+  ec: 6.2.1.20
+- id: AACPS5
+  name: acyl-[acyl-carrier-protein] synthetase  (n-C18:1)
+  genes: (k249_531167_18 and k249_578838_31)
+  equation: ACP[c] + atp[c] + ocdcea[c] => amp[c] + octeACP[c] + ppi[c]
+  subsystem: Cell Envelope Biosynthesis
+  ec: 6.2.1.20
+- id: AACPS6
+  name: acyl-[acyl-carrier-protein] synthetase  (n-C18:0)
+  genes: (k249_531167_18 and k249_578838_31)
+  equation: ACP[c] + atp[c] + ocdca[c] => amp[c] + ocdcaACP[c] + ppi[c]
+  subsystem: Cell Envelope Biosynthesis
+  ec: 6.2.1.20
+- id: AACPS7
+  name: acyl-[acyl-carrier-protein] synthetase  (n-C12:0)
+  genes: (k249_531167_18 and k249_578838_31)
+  equation: ACP[c] + atp[c] + ddca[c] => amp[c] + ddcaACP[c] + ppi[c]
+  subsystem: Cell Envelope Biosynthesis
+  ec: 6.2.1.20
+- id: AACPS8
+  name: acyl-[acyl-carrier-protein] synthetase  (n-C10:0)
+  genes: (k249_531167_18 and k249_578838_31)
+  equation: ACP[c] + atp[c] + dca[c] => amp[c] + dcaACP[c] + ppi[c]
+  subsystem: Cell Envelope Biosynthesis
+  ec: 6.2.1.20
+- id: AACPS9
+  name: acyl-[acyl-carrier-protein] synthetase  (n-C8:0)
+  genes: (k249_531167_18 and k249_578838_31)
+  equation: ACP[c] + atp[c] + octa[c] => amp[c] + ocACP[c] + ppi[c]
+  subsystem: Cell Envelope Biosynthesis
+  ec: 6.2.1.20
+- id: ADOCBLtonex
+  name: Adenosylcobalimin transport via ton system (extermal)
+  genes: (k249_732651_3 and k249_98619_24 and k249_2147958_17 and k249_578838_45)
+  equation: adocbl[e] + h[p] => h[c] + adocbl[p]
+  subsystem: Transport, Outer Membrane
+- id: CBItonex
+  name: Cobinamide transport via ton system (extermal)
+  genes: (k249_732651_3 and k249_98619_24 and k249_2147958_17 and k249_578838_45)
+  equation: cbi[e] + h[p] => h[c] + cbi[p]
+  subsystem: Transport, Outer Membrane
+- id: CBL1tonex
+  name: Cob(1)alamin transport via ton system (extermal)
+  genes: (k249_732651_3 and k249_98619_24 and k249_2147958_17 and k249_578838_45)
+  equation: cbl1[e] + h[p] => h[c] + cbl1[p]
+  subsystem: Transport, Outer Membrane
+- id: CPGNtonex
+  name: Coprogen transport via ton system (extracellular)
+  genes: (k249_732651_3 and k249_98619_24 and k249_2147958_17 and k249_578838_45)
+  equation: cpgn[e] + h[p] => h[c] + cpgn[p]
+  subsystem: Transport, Outer Membrane
+- id: CPMPS
+  name: cyclic pyranopterin monophosphate synthase
+  genes: (k249_1210463_2 and k249_818306_9)
+  equation: gtp[c] + h2o[c] => cpmp[c] + ppi[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+- id: CRNDabcpp
+  name: D-carnitine transport via ABC system (periplasm)
+  genes: (k249_1675960_5 and k249_1675960_6 and k249_1675960_7)
+  equation: atp[c] + h2o[c] + crn-D[p] => adp[c] + crn-D[c] + h[c] + pi[c]
+  subsystem: Transport, Inner Membrane
+- id: CRNabcpp
+  name: L-carnitine transport via ABC system (periplasm)
+  genes: (k249_1675960_5 and k249_1675960_6 and k249_1675960_7)
+  equation: atp[c] + h2o[c] + crn[p] => adp[c] + crn[c] + h[c] + pi[c]
+  subsystem: Transport, Inner Membrane
+- id: CTBTabcpp
+  name: crotonobetaine transport via ABC system (periplasm)
+  genes: (k249_1675960_5 and k249_1675960_6 and k249_1675960_7)
+  equation: atp[c] + h2o[c] + ctbt[p] => adp[c] + ctbt[c] + h[c] + pi[c]
+  subsystem: Transport, Inner Membrane
+- id: DSBAO1
+  name: DsbA protein reoxidation reaction (aerobic)
+  genes: (k249_847715_6 and k249_2998397_11)
+  equation: q8[c] + dsbard[p] => q8h2[c] + dsbaox[p]
+  subsystem: Unassigned
+- id: DSBAO2
+  name: DsbA protein reoxidation reaction (anaerobic)
+  genes: (k249_847715_6 and k249_2998397_1)
+  equation: mqn8[c] + dsbard[p] => mql8[c] + dsbaox[p]
+  subsystem: Unassigned
+- id: FE3DCITabcpp
+  name: iron transport from ferric-dicitrate via ABC system (periplasm)
+  genes: (k249_693608_2 and k249_693608_3 and k249_693608_3 and k249_693608_4)
+  equation: atp[c] + h2o[c] + fe3dcit[p] => adp[c] + (2) cit[c] + fe3[c] + h[c] +
+    pi[c]
+  subsystem: Inorganic Ion Transport and Metabolism
+- id: FE3DCITtonex
+  name: ferric-dicitrate transport via ton system (extracellular)
+  genes: (k249_732651_3 and k249_98619_24 and k249_2147958_17 and k249_578838_45)
+  equation: fe3dcit[e] + h[p] => h[c] + fe3dcit[p]
+  subsystem: Transport, Outer Membrane
+- id: FE3HOXtonex
+  name: Fe(III)hydroxamine transport via ton system (extracellular)
+  genes: (k249_732651_3 and k249_98619_24 and k249_2147958_17 and k249_578838_46)
+  equation: fe3hox[e] + h[p] => h[c] + fe3hox[p]
+  subsystem: Transport, Outer Membrane
+- id: FECRMtonex
+  name: ferrichrome transport via ton system (extracellular)
+  genes: (k249_732651_3 and k249_98619_24 and k249_2147958_17 and k249_578838_47)
+  equation: fecrm[e] + h[p] => h[c] + fecrm[p]
+  subsystem: Transport, Outer Membrane
+- id: FEENTERtonex
+  name: Fe-enterobactin transport via ton system (extracellular)
+  genes: (k249_732651_3 and k249_98619_24 and k249_2147958_17 and k249_578838_48)
+  equation: feenter[e] + h[p] => h[c] + feenter[p]
+  subsystem: Transport, Outer Membrane
+- id: FEOXAMtonex
+  name: ferroxamine transport via ton system (extracellular)
+  genes: (k249_732651_3 and k249_98619_24 and k249_2147958_17 and k249_578838_49)
+  equation: feoxam[e] + h[p] => h[c] + feoxam[p]
+  subsystem: Transport, Outer Membrane
+- id: FRUptspp
+  name: D-fructose transport via PEP:Pyr PTS (periplasm)
+  genes: (k249_945323_45 and k249_945323_44 and k249_798161_17 and k249_531167_34)
+  equation: pep[c] + fru[p] => f1p[c] + pyr[c]
+  subsystem: Transport, Inner Membrane
+- id: GTHRDabcpp
+  name: Reduced glutathione via ABC system (periplasm)
+  genes: (k249_1054227_2 and k249_1155537_13 and k249_1155537_12 and k249_1035232_3)
+  equation: atp[c] + h2o[c] + gthrd[p] => adp[c] + gthrd[c] + h[c] + pi[c]
+  subsystem: Transport, Inner Membrane
+- id: MNLptspp
+  name: mannitol transport via PEP:Pyr PTS (periplasm)
+  genes: (k249_945323_45 and k249_798161_17 and k249_531167_34)
+  equation: pep[c] + mnl[p] => mnl1p[c] + pyr[c]
+  subsystem: Transport, Inner Membrane
+- id: NO3R2bpp
+  name: Nitrate reductase (Menaquinol-8) (periplasm)
+  genes: (k249_426359_1 and k249_426359_2 and k249_52663_21)
+  equation: mql8[c] + no3[p] => mqn8[c] + h2o[p] + no2[p]
+  subsystem: Nitrogen Metabolism
+  ec: 1.7.99.4
+- id: NTRIR2x
+  name: nitrite Reductase (NADH)
+  genes: (k249_445190_1 and k249_445190_2)
+  equation: (5) h[c] + (3) nadh[c] + no2[c] => (2) h2o[c] + (3) nad[c] + nh4[c]
+  subsystem: Oxidative Phosphorylation
+- id: PHEMEabcpp
+  name: protoheme transport via ABC system (periplasm)
+  genes: (k249_436260_11 and k249_436260_10 and k249_436260_9 and k249_436260_8 and
+    k249_436260_7)
+  equation: atp[c] + h2o[c] + pheme[c] => adp[c] + h[c] + pi[c] + pheme[p]
+  subsystem: Transport, Inner Membrane
+- id: PIuabcpp
+  name: phosphate transport via ABC system (uptake, periplasm)
+  genes: (k249_1155537_12 and k249_2240347_3 and k249_1155537_12 and k249_38867_2)
+  equation: atp[c] + h2o[c] + pi[p] => adp[c] + h[c] + (2) pi[c]
+  subsystem: Inorganic Ion Transport and Metabolism
+- id: PROabcpp
+  name: L-proline transport via ABC system (periplasm)
+  genes: (k249_1675960_5 and k249_1675960_6 and k249_1675960_7)
+  equation: atp[c] + h2o[c] + pro-L[p] => adp[c] + h[c] + pi[c] + pro-L[c]
+  subsystem: Transport, Inner Membrane
+- id: SELtpp
+  name: selenate transport via proton symport (periplasm)
+  genes: (k249_818306_4 and k249_261853_2 and k249_1155537_12 and k249_1155537_12)
+  equation: (2) h[p] + sel[p] => (2) h[c] + sel[c]
+  subsystem: Inorganic Ion Transport and Metabolism
+- id: SLNTtpp
+  name: selenite transport via proton symport (periplasm)
+  genes: (k249_818306_4 and k249_261853_2 and k249_1155537_12 and k249_1155537_12)
+  equation: h[p] + slnt[p] => h[c] + slnt[c]
+  subsystem: Inorganic Ion Transport and Metabolism
+- id: SUCDi
+  name: succinate dehydrogenase (irreversible)
+  genes: (k249_1041617_10 and k249_1041617_9 and k249_1041617_8 and k249_1041617_7)
+  equation: q8[c] + succ[c] => fum[c] + q8h2[c]
+  subsystem: Oxidative Phosphorylation
+  ec: 1.3.99.1
+- id: TDSR1
+  name: thiol:disulfide reductase (DsbC)
+  genes: (k249_280456_3 and k249_2841686_9)
+  equation: dsbdrd[c] + dsbcox[p] => dsbdox[c] + dsbcrd[p]
+  subsystem: Transport, Inner Membrane
+- id: TDSR2
+  name: thiol:disulfide reductase (DsbG)
+  genes: (k249_2841686_9 and k249_280456_3)
+  equation: dsbdrd[c] + dsbgox[p] => dsbdox[c] + dsbgrd[p]
+  subsystem: Transport, Inner Membrane
+- id: TRPS1
+  name: tryptophan synthase (indoleglycerol phosphate)
+  genes: (k249_979359_8 and k249_979359_9)
+  equation: 3ig3p[c] + ser-L[c] => g3p[c] + h2o[c] + trp-L[c]
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+  ec: 4.2.1.20
+- id: TRPS2
+  name: tryptophan synthase (indole)
+  genes: (k249_979359_8 and k249_979359_9)
+  equation: indole[c] + ser-L[c] => h2o[c] + trp-L[c]
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+  ec: 4.2.1.20
+- id: TRPS3
+  name: tryptophan synthase (indoleglycerol phosphate)
+  genes: (k249_979359_8 and k249_979359_9)
+  equation: 3ig3p[c] => g3p[c] + indole[c]
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+  ec: 4.2.1.20
+- id: TUNGSabcpp
+  name: tungstate transport via ABC system (periplasm)
+  genes: (k249_1015053_6 and k249_818306_5 and k249_818306_4)
+  equation: atp[c] + h2o[c] + tungs[p] => adp[c] + h[c] + pi[c] + tungs[c]
+  subsystem: Inorganic Ion Transport and Metabolism
+- id: XYLabcpp
+  name: D-xylose transport via ABC system (periplasm)
+  genes: (k249_653278_3 and k249_81429_59 and k249_1131129_12)
+  equation: atp[c] + h2o[c] + xyl-D[p] => adp[c] + h[c] + pi[c] + xyl-D[c]
+  subsystem: Transport, Inner Membrane
+- id: Biomass
+  name: E. coli biomass objective function (iJO1366) - core - with 53.95 GAM estimate
+  equation:
+    reversible: false
+    left:
+    - id: 10fthf
+      compartment: c
+      value: 0.000223
+    - id: 2fe2s
+      compartment: c
+      value: 0.000026
+    - id: 2ohph
+      compartment: c
+      value: 0.000223
+    - id: 4fe4s
+      compartment: c
+      value: 0.00026
+    - id: ala-L
+      compartment: c
+      value: 0.513689
+    - id: amet
+      compartment: c
+      value: 0.000223
+    - id: arg-L
+      compartment: c
+      value: 0.295792
+    - id: asn-L
+      compartment: c
+      value: 0.241055
+    - id: asp-L
+      compartment: c
+      value: 0.241055
+    - id: atp
+      compartment: c
+      value: 54.124831
+    - id: bmocogdp
+      compartment: c
+      value: 0.000122
+    - id: btn
+      compartment: c
+      value: 0.000002
+    - id: ca2
+      compartment: c
+      value: 0.005205
+    - id: cl
+      compartment: c
+      value: 0.005205
+    - id: coa
+      compartment: c
+      value: 0.000576
+    - id: cobalt2
+      compartment: c
+      value: 0.000025
+    - id: ctp
+      compartment: c
+      value: 0.133508
+    - id: cu2
+      compartment: c
+      value: 0.000709
+    - id: cys-L
+      compartment: c
+      value: 0.09158
+    - id: datp
+      compartment: c
+      value: 0.026166
+    - id: dctp
+      compartment: c
+      value: 0.027017
+    - id: dgtp
+      compartment: c
+      value: 0.027017
+    - id: dttp
+      compartment: c
+      value: 0.026166
+    - id: fad
+      compartment: c
+      value: 0.000223
+    - id: fe2
+      compartment: c
+      value: 0.006715
+    - id: fe3
+      compartment: c
+      value: 0.007808
+    - id: gln-L
+      compartment: c
+      value: 0.26316
+    - id: glu-L
+      compartment: c
+      value: 0.26316
+    - id: gly
+      compartment: c
+      value: 0.612638
+    - id: gtp
+      compartment: c
+      value: 0.215096
+    - id: h2o
+      compartment: c
+      value: 48.601527
+    - id: his-L
+      compartment: c
+      value: 0.094738
+    - id: ile-L
+      compartment: c
+      value: 0.290529
+    - id: k
+      compartment: c
+      value: 0.195193
+    - id: leu-L
+      compartment: c
+      value: 0.450531
+    - id: lys-L
+      compartment: c
+      value: 0.343161
+    - id: met-L
+      compartment: c
+      value: 0.153686
+    - id: mg2
+      compartment: c
+      value: 0.008675
+    - id: mlthf
+      compartment: c
+      value: 0.000223
+    - id: mn2
+      compartment: c
+      value: 0.000691
+    - id: mobd
+      compartment: c
+      value: 0.000007
+    - id: nad
+      compartment: c
+      value: 0.001831
+    - id: nadp
+      compartment: c
+      value: 0.000447
+    - id: nh4
+      compartment: c
+      value: 0.013013
+    - id: ni2
+      compartment: c
+      value: 0.000323
+    - id: pe160
+      compartment: c
+      value: 0.017868
+    - id: pe161
+      compartment: c
+      value: 0.054154
+    - id: phe-L
+      compartment: c
+      value: 0.185265
+    - id: pheme
+      compartment: c
+      value: 0.000223
+    - id: pro-L
+      compartment: c
+      value: 0.221055
+    - id: pydx5p
+      compartment: c
+      value: 0.000223
+    - id: ribflv
+      compartment: c
+      value: 0.000223
+    - id: ser-L
+      compartment: c
+      value: 0.215792
+    - id: sheme
+      compartment: c
+      value: 0.000223
+    - id: so4
+      compartment: c
+      value: 0.004338
+    - id: thf
+      compartment: c
+      value: 0.000223
+    - id: thmpp
+      compartment: c
+      value: 0.000223
+    - id: thr-L
+      compartment: c
+      value: 0.253687
+    - id: trp-L
+      compartment: c
+      value: 0.056843
+    - id: tyr-L
+      compartment: c
+      value: 0.137896
+    - id: udcpdp
+      compartment: c
+      value: 0.000055
+    - id: utp
+      compartment: c
+      value: 0.144104
+    - id: val-L
+      compartment: c
+      value: 0.423162
+    - id: zn2
+      compartment: c
+      value: 0.000341
+    - id: kdo2lipid4
+      compartment: e
+      value: 0.019456
+    - id: murein5px4p
+      compartment: p
+      value: 0.013894
+    - id: pe160
+      compartment: p
+      value: 0.045946
+    - id: pe161
+      compartment: p
+      value: 0.02106
+    right:
+    - id: adp
+      compartment: c
+      value: 53.95
+    - id: h
+      compartment: c
+      value: 53.95
+    - id: pi
+      compartment: c
+      value: 53.945662
+    - id: ppi
+      compartment: c
+      value: 0.773903
+- id: 4HTHRS
+  name: 4-Hydroxy-L-threonine synthase
+  genes: k249_441004_10
+  equation: h2o[c] + phthr[c] => 4hthr[c] + pi[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+- id: A5PISO
+  name: arabinose-5-phosphate isomerase
+  genes: k249_798161_9
+  equation: ru5p-D[c] <=> ara5p[c]
+  subsystem: Alternate Carbon Metabolism
+  ec: 5.3.1.13
+- id: ACACT2r
+  name: acetyl-CoA C-acyltransferase (butanoyl-CoA) (r)
+  genes: (k249_633436_1 or k249_759691_1)
+  equation: accoa[c] + btcoa[c] <=> 3ohcoa[c] + coa[c]
+  subsystem: Membrane Lipid Metabolism
+  ec: 2.3.1.16
+- id: ACACT3r
+  name: acetyl-CoA C-acyltransferase (hexanoyl-CoA) (r)
+  genes: (k249_633436_1 or k249_759691_1)
+  equation: accoa[c] + hxcoa[c] <=> 3oocoa[c] + coa[c]
+  subsystem: Membrane Lipid Metabolism
+  ec: 2.3.1.16
+- id: ACACT4r
+  name: acetyl-CoA C-acyltransferase (octanoyl-CoA) (r)
+  genes: (k249_633436_1 or k249_759691_1)
+  equation: accoa[c] + occoa[c] <=> 3odcoa[c] + coa[c]
+  subsystem: Membrane Lipid Metabolism
+  ec: 2.3.1.16
+- id: ACACT5r
+  name: acetyl-CoA C-acyltransferase (decanoyl-CoA) (r)
+  genes: (k249_633436_1 or k249_759691_1)
+  equation: accoa[c] + dcacoa[c] <=> 3oddcoa[c] + coa[c]
+  subsystem: Membrane Lipid Metabolism
+  ec: 2.3.1.16
+- id: ACACT7r
+  name: acetyl-CoA C-acyltransferase (tetradecanoyl-CoA) (r)
+  genes: (k249_633436_1 or k249_759691_1)
+  equation: accoa[c] + tdcoa[c] <=> 3ohdcoa[c] + coa[c]
+  subsystem: Membrane Lipid Metabolism
+  ec: 2.3.1.16
+- id: ACALD
+  name: acetaldehyde dehydrogenase (acetylating)
+  genes: k249_2525945_18
+  equation: acald[c] + coa[c] + nad[c] <=> accoa[c] + h[c] + nadh[c]
+  subsystem: Pyruvate Metabolism
+  ec: 1.2.1.10
+- id: ACCOAC
+  name: acetyl-CoA carboxylase
+  genes: k249_1399648_16 and k249_648967_4 and k249_376197_8 and k249_376197_7
+  equation: accoa[c] + atp[c] + hco3[c] => adp[c] + h[c] + malcoa[c] + pi[c]
+  subsystem: Membrane Lipid Metabolism
+  ec: 6.4.1.2
+- id: ACGS
+  name: N-acetylglutamate synthase
+  genes: k249_13594_9
+  equation: accoa[c] + glu-L[c] => acglu[c] + coa[c] + h[c]
+  subsystem: Arginine and Proline Metabolism
+  ec: 2.3.1.1
+- id: ACHBS
+  name: 2-aceto-2-hydroxybutanoate synthase
+  genes: (- and -) or (k249_693436_7 and k249_693436_8)
+  equation: 2obut[c] + h[c] + pyr[c] => 2ahbut[c] + co2[c]
+  subsystem: Valine, Leucine, and Isoleucine Metabolism
+- id: ACLS
+  name: acetolactate synthase
+  genes: (- and -) or (k249_693436_7 and k249_693436_8)
+  equation: h[c] + (2) pyr[c] => alac-S[c] + co2[c]
+  subsystem: Valine, Leucine, and Isoleucine Metabolism
+  ec: 4.1.3.18
+- id: ACONTa
+  name: aconitase (half-reaction A, Citrate hydro-lyase)
+  genes: k249_696185_9
+  equation: cit[c] <=> acon-C[c] + h2o[c]
+  subsystem: Citric Acid Cycle
+  ec: 4.2.1.3
+- id: ACONTb
+  name: aconitase (half-reaction B, Isocitrate hydro-lyase)
+  genes: k249_696185_9
+  equation: acon-C[c] + h2o[c] <=> icit[c]
+  subsystem: Citric Acid Cycle
+  ec: 4.2.1.3
+- id: ACOTA
+  name: acetylornithine transaminase
+  genes: k249_2525945_9
+  equation: acorn[c] + akg[c] <=> acg5sa[c] + glu-L[c]
+  subsystem: Arginine and Proline Metabolism
+  ec: 2.6.1.11
+- id: ACS
+  name: acetyl-CoA synthetase
+  genes: k249_531167_18
+  equation: ac[c] + atp[c] + coa[c] => accoa[c] + amp[c] + ppi[c]
+  subsystem: Pyruvate Metabolism
+  ec: 6.2.1.1
+- id: ADCS
+  name: 4-amino-4-deoxychorismate synthase
+  genes: (k249_241809_16 or k249_241809_19) and (k249_154338_21 or k249_241809_17)
+  equation: chor[c] + gln-L[c] => 4adcho[c] + glu-L[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+- id: ADSL1r
+  name: adenylsuccinate lyase
+  genes: k249_955711_19
+  equation: dcamp[c] <=> amp[c] + fum[c]
+  subsystem: Purine and Pyrimidine Biosynthesis
+  ec: 4.3.2.2
+- id: ADSS
+  name: adenylosuccinate synthase
+  genes: (k249_943897_9 or k249_2860273_2)
+  equation: asp-L[c] + gtp[c] + imp[c] => dcamp[c] + gdp[c] + (2) h[c] + pi[c]
+  subsystem: Purine and Pyrimidine Biosynthesis
+  ec: 6.3.4.4
+- id: AGMT
+  name: agmatinase
+  genes: k249_2550746_8
+  equation: agm[c] + h2o[c] => ptrc[c] + urea[c]
+  subsystem: Arginine and Proline Metabolism
+  ec: 3.5.3.11
+- id: AKGDH
+  name: 2-Oxogluterate dehydrogenase
+  genes: (k249_465104_5 or k249_822941_2 or k249_1041617_4 or k249_2416230_1) and
+    k249_1041617_6 and k249_1041617_5
+  equation: akg[c] + coa[c] + nad[c] => co2[c] + nadh[c] + succoa[c]
+  subsystem: Citric Acid Cycle
+- id: ALAALAr
+  name: D-alanine-D-alanine ligase (reversible)
+  genes: k249_659916_1
+  equation: (2) ala-D[c] + atp[c] <=> adp[c] + alaala[c] + h[c] + pi[c]
+  subsystem: Cell Envelope Biosynthesis
+  ec: 6.3.2.4
+- id: ALAR
+  name: alanine racemase
+  genes: k249_1459546_7
+  equation: ala-L[c] <=> ala-D[c]
+  subsystem: Alanine and Aspartate Metabolism
+  ec: 5.1.1.1
+- id: ALATA_L
+  name: L-alanine transaminase
+  genes: k249_1746777_13
+  equation: akg[c] + ala-L[c] <=> glu-L[c] + pyr[c]
+  subsystem: Alanine and Aspartate Metabolism
+  ec: 2.6.1.2
+- id: ALCD2x
+  name: alcohol dehydrogenase (ethanol)
+  genes: k249_2525945_18
+  equation: etoh[c] + nad[c] <=> acald[c] + h[c] + nadh[c]
+  subsystem: Pyruvate Metabolism
+  ec: 1.1.1.1
+- id: ALDD2x
+  name: aldehyde dehydrogenase (acetaldehyde, NAD)
+  genes: k249_2550746_4
+  equation: acald[c] + h2o[c] + nad[c] => ac[c] + (2) h[c] + nadh[c]
+  subsystem: Alternate Carbon Metabolism
+  ec: 1.2.1.3
+- id: ALDD2y
+  name: aldehyde dehydrogenase (acetaldehyde, NADP)
+  genes: (k249_632589_2 or k249_805088_9)
+  equation: acald[c] + h2o[c] + nadp[c] => ac[c] + (2) h[c] + nadph[c]
+  subsystem: Alternate Carbon Metabolism
+  ec: 1.2.1.4
+- id: ALLTN
+  name: allantoinase
+  genes: k249_2616098_4
+  equation: alltn[c] + h2o[c] => alltt[c] + h[c]
+  subsystem: Nitrogen Metabolism
+  ec: 3.5.2.5
+- id: ALTRH
+  name: altronate hydrolase
+  genes: k249_440146_1
+  equation: altrn[c] => 2ddglcn[c] + h2o[c]
+  subsystem: Alternate Carbon Metabolism
+  ec: 4.2.1.7
+- id: AMAOTr
+  name: adenosylmethionine-8-amino-7-oxononanoate transaminase
+  genes: k249_1448588_10
+  equation: 8aonn[c] + amet[c] <=> amob[c] + dann[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+  ec: 2.6.1.62
+- id: AMPTASECG
+  name: alanyl aminopeptidase (cys-gly)
+  genes: k249_800257_4 or k249_1448588_14 or k249_1215375_2
+  equation: cgly[c] + h2o[c] => cys-L[c] + gly[c]
+  subsystem: Cysteine Metabolism
+  ec: 3.4.11.2
+- id: ANPRT
+  name: anthranilate phosphoribosyltransferase
+  genes: k249_241809_20
+  equation: anth[c] + prpp[c] => ppi[c] + pran[c]
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+  ec: 2.4.2.18
+- id: AP4AH
+  name: Ap4A hydrolase
+  genes: k249_76775_4
+  equation: ap4a[c] + h2o[c] => (2) adp[c] + (2) h[c]
+  subsystem: Nucleotide Salvage Pathway
+  ec: 3.6.1.41
+- id: APRAUR
+  name: 5-amino-6-(5-phosphoribosylamino)uracil reductase
+  genes: k249_1155537_5
+  equation: 5apru[c] + h[c] + nadph[c] => 5aprbu[c] + nadp[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+  ec: 1.1.1.193
+- id: ASAD
+  name: aspartate-semialdehyde dehydrogenase
+  genes: k249_2950005_4
+  equation: aspsa[c] + nadp[c] + pi[c] <=> 4pasp[c] + h[c] + nadph[c]
+  subsystem: Threonine and Lysine Metabolism
+  ec: 1.2.1.11
+- id: ASP1DC
+  name: aspartate 1-decarboxylase
+  genes: k249_2970280_8
+  equation: asp-L[c] + h[c] => ala-B[c] + co2[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+  ec: 4.1.1.11
+- id: ASPCT
+  name: aspartate carbamoyltransferase
+  genes: (- and k249_130661_2) or k249_130661_2
+  equation: asp-L[c] + cbp[c] => cbasp[c] + h[c] + pi[c]
+  subsystem: Purine and Pyrimidine Biosynthesis
+  ec: 2.1.3.2
+- id: ASPK
+  name: aspartate kinase
+  genes: k249_362844_2
+  equation: asp-L[c] + atp[c] <=> 4pasp[c] + adp[c]
+  subsystem: Threonine and Lysine Metabolism
+  ec: 2.7.2.4
+- id: ASPO6
+  name: L-aspartate oxidase
+  genes: (k249_166261_9 or k249_657971_1)
+  equation: asp-L[c] + o2[c] => h[c] + h2o2[c] + iasp[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+- id: ASPTA
+  name: aspartate transaminase
+  genes: (k249_150865_7 or k249_1115072_4)
+  equation: akg[c] + asp-L[c] <=> glu-L[c] + oaa[c]
+  subsystem: Alanine and Aspartate Metabolism
+  ec: 2.6.1.1
+- id: AST
+  name: Arginine succinyltransferase
+  genes: k249_2525945_7
+  equation: arg-L[c] + succoa[c] => coa[c] + h[c] + sucarg[c]
+  subsystem: Arginine and Proline Metabolism
+  ec: 2.3.1.109
+- id: BPNT
+  name: 3',5'-bisphosphate nucleotidase
+  genes: k249_531167_28
+  equation: h2o[c] + pap[c] => amp[c] + pi[c]
+  subsystem: Cysteine Metabolism
+  ec: 3.1.3.7
+- id: CBPS
+  name: carbamoyl-phosphate synthase (glutamine-hydrolysing)
+  genes: k249_1031794_12 and k249_1031794_13
+  equation: (2) atp[c] + gln-L[c] + h2o[c] + hco3[c] => (2) adp[c] + cbp[c] + glu-L[c]
+    + (2) h[c] + pi[c]
+  subsystem: Arginine and Proline Metabolism
+  ec: 6.3.5.5
+- id: CHORM
+  name: chorismate mutase
+  genes: k249_3244152_2
+  equation: chor[c] => pphn[c]
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+  ec: 5.4.99.5
+- id: CHORS
+  name: chorismate synthase
+  genes: k249_608065_26
+  equation: 3psme[c] => chor[c] + pi[c]
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+  ec: 4.2.3.5
+- id: CPPPGO
+  name: coproporphyrinogen oxidase (O2 required)
+  genes: k249_1513927_2
+  equation: cpppg3[c] + (2) h[c] + o2[c] => (2) co2[c] + (2) h2o[c] + pppg9[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+  ec: 1.3.3.3
+- id: CPPPGO2
+  name: Oxygen Independent coproporphyrinogen-III oxidase
+  genes: k249_13594_8
+  equation: (2) amet[c] + cpppg3[c] => (2) co2[c] + (2) dad-5[c] + (2) met-L[c] +
+    pppg9[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+- id: CS
+  name: citrate synthase
+  genes: k249_1041617_11
+  equation: accoa[c] + h2o[c] + oaa[c] => cit[c] + coa[c] + h[c]
+  subsystem: Citric Acid Cycle
+- id: CTPS2
+  name: CTP synthase (glutamine)
+  genes: k249_1399648_13
+  equation: atp[c] + gln-L[c] + h2o[c] + utp[c] => adp[c] + ctp[c] + glu-L[c] + (2)
+    h[c] + pi[c]
+  subsystem: Purine and Pyrimidine Biosynthesis
+  ec: 6.3.4.2
+- id: CYSS
+  name: cysteine synthase
+  genes: k249_1426829_2 or k249_657971_12
+  equation: acser[c] + h2s[c] => ac[c] + cys-L[c] + h[c]
+  subsystem: Cysteine Metabolism
+- id: CYTDK2
+  name: cytidine kinase (GTP)
+  genes: k249_531167_9
+  equation: cytd[c] + gtp[c] => cmp[c] + gdp[c] + h[c]
+  subsystem: Nucleotide Salvage Pathway
+- id: CYTK1
+  name: cytidylate kinase (CMP)
+  genes: k249_568003_13
+  equation: atp[c] + cmp[c] <=> adp[c] + cdp[c]
+  subsystem: Nucleotide Salvage Pathway
+  ec: 2.7.4.14
+- id: CYTK2
+  name: cytidylate kinase (dCMP)
+  genes: k249_568003_13
+  equation: atp[c] + dcmp[c] <=> adp[c] + dcdp[c]
+  subsystem: Nucleotide Salvage Pathway
+  ec: 2.7.4.14
+- id: DAPDC
+  name: diaminopimelate decarboxylase
+  genes: k249_2428595_8
+  equation: 26dap-M[c] + h[c] => co2[c] + lys-L[c]
+  subsystem: Threonine and Lysine Metabolism
+  ec: 4.1.1.20
+- id: DAPE
+  name: diaminopimelate epimerase
+  genes: k249_2428595_7
+  equation: 26dap-LL[c] <=> 26dap-M[c]
+  subsystem: Threonine and Lysine Metabolism
+  ec: 5.1.1.7
+- id: DB4PS
+  name: 3,4-Dihydroxy-2-butanone-4-phosphate synthase
+  genes: k249_1155537_6
+  equation: ru5p-D[c] => db4p[c] + for[c] + h[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+- id: DBTS
+  name: dethiobiotin synthase
+  genes: k249_1031794_8
+  equation: atp[c] + co2[c] + dann[c] => adp[c] + dtbt[c] + (3) h[c] + pi[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+  ec: 6.3.3.3
+- id: DDGLK
+  name: 2-dehydro-3-deoxygluconokinase
+  genes: k249_1455622_12
+  equation: 2ddglcn[c] + atp[c] => 2ddg6p[c] + adp[c] + h[c]
+  subsystem: Alternate Carbon Metabolism
+  ec: 2.7.1.45
+- id: DDPA
+  name: 3-deoxy-D-arabino-heptulosonate 7-phosphate synthetase
+  genes: k249_154338_15
+  equation: e4p[c] + h2o[c] + pep[c] => 2dda7p[c] + pi[c]
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+  ec: 4.1.2.15
+- id: DGK1
+  name: deoxyguanylate kinase (dGMP:ATP)
+  genes: k249_2998397_8
+  equation: atp[c] + dgmp[c] <=> adp[c] + dgdp[c]
+  subsystem: Nucleotide Salvage Pathway
+  ec: 2.7.4.8
+- id: DHACOAH
+  name: 2,3-dehydroadipyl-CoA hydratase
+  genes: k249_150865_4
+  equation: 23dhacoa[c] + h2o[c] <=> 3hadpcoa[c]
+  subsystem: Alternate Carbon Metabolism
+- id: DHAD1
+  name: dihydroxy-acid dehydratase (2,3-dihydroxy-3-methylbutanoate)
+  genes: k249_1202656_2
+  equation: 23dhmb[c] => 3mob[c] + h2o[c]
+  subsystem: Valine, Leucine, and Isoleucine Metabolism
+  ec: 4.2.1.9
+- id: DHAD2
+  name: Dihydroxy-acid dehydratase (2,3-dihydroxy-3-methylpentanoate)
+  genes: k249_1202656_2
+  equation: 23dhmp[c] => 3mop[c] + h2o[c]
+  subsystem: Valine, Leucine, and Isoleucine Metabolism
+- id: DHFS
+  name: dihydrofolate synthase
+  genes: k249_648967_5
+  equation: atp[c] + dhpt[c] + glu-L[c] => adp[c] + dhf[c] + h[c] + pi[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+  ec: 6.3.2.12
+- id: DHORTS
+  name: dihydroorotase
+  genes: k249_1115072_2
+  equation: dhor-S[c] + h2o[c] <=> cbasp[c] + h[c]
+  subsystem: Purine and Pyrimidine Biosynthesis
+  ec: 3.5.2.3
+- id: DHPPDA2
+  name: diaminohydroxyphosphoribosylaminopryrimidine deaminase (25drapp)
+  genes: k249_1155537_5
+  equation: 25drapp[c] + h[c] + h2o[c] => 5apru[c] + nh4[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+  ec: 3.5.4.26
+- id: DHPS2
+  name: dihydropteroate synthase
+  genes: k249_1822632_2
+  equation: 4abz[c] + 6hmhptpp[c] => dhpt[c] + ppi[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+  ec: 2.5.1.15
+- id: DHQS
+  name: 3-dehydroquinate synthase
+  genes: k249_1822632_20
+  equation: 2dda7p[c] => 3dhq[c] + pi[c]
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+  ec: 4.2.3.4
+- id: DMATT
+  name: dimethylallyltranstransferase
+  genes: k249_709608_12
+  equation: dmpp[c] + ipdp[c] => grdp[c] + ppi[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+  ec: 2.5.1.1
+- id: DRPA
+  name: deoxyribose-phosphate aldolase
+  genes: k249_782612_2
+  equation: 2dr5p[c] => acald[c] + g3p[c]
+  subsystem: Alternate Carbon Metabolism
+  ec: 4.1.2.4
+- id: DTMPK
+  name: dTMP kinase
+  genes: k249_578838_27
+  equation: atp[c] + dtmp[c] <=> adp[c] + dtdp[c]
+  subsystem: Nucleotide Salvage Pathway
+  ec: 2.7.4.9
+- id: DURIK1
+  name: deoxyuridine kinase (ATP:Deoxyuridine)
+  genes: k249_195882_3
+  equation: atp[c] + duri[c] => adp[c] + dump[c] + h[c]
+  subsystem: Nucleotide Salvage Pathway
+- id: DURIPP
+  name: deoxyuridine phosphorylase
+  genes: k249_782612_1 or k249_98619_11
+  equation: duri[c] + pi[c] <=> 2dr1p[c] + ura[c]
+  subsystem: Nucleotide Salvage Pathway
+- id: DXPRIi
+  name: 1-deoxy-D-xylulose reductoisomerase
+  genes: k249_1399648_26
+  equation: dxyl5p[c] + h[c] + nadph[c] => 2me4p[c] + nadp[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+- id: DXPS
+  name: 1-deoxy-D-xylulose 5-phosphate synthase
+  genes: (k249_805868_11 or k249_1078230_1)
+  equation: g3p[c] + h[c] + pyr[c] => co2[c] + dxyl5p[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+- id: ECOAH1
+  name: 3-hydroxyacyl-CoA dehydratase (3-hydroxybutanoyl-CoA)
+  genes: k249_633436_2
+  equation: 3hbcoa[c] <=> b2coa[c] + h2o[c]
+  subsystem: Membrane Lipid Metabolism
+  ec: 4.2.1.17
+- id: ECOAH2
+  name: 3-hydroxyacyl-CoA dehydratase (3-hydroxyhexanoyl-CoA)
+  genes: k249_633436_2
+  equation: 3hhcoa[c] <=> h2o[c] + hx2coa[c]
+  subsystem: Membrane Lipid Metabolism
+  ec: 4.2.1.17
+- id: ECOAH3
+  name: 3-hydroxyacyl-CoA dehydratase (3-hydroxyoctanoyl-CoA)
+  genes: k249_633436_2
+  equation: 3hocoa[c] <=> h2o[c] + oc2coa[c]
+  subsystem: Membrane Lipid Metabolism
+  ec: 4.2.1.17
+- id: ECOAH4
+  name: 3-hydroxyacyl-CoA dehydratase (3-hydroxydecanoyl-CoA)
+  genes: k249_633436_2
+  equation: 3hdcoa[c] <=> dc2coa[c] + h2o[c]
+  subsystem: Membrane Lipid Metabolism
+  ec: 4.2.1.17
+- id: ECOAH6
+  name: 3-hydroxyacyl-CoA dehydratase (3-hydroxytetradecanoyl-CoA)
+  genes: k249_633436_2
+  equation: 3htdcoa[c] <=> h2o[c] + td2coa[c]
+  subsystem: Membrane Lipid Metabolism
+  ec: 4.2.1.17
+- id: ECOAH7
+  name: 3-hydroxyacyl-CoA dehydratase (3-hydroxyhexadecanoyl-CoA)
+  genes: k249_633436_2
+  equation: 3hhdcoa[c] <=> h2o[c] + hdd2coa[c]
+  subsystem: Membrane Lipid Metabolism
+  ec: 4.2.1.17
+- id: EDA
+  name: 2-dehydro-3-deoxy-phosphogluconate aldolase
+  genes: k249_1049152_9
+  equation: 2ddg6p[c] => g3p[c] + pyr[c]
+  subsystem: Pentose Phosphate Pathway
+  ec: 4.1.2.14
+- id: ENO
+  name: enolase
+  genes: k249_1399648_12
+  equation: 2pg[c] <=> h2o[c] + pep[c]
+  subsystem: Glycolysis/Gluconeogenesis
+  ec: 4.2.1.11
+- id: FBA3
+  name: Sedoheptulose 1,7-bisphosphate D-glyceraldehyde-3-phosphate-lyase
+  genes: k249_531167_11
+  equation: s17bp[c] <=> dhap[c] + e4p[c]
+  subsystem: Pentose Phosphate Pathway
+  ec: 4.1.2.13
+- id: FBP
+  name: fructose-bisphosphatase
+  genes: k249_397260_4
+  equation: fdp[c] + h2o[c] => f6p[c] + pi[c]
+  subsystem: Glycolysis/Gluconeogenesis
+  ec: 3.1.3.11
+- id: FCLT
+  name: Ferrochelatase
+  genes: k249_531167_24
+  equation: fe2[c] + ppp9[c] => (2) h[c] + pheme[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+  ec: 4.99.1.1
+- id: FMNAT
+  name: FMN adenylyltransferase
+  genes: k249_241809_28
+  equation: atp[c] + fmn[c] + h[c] => fad[c] + ppi[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+  ec: 2.7.7.2
+- id: G6PDA
+  name: glucosamine-6-phosphate deaminase
+  genes: k249_2970280_2
+  equation: gam6p[c] + h2o[c] => f6p[c] + nh4[c]
+  subsystem: Alternate Carbon Metabolism
+  ec: 3.5.99.6
+- id: G6PDH2r
+  name: glucose 6-phosphate dehydrogenase
+  genes: k249_1486087_5
+  equation: g6p[c] + nadp[c] <=> 6pgl[c] + h[c] + nadph[c]
+  subsystem: Pentose Phosphate Pathway
+  ec: 1.1.1.49
+- id: GALKr
+  name: galactokinase
+  genes: (k249_599558_1 or k249_1645266_4)
+  equation: atp[c] + gal[c] <=> adp[c] + gal1p[c] + h[c]
+  subsystem: Alternate Carbon Metabolism
+  ec: 2.7.1.6
+- id: GALUi
+  name: UTP-glucose-1-phosphate uridylyltransferase (irreversible)
+  genes: k249_3328914_17
+  equation: g1p[c] + h[c] + utp[c] => ppi[c] + udpg[c]
+  subsystem: Cell Envelope Biosynthesis
+  ec: 2.7.7.9
+- id: GGPTRCS
+  name: gamma glutamyl putrescine synthase
+  genes: k249_2550746_11
+  equation: atp[c] + glu-L[c] + ptrc[c] => adp[c] + ggptrc[c] + h[c] + pi[c]
+  subsystem: Alternate Carbon Metabolism
+- id: GHMT2r
+  name: glycine hydroxymethyltransferase, reversible
+  genes: k249_241809_15
+  equation: ser-L[c] + thf[c] <=> gly[c] + h2o[c] + mlthf[c]
+  subsystem: Glycine and Serine Metabolism
+  ec: 2.1.2.1
+- id: GK1
+  name: guanylate kinase (GMP:ATP)
+  genes: k249_2998397_8
+  equation: atp[c] + gmp[c] <=> adp[c] + gdp[c]
+  subsystem: Nucleotide Salvage Pathway
+  ec: 2.7.4.8
+- id: GLNS
+  name: glutamine synthetase
+  genes: k249_81429_19 or k249_2550746_11
+  equation: atp[c] + glu-L[c] + nh4[c] => adp[c] + gln-L[c] + h[c] + pi[c]
+  subsystem: Glutamate Metabolism
+  ec: 6.3.1.2
+- id: GLU5K
+  name: glutamate 5-kinase
+  genes: k249_798161_35
+  equation: atp[c] + glu-L[c] => adp[c] + glu5p[c]
+  subsystem: Arginine and Proline Metabolism
+  ec: 2.7.2.11
+- id: GLUCYS
+  name: gamma-glutamylcysteine synthetase
+  genes: k249_594999_11
+  equation: atp[c] + cys-L[c] + glu-L[c] => adp[c] + glucys[c] + h[c] + pi[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+  ec: 6.3.2.2
+- id: GLUN
+  name: glutaminase
+  genes: (k249_154338_21 or k249_241809_17)
+  equation: gln-L[c] + h2o[c] => glu-L[c] + nh4[c]
+  subsystem: Glutamate Metabolism
+  ec: 3.5.1.2
+- id: GLUPRT
+  name: glutamine phosphoribosyldiphosphate amidotransferase
+  genes: k249_648967_8
+  equation: gln-L[c] + h2o[c] + prpp[c] => glu-L[c] + ppi[c] + pram[c]
+  subsystem: Purine and Pyrimidine Biosynthesis
+  ec: 2.4.2.14
+- id: GLUSy
+  name: glutamate synthase (NADPH)
+  genes: (k249_1426829_4 or k249_1822632_22 or k249_1980508_1) and (k249_1426829_3
+    or k249_1980508_2)
+  equation: akg[c] + gln-L[c] + h[c] + nadph[c] => (2) glu-L[c] + nadp[c]
+  subsystem: Glutamate Metabolism
+  ec: 1.4.1.13
+- id: GLYCLTDx
+  name: Glycolate dehydrogenase (NAD)
+  genes: (k249_767246_5 or k249_1015053_13)
+  equation: glx[c] + h[c] + nadh[c] => glyclt[c] + nad[c]
+  subsystem: Glyoxylate Metabolism
+- id: GMPR
+  name: GMP reductase
+  genes: k249_805088_6
+  equation: gmp[c] + (2) h[c] + nadph[c] => imp[c] + nadp[c] + nh4[c]
+  subsystem: Purine and Pyrimidine Biosynthesis
+  ec: 1.7.1.7
+- id: GND
+  name: phosphogluconate dehydrogenase
+  genes: k249_417112_4
+  equation: 6pgc[c] + nadp[c] => co2[c] + nadph[c] + ru5p-D[c]
+  subsystem: Pentose Phosphate Pathway
+  ec: 1.1.1.44
+- id: GRTT
+  name: geranyltranstransferase
+  genes: k249_709608_12
+  equation: grdp[c] + ipdp[c] => frdp[c] + ppi[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+  ec: 2.5.1.10
+- id: GTHS
+  name: glutathione synthetase
+  genes: k249_98619_23
+  equation: atp[c] + glucys[c] + gly[c] => adp[c] + gthrd[c] + h[c] + pi[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+  ec: 6.3.2.3
+- id: GTPCII2
+  name: GTP cyclohydrolase II (25drapp)
+  genes: k249_847715_24
+  equation: gtp[c] + (3) h2o[c] => 25drapp[c] + for[c] + (2) h[c] + ppi[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+- id: GTPDPK
+  name: GTP diphosphokinase
+  genes: (k249_657971_14 or k249_3722152_1)
+  equation: atp[c] + gtp[c] => amp[c] + gdptp[c] + h[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+  ec: 2.7.6.5
+- id: GUAD
+  name: guanine deaminase
+  genes: (k249_560581_8 or k249_2616098_1)
+  equation: gua[c] + h[c] + h2o[c] => nh4[c] + xan[c]
+  subsystem: Nucleotide Salvage Pathway
+  ec: 3.5.4.3
+- id: HACD1
+  name: 3-hydroxyacyl-CoA dehydrogenase (acetoacetyl-CoA)
+  genes: k249_633436_2
+  equation: aacoa[c] + h[c] + nadh[c] <=> 3hbcoa[c] + nad[c]
+  subsystem: Membrane Lipid Metabolism
+  ec: 1.1.1.35
+- id: HACD2
+  name: 3-hydroxyacyl-CoA dehydrogenase (3-oxohexanoyl-CoA)
+  genes: k249_633436_2
+  equation: 3ohcoa[c] + h[c] + nadh[c] <=> 3hhcoa[c] + nad[c]
+  subsystem: Membrane Lipid Metabolism
+  ec: 1.1.1.35
+- id: HACD3
+  name: 3-hydroxyacyl-CoA dehydrogenase (3-oxooctanoyl-CoA)
+  genes: k249_633436_2
+  equation: 3oocoa[c] + h[c] + nadh[c] <=> 3hocoa[c] + nad[c]
+  subsystem: Membrane Lipid Metabolism
+  ec: 1.1.1.35
+- id: HACD5
+  name: 3-hydroxyacyl-CoA dehydrogenase (3-oxododecanoyl-CoA)
+  genes: k249_633436_2
+  equation: 3oddcoa[c] + h[c] + nadh[c] <=> 3hddcoa[c] + nad[c]
+  subsystem: Membrane Lipid Metabolism
+  ec: 1.1.1.35
+- id: HISTD
+  name: histidinol dehydrogenase
+  genes: k249_798161_3
+  equation: h2o[c] + histd[c] + (2) nad[c] => (3) h[c] + his-L[c] + (2) nadh[c]
+  subsystem: Histidine Metabolism
+  ec: 1.1.1.23
+- id: HISTP
+  name: histidinol-phosphatase
+  genes: k249_545032_2
+  equation: h2o[c] + hisp[c] => histd[c] + pi[c]
+  subsystem: Histidine Metabolism
+  ec: 3.1.3.15
+- id: HMBS
+  name: hydroxymethylbilane synthase
+  genes: k249_1980508_6
+  equation: h2o[c] + (4) ppbng[c] => hmbil[c] + (4) nh4[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+  ec: 4.3.1.8
+- id: HSDy
+  name: homoserine dehydrogenase (NADPH)
+  genes: k249_362844_2
+  equation: hom-L[c] + nadp[c] <=> aspsa[c] + h[c] + nadph[c]
+  subsystem: Threonine and Lysine Metabolism
+  ec: 1.1.1.3
+- id: IG3PS
+  name: Imidazole-glycerol-3-phosphate synthase
+  genes: k249_545032_3 and k249_545032_5
+  equation: gln-L[c] + prlp[c] => aicar[c] + eig3p[c] + glu-L[c] + h[c]
+  subsystem: Histidine Metabolism
+- id: IGPDH
+  name: imidazoleglycerol-phosphate dehydratase
+  genes: k249_545032_2
+  equation: eig3p[c] => h2o[c] + imacp[c]
+  subsystem: Histidine Metabolism
+  ec: 4.2.1.19
+- id: IGPS
+  name: indole-3-glycerol-phosphate synthase
+  genes: k249_241809_21
+  equation: 2cpr5p[c] + h[c] => 3ig3p[c] + co2[c] + h2o[c]
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+  ec: 4.1.1.48
+- id: IMPC
+  name: IMP cyclohydrolase
+  genes: k249_376197_2
+  equation: h2o[c] + imp[c] <=> fprica[c]
+  subsystem: Purine and Pyrimidine Biosynthesis
+  ec: 3.5.4.10
+- id: KARA1
+  name: ketol-acid reductoisomerase (2,3-dihydroxy-3-methylbutanoate)
+  genes: k249_693436_9
+  equation: 23dhmb[c] + nadp[c] <=> alac-S[c] + h[c] + nadph[c]
+  subsystem: Valine, Leucine, and Isoleucine Metabolism
+  ec: 1.1.1.86
+- id: KDOCT2
+  name: 3-deoxy-manno-octulosonate cytidylyltransferase
+  genes: k249_578838_42
+  equation: ctp[c] + kdo[c] => ckdo[c] + ppi[c]
+  subsystem: Lipopolysaccharide Biosynthesis / Recycling
+  ec: 2.7.7.38
+- id: KDOPP
+  name: 3-deoxy-manno-octulosonate-8-phosphatase
+  genes: k249_578838_53
+  equation: h2o[c] + kdo8p[c] => kdo[c] + pi[c]
+  subsystem: Lipopolysaccharide Biosynthesis / Recycling
+  ec: 3.1.3.45
+- id: KDOPS
+  name: 3-deoxy -D-manno-octulosonic -acid 8-phosphate synthase
+  genes: k249_578838_52
+  equation: ara5p[c] + h2o[c] + pep[c] => kdo8p[c] + pi[c]
+  subsystem: Lipopolysaccharide Biosynthesis / Recycling
+  ec: 4.1.2.16
+- id: LACZ
+  name: b-galactosidase
+  genes: k249_1504340_4
+  equation: h2o[c] + lcts[c] => gal[c] + glc-D[c]
+  subsystem: Alternate Carbon Metabolism
+  ec: 3.2.1.23
+- id: LGTHL
+  name: lactoylglutathione lyase
+  genes: (k249_188005_12 or k249_800257_20)
+  equation: gthrd[c] + mthgxl[c] => lgt-S[c]
+  subsystem: Methylglyoxal Metabolism
+  ec: 4.4.1.5
+- id: MALS
+  name: malate synthase
+  genes: (k249_686474_12 or k249_981189_1 or k249_2973906_4)
+  equation: accoa[c] + glx[c] + h2o[c] => coa[c] + h[c] + mal-L[c]
+  subsystem: Anaplerotic Reactions
+  ec: 4.1.3.2
+- id: MCITD
+  name: 2-methylcitrate dehydratase
+  genes: k249_2592755_3
+  equation: 2mcit[c] => 2mcacn[c] + h2o[c]
+  subsystem: Alternate Carbon Metabolism
+  ec: 4.2.1.79
+- id: MCITS
+  name: 2-methylcitrate synthase
+  genes: (k249_2592755_1 or k249_2592755_2)
+  equation: h2o[c] + oaa[c] + ppcoa[c] => 2mcit[c] + coa[c] + h[c]
+  subsystem: Alternate Carbon Metabolism
+  ec: 4.1.3.31
+- id: MECDPS
+  name: 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase
+  genes: k249_1399648_9
+  equation: 2p4c2me[c] => 2mecdp[c] + cmp[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+- id: METAT
+  name: methionine adenosyltransferase
+  genes: k249_2668756_3
+  equation: atp[c] + h2o[c] + met-L[c] => amet[c] + pi[c] + ppi[c]
+  subsystem: Methionine Metabolism
+  ec: 2.5.1.6
+- id: METS
+  name: methionine synthase
+  genes: k249_800257_12
+  equation: 5mthf[c] + hcys-L[c] => h[c] + met-L[c] + thf[c]
+  subsystem: Methionine Metabolism
+  ec: 2.1.1.13
+- id: MOAT2
+  name: 3-deoxy-D-manno-octulosonic acid transferase
+  genes: k249_405843_3
+  equation: ckdo[c] + kdolipid4[c] => cmp[c] + h[c] + kdo2lipid4[c]
+  subsystem: Lipopolysaccharide Biosynthesis / Recycling
+- id: MOHMT
+  name: 3-methyl-2-oxobutanoate hydroxymethyltransferase
+  genes: k249_2970280_6
+  equation: 3mob[c] + h2o[c] + mlthf[c] => 2dhp[c] + thf[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+  ec: 2.1.2.11
+- id: MTHFC
+  name: methenyltetrahydrofolate cyclohydrolase
+  genes: k249_154338_44
+  equation: h2o[c] + methf[c] <=> 10fthf[c] + h[c]
+  subsystem: Folate Metabolism
+  ec: 3.5.4.9
+- id: MTHFD
+  name: methylenetetrahydrofolate dehydrogenase (NADP)
+  genes: k249_154338_44
+  equation: mlthf[c] + nadp[c] <=> methf[c] + nadph[c]
+  subsystem: Folate Metabolism
+  ec: 1.5.1.5
+- id: MTHFR2
+  name: 5,10-methylenetetrahydrofolate reductase (NADH)
+  genes: k249_165867_5
+  equation: (2) h[c] + mlthf[c] + nadh[c] => 5mthf[c] + nad[c]
+  subsystem: Folate Metabolism
+  ec: 1.5.1.20
+- id: NDPK1
+  name: nucleoside-diphosphate kinase (ATP:GDP)
+  genes: k249_518594_5
+  equation: atp[c] + gdp[c] <=> adp[c] + gtp[c]
+  subsystem: Nucleotide Salvage Pathway
+  ec: 2.7.4.6
+- id: NDPK2
+  name: nucleoside-diphosphate kinase (ATP:UDP)
+  genes: k249_518594_5
+  equation: atp[c] + udp[c] <=> adp[c] + utp[c]
+  subsystem: Nucleotide Salvage Pathway
+  ec: 2.7.4.6
+- id: NDPK3
+  name: nucleoside-diphosphate kinase (ATP:CDP)
+  genes: k249_518594_5
+  equation: atp[c] + cdp[c] <=> adp[c] + ctp[c]
+  subsystem: Nucleotide Salvage Pathway
+  ec: 2.7.4.6
+- id: NDPK4
+  name: nucleoside-diphosphate kinase (ATP:dTDP)
+  genes: k249_518594_5
+  equation: atp[c] + dtdp[c] <=> adp[c] + dttp[c]
+  subsystem: Nucleotide Salvage Pathway
+  ec: 2.7.4.6
+- id: NDPK5
+  name: nucleoside-diphosphate kinase (ATP:dGDP)
+  genes: k249_518594_5
+  equation: atp[c] + dgdp[c] <=> adp[c] + dgtp[c]
+  subsystem: Nucleotide Salvage Pathway
+  ec: 2.7.4.6
+- id: NDPK6
+  name: nucleoside-diphosphate kinase (ATP:dUDP)
+  genes: k249_518594_5
+  equation: atp[c] + dudp[c] <=> adp[c] + dutp[c]
+  subsystem: Nucleotide Salvage Pathway
+  ec: 2.7.4.6
+- id: NDPK7
+  name: nucleoside-diphosphate kinase (ATP:dCDP)
+  genes: k249_518594_5
+  equation: atp[c] + dcdp[c] <=> adp[c] + dctp[c]
+  subsystem: Nucleotide Salvage Pathway
+  ec: 2.7.4.6
+- id: NDPK8
+  name: nucleoside-diphosphate kinase (ATP:dADP)
+  genes: k249_518594_5
+  equation: atp[c] + dadp[c] <=> adp[c] + datp[c]
+  subsystem: Nucleotide Salvage Pathway
+  ec: 2.7.4.6
+- id: NNDPR
+  name: nicotinate-nucleotide diphosphorylase (carboxylating)
+  genes: k249_1223403_6
+  equation: (2) h[c] + prpp[c] + quln[c] => co2[c] + nicrnt[c] + ppi[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+  ec: 2.4.2.19
+- id: NTD1
+  name: 5'-nucleotidase (dUMP)
+  genes: k249_1448588_7
+  equation: dump[c] + h2o[c] => duri[c] + pi[c]
+  subsystem: Nucleotide Salvage Pathway
+  ec: 3.1.3.5
+- id: NTD3
+  name: 5'-nucleotidase (dCMP)
+  genes: k249_1448588_7
+  equation: dcmp[c] + h2o[c] => dcyt[c] + pi[c]
+  subsystem: Nucleotide Salvage Pathway
+  ec: 3.1.3.5
+- id: NTD5
+  name: 5'-nucleotidase (dTMP)
+  genes: k249_1448588_7
+  equation: dtmp[c] + h2o[c] => pi[c] + thymd[c]
+  subsystem: Nucleotide Salvage Pathway
+  ec: 3.1.3.5
+- id: NTD6
+  name: 5'-nucleotidase (dAMP)
+  genes: k249_1448588_7
+  equation: damp[c] + h2o[c] => dad-2[c] + pi[c]
+  subsystem: Nucleotide Salvage Pathway
+  ec: 3.1.3.5
+- id: NTD8
+  name: 5'-nucleotidase (dGMP)
+  genes: k249_1448588_7
+  equation: dgmp[c] + h2o[c] => dgsn[c] + pi[c]
+  subsystem: Nucleotide Salvage Pathway
+  ec: 3.1.3.5
+- id: NTP1
+  name: nucleoside-triphosphatase (ATP)
+  genes: k249_779311_24
+  equation: atp[c] + h2o[c] => adp[c] + h[c] + pi[c]
+  subsystem: Nucleotide Salvage Pathway
+  ec: 3.6.1.15
+- id: NTPP1
+  name: Nucleoside triphosphate pyrophosphorylase (dgtp)
+  genes: k249_3722152_2
+  equation: dgtp[c] + h2o[c] => dgmp[c] + h[c] + ppi[c]
+  subsystem: Nucleotide Salvage Pathway
+- id: NTPP11
+  name: Nucleoside triphosphate pyrophosphorylase (xtp)
+  genes: k249_405843_5
+  equation: h2o[c] + xtp[c] => h[c] + ppi[c] + xmp[c]
+  subsystem: Nucleotide Salvage Pathway
+  ec: 3.6.1.19
+- id: NTPP2
+  name: Nucleoside triphosphate pyrophosphorylase (gtp)
+  genes: k249_3722152_2
+  equation: gtp[c] + h2o[c] => gmp[c] + h[c] + ppi[c]
+  subsystem: Nucleotide Salvage Pathway
+- id: NTPP4
+  name: Nucleoside triphosphate pyrophosphorylase (ctp)
+  genes: k249_3722152_2
+  equation: ctp[c] + h2o[c] => cmp[c] + h[c] + ppi[c]
+  subsystem: Nucleotide Salvage Pathway
+- id: NTPP6
+  name: Nucleoside triphosphate pyrophosphorylase (atp)
+  genes: k249_3722152_2
+  equation: atp[c] + h2o[c] => amp[c] + h[c] + ppi[c]
+  subsystem: Nucleotide Salvage Pathway
+- id: NTPP7
+  name: Nucleoside triphosphate pyrophosphorylase (dttp)
+  genes: k249_3722152_2
+  equation: dttp[c] + h2o[c] => dtmp[c] + h[c] + ppi[c]
+  subsystem: Nucleotide Salvage Pathway
+- id: NTPP8
+  name: Nucleoside triphosphate pyrophosphorylase (utp)
+  genes: k249_3722152_2
+  equation: h2o[c] + utp[c] => h[c] + ppi[c] + ump[c]
+  subsystem: Nucleotide Salvage Pathway
+- id: NTPP9
+  name: Nucleoside triphosphate pyrophosphorylase (itp)
+  genes: k249_405843_5
+  equation: h2o[c] + itp[c] => h[c] + imp[c] + ppi[c]
+  subsystem: Nucleotide Salvage Pathway
+  ec: 3.6.1.19
+- id: OAADC
+  name: oxaloacetate decarboxylase
+  genes: k249_1049152_9
+  equation: h[c] + oaa[c] => co2[c] + pyr[c]
+  subsystem: Pyruvate Metabolism
+  ec: 4.1.1.3
+- id: OBTFL
+  name: 2-Oxobutanoate formate lyase
+  genes: (k249_1210463_2 and k249_545032_7 and -) or (k249_1210463_2 and k249_545032_7)
+    or (k249_1210463_2 and -)
+  equation: 2obut[c] + coa[c] => for[c] + ppcoa[c]
+  subsystem: Alternate Carbon Metabolism
+- id: OCTDPS
+  name: Octaprenyl pyrophosphate synthase
+  genes: k249_798161_39
+  equation: frdp[c] + (5) ipdp[c] => octdp[c] + (5) ppi[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+- id: OHPHM
+  name: 2-octaprenyl-6-hydroxyphenol methylase
+  genes: k249_568003_7
+  equation: 2ohph[c] + amet[c] => 2omph[c] + ahcys[c] + h[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+- id: OPHBDC
+  name: Octaprenyl-hydroxybenzoate decarboxylase
+  genes: k249_98619_3 and k249_2806495_3
+  equation: 3ophb[c] + h[c] => 2oph[c] + co2[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+- id: OPHHX
+  name: 2-Octaprenylphenol hydroxylase
+  genes: k249_2188045_12
+  equation: 2oph[c] + (0.5) o2[c] => 2ohph[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+- id: ORPT
+  name: orotate phosphoribosyltransferase
+  genes: k249_2435177_2
+  equation: orot5p[c] + ppi[c] <=> orot[c] + prpp[c]
+  subsystem: Purine and Pyrimidine Biosynthesis
+  ec: 2.4.2.10
+- id: P5CD
+  name: 1-pyrroline-5-carboxylate dehydrogenase
+  genes: k249_1016403_1
+  equation: 1pyr5c[c] + (2) h2o[c] + nad[c] => glu-L[c] + h[c] + nadh[c]
+  subsystem: Arginine and Proline Metabolism
+  ec: 1.5.1.12
+- id: P5CR
+  name: pyrroline-5-carboxylate reductase
+  genes: k249_425222_38
+  equation: 1pyr5c[c] + (2) h[c] + nadph[c] => nadp[c] + pro-L[c]
+  subsystem: Arginine and Proline Metabolism
+  ec: 1.5.1.2
+- id: PANTS
+  name: pantothenate synthase
+  genes: k249_2970280_7
+  equation: ala-B[c] + atp[c] + pant-R[c] => amp[c] + h[c] + pnto-R[c] + ppi[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+  ec: 6.3.2.1
+- id: PDH
+  name: pyruvate dehydrogenase
+  genes: k249_1486087_2 and (k249_1486087_1 or k249_2416230_2 or k249_3328914_18)
+    and (k249_465104_5 or k249_822941_2 or k249_1041617_4 or k249_2416230_1)
+  equation: coa[c] + nad[c] + pyr[c] => accoa[c] + co2[c] + nadh[c]
+  subsystem: Glycolysis/Gluconeogenesis
+- id: PDX5POi
+  name: pyridoxine 5'-phosphate oxidase
+  genes: k249_1292323_6
+  equation: o2[c] + pdx5p[c] => h2o2[c] + pydx5p[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+  ec: 1.4.3.5
+- id: PERD
+  name: Erythronate 4-phosphate (4per) dehydrogenase
+  genes: k249_1746777_12
+  equation: 4per[c] + nad[c] <=> h[c] + nadh[c] + ohpb[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+- id: PFK
+  name: phosphofructokinase
+  genes: k249_545032_6
+  equation: atp[c] + f6p[c] => adp[c] + fdp[c] + h[c]
+  subsystem: Glycolysis/Gluconeogenesis
+  ec: 2.7.1.11
+- id: PFK_2
+  name: Phosphofructokinase
+  genes: k249_545032_6
+  equation: atp[c] + tag6p-D[c] => adp[c] + h[c] + tagdp-D[c]
+  subsystem: Alternate Carbon Metabolism
+  ec: 2.7.1.11
+- id: PFL
+  name: pyruvate formate lyase
+  genes: (k249_1210463_2 and k249_545032_7) or (k249_1210463_2 and -) or (- and -)
+    or (k249_1210463_2 and k249_545032_7 and -)
+  equation: coa[c] + pyr[c] => accoa[c] + for[c]
+  subsystem: Pyruvate Metabolism
+- id: PGAMT
+  name: phosphoglucosamine mutase
+  genes: k249_1822632_3
+  equation: gam1p[c] <=> gam6p[c]
+  subsystem: Cell Envelope Biosynthesis
+  ec: 5.4.2.10
+- id: PGCD
+  name: phosphoglycerate dehydrogenase
+  genes: k249_1468926_7
+  equation: 3pg[c] + nad[c] => 3php[c] + h[c] + nadh[c]
+  subsystem: Glycine and Serine Metabolism
+  ec: 1.1.1.95
+- id: PGK
+  name: phosphoglycerate kinase
+  genes: k249_531167_10
+  equation: 3pg[c] + atp[c] <=> 13dpg[c] + adp[c]
+  subsystem: Glycolysis/Gluconeogenesis
+  ec: 2.7.2.3
+- id: PGM
+  name: phosphoglycerate mutase
+  genes: k249_81429_15
+  equation: 2pg[c] <=> 3pg[c]
+  subsystem: Glycolysis/Gluconeogenesis
+  ec: 5.4.2.1
+- id: PHETA1
+  name: phenylalanine transaminase
+  genes: (k249_150865_7 or k249_1115072_4)
+  equation: akg[c] + phe-L[c] <=> glu-L[c] + phpyr[c]
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+  ec: 2.6.1.58
+- id: PPBNGS
+  name: porphobilinogen synthase
+  genes: k249_3836202_4
+  equation: (2) 5aop[c] => h[c] + (2) h2o[c] + ppbng[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+  ec: 4.2.1.24
+- id: PPGPPDP
+  name: guanosine-3',5'-bis(diphosphate) 3'-diphosphatase
+  genes: k249_2998397_10
+  equation: h2o[c] + ppgpp[c] => gdp[c] + ppi[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+  ec: 3.1.7.2
+- id: PPM
+  name: phosphopentomutase
+  genes: (k249_715153_2 or k249_2018966_1)
+  equation: r1p[c] <=> r5p[c]
+  subsystem: Alternate Carbon Metabolism
+  ec: 5.4.2.7
+- id: PPM2
+  name: phosphopentomutase 2 (deoxyribose)
+  genes: (k249_715153_2 or k249_2018966_1)
+  equation: 2dr1p[c] <=> 2dr5p[c]
+  subsystem: Alternate Carbon Metabolism
+  ec: 5.4.2.7
+- id: PPNDH
+  name: prephenate dehydratase
+  genes: k249_3244152_2
+  equation: h[c] + pphn[c] => co2[c] + h2o[c] + phpyr[c]
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+  ec: 4.2.1.51
+- id: PRAGSr
+  name: phosphoribosylglycinamide synthase
+  genes: (k249_13594_1 or k249_376197_1)
+  equation: atp[c] + gly[c] + pram[c] <=> adp[c] + gar[c] + h[c] + pi[c]
+  subsystem: Purine and Pyrimidine Biosynthesis
+  ec: 6.3.4.13
+- id: PRAIi
+  name: phosphoribosylanthranilate isomerase (irreversible)
+  genes: k249_241809_21
+  equation: pran[c] => 2cpr5p[c]
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+  ec: 5.3.1.24
+- id: PRASCSi
+  name: phosphoribosylaminoimidazolesuccinocarboxamide synthase
+  genes: k249_1594781_9
+  equation: 5aizc[c] + asp-L[c] + atp[c] => 25aics[c] + adp[c] + h[c] + pi[c]
+  subsystem: Purine and Pyrimidine Biosynthesis
+  ec: 6.3.2.6
+- id: PSCVT
+  name: 3-phosphoshikimate 1-carboxyvinyltransferase
+  genes: k249_376197_12
+  equation: pep[c] + skm5p[c] <=> 3psme[c] + pi[c]
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+  ec: 2.5.1.19
+- id: PSP_L
+  name: phosphoserine phosphatase (L-serine)
+  genes: k249_81429_34
+  equation: h2o[c] + pser-L[c] => pi[c] + ser-L[c]
+  subsystem: Glycine and Serine Metabolism
+  ec: 3.1.3.3
+- id: PTA2
+  name: Phosphate acetyltransferase
+  genes: k249_739799_5
+  equation: pi[c] + ppcoa[c] => coa[c] + ppap[c]
+  subsystem: Alternate Carbon Metabolism
+- id: PTAr
+  name: phosphotransacetylase
+  genes: k249_739799_5
+  equation: accoa[c] + pi[c] <=> actp[c] + coa[c]
+  subsystem: Pyruvate Metabolism
+  ec: 2.3.1.8
+- id: PTPATi
+  name: pantetheine-phosphate adenylyltransferase
+  genes: k249_805088_8
+  equation: atp[c] + h[c] + pan4p[c] => dpcoa[c] + ppi[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+  ec: 2.7.7.3
+- id: PUNP1
+  name: purine-nucleoside phosphorylase (Adenosine)
+  genes: k249_98619_11
+  equation: adn[c] + pi[c] <=> ade[c] + r1p[c]
+  subsystem: Nucleotide Salvage Pathway
+  ec: 2.4.2.1
+- id: PUNP2
+  name: purine-nucleoside phosphorylase (Deoxyadenosine)
+  genes: k249_98619_11
+  equation: dad-2[c] + pi[c] <=> 2dr1p[c] + ade[c]
+  subsystem: Nucleotide Salvage Pathway
+  ec: 2.4.2.1
+- id: PUNP3
+  name: purine-nucleoside phosphorylase (Guanosine)
+  genes: k249_98619_11
+  equation: gsn[c] + pi[c] <=> gua[c] + r1p[c]
+  subsystem: Nucleotide Salvage Pathway
+  ec: 2.4.2.1
+- id: PUNP4
+  name: purine-nucleoside phosphorylase (Deoxyguanosine)
+  genes: k249_98619_11
+  equation: dgsn[c] + pi[c] <=> 2dr1p[c] + gua[c]
+  subsystem: Nucleotide Salvage Pathway
+  ec: 2.4.2.1
+- id: PUNP5
+  name: purine-nucleoside phosphorylase (Inosine)
+  genes: k249_98619_11
+  equation: ins[c] + pi[c] <=> hxan[c] + r1p[c]
+  subsystem: Nucleotide Salvage Pathway
+  ec: 2.4.2.1
+- id: PUNP6
+  name: purine-nucleoside phosphorylase (Deoxyinosine)
+  genes: k249_98619_11
+  equation: din[c] + pi[c] <=> 2dr1p[c] + hxan[c]
+  subsystem: Nucleotide Salvage Pathway
+  ec: 2.4.2.1
+- id: PYK
+  name: pyruvate kinase
+  genes: k249_1486087_3 or k249_696185_11
+  equation: adp[c] + h[c] + pep[c] => atp[c] + pyr[c]
+  subsystem: Glycolysis/Gluconeogenesis
+  ec: 2.7.1.40
+- id: R15BPK
+  name: ribose-1,5-bisphosphokinase
+  genes: k249_8769_12
+  equation: atp[c] + r15bp[c] => adp[c] + prpp[c]
+  subsystem: Alternate Carbon Metabolism
+- id: RBFK
+  name: riboflavin kinase
+  genes: k249_241809_28
+  equation: atp[c] + ribflv[c] => adp[c] + fmn[c] + h[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+  ec: 2.7.1.26
+- id: RBFSb
+  name: riboflavin synthase
+  genes: k249_1155537_7
+  equation: (2) dmlz[c] => 4r5au[c] + ribflv[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+  ec: 2.5.1.9
+- id: RPE
+  name: ribulose 5-phosphate 3-epimerase
+  genes: k249_1455622_4
+  equation: ru5p-D[c] <=> xu5p-D[c]
+  subsystem: Pentose Phosphate Pathway
+  ec: 5.1.3.1
+- id: RPI
+  name: ribose-5-phosphate isomerase
+  genes: k249_531167_37
+  equation: r5p[c] <=> ru5p-D[c]
+  subsystem: Pentose Phosphate Pathway
+  ec: 5.3.1.6
+- id: SADH
+  name: Succinylarginine dihydrolase
+  genes: (k249_2525945_4 or k249_2525945_5)
+  equation: (2) h[c] + (2) h2o[c] + sucarg[c] => co2[c] + (2) nh4[c] + sucorn[c]
+  subsystem: Arginine and Proline Metabolism
+  ec: 2.6.1.69
+- id: SDPDS
+  name: succinyl-diaminopimelate desuccinylase
+  genes: k249_822466_19
+  equation: h2o[c] + sl26da[c] => 26dap-LL[c] + succ[c]
+  subsystem: Threonine and Lysine Metabolism
+  ec: 3.5.1.18
+- id: SDPTA
+  name: succinyldiaminopimelate transaminase
+  genes: k249_2525945_9
+  equation: akg[c] + sl26da[c] <=> glu-L[c] + sl2a6o[c]
+  subsystem: Threonine and Lysine Metabolism
+  ec: 2.6.1.17
+- id: SERAT
+  name: serine O-acetyltransferase
+  genes: (k249_702968_4 or k249_767246_2)
+  equation: accoa[c] + ser-L[c] <=> acser[c] + coa[c]
+  subsystem: Cysteine Metabolism
+  ec: 2.3.1.30
+- id: SERD_L
+  name: L-serine deaminase
+  genes: (k249_1155537_1 or k249_1455622_13)
+  equation: ser-L[c] => nh4[c] + pyr[c]
+  subsystem: Glycine and Serine Metabolism
+  ec: 4.3.1.17
+- id: SGDS
+  name: Succinylglutamate desuccinylase
+  genes: k249_693987_5
+  equation: h2o[c] + sucglu[c] => glu-L[c] + succ[c]
+  subsystem: Arginine and Proline Metabolism
+- id: SHCHF
+  name: sirohydrochlorin ferrochelatase
+  genes: k249_955711_1
+  equation: fe2[c] + scl[c] => (3) h[c] + sheme[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+- id: SHSL1
+  name: O-succinylhomoserine lyase (L-cysteine)
+  genes: k249_167816_12
+  equation: cys-L[c] + suchms[c] => cyst-L[c] + h[c] + succ[c]
+  subsystem: Methionine Metabolism
+  ec: 4.2.99.9
+- id: SSALy
+  name: succinate-semialdehyde dehydrogenase (NADP)
+  genes: (k249_1107854_1 or k249_2416230_3)
+  equation: h2o[c] + nadp[c] + sucsal[c] => (2) h[c] + nadph[c] + succ[c]
+  subsystem: Arginine and Proline Metabolism
+  ec: 1.2.1.16
+- id: SUCOAS
+  name: succinyl-CoA synthetase (ADP-forming)
+  genes: (k249_955711_29 or k249_1041617_3) and (k249_955711_28 or k249_1041617_2)
+  equation: atp[c] + coa[c] + succ[c] <=> adp[c] + pi[c] + succoa[c]
+  subsystem: Citric Acid Cycle
+  ec: 6.2.1.5
+- id: TDSK
+  name: Tetraacyldisaccharide 4'kinase
+  genes: k249_578838_43
+  equation: atp[c] + lipidAds[c] => adp[c] + h[c] + lipidA[c]
+  subsystem: Lipopolysaccharide Biosynthesis / Recycling
+  ec: 2.7.1.130
+- id: THRA2i
+  name: L-allo-Threonine Aldolase
+  genes: k249_241809_15
+  equation: athr-L[c] => acald[c] + gly[c]
+  subsystem: Threonine and Lysine Metabolism
+  ec: 4.1.2.5
+- id: THRAi
+  name: Threonine aldolase
+  genes: k249_241809_15
+  equation: thr-L[c] => acald[c] + gly[c]
+  subsystem: Threonine and Lysine Metabolism
+  ec: 4.1.2.5
+- id: THRD_L
+  name: L-threonine deaminase
+  genes: k249_531167_36
+  equation: thr-L[c] => 2obut[c] + nh4[c]
+  subsystem: Valine, Leucine, and Isoleucine Metabolism
+  ec: 4.3.1.19
+- id: THRS
+  name: threonine synthase
+  genes: k249_441004_10
+  equation: h2o[c] + phom[c] => pi[c] + thr-L[c]
+  subsystem: Threonine and Lysine Metabolism
+  ec: 4.2.3.1
+- id: TKT2
+  name: transketolase
+  genes: k249_394386_4
+  equation: e4p[c] + xu5p-D[c] <=> f6p[c] + g3p[c]
+  subsystem: Pentose Phosphate Pathway
+  ec: 2.2.1.1
+- id: TMDK1
+  name: thymidine kinase (ATP:thymidine)
+  genes: k249_195882_3
+  equation: atp[c] + thymd[c] => adp[c] + dtmp[c] + h[c]
+  subsystem: Nucleotide Salvage Pathway
+  ec: 2.7.1.21
+- id: TMDPP
+  name: thymidine phosphorylase
+  genes: k249_782612_1
+  equation: pi[c] + thymd[c] <=> 2dr1p[c] + thym[c]
+  subsystem: Nucleotide Salvage Pathway
+  ec: 2.4.2.4
+- id: TMPK
+  name: thiamine-phosphate kinase
+  genes: k249_446308_3
+  equation: atp[c] + thmmp[c] => adp[c] + thmpp[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+  ec: 2.7.4.16
+- id: TRSARr
+  name: tartronate semialdehyde reductase
+  genes: k249_1746777_10
+  equation: 2h3oppan[c] + h[c] + nadh[c] <=> glyc-R[c] + nad[c]
+  subsystem: Alternate Carbon Metabolism
+  ec: 1.1.1.60
+- id: TYRTA
+  name: tyrosine transaminase
+  genes: (k249_150865_7 or k249_1115072_4)
+  equation: akg[c] + tyr-L[c] <=> 34hpp[c] + glu-L[c]
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+  ec: 2.6.1.5
+- id: UAAGDS
+  name: UDP-N-acetylmuramoyl-L-alanyl-D-glutamyl-meso-2,6-diaminopimelate synthetase
+  genes: (k249_51520_1 or k249_376197_23)
+  equation: 26dap-M[c] + atp[c] + uamag[c] => adp[c] + h[c] + pi[c] + ugmd[c]
+  subsystem: Cell Envelope Biosynthesis
+  ec: 6.3.2.13
+- id: UAGCVT
+  name: UDP-N-acetylglucosamine 1-carboxyvinyltransferase
+  genes: k249_798161_5
+  equation: pep[c] + uacgam[c] => pi[c] + uaccg[c]
+  subsystem: Cell Envelope Biosynthesis
+  ec: 2.5.1.7
+- id: UAGPT3
+  name: UDP-N-acetylglucosamine-N-acetylmuramyl-(pentapeptide)pyrophosphoryl-undecaprenol
+    N-acetylglucosamine transferase
+  genes: k249_659916_3
+  equation: uacgam[c] + uagmda[c] => h[c] + uaagmda[c] + udp[c]
+  subsystem: Cell Envelope Biosynthesis
+- id: UAMAGS
+  name: UDP-N-acetylmuramoyl-L-alanyl-D-glutamate synthetase
+  genes: k249_659916_5
+  equation: atp[c] + glu-D[c] + uama[c] => adp[c] + h[c] + pi[c] + uamag[c]
+  subsystem: Cell Envelope Biosynthesis
+  ec: 6.3.2.9
+- id: UAMAS
+  name: UDP-N-acetylmuramoyl-L-alanine synthetase
+  genes: k249_659916_2
+  equation: ala-L[c] + atp[c] + uamr[c] => adp[c] + h[c] + pi[c] + uama[c]
+  subsystem: Cell Envelope Biosynthesis
+  ec: 6.3.2.8
+- id: UDPG4E
+  name: UDPglucose 4-epimerase
+  genes: k249_52663_14
+  equation: udpg[c] <=> udpgal[c]
+  subsystem: Alternate Carbon Metabolism
+  ec: 5.1.3.2
+- id: UGLT
+  name: UDPglucose--hexose-1-phosphate uridylyltransferase
+  genes: k249_599558_2
+  equation: gal1p[c] + udpg[c] <=> g1p[c] + udpgal[c]
+  subsystem: Alternate Carbon Metabolism
+  ec: 2.7.7.12
+- id: UGMDDS
+  name: UDP-N-acetylmuramoyl-L-alanyl-D-glutamyl-meso-2,6-diaminopimeloyl-D-alanyl-D-alanine
+    synthetase
+  genes: k249_376197_24
+  equation: alaala[c] + atp[c] + ugmd[c] => adp[c] + h[c] + pi[c] + ugmda[c]
+  subsystem: Cell Envelope Biosynthesis
+  ec: 6.3.2.15
+- id: UHGADA
+  name: UDP-3-O-acetylglucosamine deacetylase
+  genes: k249_88836_5
+  equation: h2o[c] + u3aga[c] => ac[c] + u3hga[c]
+  subsystem: Lipopolysaccharide Biosynthesis / Recycling
+- id: UMPK
+  name: UMP kinase
+  genes: k249_568003_13
+  equation: atp[c] + ump[c] <=> adp[c] + udp[c]
+  subsystem: Nucleotide Salvage Pathway
+  ec: 2.7.4.14
+- id: UPP3MT
+  name: uroporphyrinogen methyltransferase
+  genes: k249_955711_1
+  equation: (2) amet[c] + uppg3[c] => (2) ahcys[c] + dscl[c] + h[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+  ec: 2.1.1.107
+- id: UPPDC1
+  name: uroporphyrinogen decarboxylase (uroporphyrinogen III)
+  genes: k249_1980508_4
+  equation: (4) h[c] + uppg3[c] => (4) co2[c] + cpppg3[c]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+  ec: 4.1.1.37
+- id: UPPRT
+  name: uracil phosphoribosyltransferase
+  genes: k249_822466_5
+  equation: prpp[c] + ura[c] => ppi[c] + ump[c]
+  subsystem: Nucleotide Salvage Pathway
+  ec: 2.4.2.9
+- id: URIK2
+  name: uridine kinase (GTP:Uridine)
+  genes: k249_531167_9
+  equation: gtp[c] + uri[c] => gdp[c] + h[c] + ump[c]
+  subsystem: Nucleotide Salvage Pathway
+  ec: 2.7.1.48
+- id: USHD
+  name: UDP-sugar hydrolase
+  genes: k249_154338_42
+  equation: h2o[c] + u23ga[c] => (2) h[c] + lipidX[c] + ump[c]
+  subsystem: Lipopolysaccharide Biosynthesis / Recycling
