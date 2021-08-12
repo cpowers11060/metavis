@@ -108,43 +108,43 @@ def build_network(nm, rxn_set, network):
         edges=[]
         for rxn in network[0]:
             rxn_num=0
-                for cpd in network[0][rxn][0]:
-                    nodes.append({'data':{'id':str(cpd[0]),
-                                                'label': name[str(cpd[0])[0:-3]],
-                                                'formula': formula[str(cpd[0])[0:-3]]
-                                                }})
-                    nodes.append({'data':{'id':str(cpd[1]),
-                                                'label': name[str(cpd[1])[0:-3]],
-                                                'formula': formula[str(cpd[1])[0:-3]]
-                                                }})
-                    if  'pathways' in rxn.properties:
-                        path = rxn.properties['pathways']
-                    elif  'subsystem' in rxn.properties:
-                        path = rxn.properties['subsystem']
-                    else:
-                        path = ['No pathway exists']
-                    if rxn.id in edges:
-                        edges.append({'data':{
-                            'id':"".join([rxn.id, "_", str(rxn_num)]),
-                            'source':str(cpd[0]),
-                            'target':str(cpd[1]),
-                            'label': "".join([rxn.name, "_", str(rxn_num)]),
-                            'equation': str(rxn.properties["equation"]),
-                            'pathways':path
+            for cpd in network[0][rxn][0]:
+                nodes.append({'data':{'id':str(cpd[0]),
+                                            'label': name[str(cpd[0])[0:-3]],
+                                            'formula': formula[str(cpd[0])[0:-3]]
+                                            }})
+                nodes.append({'data':{'id':str(cpd[1]),
+                                            'label': name[str(cpd[1])[0:-3]],
+                                            'formula': formula[str(cpd[1])[0:-3]]
+                                            }})
+                if  'pathways' in rxn.properties:
+                    path = rxn.properties['pathways']
+                elif  'subsystem' in rxn.properties:
+                    path = rxn.properties['subsystem']
+                else:
+                    path = ['No pathway exists']
+                if rxn.id in edges:
+                    edges.append({'data':{
+                        'id':"".join([rxn.id, "_", str(rxn_num)]),
+                        'source':str(cpd[0]),
+                        'target':str(cpd[1]),
+                        'label': "".join([rxn.name, "_", str(rxn_num)]),
+                        'equation': str(rxn.properties["equation"]),
+                        'pathways':path
 #                            'equation':rxn.equation
-                            }})
-                        rxn_num+=1
-                    else:
-                        edges.append({'data':{
-                            'id':"".join([rxn.id, "_", str(rxn_num)]),
-                            'source':str(cpd[0]),
-                            'target':str(cpd[1]),
-                            'label': "".join([rxn.name, "_", str(rxn_num)]),
-                            'equation': str(rxn.properties["equation"]),
-                            'pathways':path
+                        }})
+                    rxn_num+=1
+                else:
+                    edges.append({'data':{
+                        'id':"".join([rxn.id, "_", str(rxn_num)]),
+                        'source':str(cpd[0]),
+                        'target':str(cpd[1]),
+                        'label': "".join([rxn.name, "_", str(rxn_num)]),
+                        'equation': str(rxn.properties["equation"]),
+                        'pathways':path
 #                            'equation':rxn.equation
-                            }})
-                        rxn_num+=1
+                        }})
+                    rxn_num+=1
         return nodes, edges
 
 
