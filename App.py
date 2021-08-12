@@ -8,15 +8,15 @@ allowing for the
 '''
 
 
-import logging
-#===== START LOGGER =====
-logger = logging.getLogger(__name__)
-root_logger = logging.getLogger()
-root_logger.setLevel(logging.INFO)
-sh = logging.StreamHandler()
-formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
-sh.setFormatter(formatter)
-root_logger.addHandler(sh)
+# import logging
+# #===== START LOGGER =====
+# logger = logging.getLogger(__name__)
+# root_logger = logging.getLogger()
+# root_logger.setLevel(logging.INFO)
+# sh = logging.StreamHandler()
+# formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+# sh.setFormatter(formatter)
+# root_logger.addHandler(sh)
 
 from collections import defaultdict
 from psamm.datasource.native import NativeModel, ModelReader, ModelWriter
@@ -107,7 +107,7 @@ def build_network(nm, rxn_set, network):
         nodes=[]
         edges=[]
         for rxn in network[0]:
-            if rxn.id in rxn_set:
+            rxn_num=0
                 for cpd in network[0][rxn][0]:
                     nodes.append({'data':{'id':str(cpd[0]),
                                                 'label': name[str(cpd[0])[0:-3]],
@@ -123,20 +123,35 @@ def build_network(nm, rxn_set, network):
                         path = rxn.properties['subsystem']
                     else:
                         path = ['No pathway exists']
-                    edges.append({'data':{
-                            'id':rxn.id,
+                    if rxn.id in edges:
+                        edges.append({'data':{
+                            'id':"".join([rxn.id, "_", str(rxn_num)]),
                             'source':str(cpd[0]),
                             'target':str(cpd[1]),
-                            'label': rxn.name,
+                            'label': "".join([rxn.name, "_", str(rxn_num)]),
+                            'equation': str(rxn.properties["equation"]),
                             'pathways':path
 #                            'equation':rxn.equation
                             }})
+                        rxn_num+=1
+                    else:
+                        edges.append({'data':{
+                            'id':"".join([rxn.id, "_", str(rxn_num)]),
+                            'source':str(cpd[0]),
+                            'target':str(cpd[1]),
+                            'label': "".join([rxn.name, "_", str(rxn_num)]),
+                            'equation': str(rxn.properties["equation"]),
+                            'pathways':path
+#                            'equation':rxn.equation
+                            }})
+                        rxn_num+=1
         return nodes, edges
 
 
 
 # Generates all initial data for building the app
 nm, network = read_model("./models/iGEM_bin526_curated/", "C")
+#nm, network = read_model("../../ETH_Modelling/GEM-HS/E_rectale_MM/", "C")
 pathway_list, rxn_set = get_pathway_list(nm, "All")
 compounds_list = get_compounds_list(nm)
 # nodes, edges = build_network(nm, rxn_set, network)
@@ -392,18 +407,19 @@ def display_nodedata(datalist):
                                         + data["label"]
                                 )
                         )
-                        # contents.append(
-                        #         html.P(
-                        #                 "Equation: "
-                        #                 + str(data["equation"])
-                        #         )
-                        # )
+                        contents.append(
+                                html.P(
+                                        "Equation: "
+                                        + str(data["equation"])
+                                )
+                        )
                         contents.append(
                                 html.P(
                                         "Pathways: "
                                         + data["pathways"]
                                 )
                         )
+
 
         return contents
 
@@ -417,13 +433,14 @@ def display_nodedata(datalist):
 def filter_nodes(pathways_dropdown, element_dropdown, compounds_dropdown):
 
         nm, network = read_model("./models/iGEM_bin526_curated/", element_dropdown)
+        #nm, network = read_model("../../ETH_Modelling/GEM-HS/E_rectale_MM/", element_dropdown)
         pathway_list, rxn_set = get_pathway_list(nm, pathways_dropdown)
-        print(type(compounds_dropdown))
+
         if isinstance(compounds_dropdown, str):
             rxn_list = []
             for rxn in network[0]:
                 for cpd in network[0][rxn][0]:
-                    print(cpd[0].name, compounds_dropdown)
+
                     if cpd[0].name == compounds_dropdown and rxn.id in rxn_set:
                         rxn_list.append(rxn.id)
         else:
