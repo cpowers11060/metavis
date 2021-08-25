@@ -11,7 +11,6 @@ dash-table==4.11.3
 Flask==2.0.1
 Flask-Compress==1.10.1
 future==0.18.2
-glpk==0.4.6
 gunicorn==20.1.0
 importlib-metadata==4.6.1
 itsdangerous==2.0.1
