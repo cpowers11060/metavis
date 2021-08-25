@@ -53,7 +53,7 @@ def read_model(model_path, el):
         excluded_reactions=[]
         for rxn in nm.reactions:
             for cpd, v in rxn.equation.compounds:
-                if (float(v)).is_integer()==False or float(v) > 100:
+                if (float(v)).is_integer()==False or float(v) > 10:
                     excluded_reactions.append(rxn.id)
         network = make_network_dict(nm, mm, subset=None, method='fpp',
                                                                 element=el, excluded_reactions=excluded_reactions,
@@ -181,7 +181,7 @@ def build_network(nm, rxn_set, network, fba_dropdown):
 
 # Generates all initial data for building the app
 #nm, network = read_model("./models/E_rectale_MM/", "C")
-mr = ModelReader.reader_from_path("./models/E_rectale_MM/",)
+mr = ModelReader.reader_from_path("./models/E_rectale_MM/")
 nm = mr.create_model()
 
 pathway_list, rxn_set = get_pathway_list(nm, "All")
