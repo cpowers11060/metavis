@@ -8,15 +8,15 @@ allowing for the
 '''
 
 
-# import logging
-# #===== START LOGGER =====
-# logger = logging.getLogger(__name__)
-# root_logger = logging.getLogger()
-# root_logger.setLevel(logging.INFO)
-# sh = logging.StreamHandler()
-# formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
-# sh.setFormatter(formatter)
-# root_logger.addHandler(sh)
+import logging
+#===== START LOGGER =====
+logger = logging.getLogger(__name__)
+root_logger = logging.getLogger()
+root_logger.setLevel(logging.INFO)
+sh = logging.StreamHandler()
+formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+sh.setFormatter(formatter)
+root_logger.addHandler(sh)
 
 from collections import defaultdict
 from psamm.datasource.native import NativeModel, ModelReader, ModelWriter
@@ -28,11 +28,8 @@ from psamm.graph import make_network_dict, write_network_dict
 from psamm.datasource.reaction import Reaction, Compound
 import plotly.express as px
 import sys
-
-# From Bokeh/NetworkX
-
-
-# From Visdxx
+from psamm.fluxanalysis import FluxBalanceProblem
+from psamm.lpsolver import glpk, lp
 import json
 import dash
 import dash_core_components as dcc
@@ -53,9 +50,13 @@ def read_model(model_path, el):
         mr = ModelReader.reader_from_path(model_path)
         nm = mr.create_model()
         mm = nm.create_metabolic_model()
-
+        excluded_reactions=[]
+        for rxn in nm.reactions:
+            for cpd, v in rxn.equation.compounds:
+                if (float(v)).is_integer()==False:
+                    excluded_reactions.append(rxn.id)
         network = make_network_dict(nm, mm, subset=None, method='fpp',
-                                                                element=el, excluded_reactions=[],
+                                                                element=el, excluded_reactions=excluded_reactions,
                                                                 reaction_dict={}, analysis=None)
         return nm, network
 
@@ -63,11 +64,13 @@ def read_model(model_path, el):
 # Builds a reaction set from a model based on a pathway of interest
 def get_pathway_list(nm, pathway):
         pathway_list=set()
+
         if isinstance(pathway, list) or pathway == None:
             pathway = "All"
         if pathway != "All":
             rxn_set=set()
             for i in nm.reactions:
+
                 if 'pathways' in i.properties:
                     for j in i.properties['pathways']:
                         pathway_list.add(j)
@@ -81,6 +84,7 @@ def get_pathway_list(nm, pathway):
         else:
             rxn_set=set()
             for i in nm.reactions:
+
                 if  'pathways' in i.properties:
                     for j in i.properties['pathways']:
                         pathway_list.add(j)
@@ -96,9 +100,10 @@ def get_compounds_list(nm):
     for i in nm.compounds:
         compounds_list.append(i.id)
     return compounds_list
+
 # Useful function to build the subset network. Returns nodes and edges
 # from the network associated with the rxn_set of interest
-def build_network(nm, rxn_set, network):
+def build_network(nm, rxn_set, network, fba_dropdown):
         name={}
         formula={}
         for i in nm.compounds:
@@ -106,54 +111,80 @@ def build_network(nm, rxn_set, network):
             formula[i.id]=i.formula
         nodes=[]
         edges=[]
+        print(rxn_set)
+        if not isinstance(fba_dropdown, list):
+            objective=str(fba_dropdown)
+            mm = nm.create_metabolic_model()
+
+            # Set up the solver
+            solver = glpk.Solver()
+            # Define the flux balance
+            problem = FluxBalanceProblem(mm, solver)
+            problem.maximize(fba_dropdown)
+            flux_carrying={}
+            for i in nm.reactions:
+                flux_carrying[i.id]=problem.get_flux(i.id)
+            #return(str(problem.get_flux(fba_dropdown)))
+        else:
+            flux_carrying={}
+            for i in nm.reactions:
+                flux_carrying[i.id]=0
+
+
         for rxn in network[0]:
-            rxn_num=0
-            for cpd in network[0][rxn][0]:
-                nodes.append({'data':{'id':str(cpd[0]),
-                                            'label': name[str(cpd[0])[0:-3]],
-                                            'formula': formula[str(cpd[0])[0:-3]]
-                                            }})
-                nodes.append({'data':{'id':str(cpd[1]),
-                                            'label': name[str(cpd[1])[0:-3]],
-                                            'formula': formula[str(cpd[1])[0:-3]]
-                                            }})
-                if  'pathways' in rxn.properties:
-                    path = rxn.properties['pathways']
-                elif  'subsystem' in rxn.properties:
-                    path = rxn.properties['subsystem']
-                else:
-                    path = ['No pathway exists']
-                if rxn.id in edges:
-                    edges.append({'data':{
-                        'id':"".join([rxn.id, "_", str(rxn_num)]),
-                        'source':str(cpd[0]),
-                        'target':str(cpd[1]),
-                        'label': "".join([rxn.name, "_", str(rxn_num)]),
-                        'equation': str(rxn.properties["equation"]),
-                        'pathways':path
-#                            'equation':rxn.equation
-                        }})
-                    rxn_num+=1
-                else:
-                    edges.append({'data':{
-                        'id':"".join([rxn.id, "_", str(rxn_num)]),
-                        'source':str(cpd[0]),
-                        'target':str(cpd[1]),
-                        'label': "".join([rxn.name, "_", str(rxn_num)]),
-                        'equation': str(rxn.properties["equation"]),
-                        'pathways':path
-#                            'equation':rxn.equation
-                        }})
-                    rxn_num+=1
+            if rxn.id in rxn_set:
+                rxn_num=0
+                for cpd in network[0][rxn][0]:
+                    nodes.append({'data':{'id':str(cpd[0]),
+                                                'label': name[str(cpd[0])[0:(str(cpd[0]).find('['))]],
+                                                'formula': formula[str(cpd[0])[0:(str(cpd[0]).find('['))]]
+                                                }})
+                    nodes.append({'data':{'id':str(cpd[1]),
+                                                'label': name[str(cpd[1])[0:(str(cpd[1]).find('['))]],
+                                                'formula': formula[str(cpd[1])[0:(str(cpd[1]).find('['))]]
+                                                }})
+                    if  'pathways' in rxn.properties:
+                        path = rxn.properties['pathways']
+                    elif  'subsystem' in rxn.properties:
+                        path = rxn.properties['subsystem']
+                    else:
+                        path = ['No pathway exists']
+                    if rxn.id in edges:
+                        edges.append({'data':{
+                            'id':"".join([rxn.id, "_", str(rxn_num)]),
+                            'source':str(cpd[0]),
+                            'target':str(cpd[1]),
+                            'label': "".join([rxn.name, "_", str(rxn_num)]),
+                            'equation': str(rxn.properties["equation"]),
+                            'pathways':path,
+                            'flux':flux_carrying[rxn.id]
+    #                            'equation':rxn.equation
+                            }})
+                        rxn_num+=1
+                    else:
+                        edges.append({'data':{
+                            'id':"".join([rxn.id, "_", str(rxn_num)]),
+                            'source':str(cpd[0]),
+                            'target':str(cpd[1]),
+                            'label': "".join([rxn.name, "_", str(rxn_num)]),
+                            'equation': str(rxn.properties["equation"]),
+                            'pathways':path,
+                            'flux':flux_carrying[rxn.id]
+    #                            'equation':rxn.equation
+                            }})
+                        rxn_num+=1
+
         return nodes, edges
 
 
 
+
+
 # Generates all initial data for building the app
-nm, network = read_model("./models/iGEM_bin526_curated/", "C")
-#nm, network = read_model("../../ETH_Modelling/GEM-HS/E_rectale_MM/", "C")
+nm, network = read_model("./models/E_rectale_MM/", "C")
 pathway_list, rxn_set = get_pathway_list(nm, "All")
 compounds_list = get_compounds_list(nm)
+rxns=list(rxn_set)
 # nodes, edges = build_network(nm, rxn_set, network)
 # initialize an empty list. the full is messy
 nodes, edges = [], []
@@ -208,9 +239,10 @@ body_layout = dbc.Container(
                                 dcc.Markdown(
                                         """
                         -----
-                        ##### Filter / Explore metabolic model of _Reinekea_ MAG from NB
+                        ##### Filter / Explore metabolic models
                         Use these filters to highlight reactions and compounds associated with different reactions
                         Try exploring different visualisation options.
+                        Note that the E rectale model is currently loaded
                         -----
                         """
                                 ),
@@ -226,7 +258,24 @@ body_layout = dbc.Container(
                                                             layout={'name':'cose'},
                                                             style={'width': '500px', 'height': '500px'},
                                                             elements=nodes+edges,
-                                                            stylesheet=default_stylesheet,
+                                                            stylesheet=[
+                                                                    {
+                                                                            'selector': 'node',
+                                                                            'style': {
+                                                                                    'background-color': '#BFD7B5',
+                                                                                    'label': 'data(label)'}},
+                                                                    {
+                                                                            "selector": "edge",
+                                                                            "style": {
+                                                                                    "width": 1,
+                                                                                    "curve-style": "bezier"}},
+                                                                    {
+                                                                            "selector": "[flux != 0]",
+                                                                            "style": {
+                                                                                    "line-color": "blue"
+                                                                            }
+                                                                    }
+                                                            ],
                                                             minZoom=0.06
                                                             )
                                                         ]
@@ -298,7 +347,7 @@ body_layout = dbc.Container(
                                                         ]
                                                 ),
                                                 dbc.Badge(
-                                                        "Compound Networks:", color="info", className="mr-1"),
+                                                        "Compound Search:", color="info", className="mr-1"),
                                                 dbc.FormGroup(
                                                         [
                                                                 dcc.Dropdown(
@@ -314,6 +363,34 @@ body_layout = dbc.Container(
                                                                         multi=False,
                                                                         style={"width": "100%"},
                                                                 ),
+                                                        ]
+                                                ),
+                                                dbc.Badge(
+                                                        "Flux Analysis:", color="info", className="mr-1"),
+                                                dbc.FormGroup(
+                                                        [
+                                                                dcc.Dropdown(
+                                                                        id="fba_dropdown",
+                                                                        options=[
+                                                                                {
+                                                                                        "label": i,
+                                                                                        "value": i,
+                                                                                }
+                                                                                for i in list(rxns)
+                                                                        ],
+                                                                        value=rxns,
+                                                                        multi=False,
+                                                                        style={"width": "100%"},
+                                                                ),
+                                                        ]
+                                                ),
+                                                dbc.Row(
+                                                        [
+                                                                dbc.Alert(
+                                                                        id="fba-data",
+                                                                        children="Select a reaction to see the flux here",
+                                                                        color="secondary",
+                                                                )
                                                         ]
                                                 ),
 
@@ -419,6 +496,12 @@ def display_nodedata(datalist):
                                         + data["pathways"]
                                 )
                         )
+                        contents.append(
+                                html.P(
+                                        "Flux: "
+                                        + str(data["flux"])
+                                )
+                        )
 
 
         return contents
@@ -427,13 +510,14 @@ def display_nodedata(datalist):
         Output("net", "elements"),
         [
                 Input("pathways_dropdown", "value"),
-                Input("element_dropdown", "value"),Input("compounds_dropdown", "value"),
+                Input("element_dropdown", "value"),
+                Input("compounds_dropdown", "value"),
+                Input("fba_dropdown", "value"),
         ],
 )
-def filter_nodes(pathways_dropdown, element_dropdown, compounds_dropdown):
+def filter_nodes(pathways_dropdown, element_dropdown, compounds_dropdown, fba_dropdown):
 
-        nm, network = read_model("./models/iGEM_bin526_curated/", element_dropdown)
-        #nm, network = read_model("../../ETH_Modelling/GEM-HS/E_rectale_MM/", element_dropdown)
+        nm, network = read_model("./models/E_rectale_MM/", element_dropdown)
         pathway_list, rxn_set = get_pathway_list(nm, pathways_dropdown)
 
         if isinstance(compounds_dropdown, str):
@@ -445,30 +529,35 @@ def filter_nodes(pathways_dropdown, element_dropdown, compounds_dropdown):
                         rxn_list.append(rxn.id)
         else:
             rxn_list = rxn_set
-        nodes, edges = build_network(nm, rxn_list, network)
+        nodes, edges = build_network(nm, rxn_list, network, fba_dropdown)
         elements=nodes+edges
 
         return elements
 
-# @app.callback(
-#         Output("compunds net", "compounds"),
-#         [
-#                 Input("compounds_dropdown", "value"),
-#                 Input("element_dropdown", "value"),
-#         ],
-# )
-# def filter_compounds(compounds_dropdown, element_dropdown):
-#
-#         nm, network = read_model("./models/iGEM_bin526_curated/", element_dropdown)
-#         rxn_list = []
-#         for rxn in network[0]:
-#             for cpd in network[0][rxn][0]:
-#                 if cpd[0].name == compounds_dropdown:
-#                     rxn_list.append(rxn.id)
-#         nodes, edges = build_network(nm, rxn_list, network)
-#         compounds=nodes+edges
-#
-#         return compounds
+
+@app.callback(
+        Output("fba-data", "children"), [Input("fba_dropdown", "value")]
+)
+def Run_FBA(fba_dropdown):
+  if not isinstance(fba_dropdown, list):
+      objective=str(fba_dropdown)
+      # First read in the base model
+      mr = ModelReader.reader_from_path('../../ETH_Modelling/GEM-HS/E_rectale_MM/')
+      nm = mr.create_model()
+      mm = nm.create_metabolic_model()
+
+      # Set up the solver
+      solver = glpk.Solver()
+      # Define the flux balance
+      problem = FluxBalanceProblem(mm, solver)
+      problem.maximize(fba_dropdown)
+
+
+
+      return(str(problem.get_flux(fba_dropdown)))
+  else:
+      return("More than one reaction selected")
+
 
 if __name__ == '__main__':
     app.run_server(debug=True)

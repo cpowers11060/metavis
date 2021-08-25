@@ -1,0 +1,2953 @@
+- id: TP_cys__45__L[cere]_cys__45__L[e]_ere
+  name: cysteine_transporter
+  equation: cys__45__L[cere] <=> cys__45__L[e]
+- id: ere_biomass
+  name: E rectale Biomass
+  equation: m348[e] =>
+- id: ACGK_ere
+  name: acetylglutamate kinase
+  genes: (EUBREC_1610)
+  equation: acglu[cere] + atp[cere] => acg5p[cere] + adp[cere]
+  subsystem: Amino Acid Metabolism
+  original_id: r9
+- id: ACKr_ere
+  name: acetate kinase
+  genes: (EUBREC_1494)
+  equation: actp[cere] + adp[cere] => ac[cere] + atp[cere]
+  subsystem: Pyruvate Metabolism
+  original_id: r281
+- id: ACLS_ere
+  name: acetolactate synthase
+  genes: (EUBREC_1250)
+  equation: (2) pyr[cere] + h[cere] => alac__45__S[cere] + co2[cere]
+  subsystem: Valine, Leucine, and Isoleucine Metabolism
+  original_id: r347
+  source: iJO1366
+- id: ACOATA_ere
+  name: Acetyl-CoA ACP transacylase
+  genes: (EUBREC_3140)
+  equation: acACP[cere] + coa[cere] <=> ACP[cere] + accoa[cere]
+  subsystem: Cell Envelope Biosynthesis
+  original_id: r65
+- id: ACOTA_ere
+  name: acetylornithine transaminase
+  genes: (EUBREC_1611)
+  equation: acg5sa[cere] + glu__45__L[cere] <=> acorn[cere] + akg[cere]
+  subsystem: Amino Acid Metabolism
+  original_id: r10
+- id: ADK1_ere
+  name: adenylate kinase
+  genes: (EUBREC_0438)
+  equation: (2) adp[cere] <=> amp[cere] + atp[cere]
+  subsystem: Purine and Pyrimidine Biosynthesis
+  original_id: r224
+- id: ADPT_ere
+  name: adenine phosphoribosyltransferase
+  genes: (EUBREC_2433)
+  equation: ade[cere] + prpp[cere] => amp[cere] + ppi[cere]
+  subsystem: Purine and Pyrimidine Biosynthesis
+  original_id: r225
+- id: ADSL2r_ere
+  name: adenylosuccinate lyase
+  genes: (EUBREC_1528)
+  equation: dcamp[cere] => amp[cere] + fum[cere]
+  subsystem: Purine and Pyrimidine Biosynthesis
+  original_id: r226
+- id: AGMHE_ere
+  name: ADP-D-glycero-D-manno-heptose epimerase
+  genes: (EUBREC_1949)
+  equation: adphep__45__DD[cere] => adphep__45__LD[cere]
+  subsystem: Cell Envelope Biosynthesis
+  original_id: r66
+- id: AICART_ere
+  name: phosphoribosylaminoimidazolecarboxamide formyltransferase
+  genes: (EUBREC_1567)
+  equation: 10fthf[cere] + aicar[cere] => fprica[cere] + thf[cere]
+  subsystem: Purine metabolism
+  original_id: r254
+- id: AIRC3_ere
+  name: phosphoribosylaminoimidazole carboxylase (mutase rxn)
+  genes: (EUBREC_2465)
+  equation: 5aizc[cere] <=> 5caiz[cere]
+  subsystem: Purine and Pyrimidine Biosynthesis
+  original_id: r229
+- id: ALAR_ere
+  name: alanine racemase
+  genes: (EUBREC_1964)
+  equation: ala__45__D[cere] <=> ala__45__L[cere]
+  subsystem: Amino Acid Metabolism
+  original_id: r356
+- id: AMAA_ere
+  name: N-acetylmuramoyl-L-alanine amidase
+  genes: (EUBREC_0029 or EUBREC_2308 or EUBREC_0911 or EUBREC_0966 or EUBREC_2136)
+  equation: acmama[cere] + h2o[cere] => acmam[cere] + ala__45__L[cere]
+  subsystem: N-acetylmuramoyl-L-alanine amidas
+  original_id: r194
+- id: ANPRT_ere
+  name: anthranilate phosphoribosyltransferase
+  genes: (EUBREC_2978)
+  equation: anth[cere] + prpp[cere] => ppi[cere] + pran[cere]
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+  original_id: r326
+- id: ARGDC_ere
+  name: arginine decarboxylase
+  genes: (EUBREC_3277)
+  equation: arg__45__L[cere] + h[cere] => agm[cere] + co2[cere]
+  subsystem: Arginine and Proline Metabolism
+  original_id: r37
+  source: iJO1366
+- id: ASP1DC_ere
+  name: aspartate 1-decarboxylase
+  genes: (EUBREC_2499)
+  equation: asp__45__L[cere] + h[cere] => ala__45__B[cere] + co2[cere]
+  subsystem: beta-Alanine metabolism
+  original_id: r47
+  source: iJO1366
+- id: ATPPRT_ere
+  name: ATP phosphoribosyltransferase
+  genes: (EUBREC_1686)
+  equation: atp[cere] + prpp[cere] => ppi[cere] + prbatp[cere]
+  subsystem: Purine and Pyrimidine Biosynthesis
+  original_id: r230
+- id: BGLA_ere
+  name: 1,4-beta-D-Glucan glucohydrolase
+  genes: (EUBREC_2820 or EUBREC_2879)
+  equation: h2o[cere] + m325[cere] => glc__45__bD[cere]
+  subsystem: Starch and sucrose metabolism
+  original_id: r421
+- id: CHORS_ere
+  name: chorismate synthase
+  genes: (EUBREC_1882)
+  equation: 3psme[cere] => chor[cere] + m239[cere]
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+  original_id: r328
+- id: CYTK2_ere
+  name: cytidylate kinase (dCMP)
+  genes: (EUBREC_1636)
+  equation: adp[cere] + dcdp[cere] <=> atp[cere] + dcmp[cere]
+  subsystem: Purine and Pyrimidine Biosynthesis
+  original_id: r232
+- id: DALAt2r_ere
+  name: D-alanine transport via proton symport
+  genes: (EUBREC_1418)
+  equation: ala__45__D[cere] <=> ala__45__D[e]
+  subsystem: Transport Reaction
+  original_id: r308
+- id: DAPDC_ere
+  name: diaminopimelate decarboxylase
+  genes: (EUBREC_1457 or EUBREC_2664)
+  equation: 26dap__45__M[cere] + h[cere] => co2[cere] + lys__45__L[cere]
+  subsystem: Lysine biosynthesis
+  original_id: r177
+  source: iJO1366
+- id: DB4PS_ere
+  name: 3,4-Dihydroxy-2-butanone-4-phosphate synthase
+  genes: (EUBREC_3130)
+  equation: ru5p__45__D[cere] => db4p[cere] + for[cere] + h[cere]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+  original_id: r88
+  source: iJO1366
+- id: DGK1_ere
+  name: deoxyguanylate kinase (dGMP:ATP)
+  genes: (EUBREC_1673)
+  equation: adp[cere] + dgdp[cere] <=> atp[cere] + dgmp[cere]
+  subsystem: Purine metabolism
+  original_id: r255
+- id: DHAD1_ere
+  name: dihydroxy-acid dehydratase (2,3-dihydroxy-3-methylbutanoate)
+  genes: (EUBREC_1877)
+  equation: 23dhmb[cere] => 3mob[cere] + h2o[cere]
+  subsystem: Valine, leucine and isoleucine biosynthesis
+  original_id: r343
+- id: DHAD2_ere
+  name: Dihydroxy-acid dehydratase (2,3-dihydroxy-3-methylpentanoate)
+  genes: (EUBREC_1877)
+  equation: 23dhmp[cere] => 3mop[cere] + h2o[cere]
+  subsystem: Valine, Leucine, and Isoleucine Metabolism
+  original_id: r348
+- id: DHORTS_ere
+  name: dihydroorotase
+  genes: (EUBREC_2910)
+  equation: dhor__45__S[cere] + h2o[cere] <=> cbasp[cere] + h[cere]
+  subsystem: Purine and Pyrimidine Biosynthesis
+  original_id: r233
+  source: iJO1366
+- id: DHQS_ere
+  name: 3-dehydroquinate synthase
+  genes: (EUBREC_1492)
+  equation: 2dda7p[cere] => 3dhq[cere] + m239[cere]
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+  original_id: r330
+- id: DURIPP_ere
+  name: deoxyuridine phosphorylase
+  genes: (EUBREC_0292)
+  equation: duri[cere] + m239[cere] <=> 2dr1p[cere] + ura[cere]
+  subsystem: Purine and Pyrimidine Biosynthesis
+  original_id: r234
+- id: ENO_ere
+  name: enolase
+  genes: (EUBREC_2823)
+  equation: 2pg[cere] <=> h2o[cere] + pep[cere]
+  subsystem: Glycolysis / Gluconeogenesis
+  original_id: r154
+- id: FBA_ere
+  name: fructose-bisphosphate aldolase
+  genes: (EUBREC_0700)
+  equation: fdp[cere] <=> dhap[cere] + g3p[cere]
+  subsystem: Glycolysis / Gluconeogenesis
+  original_id: r155
+- id: FBP_ere
+  name: fructose-bisphosphatase
+  genes: (EUBREC_1460 or EUBREC_0921)
+  equation: fdp[cere] + h2o[cere] => f6p[cere] + m239[cere]
+  subsystem: Glycolysis / Gluconeogenesis
+  original_id: r160
+- id: G6PDA_ere
+  name: glucosamine-6-phosphate deaminase
+  genes: (EUBREC_2927 or EUBREC_3268)
+  equation: gam6p[cere] + h2o[cere] => f6p[cere] + nh4[cere]
+  subsystem: Carbohydrate Metabolism
+  original_id: r61
+- id: GF6PTAr_ere
+  name: glutamine-fructose-6-phosphate transaminase
+  genes: (EUBREC_0825)
+  equation: f6p[cere] + gln__45__L[cere] => gam6p[cere] + glu__45__L[cere]
+  subsystem: Amino sugar and nucleotide sugar metabolism
+  original_id: r20
+- id: GK1_ere
+  name: guanylate kinase (GMP:ATP)
+  genes: (EUBREC_1673)
+  equation: adp[cere] + gdp[cere] <=> atp[cere] + gmp[cere]
+  subsystem: Purine and Pyrimidine Biosynthesis
+  original_id: r235
+- id: GLUR_ere
+  name: glutamate racemase
+  genes: (EUBREC_0684)
+  equation: glu__45__D[cere] <=> glu__45__L[cere]
+  subsystem: Amino Acid Metabolism
+  original_id: r357
+- id: GUAPRT_ere
+  name: guanine phosphoribosyltransferase
+  genes: (EUBREC_2433)
+  equation: gua[cere] + prpp[cere] => gmp[cere] + ppi[cere]
+  subsystem: Purine and Pyrimidine Biosynthesis
+  original_id: r239
+- id: HXPRT_ere
+  name: hypoxanthine phosphoribosyltransferase (Hypoxanthine)
+  genes: (EUBREC_0534)
+  equation: hxan[cere] + prpp[cere] => imp[cere] + ppi[cere]
+  subsystem: Purine and Pyrimidine Biosynthesis
+  original_id: r240
+- id: HYD4_ere
+  name: hydrogen:ferredoxin oxidoreductase
+  genes: (EUBREC_2390)
+  equation: (2) fdred[cere] + (2) h[cere] <=> (2) fdxox[cere] + h2[cere]
+  subsystem: Methane metabolism
+  original_id: r121
+  source: KEGG_R00019
+- id: IGPDH_ere
+  name: imidazoleglycerol-phosphate dehydratase
+  genes: (EUBREC_1688)
+  equation: eig3p[cere] => h2o[cere] + imacp[cere]
+  subsystem: Histidine metabolism
+  original_id: r171
+- id: ILETA_ere
+  name: isoleucine transaminase
+  genes: (EUBREC_2380)
+  equation: akg[cere] + ile__45__L[cere] <=> 3mop[cere] + glu__45__L[cere]
+  subsystem: Valine, leucine and isoleucine biosynthesis
+  original_id: r344
+- id: IMPC_ere
+  name: IMP cyclohydrolase
+  genes: (EUBREC_1567)
+  equation: h2o[cere] + imp[cere] <=> fprica[cere]
+  subsystem: Purine and Pyrimidine Biosynthesis
+  original_id: r241
+- id: IPPMIa_ere
+  name: 3-isopropylmalate dehydratase
+  genes: (EUBREC_1995 or EUBREC_1996)
+  equation: m17[cere] + h2o[cere] <=> 3c2hmp[cere]
+  subsystem: Valine, Leucine, and Isoleucine Metabolism
+  original_id: r350
+- id: IPPMIb_ere
+  name: 2-isopropylmalate hydratase
+  genes: (EUBREC_1995 or EUBREC_1996)
+  equation: m17[cere] + h2o[cere] <=> 3c3hmp[cere]
+  subsystem: Valine, Leucine, and Isoleucine Metabolism
+  original_id: r351
+- id: LEUTA_ere
+  name: leucine transaminase
+  genes: (EUBREC_2380)
+  equation: akg[cere] + leu__45__L[cere] <=> 4mop[cere] + glu__45__L[cere]
+  subsystem: Valine, leucine and isoleucine biosynthesis
+  original_id: r345
+- id: LYSDC_ere
+  name: lysine decarboxylase
+  genes: (EUBREC_3277)
+  equation: lys__45__L[cere] + h[cere] => 15dap[cere] + co2[cere]
+  subsystem: Threonine and Lysine Metabolism
+  original_id: r302
+  source: iJO1366
+- id: MCOATA_ere
+  name: Malonyl-CoA-ACP transacylase
+  genes: (EUBREC_3146)
+  equation: coa[cere] + malACP[cere] <=> ACP[cere] + malcoa[cere]
+  subsystem: Fatty Acid  Biosynthesis
+  original_id: r122
+- id: MTAN_ere
+  name: methylthioadenosine nucleosidase
+  genes: (EUBREC_2601)
+  equation: 5mta[cere] + h2o[cere] => 5mtr[cere] + ade[cere]
+  subsystem: Amino Acid Metabolism
+  original_id: r15
+- id: MTHFC_ere
+  name: methenyltetrahydrofolate cyclohydrolase
+  genes: (EUBREC_1958 or EUBREC_1957)
+  equation: 10fthf[cere] + h[cere] <=> h2o[cere] + methf[cere]
+  subsystem: Metabolic pathways
+  original_id: r186
+  source: iJO1366
+- id: MTHFD_ere
+  name: methylenetetrahydrofolate dehydrogenase (NADP)
+  genes: (EUBREC_1957)
+  equation: methf[cere] + nadph[cere] <=> mlthf[cere] + nadp[cere]
+  subsystem: Metabolic pathways
+  original_id: r187
+- id: OMCDC_ere
+  name: 2-Oxo-4-methyl-3-carboxypentanoate decarboxylation
+  genes: (EUBREC_1878)
+  equation: 3c4mop[cere] + h[cere] => 4mop[cere] + co2[cere]
+  subsystem: Valine, Leucine, and Isoleucine Metabolism
+  original_id: r354
+  source: iJO1366
+- id: ORNTA_ere
+  name: ornithine transaminase
+  genes: (EUBREC_0097)
+  equation: akg[cere] + orn[cere] => glu5sa[cere] + glu__45__L[cere]
+  subsystem: Arginine and proline metabolism
+  original_id: r45
+- id: PAPPT3_ere
+  name: phospho-N-acetylmuramoyl-pentapeptide-transferase (meso-2,6-diaminopimelate)
+  genes: (EUBREC_1319)
+  equation: udcpp[cere] + ugmda[cere] => uagmda[cere] + ump[cere]
+  subsystem: Peptidoglycan Metabolism
+  original_id: r218
+- id: PFL_ere
+  name: pyruvate formate lyase
+  genes: (EUBREC_0469)
+  equation: accoa[cere] + for[cere] <=> coa[cere] + pyr[cere]
+  subsystem: Pyruvate Metabolism
+  original_id: r284
+- id: PGAMT_ere
+  name: phosphoglucosamine mutase
+  genes: (EUBREC_2772)
+  equation: gam1p[cere] <=> gam6p[cere]
+  subsystem: Cell Envelope Biosynthesis
+  original_id: r70
+- id: PGI_ere
+  name: glucose-6-phosphate isomerase
+  genes: (EUBREC_0228)
+  equation: g6p[cere] => f6p[cere]
+  subsystem: Glycolysis / Gluconeogenesis
+  original_id: r158
+- id: PGK_ere
+  name: phosphoglycerate kinase
+  genes: (EUBREC_1523)
+  equation: 13dpg[cere] + adp[cere] <=> 3pg[cere] + atp[cere]
+  subsystem: Glycolysis / Gluconeogenesis
+  original_id: r153
+- id: PGM_ere
+  name: phosphoglycerate mutase
+  genes: (EUBREC_3172 or EUBREC_1525 or EUBREC_0649)
+  equation: 2pg[cere] <=> 3pg[cere]
+  subsystem: Glycolysis / Gluconeogenesis
+  original_id: r163
+- id: PGMT2_ere
+  name: phosphoglucomutase
+  genes: (EUBREC_2772)
+  equation: g1p[cere] <=> g6p[cere]
+  subsystem: Amino sugar and nucleotide sugar metabolism
+  original_id: r21
+- id: PHETA1_ere
+  name: phenylalanine transaminase
+  genes: (EUBREC_1390)
+  equation: glu__45__L[cere] + phpyr[cere] <=> akg[cere] + phe__45__L[cere]
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+  original_id: r332
+- id: PMANM_ere
+  name: phosphomannomutase
+  genes: (EUBREC_2615)
+  equation: man1p[cere] <=> man6p[cere]
+  subsystem: Fructose and Mannose Metabolism
+  original_id: r127
+- id: PMDPHT_ere
+  name: pyrimidine phosphatase
+  genes: (EUBREC_3131 or EUBREC_3129)
+  equation: 5aprbu[cere] + h2o[cere] => 4r5au[cere] + m239[cere]
+  subsystem: Riboflavin Metabolism
+  original_id: r289
+- id: PMPK_ere
+  name: phosphomethylpyrimidine kinase
+  genes: (EUBREC_2528)
+  equation: 4ampm[cere] + atp[cere] => 2mahmp[cere] + adp[cere]
+  subsystem: Thiamine Metabolism
+  original_id: r300
+- id: PPCDC_ere
+  name: phosphopantothenoylcysteine decarboxylase
+  genes: (EUBREC_0828)
+  equation: 4ppcys[cere] + h[cere] => co2[cere] + pan4p[cere]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+  original_id: r90
+  source: iJO1366
+- id: PRAMPC_ere
+  name: phosphoribosyl-AMP cyclohydrolase
+  genes: (EUBREC_1689)
+  equation: h2o[cere] + prbamp[cere] => prfp[cere]
+  subsystem: Histidine metabolism
+  original_id: r172
+- id: PSCVT_ere
+  name: 3-phosphoshikimate 1-carboxyvinyltransferase
+  genes: (EUBREC_1980)
+  equation: 3psme[cere] + m239[cere] <=> pep[cere] + skm5p[cere]
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+  original_id: r335
+- id: PSERTr_ere
+  name: 3-Phosphoserine:2-oxoglutarate aminotransferase
+  genes: (EUBREC_1875)
+  equation: akg[cere] + pser__45__L[cere] <=> 3php[cere] + glu__45__L[cere]
+  subsystem: Glycine, serine and threonine metabolism
+  original_id: r147
+- id: PTAr_ere
+  name: phosphotransacetylase
+  genes: (EUBREC_1443)
+  equation: actp[cere] + coa[cere] <=> accoa[cere] + m239[cere]
+  subsystem: Pyruvate Metabolism
+  original_id: r285
+- id: PUNP1_ere
+  name: purine-nucleoside phosphorylase (Adenosine)
+  genes: (EUBREC_0292)
+  equation: ade[cere] + r1p[cere] <=> adn[cere] + m239[cere]
+  subsystem: Purine and Pyrimidine Biosynthesis
+  original_id: r245
+- id: PUNP2_ere
+  name: purine-nucleoside phosphorylase (Deoxyadenosine)
+  genes: (EUBREC_0292)
+  equation: 2dr1p[cere] + ade[cere] <=> dad__45__2[cere] + m239[cere]
+  subsystem: Purine and Pyrimidine Biosynthesis
+  original_id: r246
+- id: RAFGH_ere
+  name: Raffinose galactohydrolase
+  genes: (EUBREC_3387)
+  equation: h2o[cere] + raffin[cere] => sucr[cere] + gal[cere]
+  subsystem: Galactose metabolism
+  original_id: r406
+- id: RAFH_ere
+  name: raffinose hydrolyzing enzyme
+  genes: (EUBREC_0257)
+  equation: h2o[cere] + raffin[cere] => fru[cere] + melib[cere]
+  subsystem: Galactose metabolism
+  original_id: r129
+- id: RBFSa_ere
+  name: riboflavin synthase
+  genes: (EUBREC_3131)
+  equation: 4r5au[cere] + db4p[cere] => dmlz[cere] + (2) h2o[cere] + m239[cere]
+  subsystem: Riboflavin Metabolism
+  original_id: r291
+- id: RBFSb_ere
+  name: riboflavin synthase
+  genes: (EUBREC_3129)
+  equation: (2) dmlz[cere] => 4r5au[cere] + ribflv[cere]
+  subsystem: Riboflavin Metabolism
+  original_id: r292
+- id: RPE_ere
+  name: ribulose 5-phosphate 3-epimerase
+  genes: (EUBREC_2337 or EUBREC_0669)
+  equation: ru5p__45__D[cere] <=> xu5p__45__D[cere]
+  subsystem: Pentose and glucuronate interconversions
+  original_id: r206
+- id: S7PIr_ere
+  name: sedoheptulose 7-phosphate isomerase (reversible)
+  genes: (EUBREC_1634)
+  equation: gmhep7p[cere] <=> s7p[cere]
+  subsystem: Metabolic pathways
+  original_id: r188
+- id: SUCD1_ere
+  name: succinate dehydrogenase
+  genes: (ERE_07500)
+  equation: fad[cere] + succ[cere] <=> fadh2[cere] + fum[cere]
+  subsystem: Citric Acid Cycle
+  original_id: r86
+- id: SUCR_ere
+  name: sucrose hydrolyzing enzyme
+  genes: (EUBREC_0257 or EUBREC_0282)
+  equation: h2o[cere] + sucr[cere] => fru[cere] + glc__45__D[cere]
+  subsystem: Starch and Sucrose Metabolism
+  original_id: r294
+- id: THRAr_ere
+  name: Threonine Aldolase
+  genes: (EUBREC_2364)
+  equation: thr__45__L[cere] <=> acald[cere] + gly[cere]
+  subsystem: Glycine, serine and threonine metabolism
+  original_id: r151
+- id: TKT1_ere
+  name: transketolase
+  genes: (EUBREC_2460 or EUBREC_0331 or EUBREC_0332 or EUBREC_2459)
+  equation: e4p[cere] + xu5p__45__D[cere] <=> f6p[cere] + g3p[cere]
+  subsystem: Pentose Phosphate Pathway
+  original_id: r213
+- id: TKT2_ere
+  name: transketolase
+  genes: (EUBREC_2460 or EUBREC_0331 or EUBREC_0332 or EUBREC_2459)
+  equation: r5p[cere] + xu5p__45__D[cere] <=> g3p[cere] + s7p[cere]
+  subsystem: Pentose Phosphate Pathway
+  original_id: r212
+- id: TMDS_ere
+  name: thymidylate synthase
+  genes: (EUBREC_1248)
+  equation: dump[cere] + mlthf[cere] => dhf[cere] + dtmp[cere]
+  subsystem: Pyrimidine metabolism
+  original_id: r262
+- id: TPI_ere
+  name: triose-phosphate isomerase
+  genes: (EUBREC_1524)
+  equation: dhap[cere] <=> g3p[cere]
+  subsystem: Glycolysis / Gluconeogenesis
+  original_id: r159
+- id: TYRTA_ere
+  name: tyrosine transaminase
+  genes: (EUBREC_1390)
+  equation: 34hpp[cere] + glu__45__L[cere] <=> akg[cere] + tyr__45__L[cere]
+  subsystem: Phenylalanine, tyrosine and tryptophan biosynthesis
+  original_id: r223
+- id: UAGCVT_r_ere
+  name: UDP-N-acetylglucosamine 1-carboxyvinyltransferase
+  genes: (EUBREC_0461)
+  equation: pep[cere] + uacgam[cere] => m239[cere] + uaccg[cere]
+  subsystem: Carbohydrate Metabolism
+  original_id: r63
+- id: UDPG4E_ere
+  name: UDP-glucose 4-epimerase
+  genes: (EUBREC_1949 or EUBREC_3245)
+  equation: udpg[cere] <=> udpgal[cere]
+  subsystem: Galactose metabolism
+  original_id: r391
+- id: URIDK2r_ere
+  name: uridylate kinase (dUMP)
+  genes: (EUBREC_1771)
+  equation: adp[cere] + dudp[cere] <=> atp[cere] + dump[cere]
+  subsystem: Nucleotide Metabolism
+  original_id: r202
+- id: VALTA_ere
+  name: valine transaminase
+  genes: (EUBREC_2380)
+  equation: akg[cere] + val__45__L[cere] <=> 3mob[cere] + glu__45__L[cere]
+  subsystem: Valine, leucine and isoleucine degradation
+  original_id: r346
+- id: XANt2r_ere
+  name: xanthine transport in via proton symport
+  genes: (EUBREC_3171)
+  equation: xan[e] => xan[cere]
+  subsystem: Transport Reaction
+  original_id: r316
+- id: XPPT_ere
+  name: xanthine phosphoribosyltransferase
+  genes: (EUBREC_1763)
+  equation: prpp[cere] + xan[cere] => ppi[cere] + xmp[cere]
+  subsystem: Nucleotide Metabolism
+  original_id: r203
+- id: YUMPS_ere
+  name: yUMP synthetase
+  genes: (EUBREC_1681 or EUBREC_2998 or EUBREC_1940)
+  equation: h2o[cere] + psd5p[cere] <=> r5p[cere] + ura[cere]
+  subsystem: pseudouridine synthetase activity
+  original_id: r358
+- id: r1_ere
+  name: D-alanine-D-alanine ligase (reversible)
+  genes: (EUBREC_2937 or EUBREC_2678)
+  equation: adp[cere] + alaala[cere] + m239[cere] + h[cere] <=> (2) ala__45__D[cere]
+    + atp[cere]
+  subsystem: Alanine and Aspartate Metabolism
+  original_id: r1
+  source: iJO1366
+- id: r100_ere
+  name: S-adenosylhomocysteine nucleosidase
+  genes: (EUBREC_2601)
+  equation: ahcys[cere] + h2o[cere] => ade[cere] + rhcys[cere]
+  subsystem: Cysteine and methionine metabolism
+  original_id: r100
+- id: r101_ere
+  name: methionine adenosyltransferase
+  genes: (EUBREC_0463)
+  equation: atp[cere] + h2o[cere] + met__45__L[cere] => amet[cere] + m239[cere] +
+    ppi[cere]
+  subsystem: Cysteine and methionine metabolism
+  original_id: r101
+- id: r102_ere
+  name: methionine synthase
+  genes: (EUBREC_1436)
+  equation: 5mthf[cere] + hcys__45__L[cere] => met__45__L[cere] + thf[cere] + h[cere]
+  subsystem: Cysteine and methionine metabolism
+  original_id: r102
+  source: iJO1366
+- id: r103_ere
+  name: O-succinylhomoserine lyase (elimination), reversible
+  genes: (EUBREC_1442)
+  equation: 2obut[cere] + nh4[cere] + succ[cere] + h[cere] <=> h2o[cere] + suchms[cere]
+  subsystem: Cysteine and methionine metabolism
+  original_id: r103
+  source: ModelSeed_rxn34665
+- id: r104_ere
+  name: O-acetyl-L-homoserine:methanethiol 3-amino-3-carboxypropyltransferase;
+  genes: (EUBREC_0894 or EUBREC_0906)
+  equation: h2s[cere] + achms[cere] => ac[cere] + hcys__45__L[cere] + h[cere]
+  subsystem: Cysteine and methionine metabolism
+  original_id: r104
+  source: MetaCyc
+- id: r109_ere
+  name: Biomass Transport
+  equation: m346[cere] => m348[e]
+  subsystem: Exchange reaction
+  original_id: r109
+- id: r11_ere
+  name: aspartate-semialdehyde dehydrogenase
+  genes: (EUBREC_2152)
+  equation: 4pasp[cere] + nadph[cere] + h[cere] => aspsa[cere] + nadp[cere] + m239[cere]
+  subsystem: Amino Acid Metabolism
+  original_id: r11
+  source: iJO1366, ModelSeed_rxn01643
+- id: r117_ere
+  name: NADPH:NAD+ oxidoreductase
+  equation: m222[cere] + nadph[cere] <=> nadh[cere] + nadp[cere]
+  subsystem: Metabolic Pathways
+  original_id: r117
+- id: r118_ere
+  name: reduced-riboflavin:NADP+ oxidoreductase
+  genes: (EUBREC_0736 or EUBREC_0737)
+  equation: h[cere] + fad[cere] + nadh[cere] <=> fadh2[cere] + m222[cere]
+  subsystem: Metabolic Pathways
+  original_id: r118
+  source: iJO1366_FADRx
+- id: r119_ere
+  name: Ferredoxin:NAD oxidoreductase
+  genes: (EUBREC_0736 or EUBREC_0737)
+  equation: (2) fdred[cere] + m222[cere] + (2) h[cere] => (2) fdxox[cere] + nadh[cere]
+    + h[e]
+  subsystem: Butanoate metabolism
+  original_id: r119
+  source: iCbes
+- id: r12_ere
+  name: asparagine synthase (glutamine-hydrolysing)
+  genes: (EUBREC_1527)
+  equation: asp__45__L[cere] + atp[cere] + gln__45__L[cere] + h2o[cere] => amp[cere]
+    + asn__45__L[cere] + glu__45__L[cere] + ppi[cere] + h[cere]
+  subsystem: Amino Acid Metabolism
+  original_id: r12
+  source: iJO1366
+- id: r120_ere
+  name: F-type H+-transporting ATPase subunit a
+  genes: (EUBREC_0118 or EUBREC_0119)
+  equation: adp[cere] + m239[cere] + (4) h[e] => atp[cere] + (3) h[cere] + h2o[cere]
+  subsystem: Butanoate metabolism
+  original_id: r120
+  source: ModelSeed_rxn08173, BIGG_ATPS4r
+- id: r123_ere
+  name: acetyl-CoA C-acetyltransferase
+  genes: (EUBREC_0733)
+  equation: m50[cere] + coa[cere] <=> (2) accoa[cere]
+  subsystem: Fatty Acid Degradation
+  original_id: r123
+- id: r124_ere
+  name: fructose-1-phosphate kinase
+  genes: (EUBREC_0018)
+  equation: atp[cere] + f1p[cere] => adp[cere] + fdp[cere] + h[cere]
+  subsystem: Fructose and Mannose Metabolism
+  original_id: r124
+  source: iJO1366
+- id: r125_ere
+  name: D-fructose transport via PEP:Pyr PTS
+  genes: (EUBREC_0019)
+  equation: fru[e] + pep[cere] => f1p[cere] + pyr[cere]
+  subsystem: Fructose and Mannose Metabolism
+  original_id: r125
+- id: r126_ere
+  name: hexokinase (D-fructose:ATP)
+  genes: (EUBREC_0258 or EUBREC_1413)
+  equation: atp[cere] + fru[cere] => adp[cere] + f6p[cere] + h[cere]
+  subsystem: Fructose and mannose metabolism
+  original_id: r126
+  source: iJO1366
+- id: r128_ere
+  name: D-sorbitol dehydrogenase (R)
+  genes: (EUBREC_1410)
+  equation: h[cere] + fru[cere] + nadh[cere] <=> m222[cere] + m262[cere]
+  subsystem: Fructose and Mannose Metabolism
+  original_id: r128
+  source: ModelSeed_rxn37282
+- id: r13_ere
+  name: cysteine synthase
+  genes: (EUBREC_0318 or EUBREC_2477)
+  equation: acser[cere] + h2s[cere] => ac[cere] + cys__45__L[cere] + h[cere]
+  subsystem: Amino Acid Metabolism
+  original_id: r13
+  source: iJO1366
+- id: r130_ere
+  name: glycerol-3-phosphate cytidylyltransferase
+  genes: (EUBREC_2650)
+  equation: h[cere] + ctp[cere] + glyc3p[cere] => m108[cere] + ppi[cere]
+  subsystem: Glycerolipid Metabolism
+  original_id: r130
+  source: MetaCyc
+- id: r131_ere
+  name: glycerol kinase (reversible)
+  genes: (EUBREC_2589)
+  equation: h[cere] + adp[cere] + glyc3p[cere] <=> atp[cere] + glyc[cere]
+  subsystem: Glycerolipid Metabolism
+  original_id: r131
+  source: iJO1366
+- id: r132_ere
+  name: Glycerophosphodiester phosphodiesterase (Glycerophosphocholine)
+  genes: (EUBREC_0409)
+  equation: g3pc[cere] + h2o[cere] => chol[cere] + glyc3p[cere] + h[cere]
+  subsystem: Glycerolipid Metabolism
+  original_id: r132
+  source: iJO1366
+- id: r133_ere
+  name: glycerol-3-phosphate dehydrogenase (NADP)
+  genes: (EUBREC_2285)
+  equation: h[cere] + dhap[cere] + nadph[cere] <=> glyc3p[cere] + nadp[cere]
+  subsystem: Glycerophospholipid metabolism
+  original_id: r133
+  source: iJO1366
+- id: r134_ere
+  name: Phosphatidylglycerophosphate phosphohydrolase
+  equation: h2o[cere] + m236[cere] => m239[cere] + m330[cere]
+  subsystem: Glycerophospholipid metabolism
+  original_id: r134
+- id: r135_ere
+  name: acyl-CoA:sn-glycerol-3-phosphate 1-O-acyltransferase
+  genes: (EUBREC_1498)
+  equation: glyc3p[cere] + m331[cere] => coa[cere] + m332[cere]
+  subsystem: Glycerophospholipid metabolism
+  original_id: r135
+- id: r136_ere
+  name: acyl-CoA:1-acyl-sn-glycerol-3-phosphate 2-O-acyltransferase
+  genes: (EUBREC_0547 or EUBREC_1703)
+  equation: m331[cere] + m332[cere] => coa[cere] + m233[cere]
+  subsystem: Glycerophospholipid metabolism
+  original_id: r136
+- id: r137_ere
+  name: Cardiolipin Synthase
+  genes: (EUBREC_1933)
+  equation: glyc[cere] + m391[cere] <=> (2) m330[cere]
+  subsystem: Glycerophospholipid metabolism
+  original_id: r137
+  source: BIGG_CLPNS160
+- id: r138_ere
+  name: Phosphatidylglycerol synthase
+  genes: (EUBREC_1676 or EUBREC_3482)
+  equation: m107[cere] + glyc3p[cere] <=> m236[cere] + cmp[cere] + h[cere]
+  subsystem: Glycerophospholipid metabolism
+  original_id: r138
+  source: iJO1366_PGSA160, BIGG_PGSA160
+- id: r139_ere
+  name: O-phospho-L-serine phosphohydrolase
+  genes: (EUBREC_2971)
+  equation: h2o[cere] + pser__45__L[cere] <=> m239[cere] + ser__45__L[cere]
+  subsystem: Glycine, serine and threonine metabolism
+  original_id: r139
+- id: r14_ere
+  name: homocysteine S-methyltransferase
+  genes: (EUBREC_1436 or EUBREC_0156 or EUBREC_0158 or EUBREC_0163 or EUBREC_0812)
+  equation: amet[cere] + hcys__45__L[cere] => ahcys[cere] + met__45__L[cere] + h[cere]
+  subsystem: Amino Acid Metabolism
+  original_id: r14
+  source: iJO1366
+- id: r140_ere
+  name: L-serine ammonia-lyase
+  genes: (EUBREC_1503)
+  equation: ser__45__L[cere] => nh4[cere] + pyr[cere]
+  subsystem: Glycine, serine and threonine metabolism
+  original_id: r140
+- id: r141_ere
+  name: O-phospho-L-homoserine phosphate-lyase (adding water;L-threonine-forming)
+  genes: (EUBREC_1992)
+  equation: h2o[cere] + phom[cere] => m239[cere] + thr__45__L[cere]
+  subsystem: Glycine, serine and threonine metabolism
+  original_id: r141
+- id: r142_ere
+  name: ATP:L-homoserine O-phosphotransferase
+  genes: (EUBREC_2971)
+  equation: atp[cere] + hom__45__L[cere] => adp[cere] + phom[cere] + h[cere]
+  subsystem: Glycine, serine and threonine metabolism
+  original_id: r142
+  source: iJO1366_HSK
+- id: r143_ere
+  name: homoserine dehydrogenase (NADPH)
+  genes: (EUBREC_0724)
+  equation: h[cere] + aspsa[cere] + nadph[cere] => hom__45__L[cere] + nadp[cere]
+  subsystem: Glycine, serine and threonine metabolism
+  original_id: r143
+  source: iJO1366
+- id: r144_ere
+  name: L-cystathionine cysteine-lyase (deaminating; 2-oxobutanoate-forming)
+  equation: 2obut[cere] + cys__45__L[cere] + nh4[cere] => h2o[cere] + m367[cere]
+  subsystem: Glycine, serine and threonine metabolism
+  original_id: r144
+- id: r145_ere
+  name: L-serine hydro-lyase (adding homocysteine; L-cystathionine-forming)
+  equation: hcys__45__L[cere] + ser__45__L[cere] => h2o[cere] + m367[cere]
+  subsystem: Glycine, serine and threonine metabolism
+  original_id: r145
+- id: r146_ere
+  name: L-serine hydro-lyase (adding hydrogen sulfide, L-cysteine-forming)
+  equation: h2s[cere] + ser__45__L[cere] => cys__45__L[cere] + h2o[cere]
+  subsystem: Glycine, serine and threonine metabolism
+  original_id: r146
+- id: r148_ere
+  name: aspartate kinase, irreversible
+  genes: (EUBREC_2796)
+  equation: asp__45__L[cere] + atp[cere] => 4pasp[cere] + adp[cere]
+  subsystem: Glycine, serine and threonine metabolism
+  original_id: r148
+- id: r149_ere
+  name: glycine hydroxymethyltransferase
+  genes: (EUBREC_1119)
+  equation: gly[cere] + h2o[cere] + mlthf[cere] <=> ser__45__L[cere] + thf[cere]
+  subsystem: Glycine, serine and threonine metabolism
+  original_id: r149
+- id: r150_ere
+  name: homoserine dehydrogenase (NADPH)
+  genes: (EUBREC_0724)
+  equation: h[cere] + aspsa[cere] + nadh[cere] => hom__45__L[cere] + m222[cere]
+  subsystem: Glycine, serine and threonine metabolism
+  original_id: r150
+  source: iJO1366
+- id: r152_ere
+  name: glyceraldehyde-3-phosphate dehydrogenase
+  genes: (EUBREC_1522)
+  equation: g3p[cere] + m222[cere] + m239[cere] <=> 13dpg[cere] + nadh[cere] + h[cere]
+  subsystem: Glycolysis / Gluconeogenesis
+  original_id: r152
+  source: iJO1366
+- id: r156_ere
+  name: hexokinase (D-glucose:ATP)
+  genes: (EUBREC_2932)
+  equation: atp[cere] + glc__45__D[cere] => adp[cere] + g6p[cere] + h[cere]
+  subsystem: Glycolysis / Gluconeogenesis
+  original_id: r156
+  source: iJO1366
+- id: r157_ere
+  name: phosphofructokinase
+  genes: (EUBREC_1058 or EUBREC_0327 or EUBREC_2314)
+  equation: atp[cere] + f6p[cere] => adp[cere] + fdp[cere] + h[cere]
+  subsystem: Glycolysis / Gluconeogenesis
+  original_id: r157
+  source: iJO1366
+- id: r16_ere
+  name: Sulfate adenyltransferase
+  genes: (EUBREC_0383)
+  equation: atp[cere] + gtp[cere] + h2o[cere] + so4[cere] => aps[cere] + gdp[cere]
+    + m239[cere] + ppi[cere]
+  subsystem: Amino Acid Metabolism
+  original_id: r16
+- id: r161_ere
+  name: L-lactate dehydrogenase
+  genes: (EUBREC_2331)
+  equation: h[cere] + nadh[cere] + pyr[cere] <=> lac__45__L[cere] + m222[cere]
+  subsystem: Glycolysis / Gluconeogenesis
+  original_id: r161
+  source: ModelSeed_rxn34240
+- id: r162_ere
+  name: pyruvate kinase
+  genes: (EUBREC_3176)
+  equation: h[cere] + adp[cere] + pep[cere] <=> atp[cere] + pyr[cere]
+  subsystem: Glycolysis / Gluconeogenesis
+  original_id: r162
+  source: iJO1366
+- id: r164_ere
+  name: glycerate kinase
+  genes: (EUBREC_0522)
+  equation: atp[cere] + glyc__45__R[cere] => 3pg[cere] + adp[cere] + h[cere]
+  subsystem: Glyoxylate Metabolism
+  original_id: r164
+  source: iJO1366
+- id: r165_ere
+  name: histidinol dehydrogenase
+  genes: (EUBREC_1687)
+  equation: h2o[cere] + histd[cere] + (2) m222[cere] => his__45__L[cere] + (2) nadh[cere]
+    + (3) h[cere]
+  subsystem: Histidine Metabolism
+  original_id: r165
+  source: iJO1366_HISTD, ModelSeed_rxn00859
+- id: r166_ere
+  name: phosphoribosyl-ATP pyrophosphatase
+  genes: (EUBREC_1689)
+  equation: h2o[cere] + prbatp[cere] => ppi[cere] + prbamp[cere] + h[cere]
+  subsystem: Histidine Metabolism
+  original_id: r166
+  source: iJO1366
+- id: r167_ere
+  name: L-Histidinol-phosphate phosphohydrolase
+  genes: (EUBREC_1520 or EUBREC_2801)
+  equation: h2o[cere] + hisp[cere] => histd[cere] + m239[cere]
+  subsystem: Histidine metabolism
+  original_id: r167
+- id: r168_ere
+  name: N-(5'-Phospho-D-ribosylformimino)-5-amino-1- (5''-phospho-D-ribosyl)-4-imidazolecarboxamide
+    ketol-isomerase
+  genes: (EUBREC_2544)
+  equation: prfp[cere] => prlp[cere]
+  subsystem: Histidine metabolism
+  original_id: r168
+- id: r169_ere
+  name: L-histidinal:NAD+ oxidoreductase
+  genes: (EUBREC_1687)
+  equation: h2o[cere] + m222[cere] + m368[cere] => his__45__L[cere] + nadh[cere]
+    + (2) h[cere]
+  subsystem: Histidine metabolism
+  original_id: r169
+  source: ModelSeed_rxn00863
+- id: r17_ere
+  name: L-threonine deaminase
+  genes: (EUBREC_1503)
+  equation: thr__45__L[cere] => 2obut[cere] + nh4[cere]
+  subsystem: Amino Acid Metabolism
+  original_id: r17
+- id: r170_ere
+  name: Imidazole-glycerol-3-phosphate synthase
+  genes: (EUBREC_1468 or EUBREC_1467)
+  equation: gln__45__L[cere] + prlp[cere] => aicar[cere] + eig3p[cere] + glu__45__L[cere]
+    + h[cere]
+  subsystem: Histidine metabolism
+  original_id: r170
+  source: iJO1366
+- id: r173_ere
+  name: L-Histidinol:NAD+ oxidoreductase
+  genes: (EUBREC_1678)
+  equation: histd[cere] + m222[cere] => nadh[cere] + m368[cere] + h[cere]
+  subsystem: Histidine metabolism
+  original_id: r173
+  source: ModelSeed_rxn02159
+- id: r174_ere
+  name: CDP-Diacylglycerol synthetase
+  genes: (EUBREC_1768)
+  equation: m107[cere] + ppi[cere] <=> ctp[cere] + m233[cere] + h[cere]
+  subsystem: Lipid & Cell Wall Metabolism
+  original_id: r174
+  source: iJO1366_DASYN160, BIGG_DASYN160
+- id: r175_ere
+  name: LL-2,6-diaminoheptanedioate:2-oxoglutarate aminotransferase
+  genes: (EUBREC_2541)
+  equation: akg[cere] + 26dap__45__LL[cere] <=> glu__45__L[cere] + h2o[cere] + thdp[cere]
+    + h[cere]
+  subsystem: Lysine biosynthesis
+  original_id: r175
+  source: ModelSeed_rxn07441
+- id: r176_ere
+  name: LL-2,6-Diaminoheptanedioate 2-epimerase
+  genes: (EUBREC_1477)
+  equation: 26dap__45__LL[cere] <=> 26dap__45__M[cere]
+  subsystem: Lysine biosynthesis
+  original_id: r176
+- id: r178_ere
+  name: dihydrodipicolinate reductase (NADPH)
+  genes: (EUBREC_2534)
+  equation: h[cere] + 23dhdp[cere] + nadph[cere] => nadp[cere] + thdp[cere]
+  subsystem: Lysine biosynthesis
+  original_id: r178
+  source: iJO1366
+- id: r179_ere
+  name: dihydrodipicolinate synthase
+  genes: (EUBREC_1479 or EUBREC_1206 or EUBREC_2535)
+  equation: aspsa[cere] + pyr[cere] => 23dhdp[cere] + (2) h2o[cere] + h[cere]
+  subsystem: Lysine biosynthesis
+  original_id: r179
+  source: iJO1366
+- id: r18_ere
+  name: UDP-N-acetylmuramoyl-L-alanine synthetase
+  genes: (EUBREC_0450)
+  equation: ala__45__L[cere] + atp[cere] + uamr[cere] => adp[cere] + m239[cere] +
+    uama[cere] + h[cere]
+  subsystem: Amino Acid Metabolism
+  original_id: r18
+  source: iJO1366
+- id: r180_ere
+  name: maltose O-acetyltransferase
+  genes: (EUBREC_3383)
+  equation: accoa[cere] + malt[cere] => m62[cere] + coa[cere]
+  subsystem: maltose O-acetyltransferase
+  original_id: r180
+- id: r181_ere
+  name: dihydrofolate reductase
+  genes: (EUBREC_1249)
+  equation: h[cere] + dhf[cere] + nadph[cere] <=> nadp[cere] + thf[cere]
+  subsystem: Metabolic pathways
+  original_id: r181
+  source: iJO1366
+- id: r182_ere
+  name: dihydrofolate synthase
+  genes: (EUBREC_2384)
+  equation: atp[cere] + dhpt[cere] + glu__45__L[cere] => adp[cere] + dhf[cere] +
+    m239[cere] + h[cere]
+  subsystem: Metabolic pathways
+  original_id: r182
+  source: iJO1366
+- id: r183_ere
+  name: diaminohydroxyphosphoribosylaminopyrimidine deaminase
+  genes: (EUBREC_3132)
+  equation: h[cere] + 25dhpp[cere] + h2o[cere] => 5apru[cere] + nh4[cere]
+  subsystem: Metabolic pathways
+  original_id: r183
+  source: ModelSeed_rxn30012
+- id: r184_ere
+  name: formate-tetrahydrofolate ligase
+  genes: (EUBREC_1957)
+  equation: 10fthf[cere] + adp[cere] + m239[cere] <=> atp[cere] + for[cere] + thf[cere]
+  subsystem: Metabolic pathways
+  original_id: r184
+- id: r185_ere
+  name: 3-methyl-2-oxobutanoate hydroxymethyltransferase
+  genes: (EUBREC_2501)
+  equation: 3mob[cere] + h2o[cere] + mlthf[cere] => 2dhp[cere] + thf[cere]
+  subsystem: Metabolic pathways
+  original_id: r185
+- id: r189_ere
+  name: Tetrahydrofolate:L-glutamate gamma-ligase (ADP-forming)
+  genes: (EUBREC_2384)
+  equation: h[cere] + adp[cere] + m239[cere] + thfglu[cere] <=> atp[cere] + glu__45__L[cere]
+    + thf[cere]
+  subsystem: Metabolic pathways
+  original_id: r189
+  source: ModelSeed_rxn30129
+- id: r19_ere
+  name: pyrroline-5-carboxylate reductase
+  genes: (EUBREC_1178)
+  equation: (2) h[cere] + 1pyr5c[cere] + nadph[cere] => nadp[cere] + pro__45__L[cere]
+  subsystem: Amino Acid Metabolism
+  original_id: r19
+  source: iJO1366, ModelSeed_rxn00929
+- id: r190_ere
+  name: 5-methyltetrahydrofolate:NADP+ oxidoreductase
+  genes: (EUBREC_2200)
+  equation: (2) h[cere] + mlthf[cere] + nadph[cere] <=> 5mthf[cere] + nadp[cere]
+  subsystem: Methane metabolism
+  original_id: r190
+  source: iJO1366_MTHFR2
+- id: r191_ere
+  name: glycerol teichoic acid synthesis (no sub, n=25)
+  genes: (EUBREC_2650 or EUBREC_2767 or EUBREC_0711)
+  equation: acgam[cere] + (25) m108[cere] + uacmam[cere] => m185[cere] + udp[cere]
+    + (25) cmp[cere] + (26) h[cere]
+  subsystem: N-acetylglucosaminyldiphosphoundecaprenol
+  original_id: r191
+  source: BIGG_TECA1S
+- id: r192_ere
+  name: glycerol techoic acid synthesis (D-ala, n=25)
+  genes: (EUBREC_2767 or EUBREC_0711 or EUBREC_2650 or EUBREC_2623)
+  equation:
+    reversible: false
+    left:
+    - id: acgam
+      compartment: cere
+      value: 1
+    - id: ala__45__D
+      compartment: cere
+      value: 25
+    - id: atp
+      compartment: cere
+      value: 25
+    - id: m108
+      compartment: cere
+      value: 25
+    - id: uacmam
+      compartment: cere
+      value: 1
+    right:
+    - id: amp
+      compartment: cere
+      value: 25
+    - id: m186
+      compartment: cere
+      value: 1
+    - id: ppi
+      compartment: cere
+      value: 25
+    - id: udp
+      compartment: cere
+      value: 1
+    - id: cmp
+      compartment: cere
+      value: 25
+    - id: h
+      compartment: cere
+      value: 26
+  subsystem: N-acetylglucosaminyldiphosphoundecaprenol
+  original_id: r192
+  source: BIGG_TECA2S
+- id: r193_ere
+  name: glycerol teichoic acid synthesis (n=25, glucose sub)
+  genes: (EUBREC_2650 or EUBREC_2767 or EUBREC_0711)
+  equation: acgam[cere] + (25) m108[cere] + uacmam[cere] + (25) udpg[cere] => m187[cere]
+    + (26) udp[cere] + (25) cmp[cere] + (51) h[cere]
+  subsystem: N-acetylglucosaminyldiphosphoundecaprenol
+  original_id: r193
+  source: BIGG_TECA3S
+- id: r195_ere
+  name: FMN reductase
+  genes: (EUBREC_2847)
+  equation: h[cere] + fmn[cere] + nadh[cere] => m153[cere] + m222[cere]
+  subsystem: NADH:flavin oxidoreductase
+  original_id: r195
+  source: iJO1366
+- id: r196_ere
+  name: NAD kinase
+  genes: (EUBREC_2207)
+  equation: atp[cere] + m222[cere] => adp[cere] + nadp[cere] + h[cere]
+  subsystem: Nicotinate and nicotinamide metabolism
+  original_id: r196
+  source: iJO1366
+- id: r197_ere
+  name: NAD synthase (nh3)
+  genes: (EUBREC_1358)
+  equation: atp[cere] + dnad[cere] + nh4[cere] => amp[cere] + m222[cere] + ppi[cere]
+    + h[cere]
+  subsystem: Nicotinate and nicotinamide metabolism
+  original_id: r197
+  source: iJO1366
+- id: r198_ere
+  name: Carbamate kinase
+  genes: (EUBREC_2604)
+  equation: atp[cere] + co2[cere] + nh4[cere] => adp[cere] + cbp[cere] + (2) h[cere]
+  subsystem: Nitrogen Metabolism
+  original_id: r198
+  source: iJO1366
+- id: r199_ere
+  name: glutamine synthetase
+  genes: (EUBREC_2543)
+  equation: atp[cere] + glu__45__L[cere] + nh4[cere] => adp[cere] + gln__45__L[cere]
+    + m239[cere] + h[cere]
+  subsystem: Nitrogen Metabolism
+  original_id: r199
+  source: iJO1366
+- id: r2_ere
+  name: UDP-N-acetylmuramoyl-L-alanyl-D-glutamyl-meso-2,6-diaminopimeloyl-D-alanyl-D-alanine
+    synthetase
+  genes: (EUBREC_2936)
+  equation: alaala[cere] + atp[cere] + ugmd[cere] => adp[cere] + m239[cere] + ugmda[cere]
+    + h[cere]
+  subsystem: Alanine and Aspartate Metabolism
+  original_id: r2
+  source: iJO1366_UGMDDS
+- id: r200_ere
+  name: glutamate dehydrogenase (NAD)
+  genes: (EUBREC_3138)
+  equation: h[cere] + akg[cere] + nadh[cere] + nh4[cere] => glu__45__L[cere] + h2o[cere]
+    + m222[cere]
+  subsystem: Nitrogen Metabolism
+  original_id: r200
+  source: ModelSeed_rxn00182
+- id: r201_ere
+  name: glutamate synthase (NADH2)
+  genes: (EUBREC_1829 or EUBREC_2274 or EUBREC_2273 or )
+  equation: h[cere] + akg[cere] + gln__45__L[cere] + nadh[cere] => (2) glu__45__L[cere]
+    + m222[cere]
+  subsystem: Nitrogen Metabolism
+  original_id: r201
+  source: ModelSeed_rxn00069
+- id: r204_ere
+  name: N-acetylglutamate synthase
+  genes: (EUBREC_1176)
+  equation: accoa[cere] + glu__45__L[cere] => acglu[cere] + coa[cere] + h[cere]
+  subsystem: Other Amino Acid Metabolism
+  original_id: r204
+  source: iJO1366
+- id: r205_ere
+  name: inorganic diphosphatase
+  genes: (EUBREC_1475)
+  equation: h2o[cere] + ppi[cere] => (2) m239[cere] + h[cere]
+  subsystem: Oxidative phosphorylation
+  original_id: r205
+  source: iJO1366
+- id: r207_ere
+  name: ATP:D-xylulose 5-phosphotransferase
+  genes: (EUBREC_2559)
+  equation: atp[cere] + xylu__45__D[cere] <=> adp[cere] + xu5p__45__D[cere] + h[cere]
+  subsystem: Pentose and glucuronate interconversions
+  original_id: r207
+  source: iJO1366_XYLK
+- id: r208_ere
+  name: D-xylose aldose-ketose-isomerase
+  equation: xyl__45__D[cere] <=> xylu__45__D[cere]
+  subsystem: Pentose and glucuronate interconversions
+  original_id: r208
+- id: r209_ere
+  name: phosphopentomutase
+  genes: (EUBREC_0296)
+  equation: r1p[cere] <=> r5p[cere]
+  subsystem: Pentose Phosphate Pathway
+  original_id: r209
+- id: r210_ere
+  name: phosphoribosylpyrophosphate synthetase
+  genes: (EUBREC_0447)
+  equation: h[cere] + amp[cere] + prpp[cere] <=> atp[cere] + r5p[cere]
+  subsystem: Pentose phosphate pathway
+  original_id: r210
+  source: iJO1366
+- id: r211_ere
+  name: transaldolase
+  genes: (EUBREC_2461)
+  equation: e4p[cere] + f6p[cere] <=> g3p[cere] + s7p[cere]
+  subsystem: Pentose phosphate pathway
+  original_id: r211
+- id: r214_ere
+  name: ribose 5-phosphate isomeras
+  genes: (EUBREC_1432)
+  equation: r5p[cere] <=> ru5p__45__D[cere]
+  subsystem: Pentose phosphate pathway
+  original_id: r214
+- id: r215_ere
+  name: deoxyribose-phosphate aldolase
+  genes: (EUBREC_0293)
+  equation: 2dr5p[cere] => acald[cere] + g3p[cere]
+  subsystem: Pentose phosphate pathway
+  original_id: r215
+- id: r216_ere
+  name: peptidoglycan glycosyltransferase
+  equation: h2o[cere] + uaagmda[cere] => (2) ala__45__D[cere] + (2) m339[cere]
+  subsystem: Peptidoglycan biosynthesis
+  original_id: r216
+  source: BIGG_AALACPTD
+- id: r217_ere
+  name: UDP-N-acetylmuramoyl-L-alanyl-D-glutamyl-meso-2,6-diaminopimelate synthetase
+  genes: (EUBREC_1478)
+  equation: 26dap__45__M[cere] + atp[cere] + uamag[cere] => adp[cere] + m239[cere]
+    + ugmd[cere] + h[cere]
+  subsystem: Peptidoglycan biosynthesis
+  original_id: r217
+  source: iJO1366
+- id: r219_ere
+  name: UDP-N-acetylmuramoyl-L-alanyl-D-glutamate synthetase
+  genes: (EUBREC_2250)
+  equation: atp[cere] + glu__45__D[cere] + uama[cere] => adp[cere] + m239[cere] +
+    uamag[cere] + h[cere]
+  subsystem: Peptidoglycan Metabolism
+  original_id: r219
+  source: iJO1366
+- id: r22_ere
+  name: UDP-N-acetylglucosamine diphosphorylase
+  genes: (EUBREC_2612 or EUBREC_2147)
+  equation: h[cere] + acgam1p[cere] + utp[cere] => ppi[cere] + uacgam[cere]
+  subsystem: Amino sugar and nucleotide sugar metabolism
+  original_id: r22
+  source: iJO1366
+- id: r220_ere
+  name: Phosphoenolpyruvate:D-erythrose-4-phosphate C-(1-carboxyvinyl)transferase
+    (phosphate hydrolysing, 2-carboxy-2-oxoethyl-forming)
+  genes: (EUBREC_2223)
+  equation: e4p[cere] + h2o[cere] + pep[cere] => 2dda7p[cere] + m239[cere]
+  subsystem: Phenylalanine, tyrosine and tryptophan biosynthesis
+  original_id: r220
+- id: r221_ere
+  name: N-(5-Phospho-beta-D-ribosyl)anthranilate ketol-isomerase
+  genes: (EUBREC_0263)
+  equation: pran[cere] <=> 2cpr5p[cere]
+  subsystem: Phenylalanine, tyrosine and tryptophan biosynthesis
+  original_id: r221
+  source: iJO1366_PRAIi
+- id: r222_ere
+  name: Chorismate pyruvatemutase
+  genes: (EUBREC_0723 or EUBREC_1954)
+  equation: chor[cere] <=> pphn[cere]
+  subsystem: Phenylalanine, tyrosine and tryptophan biosynthesis
+  original_id: r222
+- id: r227_ere
+  name: adenylosuccinate lyase
+  genes: (EUBREC_1528)
+  equation: 25aics[cere] <=> aicar[cere] + fum[cere]
+  subsystem: Purine and Pyrimidine Biosynthesis
+  original_id: r227
+- id: r228_ere
+  name: adenylosuccinate synthase
+  genes: (EUBREC_2268 or EUBREC_1087)
+  equation: asp__45__L[cere] + gtp[cere] + imp[cere] => dcamp[cere] + gdp[cere] +
+    m239[cere] + (2) h[cere]
+  subsystem: Purine and Pyrimidine Biosynthesis
+  original_id: r228
+  source: iJO1366
+- id: r23_ere
+  name: Alanyl-tRNA synthetase
+  genes: (EUBREC_1836)
+  equation: ala__45__L[cere] + atp[cere] + m284[cere] => m89[cere] + amp[cere] +
+    ppi[cere]
+  subsystem: Aminoacyl-tRNA biosynthesis
+  original_id: r23
+- id: r231_ere
+  name: cytidine deaminase
+  genes: (EUBREC_0294 or EUBREC_1636)
+  equation: h[cere] + cytd[cere] + h2o[cere] => nh4[cere] + uri[cere]
+  subsystem: Purine and Pyrimidine Biosynthesis
+  original_id: r231
+  source: iJO1366
+- id: r236_ere
+  name: glutamine phosphoribosyldiphosphate amidotransferase
+  genes: (EUBREC_1527)
+  equation: gln__45__L[cere] + h2o[cere] + prpp[cere] => glu__45__L[cere] + ppi[cere]
+    + pram[cere]
+  subsystem: Purine and Pyrimidine Biosynthesis
+  original_id: r236
+- id: r237_ere
+  name: GMP synthase
+  genes: (EUBREC_0620)
+  equation: atp[cere] + gln__45__L[cere] + h2o[cere] + xmp[cere] => amp[cere] + glu__45__L[cere]
+    + gmp[cere] + ppi[cere] + (2) h[cere]
+  subsystem: Purine and Pyrimidine Biosynthesis
+  original_id: r237
+  source: iJO1366
+- id: r238_ere
+  name: GTP diphosphokinase
+  genes: (EUBREC_2931)
+  equation: atp[cere] + gtp[cere] => amp[cere] + gdptp[cere] + h[cere]
+  subsystem: Purine and Pyrimidine Biosynthesis
+  original_id: r238
+  source: iJO1366
+- id: r24_ere
+  name: Arginyl-tRNA synthetase
+  genes: (EUBREC_2239)
+  equation: arg__45__L[cere] + atp[cere] + m285[cere] => amp[cere] + m96[cere] +
+    ppi[cere]
+  subsystem: Aminoacyl-tRNA biosynthesis
+  original_id: r24
+- id: r242_ere
+  name: IMP dehydrogenase
+  genes: (EUBREC_2545)
+  equation: h2o[cere] + imp[cere] + m222[cere] => nadh[cere] + xmp[cere] + h[cere]
+  subsystem: Purine and Pyrimidine Biosynthesis
+  original_id: r242
+  source: iJO1366
+- id: r243_ere
+  name: phosphoribosylglycinamide synthetase
+  genes: (EUBREC_1127)
+  equation: atp[cere] + gly[cere] + pram[cere] => adp[cere] + gar[cere] + m239[cere]
+    + h[cere]
+  subsystem: Purine and Pyrimidine Biosynthesis
+  original_id: r243
+  source: iJO1366_PRAGSr
+- id: r244_ere
+  name: phosphoribosylaminoimidazolesuccinocarboxamide synthase
+  genes: (EUBREC_1526)
+  equation: h[cere] + 25aics[cere] + adp[cere] + m239[cere] <=> 5aizc[cere] + asp__45__L[cere]
+    + atp[cere]
+  subsystem: Purine and Pyrimidine Biosynthesis
+  original_id: r244
+  source: iJO1366
+- id: r247_ere
+  name: ribonucleoside-triphosphate reductase (ATP)
+  genes: (EUBREC_2400)
+  equation: atp[cere] + trdrd[cere] => datp[cere] + h2o[cere] + trdox[cere]
+  subsystem: Purine and Pyrimidine Biosynthesis
+  original_id: r247
+- id: r248_ere
+  name: ribonucleoside-triphosphate reductase (GTP)
+  genes: (EUBREC_2400)
+  equation: gtp[cere] + trdrd[cere] => dgtp[cere] + h2o[cere] + trdox[cere]
+  subsystem: Purine and Pyrimidine Biosynthesis
+  original_id: r248
+- id: r249_ere
+  name: ribonucleoside-triphosphate reductase (CTP)
+  genes: (EUBREC_2400)
+  equation: ctp[cere] + trdrd[cere] => dctp[cere] + h2o[cere] + trdox[cere]
+  subsystem: Purine and Pyrimidine Biosynthesis
+  original_id: r249
+- id: r25_ere
+  name: Asparaginyl-tRNA synthetase
+  genes: (EUBREC_1008)
+  equation: asn__45__L[cere] + atp[cere] + m286[cere] => amp[cere] + m98[cere] +
+    ppi[cere]
+  subsystem: Aminoacyl-tRNA biosynthesis
+  original_id: r25
+- id: r250_ere
+  name: UMP kinase
+  genes: (EUBREC_1636 or EUBREC_1771 or EUBREC_1730)
+  equation: adp[cere] + udp[cere] <=> atp[cere] + ump[cere]
+  subsystem: Purine and Pyrimidine Biosynthesis
+  original_id: r250
+- id: r251_ere
+  name: uracil phosphoribosyltransferase (r)
+  genes: (EUBREC_0114)
+  equation: ppi[cere] + ump[cere] <=> prpp[cere] + ura[cere]
+  subsystem: Purine and Pyrimidine Biosynthesis
+  original_id: r251
+- id: r252_ere
+  name: GTP:pyruvate 2-O-phosphotransferase
+  genes: (EUBREC_3176)
+  equation: gtp[cere] + pyr[cere] <=> gdp[cere] + pep[cere] + h[cere]
+  subsystem: Purine metabolism
+  original_id: r252
+  source: ModelSeed_rxn00304
+- id: r253_ere
+  name: ADPribose diphosphatase
+  genes: (EUBREC_2224)
+  equation: m76[cere] + h2o[cere] => amp[cere] + r5p[cere] + (2) h[cere]
+  subsystem: Purine metabolism
+  original_id: r253
+  source: iJO1366
+- id: r256_ere
+  name: phosphoribosylglycinamide formyltransferase
+  genes: (EUBREC_1126)
+  equation: h[cere] + fgam[cere] + thf[cere] <=> 10fthf[cere] + gar[cere]
+  subsystem: Purine metabolism
+  original_id: r256
+  source: iJO1366
+- id: r257_ere
+  name: phosphopentomutase 2 (deoxyribose)
+  genes: (EUBREC_0296)
+  equation: 2dr1p[cere] <=> 2dr5p[cere]
+  subsystem: Purine metabolism
+  original_id: r257
+- id: r258_ere
+  name: phosphoribosylaminoimidazole synthase
+  genes: (EUBREC_1125)
+  equation: atp[cere] + fpram[cere] => adp[cere] + air[cere] + m239[cere] + (2) h[cere]
+  subsystem: Purine metabolism
+  original_id: r258
+  source: iJO1366
+- id: r259_ere
+  name: 5-amino-1-(5-phospho-D-ribosyl)imidazole:carbon-dioxide ligase (ADP-forming)
+  equation: air[cere] + atp[cere] + co2[cere] + h2o[cere] => 5caiz[cere] + adp[cere]
+    + m239[cere] + (2) h[cere]
+  subsystem: Purine metabolism
+  original_id: r259
+  source: iJO1366_AIRC2, ModelSeed_rxn05114
+- id: r26_ere
+  name: Aspartyl-tRNA synthetase
+  genes: (EUBREC_2920)
+  equation: asp__45__L[cere] + atp[cere] + m287[cere] => amp[cere] + m101[cere] +
+    ppi[cere]
+  subsystem: Aminoacyl-tRNA biosynthesis
+  original_id: r26
+- id: r260_ere
+  name: phosphoribosylformylglycinamidine synthase
+  genes: (EUBREC_1518)
+  equation: atp[cere] + fgam[cere] + gln__45__L[cere] + h2o[cere] => adp[cere] +
+    fpram[cere] + glu__45__L[cere] + m239[cere] + h[cere]
+  subsystem: Purine metabolism
+  original_id: r260
+  source: iJO1366
+- id: r261_ere
+  name: IMP 1,2-hydrolase (decyclizing)
+  genes: (EUBREC_1567)
+  equation: fprica[cere] <=> h2o[cere] + imp[cere]
+  subsystem: Purine metabolism
+  original_id: r261
+  source: iJO1366_IMPC, ModelSeed_rxn00832
+- id: r263_ere
+  name: Orotidine-5'-phosphate:diphosphate phospho-alpha-D-ribosyl-transferase
+  genes: (EUBREC_2283 or EUBREC_2468)
+  equation: orot[cere] + prpp[cere] => ppi[cere] + orot5p[cere]
+  subsystem: Pyrimidine metabolism
+  original_id: r263
+- id: r264_ere
+  name: orotidine-5'-phosphate carboxy-lyase (UMP-forming)
+  genes: (EUBREC_2481)
+  equation: h[cere] + orot5p[cere] => co2[cere] + ump[cere]
+  subsystem: Pyrimidine metabolism
+  original_id: r264
+  source: ModelSeed_rxn00710
+- id: r265_ere
+  name: ATP:UDP phosphotransferase
+  equation: atp[cere] + udp[cere] <=> adp[cere] + utp[cere]
+  subsystem: Pyrimidine metabolism
+  original_id: r265
+- id: r266_ere
+  name: DNA polymerase III complex
+  genes: (EUBREC_0002 or EUBREC_0328)
+  equation: dttp[cere] <=> dctp[cere]
+  subsystem: Pyrimidine metabolism
+  original_id: r266
+- id: r267_ere
+  name: ATP:deoxyuridine 5'-phosphotransferase
+  equation: atp[cere] + duri[cere] <=> adp[cere] + dump[cere] + h[cere]
+  subsystem: Pyrimidine metabolism
+  original_id: r267
+  source: iJO1366_DURIK1
+- id: r268_ere
+  name: ATP:dTDP phosphotransferase
+  equation: atp[cere] + dtdp[cere] <=> adp[cere] + dttp[cere]
+  subsystem: Pyrimidine metabolism
+  original_id: r268
+- id: r269_ere
+  name: dTDP phosphohydrolase
+  equation: h2o[cere] + dtdp[cere] <=> dtmp[cere] + m239[cere] + (2) h[cere]
+  subsystem: Pyrimidine metabolism
+  original_id: r269
+  source: ModelSeed_rxn01511
+- id: r27_ere
+  name: Cysteinyl-tRNA synthetase
+  genes: (EUBREC_1446)
+  equation: atp[cere] + cys__45__L[cere] + m288[cere] => amp[cere] + m118[cere] +
+    ppi[cere]
+  subsystem: Aminoacyl-tRNA biosynthesis
+  original_id: r27
+- id: r270_ere
+  name: aspartate carbamoyltransferase
+  genes: (EUBREC_2349 or EUBREC_2349 or EUBREC_2348)
+  equation: asp__45__L[cere] + cbp[cere] => cbasp[cere] + m239[cere] + h[cere]
+  subsystem: Pyrimidine metabolism
+  original_id: r270
+  source: iJO1366
+- id: r271_ere
+  name: carbamoyl-phosphate synthase (glutamine-hydrolysing)
+  genes: (EUBREC_0732 or EUBREC_0731)
+  equation: (2) atp[cere] + co2[cere] + gln__45__L[cere] + (2) h2o[cere] => (2) adp[cere]
+    + cbp[cere] + glu__45__L[cere] + m239[cere] + (3) h[cere]
+  subsystem: Pyrimidine metabolism
+  original_id: r271
+  source: iJO1366, ModelSeed_rxn00414
+- id: r272_ere
+  name: CTP synthase (NH3)
+  genes: (EUBREC_0690)
+  equation: atp[cere] + nh4[cere] + utp[cere] => adp[cere] + ctp[cere] + m239[cere]
+    + (2) h[cere]
+  subsystem: Pyrimidine metabolism
+  original_id: r272
+  source: ModelSeed_rxn30073
+- id: r273_ere
+  name: dCMP deaminase
+  genes: (EUBREC_0115)
+  equation: dump[cere] + nh4[cere] <=> dcmp[cere] + h2o[cere] + h[cere]
+  subsystem: Pyrimidine metabolism
+  original_id: r273
+  source: ModelSeed_rxn01217
+- id: r274_ere
+  name: ATP:cytidine 5'-phosphotransferase
+  genes: (EUBREC_2356)
+  equation: atp[cere] + cytd[cere] <=> adp[cere] + cmp[cere] + h[cere]
+  subsystem: Pyrimidine metabolism
+  original_id: r274
+  source: ModelSeed_rxn00365
+- id: r275_ere
+  name: Uridine:phosphate alpha-D-ribosyltransferase
+  genes: (EUBREC_0292)
+  equation: m239[cere] + uri[cere] <=> r1p[cere] + ura[cere]
+  subsystem: Pyrimidine metabolism
+  original_id: r275
+- id: r276_ere
+  name: dihydroorotic acid (Ortate)
+  genes: (EUBREC_2479)
+  equation: dhor__45__S[cere] + fum[cere] => orot[cere] + succ[cere]
+  subsystem: Pyrimidine metabolism
+  original_id: r276
+- id: r277_ere
+  name: ribonucleoside-triphosphate reductase (UTP)
+  genes: (EUBREC_2400)
+  equation: trdrd[cere] + utp[cere] => dutp[cere] + h2o[cere] + trdox[cere]
+  subsystem: Pyrimidine metabolism
+  original_id: r277
+- id: r278_ere
+  name: thioredoxin reductase (NADPH)
+  genes: (EUBREC_0893)
+  equation: h[cere] + nadph[cere] + trdox[cere] => nadp[cere] + trdrd[cere]
+  subsystem: Pyrimidine metabolism
+  original_id: r278
+  source: iJO1366
+- id: r279_ere
+  name: acetaldehyde dehydrogenase (acetylating)
+  genes: (EUBREC_2225)
+  equation: acald[cere] + coa[cere] + m222[cere] => accoa[cere] + nadh[cere] + h[cere]
+  subsystem: Pyruvate Metabolism
+  original_id: r279
+  source: iJO1366
+- id: r28_ere
+  name: Glutamyl-tRNA synthetase
+  genes: (EUBREC_1822)
+  equation: atp[cere] + glu__45__L[cere] + m289[cere] => amp[cere] + m176[cere] +
+    ppi[cere]
+  subsystem: Aminoacyl-tRNA biosynthesis
+  original_id: r28
+- id: r280_ere
+  name: acetyl-CoA carboxylase
+  genes: (EUBREC_3141)
+  equation: accoa[cere] + atp[cere] + co2[cere] + h2o[cere] => adp[cere] + malcoa[cere]
+    + m239[cere] + (2) h[cere]
+  subsystem: Pyruvate Metabolism
+  original_id: r280
+  source: iJO1366
+- id: r282_ere
+  name: 2-isopropylmalate synthase
+  genes: (EUBREC_2332)
+  equation: 3mob[cere] + accoa[cere] + h2o[cere] => 3c3hmp[cere] + coa[cere] + h[cere]
+  subsystem: Pyruvate Metabolism
+  original_id: r282
+  source: iJO1366
+- id: r283_ere
+  name: malic enzyme
+  genes: (EUBREC_1483)
+  equation: co2[cere] + nadh[cere] + pyr[cere] => mal__45__L[cere] + m222[cere]
+  subsystem: Pyruvate Metabolism
+  original_id: r283
+- id: r286_ere
+  name: 5-amino-6-(5-phosphoribosylamino)uracil reductase
+  genes: (EUBREC_3131 or EUBREC_3129)
+  equation: h[cere] + 5apru[cere] + nadph[cere] => 5aprbu[cere] + nadp[cere]
+  subsystem: Riboflavin Metabolism
+  original_id: r286
+  source: iJO1366
+- id: r287_ere
+  name: FMN adenylyltransferase
+  genes: (EUBREC_1939)
+  equation: h[cere] + atp[cere] + fmn[cere] => fad[cere] + ppi[cere]
+  subsystem: Riboflavin Metabolism
+  original_id: r287
+  source: iJO1366
+- id: r288_ere
+  name: GTP cyclohydrolase II
+  genes: (EUBREC_3130)
+  equation: gtp[cere] + (3) h2o[cere] => 25dhpp[cere] + for[cere] + ppi[cere] + (2)
+    h[cere]
+  subsystem: Riboflavin Metabolism
+  original_id: r288
+  source: iJO1366
+- id: r29_ere
+  name: Glycyl-tRNA synthetase
+  genes: (EUBREC_1868)
+  equation: atp[cere] + gly[cere] + m290[cere] => amp[cere] + m182[cere] + ppi[cere]
+  subsystem: Aminoacyl-tRNA biosynthesis
+  original_id: r29
+- id: r290_ere
+  name: riboflavin kinase
+  genes: (EUBREC_1939)
+  equation: atp[cere] + ribflv[cere] => adp[cere] + fmn[cere] + h[cere]
+  subsystem: Riboflavin Metabolism
+  original_id: r290
+  source: iJO1366
+- id: r293_ere
+  name: beta-fructofuranosidase
+  genes: (EUBREC_0257)
+  equation: fru[cere] + g6p[cere] <=> h2o[cere] + m270[cere]
+  subsystem: Starch and Sucrose Metabolism
+  original_id: r293
+- id: r295_ere
+  name: cellulose 1,4-beta-cellobiosidase
+  genes: (EUBREC_0616)
+  equation: (6) m325[cere] + (4) h2o[cere] => (2) glc__45__D[cere] + (2) cellb[cere]
+  subsystem: Starch and sucrose metabolism
+  original_id: r295
+- id: r296_ere
+  name: alpha-amylase
+  equation: h2o[cere] + glycogen[cere] => glc__45__D[cere]
+  subsystem: Starch and sucrose metabolism
+  original_id: r296
+- id: r297_ere
+  name: maltose glucohydrolase
+  genes: (EUBREC_0500)
+  equation: h2o[cere] + malt[cere] => (2) glc__45__D[cere]
+  subsystem: Starch and sucrose metabolism
+  original_id: r297
+- id: r298_ere
+  name: ATP:sulfate adenylyltransferase
+  genes: (EUBREC_2469 or EUBREC_2470)
+  equation: h[cere] + atp[cere] + so4[cere] => aps[cere] + ppi[cere]
+  subsystem: Sulfur metabolism
+  original_id: r298
+  source: MetaCyc
+- id: r299_ere
+  name: hydroxyethylthiazole kinase
+  genes: (EUBREC_2530 or EUBREC_0224)
+  equation: m35[cere] + atp[cere] => 4mpetz[cere] + adp[cere] + h[cere]
+  subsystem: Thiamine Metabolism
+  original_id: r299
+  source: iJO1366
+- id: r3_ere
+  name: L-aspartate:ammonia ligase (AMP-forming)
+  genes: (EUBREC_0144)
+  equation: asp__45__L[cere] + atp[cere] + nh4[cere] => amp[cere] + asn__45__L[cere]
+    + ppi[cere] + h[cere]
+  subsystem: Alanine, aspartate and glutamate metabolism
+  original_id: r3
+  source: iJO1366_ASNS2
+- id: r30_ere
+  name: Isoleucyl-tRNA synthetase
+  genes: (EUBREC_1053)
+  equation: atp[cere] + ile__45__L[cere] + m291[cere] => amp[cere] + m201[cere] +
+    ppi[cere]
+  subsystem: Aminoacyl-tRNA biosynthesis
+  original_id: r30
+- id: r301_ere
+  name: thiamine-phosphate diphosphorylase
+  genes: (EUBREC_2529 or EUBREC_0222)
+  equation: h[cere] + 2mahmp[cere] + 4mpetz[cere] => ppi[cere] + thmmp[cere]
+  subsystem: Thiamine Metabolism
+  original_id: r301
+  source: iJO1366
+- id: r303_ere
+  name: D-glucose transport via PEP:Pyr PTS
+  equation: glc__45__D[e] => glc__45__D[cere]
+  subsystem: Transport Reaction
+  original_id: r303
+- id: r304_ere
+  name: CO2 Transport
+  equation: co2[cere] <=> co2[e]
+  subsystem: Transport Reaction
+  original_id: r304
+- id: r305_ere
+  name: N-Acetyl-D-glucosamine transport via PEP:Pyr PTS
+  genes: (EUBREC_2924 or EUBREC_0134)
+  equation: acgam[e] + pep[cere] => acgam6p[cere] + pyr[cere]
+  subsystem: Transport Reaction
+  original_id: r305
+- id: r306_ere
+  name: L-alanine reversible transport via proton symport
+  genes: (EUBREC_1418)
+  equation: ala__45__L[cere] <=> ala__45__L[e]
+  subsystem: Transport Reaction
+  original_id: r306
+- id: r307_ere
+  name: choline transport via proton symport, reversible
+  genes: (EUBREC_2605)
+  equation: chol[cere] <=> chol[e]
+  subsystem: Transport Reaction
+  original_id: r307
+- id: r309_ere
+  name: Na+/Proline-L symporter
+  genes: (EUBREC_2399)
+  equation: pro__45__L[cere] => pro__45__L[e]
+  subsystem: Transport Reaction
+  original_id: r309
+- id: r31_ere
+  name: Lysyl-tRNA synthetase
+  genes: (EUBREC_0063)
+  equation: atp[cere] + lys__45__L[cere] + m292[cere] => amp[cere] + m209[cere] +
+    ppi[cere]
+  subsystem: Aminoacyl-tRNA biosynthesis
+  original_id: r31
+- id: r310_ere
+  name: L-glutamate transport via proton symport, reversible
+  genes: (EUBREC_1852)
+  equation: glu__45__L[cere] <=> glu__45__L[e]
+  subsystem: Transport Reaction
+  original_id: r310
+- id: r311_ere
+  name: sn-Glycerol 3-phosphate transport via ABC system
+  genes: (EUBREC_1185 or EUBREC_0543 or EUBREC_2282 or EUBREC_1183)
+  equation: atp[cere] + glyc3p[e] + h2o[cere] => adp[cere] + glyc3p[cere] + m239[cere]
+    + h[cere]
+  subsystem: Transport Reaction
+  original_id: r311
+  source: iJO1366
+- id: r312_ere
+  name: Lactose transport via PEP:Pyr PTS
+  genes: (EUBREC_3689 or EUBREC_3688)
+  equation: lcts[e] + pep[cere] => m204[cere] + pyr[cere]
+  subsystem: Transport Reaction
+  original_id: r312
+- id: r313_ere
+  name: maltose transport via ABC system
+  genes: (EUBREC_1185 or EUBREC_0543 or EUBREC_2282 or EUBREC_1183 or EUBREC_0542
+    or EUBREC_1835 or EUBREC_0544)
+  equation: atp[cere] + h2o[cere] + malt[e] => adp[cere] + malt[cere] + m239[cere]
+    + h[cere]
+  subsystem: Transport Reaction
+  original_id: r313
+  source: iJO1366
+- id: r314_ere
+  name: spermidine transport via ABC system
+  genes: (EUBREC_2166 or EUBREC_2165 or EUBREC_2164)
+  equation: atp[cere] + h2o[cere] + spmd[e] => adp[cere] + m239[cere] + spmd[cere]
+    + h[cere]
+  subsystem: Transport Reaction
+  original_id: r314
+  source: iJO1366
+- id: r315_ere
+  name: uracil transport in via proton symport
+  genes: (EUBREC_1549)
+  equation: ura[e] => ura[cere]
+  subsystem: Transport Reaction
+  original_id: r315
+- id: r317_ere
+  name: Butyrate Transport
+  equation: actn__45__R[cere] => actn__45__R[e]
+  subsystem: Transport Reaction
+  original_id: r317
+- id: r318_ere
+  name: Acetate Transport
+  equation: ac[cere] <=> ac[e]
+  subsystem: Transport Reaction
+  original_id: r318
+- id: r319_ere
+  name: Lactate Transport
+  equation: lac__45__L[cere] <=> lac__45__L[e]
+  subsystem: Transport Reaction
+  original_id: r319
+- id: r32_ere
+  name: Methionyl-tRNA synthetase
+  genes: (EUBREC_3199)
+  equation: atp[cere] + met__45__L[cere] + m293[cere] => amp[cere] + m220[cere] +
+    ppi[cere]
+  subsystem: Aminoacyl-tRNA biosynthesis
+  original_id: r32
+- id: r320_ere
+  name: ammonium Transport
+  genes: (EUBREC_0702)
+  equation: nh4[e] <=> nh4[cere]
+  subsystem: Transport Reaction
+  original_id: r320
+- id: r321_ere
+  name: Phosphate Transport
+  genes: (EUBREC_2948 or EUBREC_2956 or EUBREC_2955 or EUBREC_2957)
+  equation: m239[cere] <=> pi[e]
+  subsystem: Transport Reaction
+  original_id: r321
+- id: r322_ere
+  name: H2O Transport
+  equation: h2o[e] <=> h2o[cere]
+  subsystem: Transport Reaction
+  original_id: r322
+- id: r323_ere
+  name: H2S Transport
+  equation: h2s[e] => h2s[cere]
+  subsystem: Transport Reaction
+  original_id: r323
+- id: r324_ere
+  name: ornithine transport via ABC system
+  genes: (EUBREC_0182)
+  equation: atp[cere] + h2o[cere] + orn[e] => adp[cere] + orn[cere] + m239[cere]
+    + h[cere]
+  subsystem: Transport Reaction
+  original_id: r324
+  source: iJO1366
+- id: r325_ere
+  name: Hydrogen Trasnport
+  equation: h2[cere] => h2[e]
+  subsystem: Transport Reaction
+  original_id: r325
+- id: r327_ere
+  name: anthranilate synthase
+  genes: (EUBREC_2980 or EUBREC_2979)
+  equation: chor[cere] + gln__45__L[cere] => anth[cere] + glu__45__L[cere] + pyr[cere]
+    + h[cere]
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+  original_id: r327
+  source: iJO1366
+- id: r329_ere
+  name: 3-dehydroquinate dehydratase
+  genes: (EUBREC_2841)
+  equation: 3dhsk[cere] + h2o[cere] <=> 3dhq[cere]
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+  original_id: r329
+- id: r33_ere
+  name: Seryl-tRNA synthetase
+  genes: (EUBREC_1120)
+  equation: atp[cere] + ser__45__L[cere] + m294[cere] => amp[cere] + ppi[cere] +
+    m264[cere]
+  subsystem: Aminoacyl-tRNA biosynthesis
+  original_id: r33
+- id: r331_ere
+  name: indole-3-glycerol-phosphate synthase
+  genes: (EUBREC_2977)
+  equation: h[cere] + 2cpr5p[cere] => 3ig3p[cere] + co2[cere] + h2o[cere]
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+  original_id: r331
+  source: iJO1366
+- id: r333_ere
+  name: prephenate dehydrogenase
+  genes: (EUBREC_1979)
+  equation: m222[cere] + pphn[cere] => 34hpp[cere] + co2[cere] + nadh[cere]
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+  original_id: r333
+- id: r334_ere
+  name: prephenate dehydratase
+  genes: (EUBREC_1954)
+  equation: h[cere] + pphn[cere] => co2[cere] + h2o[cere] + phpyr[cere]
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+  original_id: r334
+  source: iJO1366
+- id: r336_ere
+  name: serine O-acetyltransferase
+  genes: (EUBREC_1577 or EUBREC_2657)
+  equation: accoa[cere] + ser__45__L[cere] <=> acser[cere] + coa[cere]
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+  original_id: r336
+- id: r337_ere
+  name: shikimate dehydrogenase
+  genes: (EUBREC_2843 or EUBREC_2850)
+  equation: h[cere] + 3dhsk[cere] + nadph[cere] <=> nadp[cere] + skm[cere]
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+  original_id: r337
+  source: iJO1366
+- id: r338_ere
+  name: shikimate kinase
+  genes: (EUBREC_2836)
+  equation: atp[cere] + skm[cere] => adp[cere] + skm5p[cere] + h[cere]
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+  original_id: r338
+  source: iJO1366
+- id: r339_ere
+  name: tryptophan synthase (indoleglycerol phosphate)
+  genes: (EUBREC_2975 or EUBREC_2976)
+  equation: 3ig3p[cere] + ser__45__L[cere] => g3p[cere] + h2o[cere] + trp__45__L[cere]
+  subsystem: Tyrosine, Tryptophan, and Phenylalanine Metabolism
+  original_id: r339
+- id: r34_ere
+  name: Threonyl-tRNA synthetase
+  genes: (EUBREC_2259)
+  equation: atp[cere] + thr__45__L[cere] + m295[cere] => amp[cere] + ppi[cere] +
+    m280[cere]
+  subsystem: Aminoacyl-tRNA biosynthesis
+  original_id: r34
+- id: r340_ere
+  name: N-acetyl-g-glutamyl-phosphate reductase
+  genes: (EUBREC_1608)
+  equation: h[cere] + acg5p[cere] + nadph[cere] <=> acg5sa[cere] + nadp[cere] + m239[cere]
+  subsystem: Urea Cycle
+  original_id: r340
+  source: iJO1366
+- id: r341_ere
+  name: L-Valine:pyruvate aminotransferase
+  genes: (EUBREC_1366)
+  equation: 3mob[cere] + ala__45__L[cere] => pyr[cere] + val__45__L[cere]
+  subsystem: Valine, leucine and isoleucine biosynthesis
+  original_id: r341
+- id: r342_ere
+  name: 2-aceto-2-hydroxybutanoate synthase
+  genes: (EUBREC_1250)
+  equation: h[cere] + 2obut[cere] + pyr[cere] => 2ahbut[cere] + co2[cere]
+  subsystem: Valine, leucine and isoleucine biosynthesis
+  original_id: r342
+  source: iJO1366
+- id: r349_ere
+  name: 3-isopropylmalate dehydrogenase
+  genes: (EUBREC_1878)
+  equation: 3c2hmp[cere] + m222[cere] => 3c4mop[cere] + nadh[cere] + h[cere]
+  subsystem: Valine, Leucine, and Isoleucine Metabolism
+  original_id: r349
+  source: iJO1366
+- id: r35_ere
+  name: N-acetyl-D-mannosamine kinase
+  genes: (EUBREC_0694)
+  equation: acmana[cere] + atp[cere] => acgam1p[cere] + adp[cere] + h[cere]
+  subsystem: Aminosugar Metabolism
+  original_id: r35
+- id: r352_ere
+  name: acetohydroxy acid isomeroreductase
+  genes: (EUBREC_2000)
+  equation: h[cere] + alac__45__S[cere] + nadph[cere] => 23dhmb[cere] + nadp[cere]
+  subsystem: Valine, Leucine, and Isoleucine Metabolism
+  original_id: r352
+  source: iJO1366_KARA1
+- id: r353_ere
+  name: ketol-acid reductoisomerase (2-Aceto-2-hydroxybutanoate)
+  genes: (EUBREC_2000)
+  equation: h[cere] + 2ahbut[cere] + nadph[cere] => 23dhmp[cere] + nadp[cere]
+  subsystem: Valine, Leucine, and Isoleucine Metabolism
+  original_id: r353
+  source: ModelSeed_rxn08764
+- id: r355_ere
+  name: nicotinate-nucleotide adenylyltransferase
+  genes: (EUBREC_1698)
+  equation: h[cere] + atp[cere] + nicrnt[cere] <=> dnad[cere] + ppi[cere]
+  subsystem: Vitamins & Cofactor Biosynthesis
+  original_id: r355
+  source: iJO1366
+- id: r359_ere
+  name: glycerol-3-phosphate O-acyltransferase
+  genes: (EUBREC_1498 or EUBREC_2008 or EUBREC_2286)
+  equation: glyc3p[cere] + pmtcoa[cere] => coa[cere] + 1hdecg3p[cere]
+  subsystem: Glycerophospholipid metabolism
+  original_id: r359
+- id: r36_ere
+  name: glucosamine-1-phosphate N-acetyltransferase
+  genes: (EUBREC_2147)
+  equation: accoa[cere] + gam1p[cere] => acgam1p[cere] + coa[cere] + h[cere]
+  subsystem: Aminosugar Metabolism
+  original_id: r36
+  source: iJO1366
+- id: r360_ere
+  name: 1-acylglycerol-3-phosphate O-acyltransferase
+  genes: (EUBREC_0547 or EUBREC_1703)
+  equation: pmtcoa[cere] + 1hdecg3p[cere] => coa[cere] + m233[cere]
+  subsystem: Glycerophospholipid metabolism
+  original_id: r360
+  source: ModelSeed_rxn10211
+- id: r361_ere
+  name: Long-chain carboxylate:CoA ligase (AMP-forming)
+  genes: (EUBREC_1029)
+  equation: atp[cere] + coa[cere] + hdca[cere] <=> amp[cere] + ppi[cere] + pmtcoa[cere]
+  subsystem: Metabolic pathways
+  original_id: r361
+- id: r362_ere
+  name: glycerolesterhydrolase
+  equation: h2o[cere] + m372[cere] => m371[cere] + hdca[cere] + h[cere]
+  subsystem: Glycerolipid metabolism
+  original_id: r362
+  source: MetaCyc
+- id: r363_ere
+  name: triacylglycerollipaseprecursor
+  equation: h2o[cere] + m373[cere] => m372[cere] + hdca[cere] + h[cere]
+  subsystem: Glycerolipid metabolism
+  original_id: r363
+  source: ModelSeed_rxn15315
+- id: r364_ere
+  name: fatty-acid synthase or oleoyl-[acyl-carrier-protein] hydrolase
+  equation: h2o[cere] + ihdcoa[cere] => ACP[cere] + hdca[cere] + h[cere]
+  subsystem: Fatty acid biosynthesis, elongation
+  original_id: r364
+  source: iJO1366_FA160ACPHi
+- id: r365_ere
+  name: 3-oxoacyl-[acyl-carrier protein] reductase
+  genes: (EUBREC_2962 or EUBREC_3145)
+  equation: acACP[cere] + (7) malACP[cere] + (7) nadh[cere] + (7) nadph[cere] =>
+    (7) co2[cere] + (7) h2o[cere] + (7) m222[cere] + (7) nadp[cere] + ihdcoa[cere]
+    + (7) ACP[cere]
+  subsystem: Fatty acid biosynthesis, elongation
+  original_id: r365
+- id: r366_ere
+  name: malonylCoA-acylcarrierproteintransacylase
+  genes: (EUBREC_3146)
+  equation: malcoa[cere] + ACP[cere] <=> coa[cere] + malACP[cere]
+  subsystem: Fatty acid biosynthesis, elongation
+  original_id: r366
+  source: iJO1366_MCOATA
+- id: r367_ere
+  name: acetyl-CoA carboxylase
+  genes: (EUBREC_3141)
+  equation: accoa[cere] + atp[cere] + co2[cere] + h2o[cere] => adp[cere] + malcoa[cere]
+    + m239[cere] + (2) h[cere]
+  subsystem: Fatty acid biosynthesis, elongation
+  original_id: r367
+  source: iJO1366
+- id: r368_ere
+  name: '3-oxoacyl-[acyl-carrier-protein] synthaseII/ III: Acetyl-CoA:[acyl-carrier-protein]
+    S-acetyltransferase'
+  genes: (EUBREC_3140)
+  equation: accoa[cere] + ACP[cere] => acACP[cere] + coa[cere]
+  subsystem: Fatty acid biosynthesis, elongation
+  original_id: r368
+  source: iJO1366_ACOATA
+- id: r369_ere
+  name: pantothenate kinase
+  genes: (EUBREC_0060)
+  equation: atp[cere] + m376[cere] => adp[cere] + pan4p[cere] + h[cere]
+  subsystem: Pantothenate and CoA biosynthesis
+  original_id: r369
+  source: ModelSeed_rxn02128
+- id: r370_ere
+  name: phosphopantetheineadenyltransferase homolog
+  genes: (EUBREC_1678)
+  equation: h[cere] + atp[cere] + pan4p[cere] <=> dpcoa[cere] + ppi[cere]
+  subsystem: Pantothenate and CoA biosynthesis
+  original_id: r370
+  source: iJO1366_PTPATi
+- id: r371_ere
+  name: CDP-diacylglycerol:phosphatidylglycerol 3-phosphatidyltransferase
+  genes: (EUBREC_0199 or EUBREC_1933)
+  equation: m107[cere] + m330[cere] <=> m391[cere] + cmp[cere] + h[cere]
+  subsystem: Glycerophospholipid metabolism
+  original_id: r371
+  source: ModelSeed_rxn06081
+- id: r372_ere
+  name: hypothetical protein,similar to diacylglycerolkinase
+  genes: (EUBREC_0664)
+  equation: atp[cere] + m372[cere] => adp[cere] + m233[cere] + h[cere]
+  subsystem: Glycerophospholipid metabolism
+  original_id: r372
+  source: iJO1366_DAGK160
+- id: r373_ere
+  name: phospholipase C
+  equation: h2o[cere] + m330[cere] => glyc3p[cere] + m372[cere] + h[cere]
+  subsystem: Glycerophospholipid metabolism
+  original_id: r373
+  source: ModelSeed_rxn06079
+- id: r374_ere
+  name: UDP-N-acetylmuramoyl-L-alanyl-D-glutamate:L-lysine ligase (ADP-forming)
+  equation: atp[cere] + lys__45__L[cere] + uamag[cere] => adp[cere] + m239[cere]
+    + m385[cere] + h[cere]
+  subsystem: Peptidoglycan biosynthesis
+  original_id: r374
+  source: ModelSeed_rxn02009
+- id: r375_ere
+  name: UDP-N-acetylmuramoylalanyl-D-glutamyl-2,6-diaminopimelate--D-alanyl-D-alanineligase
+  genes: (EUBREC_2936)
+  equation: alaala[cere] + atp[cere] + m385[cere] => adp[cere] + m239[cere] + uGgla[cere]
+    + h[cere]
+  subsystem: Peptidoglycan biosynthesis
+  original_id: r375
+  source: ModelSeed_rxn03140
+- id: r376_ere
+  name: phospho-N-muramicacid-pentapeptidetranslocase
+  genes: (EUBREC_1319)
+  equation: uGgla[cere] => ump[cere] + m383[cere]
+  subsystem: Peptidoglycan biosynthesis
+  original_id: r376
+  source: KEGG_R05629, ModelSeed_rxn03903
+- id: r377_ere
+  name: UDP-N-acetylglucosamine--N-acetylmuramyl-(pentapeptide)pyrophosphoryl-undecaprenolN-acetylglucosaminetransferase
+  genes: (EUBREC_0054)
+  equation: uacgam[cere] + m383[cere] => udp[cere] + m382[cere] + h[cere]
+  subsystem: Peptidoglycan biosynthesis
+  original_id: r377
+  source: BIGG_UAGPT2_1, ModelSeed_rxn03933
+- id: r378_ere
+  name: ''
+  equation: atp[cere] + nh4[cere] + m382[cere] => adp[cere] + m239[cere] + m381[cere]
+    + h[cere]
+  subsystem: Peptidoglycan biosynthesis
+  original_id: r378
+  source: ModelSeed_rxn03407
+- id: r379_ere
+  name: ''
+  equation: (5) gly[cere] + m381[cere] => m380[cere]
+  subsystem: Peptidoglycan biosynthesis
+  original_id: r379
+  source: ModelSeed_rxn06837
+- id: r38_ere
+  name: 2-(Nomega-L-arginino)succinate arginine-lyase (fumarate-forming)
+  genes: (EUBREC_2153)
+  equation: argsuc[cere] => arg__45__L[cere] + fum[cere]
+  subsystem: Arginine and proline metabolism
+  original_id: r38
+- id: r380_ere
+  name: ''
+  equation: m380[cere] => m379[cere]
+  subsystem: Peptidoglycan biosynthesis
+  original_id: r380
+- id: r381_ere
+  name: ''
+  equation: m379[cere] => m378[cere]
+  subsystem: Peptidoglycan biosynthesis
+  original_id: r381
+- id: r382_ere
+  name: D-alanyl-D-alanine carboxypeptidase
+  genes: (EUBREC_1625 or EUBREC_3029 or EUBREC_3553 or EUBREC_0703)
+  equation: h2o[cere] + m378[cere] => ala__45__D[cere] + m339[cere]
+  subsystem: Peptidoglycan biosynthesis
+  original_id: r382
+- id: r383_ere
+  name: pyruvate:pyruvate acetaldehydetransferase (decarboxylating);
+  genes: (EUBREC_1250 or EUBREC_1876 or EUBREC_2001)
+  equation: alac__45__S[cere] + co2[cere] => (2) pyr[cere] + h[cere]
+  subsystem: Pantothenate and CoA biosynthesis
+  original_id: r383
+- id: r384_ere
+  name: cellobiose glucohydrolase
+  genes: (EUBREC_2820 or EUBREC_2879)
+  equation: h2o[cere] + cellb[cere] => (2) glc__45__bD[cere]
+  subsystem: Starch and sucrose metabolism
+  original_id: r384
+- id: r385_ere
+  name: ATP phosphohydrolase
+  genes: (EUBREC_0912)
+  equation: atp[cere] + h2o[cere] => adp[cere] + m239[cere] + h[cere]
+  subsystem: Purine metabolism
+  original_id: r385
+  source: ModelSeed_rxn00062
+- id: r386_ere
+  name: NAD+ phosphohydrolase
+  genes: (EUBREC_0306)
+  equation: h2o[cere] + m222[cere] => amp[cere] + nmn[cere] + (2) h[cere]
+  subsystem: Nicotinate and nicotinamide metabolism
+  original_id: r386
+  source: ModelSeed_rxn00076
+- id: r387_ere
+  name: L-Glutamate:NADP+ oxidoreductase (transaminating)
+  genes: (EUBREC_1829 or EUBREC_2273)
+  equation: (2) glu__45__L[cere] + nadp[cere] => akg[cere] + gln__45__L[cere] + nadph[cere]
+    + h[cere]
+  subsystem: Alanine, aspartate and glutamate metabolism
+  original_id: r387
+  source: iJO1366_GLUSy
+- id: r388_ere
+  name: ATP:pyruvate,phosphate phosphotransferase
+  genes: (EUBREC_1857)
+  equation: atp[cere] + m239[cere] + pyr[cere] => amp[cere] + pep[cere] + ppi[cere]
+    + h[cere]
+  subsystem: Pyruvate metabolism
+  original_id: r388
+  source: iCbes, MetaCyc
+- id: r389_ere
+  name: oxaloacetate carboxy-lyase (pyruvate-forming)
+  genes: (EUBREC_1629 or EUBREC_1630)
+  equation: h[cere] + oaa[cere] => co2[cere] + pyr[cere]
+  subsystem: Pyruvate metabolism
+  original_id: r389
+  source: ModelSeed_rxn00162
+- id: r39_ere
+  name: L-glutamate-5-semialdehyde:NADP+ 5-oxidoreductase (phosphorylating)
+  genes: (EUBREC_1651)
+  equation: h[cere] + nadph[cere] + glu5p[cere] => glu5sa[cere] + nadp[cere] + m239[cere]
+  subsystem: Arginine and proline metabolism
+  original_id: r39
+  source: iJO1366_G5SD
+- id: r390_ere
+  name: L-Glutamate:ammonia ligase (ADP-forming)
+  genes: (EUBREC_0701 or EUBREC_2543)
+  equation: atp[cere] + glu__45__L[cere] + nh4[cere] => adp[cere] + gln__45__L[cere]
+    + m239[cere] + h[cere]
+  subsystem: Alanine, aspartate and glutamate metabolism
+  original_id: r390
+  source: iJO1366_GLNS
+- id: r392_ere
+  name: (R,R)-tartrate hydro-lyase (oxaloacetate-forming)
+  genes: (EUBREC_3080 or EUBREC_3081)
+  equation: m395[cere] <=> h2o[cere] + oaa[cere]
+  subsystem: Glyoxylate and dicarboxylate metabolism
+  original_id: r392
+- id: r393_ere
+  name: L-aspartate:ammonia ligase (AMP-forming)
+  genes: (EUBREC_1360)
+  equation: asp__45__L[cere] + atp[cere] + nh4[cere] => amp[cere] + asn__45__L[cere]
+    + ppi[cere] + h[cere]
+  subsystem: Alanine, aspartate and glutamate metabolism
+  original_id: r393
+  source: iJO1366_ASNS2
+- id: r394_ere
+  name: N6-(L-1,3-Dicarboxypropyl)-L-lysine:NAD+ oxidoreductase
+  genes: (EUBREC_3343)
+  equation: h2o[cere] + m222[cere] + m396[cere] => akg[cere] + lys__45__L[cere] +
+    nadh[cere] + h[cere]
+  subsystem: Lysine biosynthesis
+  original_id: r394
+  source: ModelSeed_rxn00510
+- id: r395_ere
+  name: 4-hydroxy-2-oxopentanoate pyruvate-lyase (acetaldehyde-forming)
+  genes: (EUBREC_1320)
+  equation: acald[cere] + pyr[cere] => alac__45__S[cere]
+  subsystem: Phenylalanine metabolism
+  original_id: r395
+- id: r396_ere
+  name: sucrose:phosphate alpha-D-glucosyltransferase
+  genes: (EUBREC_0490)
+  equation: m239[cere] + sucr[cere] <=> fru[cere] + g1p[cere]
+  subsystem: Starch and sucrose metabolism
+  original_id: r396
+- id: r397_ere
+  name: sn-Glycerol-3-phosphate:(acceptor) 2-oxidoreductase
+  genes: (EUBREC_2588)
+  equation: fad[cere] + glyc3p[cere] <=> dhap[cere] + fadh2[cere]
+  subsystem: Glycerophospholipid metabolism
+  original_id: r397
+- id: r398_ere
+  name: L-cysteinylglycine dipeptidase
+  genes: (EUBREC_0889)
+  equation: h2o[cere] + cgly[cere] => cys__45__L[cere] + gly[cere]
+  subsystem: Glutathione metabolism
+  original_id: r398
+- id: r399_ere
+  name: ATP:alpha-D-glucose-1-phosphate adenyltransferase
+  genes: (EUBREC_0451 or EUBREC_0452 or EUBREC_2215 or EUBREC_2216)
+  equation: h[cere] + atp[cere] + g1p[cere] <=> ppi[cere] + m399[cere]
+  subsystem: Starch and sucrose metabolism
+  original_id: r399
+  source: iJO1366_GLGC
+- id: r4_ere
+  name: L-Alanine:2-oxoglutarate aminotransferase
+  genes: (EUBREC_1366)
+  equation: akg[cere] + ala__45__L[cere] <=> glu__45__L[cere] + pyr[cere]
+  subsystem: Alanine, aspartate and glutamate metabolism
+  original_id: r4
+- id: r40_ere
+  name: ATP:L-glutamate 5-phosphotransferase
+  genes: (EUBREC_1648)
+  equation: atp[cere] + glu__45__L[cere] => adp[cere] + glu5p[cere]
+  subsystem: Arginine and proline metabolism
+  original_id: r40
+- id: r400_ere
+  name: UDP-glucose:alpha-D-galactose-1-phosphate uridylyltransferase
+  genes: (EUBREC_1388)
+  equation: udpg[cere] + gal1p[cere] <=> g1p[cere] + udpgal[cere]
+  subsystem: Galactose metabolism
+  original_id: r400
+- id: r401_ere
+  name: glycerone-phosphate phosphate-lyase (methylglyoxal-forming)
+  genes: (EUBREC_1738)
+  equation: dhap[cere] => m239[cere] + mthgxl[cere]
+  subsystem: Pyruvate metabolism
+  original_id: r401
+- id: r402_ere
+  name: ADP-ribose ribophosphohydrolase
+  genes: (EUBREC_2224 or EUBREC_2671 or EUBREC_2833)
+  equation: m76[cere] + h2o[cere] => amp[cere] + r5p[cere] + (2) h[cere]
+  subsystem: Purine metabolism
+  original_id: r402
+- id: r403_ere
+  name: 1-(5-phospho-D-ribosyl)-ATP:diphosphate
+  genes: (EUBREC_1685 or EUBREC_1686)
+  equation: ppi[cere] + prbatp[cere] <=> atp[cere] + prpp[cere]
+  subsystem: Histidine metabolism
+  original_id: r403
+- id: r404_ere
+  name: ATP:D-galactose 1-phosphotransferase
+  genes: (EUBREC_1387)
+  equation: atp[cere] + gal[cere] <=> adp[cere] + gal1p[cere] + h[cere]
+  subsystem: Galactose metabolism
+  original_id: r404
+  source: iJO1366_GALKr
+- id: r405_ere
+  name: melibiose galactohydrolase
+  genes: (EUBREC_3387)
+  equation: h2o[cere] + melib[cere] => glc__45__D[cere] + gal[cere]
+  subsystem: Galactose metabolism
+  original_id: r405
+- id: r407_ere
+  name: Galactosylglycerol galactohydrolase
+  genes: (EUBREC_3387)
+  equation: h2o[cere] + m404[cere] <=> glyc[cere] + gal[cere]
+  subsystem: Galactose metabolism
+  original_id: r407
+- id: r408_ere
+  name: Galactan galactohydrolase
+  genes: (EUBREC_1317 or EUBREC_1385 or EUBREC_2453)
+  equation: h2o[cere] + m405[cere] => (2) gal[cere]
+  subsystem: Galactose metabolism
+  original_id: r408
+- id: r409_ere
+  name: S-adenosyl-L-methionine:L-histidine N-methyltransferase
+  genes: (EUBREC_1705 or EUBREC_2912 or EUBREC_3028)
+  equation: amet[cere] + his__45__L[cere] => ahcys[cere] + m406[cere] + h[cere]
+  subsystem: Histidine metabolism
+  original_id: r409
+  source: ModelSeed_rxn00860
+- id: r41_ere
+  name: Reaction non-enzymatic
+  equation: glu5sa[cere] <=> 1pyr5c[cere] + h2o[cere] + h[cere]
+  subsystem: Arginine and proline metabolism
+  original_id: r41
+  source: iJO1366_G5SADs
+- id: r410_ere
+  name: Nalpha-(beta-alanyl)-L-histidine hydrolase
+  genes: (EUBREC_0889)
+  equation: h2o[cere] + carn[cere] => ala__45__B[cere] + his__45__L[cere]
+  subsystem: Histidine metabolism
+  original_id: r410
+- id: r411_ere
+  name: 3-Phospho-D-glyceroyl phosphate phosphohydrolase
+  genes: (EUBREC_0200)
+  equation: 13dpg[cere] + h2o[cere] <=> 3pg[cere] + m239[cere] + h[cere]
+  original_id: r411
+  source: ModelSeed_rxn01103
+- id: r412_ere
+  name: D-Glucose 1-epimerase
+  genes: (EUBREC_0351)
+  equation: glc__45__D[cere] <=> glc__45__bD[cere]
+  subsystem: Glycolysis / Gluconeogenesis
+  original_id: r412
+- id: r413_ere
+  name: Lactose galactohydrolase
+  genes: (EUBREC_1317 or EUBREC_1385 or EUBREC_2033 or EUBREC_2034 or EUBREC_2453)
+  equation: h2o[cere] + lcts[cere] => glc__45__D[cere] + gal[cere]
+  subsystem: Galactose metabolism
+  original_id: r413
+- id: r414_ere
+  name: Isomaltose 6-alpha-D-glucanohydrolase
+  genes: (EUBREC_0891)
+  equation: h2o[cere] + malt[cere] => (2) glc__45__D[cere]
+  subsystem: Starch and sucrose metabolism
+  original_id: r414
+- id: r415_ere
+  name: Dextrin 6-alpha-D-glucanohydrolase
+  genes: (EUBREC_0891)
+  equation: h2o[cere] + m409[cere] => (2) glc__45__D[cere]
+  subsystem: Starch and sucrose metabolism
+  original_id: r415
+- id: r416_ere
+  name: dUTP nucleotidohydrolase
+  genes: (EUBREC_2284)
+  equation: dutp[cere] + h2o[cere] => dump[cere] + ppi[cere] + h[cere]
+  subsystem: Pyrimidine metabolism
+  original_id: r416
+  source: iJO1366_DUTPDP
+- id: r417_ere
+  name: 1,4-alpha-D-Glucan:1,4-alpha-D-glucan
+  genes: (EUBREC_0027)
+  equation: m410[cere] => glycogen[cere]
+  subsystem: Starch and sucrose metabolism
+  original_id: r417
+- id: r418_ere
+  name: 1,4-alpha-D-Glucan:orthophosphate alpha-D-glucosyltransferase
+  genes: (EUBREC_1054 or EUBREC_2426)
+  equation: m239[cere] + glycogen[cere] => g1p[cere]
+  subsystem: Starch and sucrose metabolism
+  original_id: r418
+- id: r419_ere
+  name: ATP:shikimate 3-phosphotransferase
+  genes: (EUBREC_0460 or EUBREC_2836)
+  equation: atp[cere] + skm[cere] => adp[cere] + skm5p[cere] + h[cere]
+  subsystem: Phenylalanine, tyrosine and tryptophan biosynthesis
+  original_id: r419
+  source: iJO1366_SHKK
+- id: r42_ere
+  name: histidinol-phosphate transaminase
+  genes: (EUBREC_1390)
+  equation: glu__45__L[cere] + imacp[cere] => akg[cere] + hisp[cere]
+  subsystem: Arginine and proline metabolism
+  original_id: r42
+- id: r420_ere
+  name: ADP-glucose:1,4-alpha-D-glucan 4-alpha-D-glucosyltransferase
+  genes: (EUBREC_1960 or EUBREC_2169)
+  equation: m399[cere] => adp[cere] + m410[cere] + h[cere]
+  subsystem: Starch and sucrose metabolism
+  original_id: r420
+- id: r422_ere
+  name: Melibiitol galactohydrolase
+  genes: (EUBREC_3387)
+  equation: h2o[cere] + m412[cere] <=> m262[cere] + gal[cere]
+  subsystem: Galactose metabolism
+  original_id: r422
+- id: r423_ere
+  name: dTDPglucose 4-epimerase
+  genes: (EUBREC_1949 or EUBREC_3245)
+  equation: dtdpglu[cere] <=> m414[cere]
+  subsystem: Galactose metabolism
+  original_id: r423
+- id: r424_ere
+  name: N-Acetylneuraminate 9-phosphate pyruvate-lyase
+  genes: (EUBREC_3247)
+  equation: m239[cere] + m415[cere] <=> acgam1p[cere] + h2o[cere] + pep[cere]
+  subsystem: Amino sugar and nucleotide sugar metabolism
+  original_id: r424
+- id: r425_ere
+  name: alpha-galactosidase
+  genes: (EUBREC_3387)
+  equation: h2o[cere] + melib[cere] <=> glc__45__D[cere] + gal[cere]
+  subsystem: Galactose metabolism
+  original_id: r425
+- id: r426_ere
+  name: glucoamylase
+  genes: (EUBREC_0891)
+  equation: h2o[cere] + glycogen[cere] <=> glc__45__D[cere]
+  subsystem: Starch and sucrose metabolism
+  original_id: r426
+- id: r427_ere
+  name: purine-nucleoside:phosphate ribosyltransferase
+  genes: (EUBREC_0297)
+  equation: m239[cere] + din[cere] <=> r1p[cere] + m417[cere]
+  subsystem: Purine metabolism
+  original_id: r427
+- id: r428_ere
+  name: cellobiose phosphorylase
+  genes: (EUBREC_2816 or EUBREC_1072)
+  equation: m239[cere] + cellb[cere] <=> g1p[cere] + glc__45__D[cere]
+  subsystem: Starch and sucrose metabolism
+  original_id: r428
+- id: r429_ere
+  name: CellobioseTransport
+  genes: (EUBREC_3689 or EUBREC_3688)
+  equation: cellb[cere] => cellb[e]
+  subsystem: Transport Reaction
+  original_id: r429
+- id: r43_ere
+  name: ornithine carbamoyltransferase
+  genes: (EUBREC_0057)
+  equation: cbp[cere] + orn[cere] => citr__45__L[cere] + m239[cere] + h[cere]
+  subsystem: Arginine and proline metabolism
+  original_id: r43
+  source: iJO1366
+- id: r430_ere
+  name: LactoseTransport
+  genes: (EUBREC_1075 or EUBREC_1076 or EUBREC_1383 or EUBREC_1384)
+  equation: lcts[e] => lcts[cere]
+  subsystem: Transport Reaction
+  original_id: r430
+- id: r431_ere
+  name: methyl-galactoside transport system permease protein
+  genes: (EUBREC_0477 or EUBREC_0478 or EUBREC_0479 or EUBREC_0484)
+  equation: m419[e] => m420[cere]
+  subsystem: Transport Reaction
+  original_id: r431
+- id: r432_ere
+  name: Galactoside Transport
+  genes: (EUBREC_2925)
+  equation: m421[e] => m422[cere]
+  subsystem: Transport Reaction
+  original_id: r432
+- id: r433_ere
+  name: glcamine Transport
+  genes: (EUBREC_1452 or EUBREC_1425)
+  equation: atp[cere] + gam[e] => adp[cere] + gam6p[cere] + h[cere]
+  subsystem: Transport Reaction
+  original_id: r433
+- id: r434_ere
+  name: 1,4-alpha-D-Glucan:1,4-alpha-D-glucan 4-alpha-D-glycosyltransferase
+  genes: (EUBREC_1840)
+  equation: glc__45__D[cere] + m410[cere] => malt[cere]
+  subsystem: Starch and sucrose metabolism
+  original_id: r434
+- id: r44_ere
+  name: Ornithine Decarboxylase
+  genes: (EUBREC_3277)
+  equation: h[cere] + orn[cere] => co2[cere] + ptrc[cere]
+  subsystem: Arginine and proline metabolism
+  original_id: r44
+  source: iJO1366
+- id: r46_ere
+  name: ornithine transacetylase
+  genes: (EUBREC_1176)
+  equation: acorn[cere] + glu__45__L[cere] <=> acglu[cere] + orn[cere]
+  subsystem: Arginine and proline metabolism
+  original_id: r46
+- id: r48_ere
+  name: Biomass(Protein)
+  equation:
+    reversible: false
+    left:
+    - id: ala__45__L
+      compartment: cere
+      value: 0.492
+    - id: arg__45__L
+      compartment: cere
+      value: 0.268
+    - id: asn__45__L
+      compartment: cere
+      value: 0.433
+    - id: asp__45__L
+      compartment: cere
+      value: 0.446
+    - id: atp
+      compartment: cere
+      value: 39.94
+    - id: cys__45__L
+      compartment: cere
+      value: 0.048
+    - id: gln__45__L
+      compartment: cere
+      value: 0.318
+    - id: glu__45__L
+      compartment: cere
+      value: 0.497
+    - id: gly
+      compartment: cere
+      value: 0.462
+    - id: his__45__L
+      compartment: cere
+      value: 0.178
+    - id: ile__45__L
+      compartment: cere
+      value: 0.658
+    - id: leu__45__L
+      compartment: cere
+      value: 0.699
+    - id: lys__45__L
+      compartment: cere
+      value: 0.576
+    - id: met__45__L
+      compartment: cere
+      value: 0.202
+    - id: phe__45__L
+      compartment: cere
+      value: 0.343
+    - id: pro__45__L
+      compartment: cere
+      value: 0.246
+    - id: ser__45__L
+      compartment: cere
+      value: 0.469
+    - id: thr__45__L
+      compartment: cere
+      value: 0.443
+    - id: trp__45__L
+      compartment: cere
+      value: 0.057
+    - id: tyr__45__L
+      compartment: cere
+      value: 0.298
+    - id: val__45__L
+      compartment: cere
+      value: 0.514
+    right:
+    - id: adp
+      compartment: cere
+      value: 39.94
+    - id: m239
+      compartment: cere
+      value: 39.94
+    - id: m340
+      compartment: cere
+      value: 1
+  subsystem: Biomass synthesis
+  original_id: r48
+- id: r49_ere
+  name: Biomass(DNA)
+  equation: (4.39) atp[cere] + (0.676) datp[cere] + (0.33) dctp[cere] + (0.33) dgtp[cere]
+    + (0.676) dttp[cere] => (4.39) adp[cere] + (4.39) m239[cere] + m341[cere]
+  subsystem: Biomass synthesis
+  original_id: r49
+- id: r5_ere
+  name: L-Aspartate:2-oxoglutarate aminotransferase
+  genes: (EUBREC_0560)
+  equation: akg[cere] + asp__45__L[cere] <=> glu__45__L[cere] + oaa[cere]
+  subsystem: Alanine, aspartate and glutamate metabolism
+  original_id: r5
+- id: r50_ere
+  name: Biomass(RNA)
+  equation: (1.756) atp[cere] + (0.496) ctp[cere] + (0.496) gtp[cere] + (0.496) utp[cere]
+    => (1.25) adp[cere] + (1.25) m239[cere] + m342[cere]
+  subsystem: Biomass synthesis
+  original_id: r50
+- id: r51_ere
+  name: Biomass(lipid)
+  equation: (0.4588) m330[cere] + m372[cere] + (0.0574) m391[cere] => m343[cere]
+  subsystem: Biomass synthesis
+  original_id: r51
+- id: r52_ere
+  name: Biomass(Cell wall)
+  equation: (0.363) m339[cere] => m344[cere]
+  subsystem: Biomass synthesis
+  original_id: r52
+- id: r53_ere
+  name: Biomass(pool)
+  equation:
+    reversible: false
+    left:
+    - id: ala__45__L
+      compartment: cere
+      value: 0.1161
+    - id: arg__45__L
+      compartment: cere
+      value: 0.0288
+    - id: asp__45__L
+      compartment: cere
+      value: 0.5959
+    - id: atp
+      compartment: cere
+      value: 0.0008
+    - id: gln__45__L
+      compartment: cere
+      value: 0.0086
+    - id: glu__45__L
+      compartment: cere
+      value: 0.5256
+    - id: gly
+      compartment: cere
+      value: 0.0398
+    - id: his__45__L
+      compartment: cere
+      value: 0.0169
+    - id: ile__45__L
+      compartment: cere
+      value: 0.0481
+    - id: leu__45__L
+      compartment: cere
+      value: 0.0222
+    - id: lys__45__L
+      compartment: cere
+      value: 0.0405
+    - id: met__45__L
+      compartment: cere
+      value: 0.0222
+    - id: phe__45__L
+      compartment: cere
+      value: 0.0043
+    - id: m239
+      compartment: cere
+      value: 0.9947
+    - id: pro__45__L
+      compartment: cere
+      value: 0.1293
+    - id: ser__45__L
+      compartment: cere
+      value: 0.0756
+    - id: thr__45__L
+      compartment: cere
+      value: 0.0156
+    - id: trp__45__L
+      compartment: cere
+      value: 0.0017
+    - id: val__45__L
+      compartment: cere
+      value: 0.0162
+    right:
+    - id: m345
+      compartment: cere
+      value: 1
+  subsystem: Biomass synthesis
+  original_id: r53
+- id: r54_ere
+  name: Biomass and Maintenance
+  genes: (EUBREC_1489 or EUBREC_1490)
+  equation: atp[cere] + h2o[cere] => adp[cere] + m239[cere] + h[cere]
+  subsystem: Biomass synthesis
+  original_id: r54
+  source: ModelSeed_rxn00062
+- id: r55_ere
+  name: Biomass and Maintenance
+  equation:
+    reversible: false
+    left:
+    - id: atp
+      compartment: cere
+      value: 20
+    - id: h2o
+      compartment: cere
+      value: 20
+    - id: m340
+      compartment: cere
+      value: 0.4
+    - id: m341
+      compartment: cere
+      value: 0.031
+    - id: m342
+      compartment: cere
+      value: 0.12
+    - id: m343
+      compartment: cere
+      value: 0.07
+    - id: m344
+      compartment: cere
+      value: 0.24
+    - id: m345
+      compartment: cere
+      value: 0.14
+    right:
+    - id: adp
+      compartment: cere
+      value: 20
+    - id: m239
+      compartment: cere
+      value: 20
+    - id: m346
+      compartment: cere
+      value: 1
+  subsystem: Biomass synthesis
+  original_id: r55
+- id: r56_ere
+  name: Butanoyl-CoA:NAD+ trans-2-oxidoreductase
+  genes: (EUBREC_0735)
+  equation: btcoa[cere] + (2) fdred[cere] + (2) m222[cere] <=> m103[cere] + (2) fdxox[cere]
+    + (2) nadh[cere]
+  subsystem: Butanoate metabolism
+  original_id: r56
+- id: r57_ere
+  name: Butanoyl-CoA:acetate CoA-transferase
+  equation: ac[cere] + btcoa[cere] => accoa[cere] + actn__45__R[cere]
+  subsystem: Butanoate metabolism
+  original_id: r57
+- id: r58_ere
+  name: 3-hydroxyacyl-CoA dehydratase (3-hydroxybutanoyl-CoA)
+  genes: (EUBREC_1017)
+  equation: m27[cere] <=> m103[cere] + h2o[cere]
+  subsystem: Butanoate metabolism
+  original_id: r58
+- id: r59_ere
+  name: 3-hydroxyacyl-CoA dehydrogenase (acetoacetyl-CoA)
+  genes: (EUBREC_0734)
+  equation: m27[cere] + m222[cere] <=> m50[cere] + nadh[cere] + h[cere]
+  subsystem: Butanoate metabolism
+  original_id: r59
+  source: iJO1366
+- id: r6_ere
+  name: argininosuccinate synthase, reversible
+  genes: (EUBREC_1607)
+  equation: asp__45__L[cere] + atp[cere] + citr__45__L[cere] => amp[cere] + argsuc[cere]
+    + ppi[cere] + h[cere]
+  subsystem: Alanine, aspartate and glutamate metabolism
+  original_id: r6
+- id: r60_ere
+  name: N-acetylglucosamine-6-phosphate deacetylase (reversible)
+  genes: (EUBREC_2926)
+  equation: ac[cere] + gam6p[cere] <=> acgam6p[cere] + h2o[cere]
+  subsystem: Carbohydrate Metabolism
+  original_id: r60
+- id: r62_ere
+  name: trehalose-6-phosphate hydrolase
+  genes: (EUBREC_0892)
+  equation: h2o[cere] + m283[cere] => g6p[cere] + glc__45__D[cere]
+  subsystem: Carbohydrate Metabolism
+  original_id: r62
+- id: r64_ere
+  name: undecaprenol kinase (reversible)
+  genes: (EUBREC_1850)
+  equation: h[cere] + adp[cere] + udcpp[cere] <=> atp[cere] + m306[cere]
+  subsystem: Carbohydrate Metabolism
+  original_id: r64
+  source: ModelSeed_rxn03900
+- id: r67_ere
+  name: beta-ketoacyl-ACP synthase
+  genes: (EUBREC_3140 or EUBREC_3144)
+  equation: h[cere] + acACP[cere] + malACP[cere] => ACP[cere] + actACP[cere] + co2[cere]
+  subsystem: Cell Envelope Biosynthesis
+  original_id: r67
+  source: iJO1366
+- id: r68_ere
+  name: beta-ketoacyl-ACP synthase (2)
+  genes: (EUBREC_3140 or EUBREC_3144)
+  equation: h[cere] + accoa[cere] + malACP[cere] => actACP[cere] + co2[cere] + coa[cere]
+  subsystem: Cell Envelope Biosynthesis
+  original_id: r68
+  source: iJO1366
+- id: r69_ere
+  name: Malonyl-ACP decarboxylase
+  genes: (EUBREC_3144)
+  equation: malACP[cere] + h[cere] => acACP[cere] + co2[cere]
+  subsystem: Cell Envelope Biosynthesis
+  original_id: r69
+- id: r7_ere
+  name: L-alanine:NAD+ oxidoreductase
+  genes: (EUBREC_1366)
+  equation: h[cere] + nadh[cere] + nh4[cere] + pyr[cere] => ala__45__L[cere] + h2o[cere]
+    + m222[cere]
+  subsystem: Alanine, aspartate and glutamate metabolism
+  original_id: r7
+- id: r71_ere
+  name: UDP-N-acetylglucosamine-N-acetylmuramyl-(pentapeptide)pyrophosphoryl-undecaprenol
+    N-acetylglucosamine transferase
+  genes: (EUBREC_0054)
+  equation: uacgam[cere] + uagmda[cere] => uaagmda[cere] + udp[cere] + h[cere]
+  subsystem: Cell Envelope Biosynthesis
+  original_id: r71
+- id: r72_ere
+  name: UDP-N-acetylenolpyruvoylglucosamine reductase
+  genes: (EUBREC_0696)
+  equation: nadph[cere] + uaccg[cere] + h[cere] => nadp[cere] + uamr[cere]
+  subsystem: Cell Envelope Biosynthesis
+  original_id: r72
+- id: r73_ere
+  name: ATP synthase (four protons for one ATP)
+  genes: (EUBREC_0120 or EUBREC_0125 or EUBREC_0121 or EUBREC_0124 or EUBREC_0123
+    or EUBREC_0118 or EUBREC_0122)
+  equation: adp[cere] + m239[cere] + (4) h[cere] <=> atp[cere] + h2o[cere] + (3)
+    h[e]
+  subsystem: Central Metabolism
+  original_id: r73
+- id: r74_ere
+  name: Succinate:CoA ligase (ADP-forming)
+  equation: atp[cere] + coa[cere] + succ[cere] <=> adp[cere] + m239[cere] + succoa[cere]
+  subsystem: Citrate cycle (TCA cycle)
+  original_id: r74
+- id: r75_ere
+  name: (S)-malate hydro-lyase (fumarate-forming)
+  genes: (EUBREC_0009 or EUBREC_0007)
+  equation: fum[cere] + h2o[cere] => mal__45__L[cere]
+  subsystem: Citrate cycle (TCA cycle)
+  original_id: r75
+- id: r76_ere
+  name: (S)-malate:NAD+ oxidoreductase
+  genes: (EUBREC_1483)
+  equation: mal__45__L[cere] + m222[cere] <=> nadh[cere] + oaa[cere] + h[cere]
+  subsystem: Citrate cycle (TCA cycle)
+  original_id: r76
+- id: r77_ere
+  name: pyruvate dehydrogenase
+  genes: (EUBREC_0332)
+  equation: coa[cere] + m222[cere] + pyr[cere] => accoa[cere] + co2[cere] + nadh[cere]
+  subsystem: Citrate cycle (TCA cycle)
+  original_id: r77
+- id: r78_ere
+  name: pyruvate:ferredoxin 2-oxidoreductase
+  genes: (EUBREC_1472)
+  equation: coa[cere] + (2) fdxox[cere] + pyr[cere] <=> accoa[cere] + co2[cere] +
+    (2) fdred[cere] + h[cere]
+  subsystem: Citrate cycle (TCA cycle)
+  original_id: r78
+  source: ModelSeed_rxn13974
+- id: r79_ere
+  name: citrate hydroxymutase
+  genes: (EUBREC_0024)
+  equation: cit[cere] <=> icit[cere]
+  subsystem: Citrate cycle (TCA cycle)
+  original_id: r79
+- id: r8_ere
+  name: phosphoglycerate dehydrogenase
+  genes: (EUBREC_1207 or EUBREC_1874)
+  equation: 3pg[cere] + m222[cere] => 3php[cere] + nadh[cere] + h[cere]
+  subsystem: Alternate Carbon Metabolism
+  original_id: r8
+- id: r80_ere
+  name: 2-oxoglutarate synthase (rev)
+  genes: (EUBREC_1472)
+  equation: h[cere] + co2[cere] + (2) fdred[cere] + succoa[cere] <=> akg[cere] +
+    coa[cere] + (2) fdxox[cere]
+  subsystem: Citrate cycle (TCA cycle)
+  original_id: r80
+- id: r81_ere
+  name: pyruvate:carbon-dioxide ligase (ADP-forming)
+  genes: (EUBREC_1628)
+  equation: atp[cere] + co2[cere] + h2o[cere] + pyr[cere] => adp[cere] + oaa[cere]
+    + m239[cere]
+  subsystem: Citrate cycle (TCA cycle)
+  original_id: r81
+- id: r82_ere
+  name: isocitrate:NAD+ oxidoreductase
+  genes: (EUBREC_1968)
+  equation: m222[cere] + icit[cere] => akg[cere] + co2[cere] + nadh[cere]
+  subsystem: Citrate cycle (TCA cycle)
+  original_id: r82
+- id: r83_ere
+  name: phosphoenolpyruvate carboxylase
+  equation: co2[cere] + h2o[cere] + pep[cere] => oaa[cere] + m239[cere]
+  subsystem: Citrate cycle (TCA cycle)
+  original_id: r83
+- id: r84_ere
+  name: citrate synthase
+  genes: (EUBREC_3489 or EUBREC_1175)
+  equation: accoa[cere] + h2o[cere] + oaa[cere] => cit[cere] + coa[cere] + h[cere]
+  subsystem: Citric Acid Cycle
+  original_id: r84
+- id: r85_ere
+  name: Isocitrate:NADP+ oxidoreductase (decarboxylating)
+  genes: (EUBREC_1968)
+  equation: nadp[cere] + icit[cere] => akg[cere] + co2[cere] + nadph[cere]
+  subsystem: Citric Acid Cycle
+  original_id: r85
+- id: r87_ere
+  name: phosphoenolpyruvate carboxykinase
+  genes: (EUBREC_2002)
+  equation: atp[cere] + oaa[cere] <=> adp[cere] + co2[cere] + pep[cere]
+  subsystem: Citric Acid Cycle
+  original_id: r87
+- id: r89_ere
+  name: dephospho-CoA kinase
+  genes: (EUBREC_1561)
+  equation: atp[cere] + dpcoa[cere] => adp[cere] + coa[cere] + h[cere]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+  original_id: r89
+- id: r91_ere
+  name: phosphopantothenate-cysteine ligase
+  genes: (EUBREC_0828)
+  equation: 4ppan[cere] + ctp[cere] + cys__45__L[cere] => 4ppcys[cere] + ppi[cere]
+    + cmp[cere] + h[cere]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+  original_id: r91
+  source: iJO1366
+- id: r92_ere
+  name: pantetheine-phosphate adenylyltransferase
+  genes: (EUBREC_1678)
+  equation: h[cere] + atp[cere] + pan4p[cere] => dpcoa[cere] + ppi[cere]
+  subsystem: Cofactor and Prosthetic Group Biosynthesis
+  original_id: r92
+- id: r93_ere
+  name: O-succinyl-L-homoserine succinate-lyase (adding hydrogen sulfide)
+  equation: h2s[cere] + suchms[cere] => hcys__45__L[cere] + succ[cere] + h[cere]
+  subsystem: Cysteine and methionine metabolism
+  original_id: r93
+- id: r94_ere
+  name: Succinyl-CoA:L-homoserine O-succinyltransferase
+  genes: (EUBREC_2217)
+  equation: hom__45__L[cere] + succoa[cere] => coa[cere] + suchms[cere]
+  subsystem: Cysteine and methionine metabolism
+  original_id: r94
+- id: r95_ere
+  name: Acetyl-CoA:L-homoserine O-acetyltransferase
+  equation: accoa[cere] + hom__45__L[cere] => coa[cere] + achms[cere]
+  subsystem: Cysteine and methionine metabolism
+  original_id: r95
+- id: r96_ere
+  name: L-cystathionine L-homocysteine-lyase (deaminating; pyruvate-forming)
+  genes: (EUBREC_2329)
+  equation: h2o[cere] + m367[cere] => hcys__45__L[cere] + nh4[cere] + pyr[cere]
+  subsystem: Cysteine and methionine metabolism
+  original_id: r96
+- id: r97_ere
+  name: O-Succinyl-L-homoserine succinate-lyase (adding cysteine)
+  equation: cys__45__L[cere] + suchms[cere] => succ[cere] + m367[cere] + h[cere]
+  subsystem: Cysteine and methionine metabolism
+  original_id: r97
+- id: r98_ere
+  name: O-Acetyl-L-homoserine succinate-lyase (adding cysteine)
+  equation: cys__45__L[cere] + achms[cere] => ac[cere] + m367[cere] + h[cere]
+  subsystem: Cysteine and methionine metabolism
+  original_id: r98
+- id: r99_ere
+  name: L-Cysteine hydrogen-sulfide-lyase (deaminating; pyruvate-forming)
+  genes: (EUBREC_2329)
+  equation: cys__45__L[cere] + h2o[cere] <=> h2s[cere] + nh4[cere] + pyr[cere]
+  subsystem: Cysteine and methionine metabolism
+  original_id: r99

@@ -31,3 +31,4 @@ typing-extensions==3.10.0.0
 Werkzeug==2.0.1
 XlsxWriter==1.4.4
 zipp==3.5.0
+glpk==0.4.6

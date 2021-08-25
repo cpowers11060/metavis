@@ -1,0 +1,2707 @@
+- id: hco3
+  name: Bicarbonate
+  formula: CHO3
+  charge: -1
+  source: iJO1366
+- id: 10fthf
+  name: 10-Formyltetrahydrofolate
+  formula: C20H21N7O7
+  charge: -2
+  original_id:
+  - m1
+  source: iJO1366
+- id: 13dpg
+  name: 3-Phospho-D-glyceroyl phosphate
+  formula: C3H4O10P2
+  charge: -4
+  original_id:
+  - m2
+  source: iJO1366
+- id: 15dap
+  name: 1,5-Diaminopentane
+  formula: C5H16N2
+  charge: 2
+  original_id:
+  - m3
+  source: iJO1366
+- id: 1hdecg3p
+  name: 1-Hexadecanoyl-sn-glycerol 3-phosphate
+  formula: C19H37O7P
+  charge: -2
+  original_id:
+  - m370
+  source: ModelSeed_cpd02496
+- id: 1pyr5c
+  name: 1-Pyrroline-5-carboxylate
+  formula: C5H6NO2
+  charge: -1
+  original_id:
+  - m4
+  source: iJO1366
+- id: 23dhdp
+  name: 2,3-Dihydrodipicolinate
+  formula: C7H5NO4
+  charge: -2
+  original_id:
+  - m5
+  source: iJO1366
+- id: 23dhmb
+  name: (R)-2,3-Dihydroxy-3-methylbutanoate
+  formula: C5H9O4
+  charge: -1
+  original_id:
+  - m6
+  source: iJO1366
+- id: 23dhmp
+  name: (R)-2,3-Dihydroxy-3-methylpentanoate
+  formula: C6H11O4
+  charge: -1
+  original_id:
+  - m7
+  source: iJO1366
+- id: 25aics
+  name: (S)-2-[5-Amino-1-(5-phospho-D-ribosyl)imidazole-4-carboxamido]succinate
+  formula: C13H15N4O12P
+  charge: -4
+  original_id:
+  - m8
+  source: iJO1366
+- id: 25dhpp
+  name: 2,5-Diamino-6-hydroxy-4-(5'-phosphoribosylamino)-pyrimidine
+  formula: C9H14N5O8P
+  charge: -2
+  original_id:
+  - m9
+  source: ModelSeed_cpd00957
+- id: 26dap__45__LL
+  name: LL-2,6-Diaminoheptanedioate
+  formula: C7H14N2O4
+  charge: 0
+  original_id:
+  - m337
+  source: iJO1366
+- id: 26dap__45__M
+  name: meso-2,6-Diaminoheptanedioate
+  formula: C7H14N2O4
+  charge: 0
+  original_id:
+  - m10
+  source: iJO1366
+- id: 2ahbut
+  name: (S)-2-Aceto-2-hydroxybutanoate
+  formula: C6H9O4
+  charge: -1
+  original_id:
+  - m11
+  source: iJO1366
+- id: 2cpr5p
+  name: 1-(2-Carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate
+  formula: C12H13NO9P
+  charge: -3
+  original_id:
+  - m12
+  source: iJO1366
+- id: 2dda7p
+  name: 2-Dehydro-3-deoxy-D-arabino-heptonate 7-phosphate
+  formula: C7H10O10P
+  charge: -3
+  original_id:
+  - m13
+  source: iJO1366
+- id: 2dhp
+  name: 2-Dehydropantoate
+  formula: C6H9O4
+  charge: -1
+  original_id:
+  - m14
+  source: iJO1366
+- id: 2dr1p
+  name: 2-Deoxy-D-ribose 1-phosphate
+  formula: C5H9O7P
+  charge: -2
+  original_id:
+  - m15
+  source: iJO1366
+- id: 2dr5p
+  name: 2-Deoxy-D-ribose 5-phosphate
+  formula: C5H9O7P
+  charge: -2
+  original_id:
+  - m16
+  source: iJO1366
+- id: 2mahmp
+  name: 2-Methyl-4-amino-5-hydroxymethylpyrimidine diphosphate
+  formula: C6H8N3O7P2
+  charge: -3
+  original_id:
+  - m18
+  source: iJO1366
+- id: 2obut
+  name: 2-Oxobutanoate
+  formula: C4H5O3
+  charge: -1
+  original_id:
+  - m19
+  source: iJO1366
+- id: 2pg
+  name: D-Glycerate 2-phosphate
+  formula: C3H4O7P
+  charge: -3
+  original_id:
+  - m20
+  source: iJO1366
+- id: 34hpp
+  name: 3-(4-Hydroxyphenyl)pyruvate
+  formula: C9H7O4
+  charge: -1
+  original_id:
+  - m21
+  source: iJO1366
+- id: 3c2hmp
+  name: 3-Carboxy-2-hydroxy-4-methylpentanoate
+  formula: C7H10O5
+  charge: -2
+  original_id:
+  - m22
+  source: iJO1366
+- id: 3c3hmp
+  name: 3-Carboxy-3-hydroxy-4-methylpentanoate
+  formula: C7H10O5
+  charge: -2
+  original_id:
+  - m23
+  source: iJO1366
+- id: 3c4mop
+  name: 3-Carboxy-4-methyl-2-oxopentanoate
+  formula: C7H8O5
+  charge: -2
+  original_id:
+  - m24
+  source: iJO1366
+- id: 3dhq
+  name: 3-Dehydroquinate
+  formula: C7H9O6
+  charge: -1
+  original_id:
+  - m25
+  source: iJO1366
+- id: 3dhsk
+  name: 3-Dehydroshikimate
+  formula: C7H7O5
+  charge: -1
+  original_id:
+  - m26
+  source: iJO1366
+- id: 3ig3p
+  name: C'-(3-Indolyl)-glycerol 3-phosphate
+  formula: C11H12NO6P
+  charge: -2
+  original_id:
+  - m28
+  source: iJO1366, ModelSeed_cpd02210
+- id: 3mob
+  name: 3-Methyl-2-oxobutanoate
+  formula: C5H7O3
+  charge: -1
+  original_id:
+  - m29
+  source: iJO1366
+- id: 3mop
+  name: (S)-3-Methyl-2-oxopentanoate
+  formula: C6H9O3
+  charge: -1
+  original_id:
+  - m30
+  source: iJO1366
+- id: 3pg
+  name: 3-Phospho-D-glycerate
+  formula: C3H4O7P
+  charge: -3
+  original_id:
+  - m31
+  source: iJO1366
+- id: 3php
+  name: 3-Phosphohydroxypyruvate
+  formula: C3H2O7P
+  charge: -3
+  original_id:
+  - m32
+  source: iJO1366
+- id: 3psme
+  name: 5-O-(1-Carboxyvinyl)-3-phosphoshikimate
+  formula: C10H9O10P
+  charge: -4
+  original_id:
+  - m33
+  source: iJO1366
+- id: 4ampm
+  name: 4-Amino-2-methyl-5-phosphomethylpyrimidine
+  formula: C6H8N3O4P
+  charge: -2
+  original_id:
+  - m34
+  source: iJO1366
+- id: 4mop
+  name: 4-Methyl-2-oxopentanoate
+  formula: C6H9O3
+  charge: -1
+  original_id:
+  - m36
+  source: iJO1366
+- id: 4mpetz
+  name: 4-Methyl-5-(2-phosphoethyl)-thiazole
+  formula: C6H8NO4PS
+  charge: -2
+  original_id:
+  - m37
+  source: iJO1366
+- id: 4pasp
+  name: 4-Phospho-L-aspartate
+  formula: C4H6NO7P
+  charge: -2
+  original_id:
+  - m38
+  source: iJO1366
+- id: 4ppan
+  name: D-4'-Phosphopantothenate
+  formula: C9H15NO8P
+  charge: -3
+  original_id:
+  - m39
+  source: iJO1366
+- id: 4ppcys
+  name: N-((R)-4-Phosphopantothenoyl)-L-cysteine
+  formula: C12H20N2O9PS
+  charge: -3
+  original_id:
+  - m40
+  source: iJO1366
+- id: 4r5au
+  name: 4-(1-D-Ribitylamino)-5-aminouracil
+  formula: C9H16N4O6
+  charge: 0
+  original_id:
+  - m41
+  source: iJO1366
+- id: 5aizc
+  name: 5-amino-1-(5-phospho-D-ribosyl)imidazole-4-carboxylate
+  formula: C9H11N3O9P
+  charge: -3
+  original_id:
+  - m42
+  source: iJO1366
+- id: 5aprbu
+  name: 5-Amino-6-(5'-phosphoribitylamino)uracil
+  formula: C9H15N4O9P
+  charge: -2
+  original_id:
+  - m43
+  source: iJO1366
+- id: 5apru
+  name: 5-Amino-6-(5'-phosphoribosylamino)uracil
+  formula: C9H13N4O9P
+  charge: -2
+  original_id:
+  - m44
+  source: iJO1366
+- id: 5caiz
+  name: 5-phosphoribosyl-5-carboxyaminoimidazole
+  formula: C9H11N3O9P
+  charge: -3
+  original_id:
+  - m45
+  source: iJO1366
+- id: 5mta
+  name: 5-Methylthioadenosine
+  formula: C11H15N5O3S
+  charge: 0
+  original_id:
+  - m46
+  source: iJO1366
+- id: 5mthf
+  name: 5-Methyltetrahydrofolate
+  formula: C20H24N7O6
+  charge: -1
+  original_id:
+  - m47
+  source: iJO1366
+- id: 5mtr
+  name: 5-Methylthio-D-ribose
+  formula: C6H12O4S
+  charge: 0
+  original_id:
+  - m48
+  source: iJO1366
+- id: ACP
+  name: acyl carrier protein
+  formula: C11H21N2O7PRS
+  charge: -1
+  original_id:
+  - m49
+  source: iJO1366
+- id: acACP
+  name: Acetyl-ACP
+  formula: C13H23N2O8PRS
+  charge: -1
+  original_id:
+  - m51
+  source: iJO1366
+- id: ac
+  name: Acetate
+  formula: C2H3O2
+  charge: -1
+  original_id:
+  - m352
+  source: iJO1366, ModelSeed_cpd00029
+- id: ac
+  name: Acetate
+  formula: C2H3O2
+  charge: -1
+  original_id:
+  - m52
+  source: iJO1366
+- id: acald
+  name: Acetaldehyde
+  formula: C2H4O
+  charge: 0
+  original_id:
+  - m53
+  source: iJO1366
+- id: accoa
+  name: Acetyl-CoA
+  formula: C23H34N7O17P3S
+  charge: -4
+  original_id:
+  - m54
+  source: iJO1366
+- id: acg5p
+  name: N-Acetyl-L-glutamyl 5-phosphate
+  formula: C7H9NO8P
+  charge: -3
+  original_id:
+  - m55
+  source: iJO1366
+- id: acg5sa
+  name: N-Acetyl-L-glutamate 5-semialdehyde
+  formula: C7H10NO4
+  charge: -1
+  original_id:
+  - m56
+  source: iJO1366
+- id: acgam1p
+  name: N-Acetyl-D-glucosamine 1-phosphate
+  formula: C8H14NO9P
+  charge: -2
+  original_id:
+  - m57
+  - m66
+  source: iJO1366
+- id: acgam6p
+  name: N-Acetyl-D-glucosamine 6-phosphate
+  formula: C8H14NO9P
+  charge: -2
+  original_id:
+  - m58
+  source: iJO1366
+- id: acgam
+  name: N-Acetyl-D-glucosamine
+  formula: C8H15NO6
+  charge: 0
+  original_id:
+  - m59
+  - m60
+  source: iJO1366
+- id: acglu
+  name: N-Acetyl-L-glutamate
+  formula: C7H9NO5
+  charge: -2
+  original_id:
+  - m61
+  source: iJO1366
+- id: achms
+  name: O-Acetyl-L-homoserine
+  formula: C6H11NO4
+  charge: 0
+  original_id:
+  - m366
+  source: ModelSeed_cpd00790
+- id: acmam
+  name: N-Acetyl-D-muramoate
+  formula: C11H18NO8
+  charge: -1
+  original_id:
+  - m63
+  source: ModelSeed_cpd01757
+- id: acmama
+  name: N-Acetyl-D-muramoyl-L-alanine
+  formula: C14H23N2O9
+  charge: -1
+  original_id:
+  - m64
+  source: ModelSeed_cpd01923
+- id: acmana
+  name: N-Acetyl-D-mannosamine
+  formula: C8H15NO6
+  charge: 0
+  original_id:
+  - m65
+  source: iJO1366
+- id: acorn
+  name: N2-Acetyl-L-ornithine
+  formula: C7H14N2O3
+  charge: 0
+  original_id:
+  - m67
+  source: iJO1366
+- id: acser
+  name: O-Acetyl-L-serine
+  formula: C5H9NO4
+  charge: 0
+  original_id:
+  - m68
+  source: iJO1366
+- id: actACP
+  name: Acetoacetyl-ACP
+  formula: C15H25N2O9PRS
+  charge: -1
+  original_id:
+  - m69
+  source: iJO1366
+- id: actn__45__R
+  name: Butyrate
+  formula: C4H7O2
+  charge: -1
+  original_id:
+  - m329
+  - m350
+  source: ModelSeed_cpd00211
+- id: actp
+  name: Acetyl phosphate
+  formula: C2H3O5P
+  charge: -2
+  original_id:
+  - m70
+  source: iJO1366
+- id: ade
+  name: Adenine
+  formula: C5H5N5
+  charge: 0
+  original_id:
+  - m71
+  source: iJO1366
+- id: adn
+  name: Adenosine
+  formula: C10H13N5O4
+  charge: 0
+  original_id:
+  - m72
+  source: iJO1366
+- id: adp
+  name: ADP
+  formula: C10H12N5O10P2
+  charge: -3
+  original_id:
+  - m73
+  source: iJO1366
+- id: adphep__45__DD
+  name: ADP-D-glycero-D-manno-heptose
+  formula: C17H25N5O16P2
+  charge: -2
+  original_id:
+  - m74
+  source: iJO1366
+- id: adphep__45__LD
+  name: ADP-L-glycero-D-manno-heptose
+  formula: C17H25N5O16P2
+  charge: -2
+  original_id:
+  - m75
+  source: iJO1366
+- id: agm
+  name: Agmatine
+  formula: C5H16N4
+  charge: 2
+  original_id:
+  - m77
+  source: iJO1366
+- id: ahcys
+  name: S-Adenosyl-L-homocysteine
+  formula: C14H20N6O5S
+  charge: 0
+  original_id:
+  - m78
+  source: iJO1366
+- id: aicar
+  name: 5-Amino-1-(5-Phospho-D-ribosyl)imidazole-4-carboxamide
+  formula: C9H13N4O8P
+  charge: -2
+  original_id:
+  - m79
+  source: iJO1366, ModelSeed_cpd02851
+- id: air
+  name: 5-amino-1-(5-phospho-D-ribosyl)imidazole
+  formula: C8H12N3O7P
+  charge: -2
+  original_id:
+  - m80
+  source: iJO1366
+- id: akg
+  name: 2-Oxoglutarate
+  formula: C5H4O5
+  charge: -2
+  original_id:
+  - m81
+  source: iJO1366
+- id: ala__45__B
+  name: beta-Alanine
+  formula: C3H7NO2
+  charge: 0
+  original_id:
+  - m82
+  source: iJO1366
+- id: ala__45__D
+  name: D-Alanine
+  formula: C3H7NO2
+  charge: 0
+  original_id:
+  - m83
+  - m84
+  source: iJO1366
+- id: ala__45__L
+  name: L-Alanine
+  formula: C3H7NO2
+  charge: 0
+  original_id:
+  - m85
+  - m86
+  source: iJO1366
+- id: alaala
+  name: D-Alanyl-D-alanine
+  formula: C6H12N2O3
+  charge: 0
+  original_id:
+  - m87
+  source: iJO1366
+- id: alac__45__S
+  name: 4-Hydroy-2-oxopentanoate
+  formula: C5H7O4
+  charge: -1
+  original_id:
+  - m397
+  - m88
+  source: iJO1366, ModelSeed_cpd02258
+- id: amet
+  name: S-Adenosyl-L-methionine
+  formula: C15H23N6O5S
+  charge: 1
+  original_id:
+  - m90
+  source: iJO1366
+- id: amp
+  name: AMP
+  formula: C10H12N5O7P
+  charge: -2
+  original_id:
+  - m91
+  source: iJO1366
+- id: anth
+  name: Anthranilate
+  formula: C7H6NO2
+  charge: -1
+  original_id:
+  - m92
+  source: iJO1366
+- id: aps
+  name: Adenosine 5'-phosphosulfate
+  formula: C10H12N5O10PS
+  charge: -2
+  original_id:
+  - m93
+  source: iJO1366
+- id: arg__45__L
+  name: L-Arginine
+  formula: C6H15N4O2
+  charge: 1
+  original_id:
+  - m94
+  source: iJO1366
+- id: argsuc
+  name: N(omega)-(L-Arginino)succinate
+  formula: C10H17N4O6
+  charge: -1
+  original_id:
+  - m95
+  source: iJO1366
+- id: asn__45__L
+  name: L-Asparagine
+  formula: C4H8N2O3
+  charge: 0
+  original_id:
+  - m97
+  source: iJO1366
+- id: asp__45__L
+  name: L-Aspartate
+  formula: C4H6NO4
+  charge: -1
+  original_id:
+  - m99
+  source: iJO1366
+- id: aspsa
+  name: L-Aspartate 4-semialdehyde
+  formula: C4H7NO3
+  charge: 0
+  original_id:
+  - m100
+  source: iJO1366, ModelSeed_cpd00346
+- id: atp
+  name: ATP
+  formula: C10H12N5O13P3
+  charge: -4
+  original_id:
+  - m102
+  source: iJO1366
+- id: btcoa
+  name: Butanoyl-CoA
+  formula: C25H38N7O17P3S
+  charge: -4
+  original_id:
+  - m104
+  source: iJO1366
+- id: carn
+  name: Carnosine
+  formula: C9H14N4O3
+  charge: 0
+  original_id:
+  - m407
+  source: ModelSeed_cpd00310
+- id: cbasp
+  name: N-Carbamoyl-L-aspartate
+  formula: C5H6N2O5
+  charge: -2
+  original_id:
+  - m105
+  source: iJO1366
+- id: cbp
+  name: Carbamoyl phosphate
+  formula: CH2NO5P
+  charge: -2
+  original_id:
+  - m106
+  source: iJO1366
+- id: cellb
+  name: Cellobiose
+  formula: C12H22O11
+  charge: 0
+  original_id:
+  - m326
+  - m418
+  source: ModelSeed_cpd00158
+- id: cgly
+  name: Cys-Gly
+  formula: C5H10N2O3S
+  charge: 0
+  original_id:
+  - m398
+  source: iJO1366
+- id: chol
+  name: Choline
+  formula: C5H14NO
+  charge: 1
+  original_id:
+  - m109
+  - m110
+  source: iJO1366
+- id: chor
+  name: chorismate
+  formula: C10H8O6
+  charge: -2
+  original_id:
+  - m111
+  source: iJO1366
+- id: cit
+  name: Citrate
+  formula: C6H5O7
+  charge: -3
+  original_id:
+  - m112
+  source: iJO1366
+- id: citr__45__L
+  name: L-Citrulline
+  formula: C6H13N3O3
+  charge: 0
+  original_id:
+  - m113
+  source: iJO1366
+- id: cmp
+  name: CMP
+  formula: C9H12N3O8P
+  charge: -2
+  original_id:
+  - m392
+  source: iJO1366, ModelSeed_cpd00046
+- id: co2
+  name: CO2
+  formula: CO2
+  charge: 0
+  original_id:
+  - m114
+  - m357
+  source: iJO1366
+- id: coa
+  name: Coenzyme A
+  formula: C21H32N7O16P3S
+  charge: -4
+  original_id:
+  - m115
+  source: iJO1366
+- id: ctp
+  name: CTP
+  formula: C9H12N3O14P3
+  charge: -4
+  original_id:
+  - m116
+  source: iJO1366
+- id: cys__45__L
+  name: L-Cysteine
+  formula: C3H7NO2S
+  charge: 0
+  original_id:
+  - m117
+  source: iJO1366
+- id: cytd
+  name: Cytidine
+  formula: C9H13N3O5
+  charge: 0
+  original_id:
+  - m119
+  source: iJO1366
+- id: dad__45__2
+  name: Deoxyadenosine
+  formula: C10H13N5O3
+  charge: 0
+  original_id:
+  - m120
+  source: iJO1366
+- id: datp
+  name: dATP
+  formula: C10H12N5O12P3
+  charge: -4
+  original_id:
+  - m121
+  source: iJO1366
+- id: db4p
+  name: 3,4-dihydroxy-2-butanone 4-phosphate
+  formula: C4H7O6P
+  charge: -2
+  original_id:
+  - m122
+  source: iJO1366
+- id: dcamp
+  name: N6-(1,2-Dicarboxyethyl)-AMP
+  formula: C14H14N5O11P
+  charge: -4
+  original_id:
+  - m123
+  source: iJO1366
+- id: dcdp
+  name: dCDP
+  formula: C9H12N3O10P2
+  charge: -3
+  original_id:
+  - m124
+  source: iJO1366
+- id: dcmp
+  name: dCMP
+  formula: C9H12N3O7P
+  charge: -2
+  original_id:
+  - m125
+  source: iJO1366
+- id: dctp
+  name: dCTP
+  formula: C9H12N3O13P3
+  charge: -4
+  original_id:
+  - m126
+  source: iJO1366
+- id: dgdp
+  name: dGDP
+  formula: C10H12N5O10P2
+  charge: -3
+  original_id:
+  - m127
+  source: iJO1366
+- id: dgmp
+  name: dGMP
+  formula: C10H12N5O7P
+  charge: -2
+  original_id:
+  - m128
+  source: iJO1366
+- id: dgtp
+  name: dGTP
+  formula: C10H12N5O13P3
+  charge: -4
+  original_id:
+  - m129
+  source: iJO1366
+- id: dhap
+  name: Dihydroxyacetone phosphate
+  formula: C3H5O6P
+  charge: -2
+  original_id:
+  - m130
+  source: iJO1366
+- id: dhf
+  name: 7,8-Dihydrofolate
+  formula: C19H19N7O6
+  charge: -2
+  original_id:
+  - m131
+  source: iJO1366
+- id: dhor__45__S
+  name: (S)-Dihydroorotate
+  formula: C5H5N2O4
+  charge: -1
+  original_id:
+  - m132
+  source: iJO1366
+- id: dhpt
+  name: Dihydropteroate
+  formula: C14H13N6O3
+  charge: -1
+  original_id:
+  - m133
+  source: iJO1366
+- id: din
+  name: N-D-Ribosylpurine
+  formula: C10H12N4O4
+  charge: 0
+  original_id:
+  - m416
+  source: ModelSeed_cpd01197
+- id: dmlz
+  name: 6,7-Dimethyl-8-(1-D-ribityl)lumazine
+  formula: C13H18N4O6
+  charge: 0
+  original_id:
+  - m134
+  source: iJO1366
+- id: dnad
+  name: Deamino-NAD+
+  formula: C21H24N6O15P2
+  charge: -2
+  original_id:
+  - m135
+  source: iJO1366, ModelSeed_cpd00638
+- id: dpcoa
+  name: Dephospho-CoA
+  formula: C21H33N7O13P2S
+  charge: -2
+  original_id:
+  - m136
+  source: iJO1366
+- id: dtdp
+  name: dTDP
+  formula: C10H14N2O11P2
+  charge: -2
+  original_id:
+  - m334
+  source: iJO1366, ModelSeed_cpd00297
+- id: dtdpglu
+  name: dTDP-glucose
+  formula: C16H24N2O16P2
+  charge: -2
+  original_id:
+  - m413
+  source: ModelSeed_cpd00626
+- id: dtmp
+  name: dTMP
+  formula: C10H13N2O8P
+  charge: -2
+  original_id:
+  - m137
+  source: iJO1366
+- id: dttp
+  name: dTTP
+  formula: C10H14N2O14P3
+  charge: -3
+  original_id:
+  - m335
+  source: ModelSeed_cpd00357
+- id: dudp
+  name: dUDP
+  formula: C9H11N2O11P2
+  charge: -3
+  original_id:
+  - m138
+  source: iJO1366
+- id: dump
+  name: dUMP
+  formula: C9H11N2O8P
+  charge: -2
+  original_id:
+  - m139
+  source: iJO1366
+- id: duri
+  name: Deoxyuridine
+  formula: C9H12N2O5
+  charge: 0
+  original_id:
+  - m140
+  source: iJO1366
+- id: dutp
+  name: dUTP
+  formula: C9H11N2O14P3
+  charge: -4
+  original_id:
+  - m141
+  source: iJO1366
+- id: e4p
+  name: D-Erythrose 4-phosphate
+  formula: C4H7O7P
+  charge: -2
+  original_id:
+  - m142
+  source: iJO1366
+- id: eig3p
+  name: D-erythro-1-(Imidazol-4-yl)glycerol 3-phosphate
+  formula: C6H9N2O6P
+  charge: -2
+  original_id:
+  - m143
+  source: iJO1366
+- id: f1p
+  name: D-Fructose 1-phosphate
+  formula: C6H11O9P
+  charge: -2
+  original_id:
+  - m144
+  source: iJO1366
+- id: f6p
+  name: D-Fructose 6-phosphate
+  formula: C6H11O9P
+  charge: -2
+  original_id:
+  - m145
+  source: iJO1366
+- id: fad
+  name: Flavin adenine dinucleotide oxidized
+  formula: C27H31N9O15P2
+  charge: -2
+  original_id:
+  - m146
+  source: iJO1366
+- id: fadh2
+  name: Flavin adenine dinucleotide reduced
+  formula: C27H33N9O15P2
+  charge: -2
+  original_id:
+  - m147
+  source: iJO1366, ModelSeed_cpd00982
+- id: fdp
+  name: D-Fructose 1,6-bisphosphate
+  formula: C6H10O12P2
+  charge: -4
+  original_id:
+  - m148
+  source: iJO1366
+- id: fdred
+  name: Reduced ferredoxin
+  formula: Fe8S8X
+  charge: 2
+  original_id:
+  - m150
+- id: fdxox
+  name: ferredoxin (oxidized) 2[4Fe-4S]
+  formula: Fe8S8X
+  charge: 3
+  original_id:
+  - m149
+- id: fgam
+  name: N2-Formyl-N1-(5-phospho-D-ribosyl)glycinamide
+  formula: C8H13N2O9P
+  charge: -2
+  original_id:
+  - m151
+  source: iJO1366
+- id: fmn
+  name: FMN
+  formula: C17H19N4O9P
+  charge: -2
+  original_id:
+  - m152
+  source: iJO1366
+- id: for
+  name: Formate
+  formula: CH1O2
+  charge: -1
+  original_id:
+  - m154
+  source: iJO1366
+- id: fpram
+  name: 2-(Formamido)-N1-(5-phospho-D-ribosyl)acetamidine
+  formula: C8H15N3O8P
+  charge: -1
+  original_id:
+  - m155
+  source: iJO1366
+- id: fprica
+  name: 5-Formamido-1-(5-phospho-D-ribosyl)imidazole-4-carboxamide
+  formula: C10H13N4O9P
+  charge: -2
+  original_id:
+  - m156
+  source: iJO1366
+- id: fru
+  name: D-Fructose
+  formula: C6H12O6
+  charge: 0
+  original_id:
+  - m157
+  - m158
+  source: iJO1366
+- id: fum
+  name: Fumarate
+  formula: C4H2O4
+  charge: -2
+  original_id:
+  - m159
+  source: iJO1366
+- id: g1p
+  name: D-Glucose 1-phosphate
+  formula: C6H11O9P
+  charge: -2
+  original_id:
+  - m160
+  source: iJO1366
+- id: g3p
+  name: Glyceraldehyde 3-phosphate
+  formula: C3H5O6P
+  charge: -2
+  original_id:
+  - m161
+  source: iJO1366
+- id: g3pc
+  name: sn-Glycero-3-phosphocholine
+  formula: C8H20NO6P
+  charge: 0
+  original_id:
+  - m162
+  source: iJO1366
+- id: g6p
+  name: D-Glucose 6-phosphate
+  formula: C6H11O9P
+  charge: -2
+  original_id:
+  - m163
+  source: iJO1366
+- id: gal1p
+  name: alpha-D-Galactose 1-phosphate
+  formula: C6H11O9P
+  charge: -2
+  original_id:
+  - m400
+  source: iJO1366, ModelSeed_cpd00348
+- id: gal
+  name: D-Galactose
+  formula: C6H12O6
+  charge: 0
+  original_id:
+  - m403
+  source: iJO1366
+- id: gam1p
+  name: D-Glucosamine 1-phosphate
+  formula: C6H13NO8P
+  charge: -1
+  original_id:
+  - m164
+  source: iJO1366
+- id: gam6p
+  name: D-Glucosamine 6-phosphate
+  formula: C6H13NO8P
+  charge: -1
+  original_id:
+  - m165
+  source: iJO1366
+- id: gam
+  name: D-Glucosamine
+  formula: C6H14NO5
+  charge: 1
+  original_id:
+  - m423
+  source: iJO1366, ModelSeed_cpd00276
+- id: gar
+  name: N1-(5-Phospho-D-ribosyl)glycinamide
+  formula: C7H14N2O8P
+  charge: -1
+  original_id:
+  - m166
+  source: iJO1366, ModelSeed_cpd02394
+- id: gdp
+  name: GDP
+  formula: C10H12N5O11P2
+  charge: -3
+  original_id:
+  - m167
+  source: iJO1366
+- id: gdptp
+  name: Guanosine 3'-diphosphate 5'-triphosphate
+  formula: C10H11N5O20P5
+  charge: -7
+  original_id:
+  - m168
+  source: iJO1366
+- id: glc__45__D
+  name: D-Glucose
+  formula: C6H12O6
+  charge: 0
+  original_id:
+  - m170
+  source: iJO1366
+- id: glc__45__D
+  name: D-Glucose
+  formula: C6H12O6
+  charge: 0
+  original_id:
+  - m169
+  source: iJO1366
+- id: glc__45__bD
+  name: beta-D-Glucose
+  formula: C6H12O6
+  charge: 0
+  original_id:
+  - m393
+  source: ModelSeed_cpd00190
+- id: gln__45__L
+  name: L-Glutamine
+  formula: C5H10N2O3
+  charge: 0
+  original_id:
+  - m171
+  source: iJO1366
+- id: glu5p
+  name: L-Glutamyl 5-phosphate
+  formula: C5H8NO7P
+  charge: -2
+  original_id:
+  - m338
+  source: ModelSeed_cpd02097
+- id: glu5sa
+  name: L-Glutamate 5-semialdehyde
+  formula: C5H9NO3
+  charge: 0
+  original_id:
+  - m172
+  source: iJO1366
+- id: glu__45__D
+  name: D-Glutamate
+  formula: C5H8NO4
+  charge: -1
+  original_id:
+  - m173
+  source: iJO1366
+- id: glu__45__L
+  name: L-Glutamate
+  formula: C5H8NO4
+  charge: -1
+  original_id:
+  - m174
+  - m175
+  source: iJO1366
+- id: gly
+  name: Glycine
+  formula: C2H5NO2
+  charge: 0
+  original_id:
+  - m177
+  source: iJO1366
+- id: glyc3p
+  name: Glycerol 3-phosphate
+  formula: C3H7O6P
+  charge: -2
+  original_id:
+  - m178
+  - m179
+  source: iJO1366
+- id: glyc__45__R
+  name: (R)-Glycerate
+  formula: C3H5O4
+  charge: -1
+  original_id:
+  - m180
+  source: iJO1366
+- id: glyc
+  name: Glycerol
+  formula: C3H8O3
+  charge: 0
+  original_id:
+  - m181
+  source: iJO1366
+- id: glycogen
+  name: glycogen
+  formula: C6H10O5
+  charge: 0
+  original_id:
+  - m327
+  - m328
+  source: iJO1366
+- id: gmhep7p
+  name: D-Glycero-D-manno-heptose 7-phosphate
+  formula: C7H13O10P
+  charge: -2
+  original_id:
+  - m183
+  source: iJO1366
+- id: gmp
+  name: GMP
+  formula: C10H12N5O8P
+  charge: -2
+  original_id:
+  - m184
+  source: iJO1366
+- id: gtp
+  name: GTP
+  formula: C10H12N5O14P3
+  charge: -4
+  original_id:
+  - m188
+  source: iJO1366
+- id: gua
+  name: Guanine
+  formula: C5H5N5O
+  charge: 0
+  original_id:
+  - m189
+  source: iJO1366
+- id: h2
+  name: H2
+  formula: H2
+  charge: 0
+  original_id:
+  - m387
+  source: iJO1366
+- id: h2
+  name: H2
+  formula: H2
+  charge: 0
+  original_id:
+  - m386
+  source: iJO1366
+- id: h2o
+  name: H2O
+  formula: H2O
+  charge: 0
+  original_id:
+  - m190
+  - m358
+  source: iJO1366
+- id: h2s
+  name: Hydrogen sulfide
+  formula: H2S
+  charge: 0
+  original_id:
+  - m191
+  - m363
+  source: iJO1366
+- id: h
+  name: Proton
+  formula: H
+  charge: 1
+  original_id:
+  - m389
+- id: h
+  name: Proton
+  formula: H
+  charge: 1
+  original_id:
+  - m390
+- id: hcys__45__L
+  name: L-Homocysteine
+  formula: C4H9NO2S
+  charge: 0
+  original_id:
+  - m194
+  source: iJO1366
+- id: hdca
+  name: Hexadecanoate
+  formula: C16H31O2
+  charge: -1
+  original_id:
+  - m377
+  source: iJO1366, ModelSeed_cpd00214
+- id: his__45__L
+  name: L-Histidine
+  formula: C6H9N3O2
+  charge: 0
+  original_id:
+  - m195
+  source: iJO1366
+- id: hisp
+  name: L-Histidinol phosphate
+  formula: C6H11N3O4P
+  charge: -1
+  original_id:
+  - m196
+  source: iJO1366
+- id: histd
+  name: L-Histidinol
+  formula: C6H12N3O
+  charge: 1
+  original_id:
+  - m197
+  source: iJO1366
+- id: hom__45__L
+  name: L-Homoserine
+  formula: C4H9NO3
+  charge: 0
+  original_id:
+  - m198
+  source: iJO1366
+- id: hxan
+  name: Hypoxanthine
+  formula: C5H4N4O
+  charge: 0
+  original_id:
+  - m199
+  source: iJO1366
+- id: icit
+  name: Isocitrate
+  formula: C6H5O7
+  charge: -3
+  original_id:
+  - m362
+  source: iJO1366
+- id: ihdcoa
+  name: Hexadecanoyl-[acp]
+  formula: C27H51N2O8PRS
+  charge: -1
+  original_id:
+  - m374
+  source: iJO1366_palmACP
+- id: ile__45__L
+  name: L-Isoleucine
+  formula: C6H13NO2
+  charge: 0
+  original_id:
+  - m200
+  source: iJO1366
+- id: imacp
+  name: 3-(Imidazol-4-yl)-2-oxopropyl phosphate
+  formula: C6H7N2O5P
+  charge: -2
+  original_id:
+  - m202
+  source: iJO1366
+- id: imp
+  name: IMP
+  formula: C10H11N4O8P
+  charge: -2
+  original_id:
+  - m203
+  source: iJO1366
+- id: lac__45__L
+  name: L-Lactate
+  formula: C3H5O3
+  charge: -1
+  original_id:
+  - m355
+  source: iJO1366, ModelSeed_cpd00159
+- id: lac__45__L
+  name: L-Lactate
+  formula: C3H5O3
+  charge: -1
+  original_id:
+  - m205
+  source: iJO1366
+- id: lcts
+  name: Lactose
+  formula: C12H22O11
+  charge: 0
+  original_id:
+  - m206
+  - m408
+  source: iJO1366
+- id: leu__45__L
+  name: L-Leucine
+  formula: C6H13NO2
+  charge: 0
+  original_id:
+  - m207
+  source: iJO1366
+- id: lys__45__L
+  name: L-Lysine
+  formula: C6H15N2O2
+  charge: 1
+  original_id:
+  - m208
+  source: iJO1366
+- id: m101
+  name: L-Aspartyl-tRNA(Asp)
+  formula: C4H5NO3R
+  charge: 0
+  original_id:
+  - m101
+  source: iJO1366
+- id: m103
+  name: Crotonoyl-CoA
+  formula: C25H36N7O17P3S
+  charge: -4
+  original_id:
+  - m103
+  source: iJO1366
+- id: m107
+  name: CDPdiacylglycerol
+  formula: C44H79N3O15P2
+  charge: -2
+  original_id:
+  - m107
+  source: iJO1366_cdpdhdecg, BIGG_cdpdhdecg
+- id: m108
+  name: CDPglycerol
+  formula: C12H19N3O13P2
+  charge: -2
+  original_id:
+  - m108
+  source: ModelSeed_cpd00402
+- id: m118
+  name: L-Cysteinyl-tRNA(Cys)
+  formula: C3H6NOSR
+  charge: 1
+  original_id:
+  - m118
+  source: iJO1366
+- id: m153
+  name: Reduced FMN
+  formula: C17H21N4O9P
+  charge: -2
+  original_id:
+  - m153
+  source: iJO1366
+- id: m17
+  name: 2-Isopropylmaleate
+  formula: C7H8O4
+  charge: -2
+  original_id:
+  - m17
+  source: iJO1366, ModelSeed_cpd01710
+- id: m176
+  name: L-Glutamyl-tRNA(Glu)
+  formula: C5H7NO3R
+  charge: 0
+  original_id:
+  - m176
+  source: iJO1366
+- id: m182
+  name: Glycyl-tRNA(Gly)
+  formula: C2H4NOR
+  charge: 1
+  original_id:
+  - m182
+  source: iJO1366
+- id: m185
+  name: glycerol teichoic acid (n=25), unlinked, unsubstituted
+  formula: C91H178N2O136P25
+  charge: -25
+  original_id:
+  - m185
+- id: m186
+  name: glycerol teichoic acid (n=25), unlinked, D-ala substituted
+  formula: C166H328N27O161P25
+  charge: 0
+  original_id:
+  - m186
+- id: m187
+  name: glycerol teichoic acid (n=25), unlinked, glucose substituted
+  formula: C241H428N2O261P25
+  charge: -25
+  original_id:
+  - m187
+- id: m201
+  name: L-Isoleucyl-tRNA(Ile)
+  formula: C6H12NOR
+  charge: 1
+  original_id:
+  - m201
+  source: iJO1366
+- id: m204
+  name: Lactose-6-phosphate
+  formula: C12H21O14P
+  charge: -2
+  original_id:
+  - m204
+  source: ModelSeed_cpd03194
+- id: m209
+  name: L-Lysine-tRNA (Lys)
+  formula: C6H14N2OR
+  charge: 2
+  original_id:
+  - m209
+  source: iJO1366
+- id: m220
+  name: L-Methionyl-tRNA (Met)
+  formula: C5H10NOSR
+  charge: 1
+  original_id:
+  - m220
+  source: iJO1366
+- id: m222
+  name: NAD+
+  formula: C21H26N7O14P2
+  charge: -1
+  original_id:
+  - m222
+  source: ModelSeed_cpd00003
+- id: m233
+  name: Phosphatidate
+  formula: C35H67O8P1
+  charge: -2
+  original_id:
+  - m233
+  source: ModelSeed_cpd15524, iJO1366_pa160, BIGG_pa160
+- id: m236
+  name: Phosphatidylglycerophosphate
+  formula: C38H73O13P2
+  charge: -3
+  original_id:
+  - m236
+  source: iJO1366_pgp160, BIGG_pgp160
+- id: m239
+  name: Phosphate
+  formula: HO4P
+  charge: -2
+  original_id:
+  - m239
+  source: iJO1366
+- id: m262
+  name: D-Sorbitol
+  formula: C6H14O6
+  charge: 0
+  original_id:
+  - m262
+  source: iJO1366
+- id: m264
+  name: L-Seryl-tRNA(Ser)
+  formula: C3H6NO2R
+  charge: 1
+  original_id:
+  - m264
+  source: iJO1366
+- id: m27
+  name: (S)-3-Hydroxybutanoyl-CoA
+  formula: C25H38N7O18P3S
+  charge: -4
+  original_id:
+  - m27
+  source: iJO1366
+- id: m270
+  name: Sucrose 6-phosphate
+  formula: C12H21O14P
+  charge: -2
+  original_id:
+  - m270
+  source: iJO1366
+- id: m280
+  name: L-Threonyl-tRNA(Thr)
+  formula: C4H8NO2R
+  charge: 1
+  original_id:
+  - m280
+  source: iJO1366
+- id: m283
+  name: alpha,alpha'-Trehalose 6-phosphate
+  formula: C12H21O14P
+  charge: -2
+  original_id:
+  - m283
+  source: iJO1366
+- id: m284
+  name: tRNA(Ala)
+  formula: R
+  charge: 0
+  original_id:
+  - m284
+  source: iJO1366
+- id: m285
+  name: tRNA(Arg)
+  formula: R
+  charge: 0
+  original_id:
+  - m285
+  source: iJO1366
+- id: m286
+  name: tRNA(Asn)
+  formula: C10H17O10PR2
+  charge: 0
+  original_id:
+  - m286
+  source: iJO1366
+- id: m287
+  name: tRNA(Asp)
+  formula: R
+  charge: 0
+  original_id:
+  - m287
+  source: iJO1366
+- id: m288
+  name: tRNA(Cys)
+  formula: R
+  charge: 0
+  original_id:
+  - m288
+  source: iJO1366
+- id: m289
+  name: tRNA (Glu)
+  formula: R
+  charge: 0
+  original_id:
+  - m289
+  source: iJO1366
+- id: m290
+  name: tRNA(Gly)
+  formula: R
+  charge: 0
+  original_id:
+  - m290
+  source: iJO1366
+- id: m291
+  name: tRNA(Ile)
+  formula: R
+  charge: 0
+  original_id:
+  - m291
+  source: iJO1366
+- id: m292
+  name: tRNA(Lys)
+  formula: R
+  charge: 0
+  original_id:
+  - m292
+  source: iJO1366
+- id: m293
+  name: tRNA(Met)
+  formula: R
+  charge: 0
+  original_id:
+  - m293
+  source: iJO1366
+- id: m294
+  name: tRNA(Ser)
+  formula: R
+  charge: 0
+  original_id:
+  - m294
+  source: iJO1366
+- id: m295
+  name: tRNA(Thr)
+  formula: R
+  charge: 0
+  original_id:
+  - m295
+  source: iJO1366
+- id: m306
+  name: Undecaprenol
+  formula: C55H90O
+  charge: 0
+  original_id:
+  - m306
+  source: BIGG_udcp
+- id: m325
+  name: Cellulose
+  formula: C6H10O5
+  charge: 0
+  original_id:
+  - m325
+- id: m330
+  name: Phosphatidylglycerol
+  formula: C38H74O10P
+  charge: -1
+  original_id:
+  - m330
+  source: iJO1366_pg160, BIGG_pg160
+- id: m331
+  name: Acyl-CoA
+  formula: C37H62N7O17P3S
+  charge: -4
+  original_id:
+  - m331
+  source: ModelSeed_cpd00134
+- id: m332
+  name: 1-Acyl-sn-glycerol 3-phosphate
+  formula: C19H37O7P
+  charge: -2
+  original_id:
+  - m332
+  source: ModelSeed_cpd15327
+- id: m339
+  name: Crosslinked peptideglycan
+  charge: -2
+  original_id:
+  - m339
+- id: m340
+  name: Protein
+  formula: C2H4NO2RC2H2NORn
+  charge: 0
+  original_id:
+  - m340
+- id: m341
+  name: DNA
+  formula: C10H17O8PR2C5H8O5PRn
+  charge: 0
+  original_id:
+  - m341
+- id: m342
+  name: RNA
+  formula: C10H18O13P2R2C5H8O6PRn
+  charge: 0
+  original_id:
+  - m342
+- id: m343
+  name: Lipid
+  formula: R
+  charge: 0
+  original_id:
+  - m343
+- id: m344
+  name: Cellwall
+  formula: R
+  charge: 0
+  original_id:
+  - m344
+- id: m345
+  name: Pool
+  formula: R
+  charge: 0
+  original_id:
+  - m345
+- id: m346
+  name: Biomassere
+  formula: R
+  charge: 0
+  original_id:
+  - m346
+- id: m348
+  name: Biomassere
+  formula: R
+  charge: 0
+  original_id:
+  - m348
+- id: m35
+  name: 4-Methyl-5-(2-hydroxyethyl)-thiazole
+  formula: C6H9NOS
+  charge: 0
+  original_id:
+  - m35
+  source: iJO1366
+- id: m367
+  name: L-Cystathionine
+  formula: C7H14N2O4S
+  charge: 0
+  original_id:
+  - m367
+  source: iJO1366
+- id: m368
+  name: L-Histidinal
+  formula: C6H10N3O
+  charge: 1
+  original_id:
+  - m368
+  source: ModelSeed_cpd01324
+- id: m371
+  name: Hexadecanoylglycerol
+  formula: C19H38O4
+  charge: 0
+  original_id:
+  - m371
+  source: PubChem_cid3084463
+- id: m372
+  name: 1,2-Dihexadecanoyl-sn-glycerol
+  formula: C35H68O5
+  charge: 0
+  original_id:
+  - m372
+  source: PubChem_cid644078
+- id: m373
+  name: Trihexadecanoylglycerol
+  formula: C51H98O6
+  charge: 0
+  original_id:
+  - m373
+  source: PubChem_cid11147
+- id: m375
+  name: '[acp]'
+  formula: C11H21N2O7PRS
+  charge: -1
+  original_id:
+  - m375
+  source: iJO1366_ACP
+- id: m376
+  name: Pantetheine
+  formula: C11H22N2O4S
+  charge: 0
+  original_id:
+  - m376
+  source: ModelSeed_cpd00620
+- id: m378
+  name: Crosslinked-N-acetylmuramoyl-(N-acetylglucosamine)-L-alanyl-D-isoglutaminyl-L-lysyl-(glycyl)5-D-alanyl-D-alanine
+  charge: 0
+  original_id:
+  - m378
+- id: m379
+  name: N-acetylmuramoyl-(N-acetylglucosamine)-L-alanyl-D-isoglutaminyl-L-lysyl-(glycyl)5-D-alanyl-D-alanine
+  charge: 0
+  original_id:
+  - m379
+- id: m380
+  name: N-acetylmuramoyl-(N-acetylglucosamine)-L-alanyl-D-isoglutaminyl-L-lysyl-(glycyl)5-D-alanyl-D-alanine-c55p[j]
+  formula: C104H170N14O30P2
+  charge: -2
+  original_id:
+  - m380
+  source: ModelSeed_cpd03493
+- id: m381
+  name: N-acetylmuramoyl-(N-acetylglucosamine)-L-alanyl-D-isoglutaminyl-L-lysyl-D-alanyl-D-alanine-c55p
+  formula: C94H155N9O25P2
+  charge: -2
+  original_id:
+  - m381
+  source: ModelSeed_cpd03492
+- id: m382
+  name: N-acetylmuramoyl-(N-acetylglucosamine)-L-alanyl-gamma-D-glutamyl-L-lysyl-D-alanyl-D-alanine-c55p
+  formula: C94H153N8O26P2
+  charge: -3
+  original_id:
+  - m382
+  source: ModelSeed_cpd03491
+- id: m383
+  name: MurAc(oyl-L-Ala-D-gamma-Glu-L-Lys-D-Ala-D-Ala)-c55p
+  formula: C86H140N7O21P2
+  charge: -3
+  original_id:
+  - m383
+  source: ModelSeed_cpd02948
+- id: m385
+  name: UDP-N-acetylmuramoyl-L-alanyl-gamma-D-glutamyl-L-lysine
+  formula: C34H52N7O24P2
+  charge: -3
+  original_id:
+  - m385
+  source: ModelSeed_cpd03490
+- id: m391
+  name: cardiolipin
+  formula: C73H140O17P2
+  charge: -2
+  original_id:
+  - m391
+  source: BIGG_clpn160
+- id: m395
+  name: (R,R)-Tartaric acid
+  formula: C4H4O6
+  charge: -2
+  original_id:
+  - m395
+  source: ModelSeed_cpd00666
+- id: m396
+  name: N6-(L-1,3-Dicarboxypropyl)-L-lysine
+  formula: C11H19N2O6
+  charge: -1
+  original_id:
+  - m396
+  source: ModelSeed_cpd00351
+- id: m399
+  name: ADP-glucose
+  formula: C16H23N5O15P2
+  charge: -2
+  original_id:
+  - m399
+  source: ModelSeed_cpd00387
+- id: m404
+  name: 3-beta-D-Galactosyl-sn-glycerol
+  formula: C9H18O8
+  charge: 0
+  original_id:
+  - m404
+  source: ModelSeed_cpd03197
+- id: m405
+  name: Galactan
+  formula: (C12H20O10)H2O
+  charge: 0
+  original_id:
+  - m405
+  source: ModelSeed_cpd12777
+- id: m406
+  name: 1-Methylhistidine
+  formula: C7H11N3O2
+  charge: 0
+  original_id:
+  - m406
+  source: ModelSeed_cpd00848
+- id: m409
+  name: Dextrin
+  formula: (C12H20O10)H2O
+  charge: 0
+  original_id:
+  - m409
+- id: m410
+  name: Amylose
+  formula: C6H10O5
+  charge: 0
+  original_id:
+  - m410
+- id: m412
+  name: Melibiitol
+  formula: C12H24O11
+  charge: 0
+  original_id:
+  - m412
+  source: ModelSeed_cpd03195
+- id: m414
+  name: dTDP-galactose
+  formula: C16H24N2O16P2
+  charge: -2
+  original_id:
+  - m414
+  source: ModelSeed_cpd01423
+- id: m415
+  name: N-Acetylneuraminate 9-phosphate
+  formula: C11H17NO12P
+  charge: -3
+  original_id:
+  - m415
+  source: ModelSeed_cpd03733
+- id: m417
+  name: Purine
+  formula: C5H4N4
+  charge: 0
+  original_id:
+  - m417
+  source: ModelSeed_cpd00360
+- id: m419
+  name: Methyl beta-D-galactoside
+  formula: C7H14O6
+  charge: 0
+  original_id:
+  - m419
+  source: ModelSeed_cpd02274
+- id: m420
+  name: Methyl beta-D-galactoside
+  formula: C7H14O6
+  charge: 0
+  original_id:
+  - m420
+  source: ModelSeed_cpd02274
+- id: m421
+  name: beta-D-galactoside
+  formula: C6H11O6R
+  charge: 0
+  original_id:
+  - m421
+  source: ModelSeed_cpd11706
+- id: m422
+  name: beta-D-galactoside
+  formula: C6H11O6R
+  charge: 0
+  original_id:
+  - m422
+  source: ModelSeed_cpd11706
+- id: m50
+  name: Acetoacetyl-CoA
+  formula: C25H36N7O18P3S
+  charge: -4
+  original_id:
+  - m50
+  source: iJO1366
+- id: m62
+  name: Acetyl-maltose
+  formula: C14H24O12
+  charge: 0
+  original_id:
+  - m62
+  source: iJO1366
+- id: m76
+  name: ADPribose
+  formula: C15H21N5O14P2
+  charge: -2
+  original_id:
+  - m76
+  source: iJO1366
+- id: m89
+  name: L-Alanyl-tRNA(Ala)
+  formula: C3H6NOR
+  charge: 1
+  original_id:
+  - m89
+  source: iJO1366
+- id: m96
+  name: L-Arginyl-tRNA(Arg)
+  formula: C6H14N4OR
+  charge: 2
+  original_id:
+  - m96
+  source: iJO1366
+- id: m98
+  name: L-Asparaginyl-tRNA(Asn)
+  formula: C14H24N2O12PR2
+  charge: 1
+  original_id:
+  - m98
+  source: iJO1366
+- id: malACP
+  name: Malonyl-[acyl-carrier protein]
+  formula: C14H22N2O10PRS
+  charge: -2
+  original_id:
+  - m210
+  source: iJO1366
+- id: mal__45__L
+  name: L-Malate
+  formula: C4H4O5
+  charge: -2
+  original_id:
+  - m211
+  source: iJO1366
+- id: malcoa
+  name: Malonyl-CoA
+  formula: C24H33N7O19P3S
+  charge: -5
+  original_id:
+  - m212
+  source: iJO1366
+- id: malt
+  name: Maltose
+  formula: C12H22O11
+  charge: 0
+  original_id:
+  - m213
+  - m214
+  source: iJO1366
+- id: man1p
+  name: D-Mannose 1-phosphate
+  formula: C6H11O9P
+  charge: -2
+  original_id:
+  - m215
+  source: iJO1366
+- id: man6p
+  name: D-Mannose 6-phosphate
+  formula: C6H11O9P
+  charge: -2
+  original_id:
+  - m216
+  source: iJO1366
+- id: melib
+  name: Melibiose
+  formula: C12H22O11
+  charge: 0
+  original_id:
+  - m217
+  source: iJO1366
+- id: met__45__L
+  name: L-Methionine
+  formula: C5H11NO2S
+  charge: 0
+  original_id:
+  - m218
+  source: iJO1366
+- id: methf
+  name: 5,10-Methenyltetrahydrofolate
+  formula: C20H20N7O6
+  charge: -1
+  original_id:
+  - m219
+  source: iJO1366, ModelSeed_cpd00347
+- id: mlthf
+  name: 5,10-Methylenetetrahydrofolate
+  formula: C20H21N7O6
+  charge: -2
+  original_id:
+  - m221
+  source: iJO1366
+- id: mthgxl
+  name: Methylglyoxal
+  formula: C3H4O2
+  charge: 0
+  original_id:
+  - m401
+  source: iJO1366
+- id: nadh
+  name: NADH
+  formula: C21H27N7O14P2
+  charge: -2
+  original_id:
+  - m223
+  source: ModelSeed_cpd00004
+- id: nadp
+  name: NADP+
+  formula: C21H25N7O17P3
+  charge: -3
+  original_id:
+  - m224
+  source: ModelSeed_cpd00006
+- id: nadph
+  name: NADPH
+  formula: C21H26N7O17P3
+  charge: -4
+  original_id:
+  - m225
+  source: ModelSeed_cpd00005
+- id: nh4
+  name: Ammonium
+  formula: H4N
+  charge: 1
+  original_id:
+  - m226
+  - m227
+  source: iJO1366
+- id: nicrnt
+  name: Nicotinate D-ribonucleotide
+  formula: C11H12NO9P
+  charge: -2
+  original_id:
+  - m228
+  source: iJO1366, ModelSeed_cpd00873
+- id: nmn
+  name: Nicotinamide D-ribonucleotide
+  formula: C11H14N2O8P
+  charge: -1
+  original_id:
+  - m394
+  source: ModelSeed_cpd00355
+- id: oaa
+  name: Oxaloacetate
+  formula: C4H2O5
+  charge: -2
+  original_id:
+  - m229
+  source: iJO1366
+- id: orn
+  name: Ornithine
+  formula: C5H13N2O2
+  charge: 1
+  original_id:
+  - m230
+  - m231
+  source: iJO1366
+- id: orot5p
+  name: Orotidine 5'-phosphate
+  formula: C10H10N2O11P
+  charge: -3
+  original_id:
+  - m333
+  source: iJO1366, ModelSeed_cpd00810
+- id: orot
+  name: Orotate
+  formula: C5H3N2O4
+  charge: -1
+  original_id:
+  - m232
+  source: iJO1366
+- id: pan4p
+  name: Pantetheine 4'-phosphate
+  formula: C11H21N2O7PS
+  charge: -2
+  original_id:
+  - m234
+  source: iJO1366
+- id: pep
+  name: Phosphoenolpyruvate
+  formula: C3H2O6P
+  charge: -3
+  original_id:
+  - m235
+  source: iJO1366
+- id: phe__45__L
+  name: L-Phenylalanine
+  formula: C9H11NO2
+  charge: 0
+  original_id:
+  - m237
+  source: iJO1366
+- id: phom
+  name: O-Phospho-L-homoserine
+  formula: C4H8NO6P
+  charge: -2
+  original_id:
+  - m365
+  source: iJO1366, ModelSeed_cpd00809
+- id: phpyr
+  name: Phenylpyruvate
+  formula: C9H7O3
+  charge: -1
+  original_id:
+  - m238
+  source: iJO1366
+- id: pi
+  name: Phosphate
+  formula: HO4P
+  charge: -2
+  original_id:
+  - m240
+  source: iJO1366, ModelSeed_cpd00009
+- id: pmtcoa
+  name: Hexadecanoyl-CoA
+  formula: C37H62N7O17P3S
+  charge: -4
+  original_id:
+  - m369
+  source: ModelSeed_cpd00134
+- id: pphn
+  name: Prephenate
+  formula: C10H8O6
+  charge: -2
+  original_id:
+  - m241
+  source: iJO1366
+- id: ppi
+  name: Diphosphate
+  formula: HO7P2
+  charge: -3
+  original_id:
+  - m242
+  source: iJO1366
+- id: pram
+  name: 5-Phospho-beta-D-ribosylamine
+  formula: C5H11NO7P
+  charge: -1
+  original_id:
+  - m243
+  source: iJO1366
+- id: pran
+  name: N-(5-Phospho-D-ribosyl)anthranilate
+  formula: C12H13NO9P
+  charge: -3
+  original_id:
+  - m244
+  source: iJO1366
+- id: prbamp
+  name: 1-(5-Phosphoribosyl)-AMP
+  formula: C15H19N5O14P2
+  charge: -4
+  original_id:
+  - m245
+  source: iJO1366
+- id: prbatp
+  name: 1-(5-Phosphoribosyl)-ATP
+  formula: C15H19N5O20P4
+  charge: -6
+  original_id:
+  - m246
+  - m402
+  source: iJO1366
+- id: prfp
+  name: 1-(5-Phosphoribosyl)-5-[(5-phosphoribosylamino)methylideneamino]imidazole-4-carboxamide
+  formula: C15H21N5O15P2
+  charge: -4
+  original_id:
+  - m247
+  source: iJO1366
+- id: prlp
+  name: 5-[(5-phospho-1-deoxyribulos-1-ylamino)methylideneamino]-1-(5-phosphoribosyl)imidazole-4-carboxamide
+  formula: C15H21N5O15P2
+  charge: -4
+  original_id:
+  - m248
+  source: iJO1366
+- id: pro__45__L
+  name: L-Proline
+  formula: C5H9NO2
+  charge: 0
+  original_id:
+  - m249
+  - m250
+  source: iJO1366
+- id: prpp
+  name: 5-Phospho-alpha-D-ribose 1-diphosphate
+  formula: C5H8O14P3
+  charge: -5
+  original_id:
+  - m251
+  source: iJO1366
+- id: psd5p
+  name: Pseudouridine 5'-phosphate
+  formula: C9H11N2O9P
+  charge: -2
+  original_id:
+  - m252
+  source: ModelSeed_cpd00859
+- id: pser__45__L
+  name: O-Phospho-L-serine
+  formula: C3H6NO6P
+  charge: -2
+  original_id:
+  - m336
+  source: iJO1366, ModelSeed_cpd00738
+- id: ptrc
+  name: Putrescine
+  formula: C4H14N2
+  charge: 2
+  original_id:
+  - m253
+  source: iJO1366
+- id: pyr
+  name: Pyruvate
+  formula: C3H3O3
+  charge: -1
+  original_id:
+  - m254
+  source: iJO1366
+- id: r1p
+  name: alpha-D-Ribose 1-phosphate
+  formula: C5H9O8P
+  charge: -2
+  original_id:
+  - m255
+  source: iJO1366
+- id: r5p
+  name: alpha-D-Ribose 5-phosphate
+  formula: C5H9O8P
+  charge: -2
+  original_id:
+  - m256
+  source: iJO1366
+- id: raffin
+  name: Raffinose
+  formula: C18H32O16
+  charge: 0
+  original_id:
+  - m257
+  source: ModelSeed_cpd00382
+- id: rhcys
+  name: S-Ribosyl-L-homocysteine
+  formula: C9H17NO6S
+  charge: 0
+  original_id:
+  - m258
+  source: iJO1366
+- id: ribflv
+  name: Riboflavin
+  formula: C17H20N4O6
+  charge: 0
+  original_id:
+  - m259
+  source: iJO1366
+- id: ru5p__45__D
+  name: D-Ribulose 5-phosphate
+  formula: C5H9O8P
+  charge: -2
+  original_id:
+  - m260
+  source: iJO1366
+- id: s7p
+  name: Sedoheptulose 7-phosphate
+  formula: C7H13O10P
+  charge: -2
+  original_id:
+  - m261
+  source: iJO1366
+- id: ser__45__L
+  name: L-Serine
+  formula: C3H7NO3
+  charge: 0
+  original_id:
+  - m263
+  source: iJO1366
+- id: skm5p
+  name: Shikimate 5-phosphate
+  formula: C7H8O8P
+  charge: -3
+  original_id:
+  - m265
+  - m411
+  source: iJO1366
+- id: skm
+  name: Shikimate
+  formula: C7H9O5
+  charge: -1
+  original_id:
+  - m266
+  source: iJO1366
+- id: so4
+  name: Sulfate
+  formula: O4S
+  charge: -2
+  original_id:
+  - m267
+  source: iJO1366
+- id: spmd
+  name: Spermidine
+  formula: C7H22N3
+  charge: 3
+  original_id:
+  - m268
+  - m269
+  source: iJO1366
+- id: succ
+  name: Succinate
+  formula: C4H4O4
+  charge: -2
+  original_id:
+  - m271
+  source: iJO1366
+- id: succoa
+  name: Succinyl-CoA
+  formula: C25H35N7O19P3S
+  charge: -5
+  original_id:
+  - m272
+  source: iJO1366
+- id: suchms
+  name: O-Succinyl-L-homoserine
+  formula: C8H12NO6
+  charge: -1
+  original_id:
+  - m273
+  source: iJO1366
+- id: sucr
+  name: Sucrose
+  formula: C12H22O11
+  charge: 0
+  original_id:
+  - m274
+  source: iJO1366
+- id: thdp
+  name: 2,3,4,5-Tetrahydrodipicolinate
+  formula: C7H7NO4
+  charge: -2
+  original_id:
+  - m275
+  source: iJO1366
+- id: thf
+  name: 5,6,7,8-Tetrahydrofolate
+  formula: C19H21N7O6
+  charge: -2
+  original_id:
+  - m276
+  source: iJO1366
+- id: thfglu
+  name: Tetrahydrofolyl-[Glu](2)
+  formula: C24H27N8O9
+  charge: -3
+  original_id:
+  - m277
+  source: ModelSeed_cpd19097
+- id: thmmp
+  name: Thiamin monophosphate
+  formula: C12H16N4O4PS
+  charge: -1
+  original_id:
+  - m278
+  source: iJO1366, PubChem_cid15942892
+- id: thr__45__L
+  name: L-Threonine
+  formula: C4H9NO3
+  charge: 0
+  original_id:
+  - m279
+  source: iJO1366
+- id: trdox
+  name: Oxidized thioredoxin
+  formula: X
+  charge: 0
+  original_id:
+  - m281
+  source: iJO1366
+- id: trdrd
+  name: Reduced thioredoxin
+  formula: XH2
+  charge: 0
+  original_id:
+  - m282
+  source: iJO1366
+- id: trp__45__L
+  name: L-Tryptophan
+  formula: C11H12N2O2
+  charge: 0
+  original_id:
+  - m296
+  source: iJO1366
+- id: tyr__45__L
+  name: L-Tyrosine
+  formula: C9H11NO3
+  charge: 0
+  original_id:
+  - m297
+  source: iJO1366
+- id: uGgla
+  name: UDPMurAc(oyl-L-Ala-D-gamma-Glu-L-Lys-D-Ala-D-Ala)
+  formula: C40H62N9O26P2
+  charge: -3
+  original_id:
+  - m384
+  source: ModelSeed_cpd02862
+- id: uaagmda
+  name: Undecaprenyl-diphospho-N-acetylmuramoyl-(N-acetylglucosamine)-L-ala-D-glu-meso-2,6-diaminopimeloyl-D-ala-D-ala
+  formula: C95H152N8O28P2
+  charge: -4
+  original_id:
+  - m298
+  source: iJO1366
+- id: uaccg
+  name: UDP-N-acetyl-3-O-(1-carboxyvinyl)-D-glucosamine
+  formula: C20H26N3O19P2
+  charge: -3
+  original_id:
+  - m299
+  source: iJO1366
+- id: uacgam
+  name: UDP-N-acetyl-D-glucosamine
+  formula: C17H25N3O17P2
+  charge: -2
+  original_id:
+  - m300
+  source: iJO1366
+- id: uacmam
+  name: UDP-N-acetyl-D-mannosamine
+  formula: C17H25N3O17P2
+  charge: -2
+  original_id:
+  - m301
+  source: iJO1366
+- id: uagmda
+  name: Undecaprenyl-diphospho-N-acetylmuramoyl-L-alanyl-D-glutamyl-meso-2,6-diaminopimeloyl-D-alanyl-D-alanine
+  formula: C87H139N7O23P2
+  charge: -4
+  original_id:
+  - m302
+  source: iJO1366
+- id: uama
+  name: UDP-N-acetylmuramoyl-L-alanine
+  formula: C23H33N4O20P2
+  charge: -3
+  original_id:
+  - m303
+  source: iJO1366
+- id: uamag
+  name: UDP-N-acetylmuramoyl-L-alanyl-D-glutamate
+  formula: C28H39N5O23P2
+  charge: -4
+  original_id:
+  - m304
+  source: iJO1366
+- id: uamr
+  name: UDP-N-acetylmuramate
+  formula: C20H28N3O19P2
+  charge: -3
+  original_id:
+  - m305
+  source: iJO1366
+- id: udcpp
+  name: Undecaprenyl phosphate
+  formula: C55H89O4P
+  charge: -2
+  original_id:
+  - m307
+  source: iJO1366
+- id: udp
+  name: UDP
+  formula: C9H11N2O12P2
+  charge: -3
+  original_id:
+  - m308
+  source: iJO1366
+- id: udpg
+  name: UDPglucose
+  formula: C15H22N2O17P2
+  charge: -2
+  original_id:
+  - m309
+  source: iJO1366
+- id: udpgal
+  name: UDPgalactose
+  formula: C15H22N2O17P2
+  charge: -2
+  original_id:
+  - m310
+  source: iJO1366
+- id: ugmd
+  name: UDP-N-acetylmuramoyl-L-alanyl-D-gamma-glutamyl-meso-2,6-diaminopimelate
+  formula: C35H51N7O26P2
+  charge: -4
+  original_id:
+  - m311
+  source: iJO1366
+- id: ugmda
+  name: UDP-N-acetylmuramoyl-L-alanyl-D-glutamyl-meso-2,6-diaminopimeloyl-D-alanyl-D-alanine
+  formula: C41H61N9O28P2
+  charge: -4
+  original_id:
+  - m312
+  source: iJO1366
+- id: ump
+  name: UMP
+  formula: C9H11N2O9P
+  charge: -2
+  original_id:
+  - m313
+  source: iJO1366
+- id: ura
+  name: Uracil
+  formula: C4H4N2O2
+  charge: 0
+  original_id:
+  - m314
+  - m315
+  source: iJO1366
+- id: uri
+  name: Uridine
+  formula: C9H12N2O6
+  charge: 0
+  original_id:
+  - m316
+  source: iJO1366
+- id: utp
+  name: UTP
+  formula: C9H11N2O15P3
+  charge: -4
+  original_id:
+  - m317
+  source: iJO1366
+- id: val__45__L
+  name: L-Valine
+  formula: C5H11NO2
+  charge: 0
+  original_id:
+  - m318
+  source: iJO1366
+- id: xan
+  name: Xanthine
+  formula: C5H4N4O2
+  charge: 0
+  original_id:
+  - m320
+  source: iJO1366
+- id: xan
+  name: Xanthine
+  formula: C5H4N4O2
+  charge: 0
+  original_id:
+  - m319
+  source: iJO1366
+- id: xmp
+  name: Xanthosine 5'-phosphate
+  formula: C10H11N4O9P
+  charge: -2
+  original_id:
+  - m321
+  source: iJO1366
+- id: xu5p__45__D
+  name: D-Xylulose 5-phosphate
+  formula: C5H9O8P
+  charge: -2
+  original_id:
+  - m322
+  source: iJO1366
+- id: xyl__45__D
+  name: D-Xylose
+  formula: C5H10O5
+  charge: 0
+  original_id:
+  - m324
+  source: iJO1366
+- id: xylu__45__D
+  name: D-Xylulose
+  formula: C5H10O5
+  charge: 0
+  original_id:
+  - m323
+  source: iJO1366

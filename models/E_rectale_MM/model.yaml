@@ -1,0 +1,30 @@
+name: Eubacterium rectale
+biomass: ere_biomass
+default_flux_limit: 1000
+compartments:
+- id: cere
+  adjacent_to: e
+  name: c_ere
+  original_id:
+  - '5'
+- id: e
+  adjacent_to: cere
+  name: e
+  original_id:
+  - '2'
+- id: p
+  name: p
+  original_id:
+  - '3'
+compounds:
+- include: compounds.yaml
+reactions:
+- include: reactions.yaml
+exchange:
+#- include: exchange.yaml
+#- include: ../B_theta_isol/medium-Bacteroides_wH2.tsv
+#  format: tsv
+- include: medium-Bacteroides_woH2.tsv
+  format: tsv
+limits:
+- include: limits.yaml
