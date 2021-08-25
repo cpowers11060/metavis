@@ -8,15 +8,15 @@ allowing for the
 '''
 
 
-import logging
-#===== START LOGGER =====
-logger = logging.getLogger(__name__)
-root_logger = logging.getLogger()
-root_logger.setLevel(logging.INFO)
-sh = logging.StreamHandler()
-formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
-sh.setFormatter(formatter)
-root_logger.addHandler(sh)
+# import logging
+# #===== START LOGGER =====
+# logger = logging.getLogger(__name__)
+# root_logger = logging.getLogger()
+# root_logger.setLevel(logging.INFO)
+# sh = logging.StreamHandler()
+# formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+# sh.setFormatter(formatter)
+# root_logger.addHandler(sh)
 
 from collections import defaultdict
 from psamm.datasource.native import NativeModel, ModelReader, ModelWriter
@@ -53,7 +53,7 @@ def read_model(model_path, el):
         excluded_reactions=[]
         for rxn in nm.reactions:
             for cpd, v in rxn.equation.compounds:
-                if (float(v)).is_integer()==False:
+                if (float(v)).is_integer()==False or float(v) > 100:
                     excluded_reactions.append(rxn.id)
         network = make_network_dict(nm, mm, subset=None, method='fpp',
                                                                 element=el, excluded_reactions=excluded_reactions,
@@ -124,7 +124,6 @@ def build_network(nm, rxn_set, network, fba_dropdown):
             flux_carrying={}
             for i in nm.reactions:
                 flux_carrying[i.id]=problem.get_flux(i.id)
-            #return(str(problem.get_flux(fba_dropdown)))
         else:
             flux_carrying={}
             for i in nm.reactions:
@@ -181,7 +180,10 @@ def build_network(nm, rxn_set, network, fba_dropdown):
 
 
 # Generates all initial data for building the app
-nm, network = read_model("./models/E_rectale_MM/", "C")
+#nm, network = read_model("./models/E_rectale_MM/", "C")
+mr = ModelReader.reader_from_path("./models/E_rectale_MM/",)
+nm = mr.create_model()
+
 pathway_list, rxn_set = get_pathway_list(nm, "All")
 compounds_list = get_compounds_list(nm)
 rxns=list(rxn_set)
