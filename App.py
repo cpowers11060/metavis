@@ -111,7 +111,7 @@ def build_network(nm, rxn_set, network, fba_dropdown):
             formula[i.id]=i.formula
         nodes=[]
         edges=[]
-        print(rxn_set)
+
         if not isinstance(fba_dropdown, list):
             objective=str(fba_dropdown)
             mm = nm.create_metabolic_model()
