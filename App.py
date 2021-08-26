@@ -226,7 +226,18 @@ navbar = dbc.NavbarSimple(
                                 href="https://github.com/cpowers11060/metavis",
                         )
                 ),
-        ],
+                dbc.NavItem(
+                        dbc.NavLink(
+                                "Psamm documentation",
+                                href="https://psamm.readthedocs.io/en/latest/",
+                        )
+                ),
+                dbc.NavItem(
+                        dbc.NavLink(
+                                "Psamm publication",
+                                href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004732",
+                        )
+                ),
         brand="Psamm web-based visualization of metabolic models",
         brand_href="#",
         color="dark",
