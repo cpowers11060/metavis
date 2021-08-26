@@ -229,7 +229,7 @@ navbar = dbc.NavbarSimple(
                 dbc.NavItem(
                         dbc.NavLink(
                                 "Psamm documentation",
-                                href="https://psamm.readthedocs.io/en/latest/",
+                                href="https://psamm.readthedocs.io",
                         )
                 ),
                 dbc.NavItem(
@@ -237,7 +237,8 @@ navbar = dbc.NavbarSimple(
                                 "Psamm publication",
                                 href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004732",
                         )
-                ),
+                ),],
+
         brand="Psamm web-based visualization of metabolic models",
         brand_href="#",
         color="dark",
