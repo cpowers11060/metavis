@@ -536,7 +536,7 @@ def filter_nodes(pathways_dropdown, element_dropdown, compounds_dropdown, fba_dr
 
         #nm, network = read_model("/Users/chrispowers/projects/ETH_Modelling/GEM-HS/model-hs.yaml", element_dropdown)
         #nm, network = read_model("./models/E_rectale_MM/", element_dropdown)
-        mr = ModelReader.reader_from_path("./models/iGEM_bin526_curated")
+        nm, network = read_model("./models/iGEM_bin526_curated", "C")
         pathway_list, rxn_set = get_pathway_list(nm, pathways_dropdown)
 
         if isinstance(compounds_dropdown, str):
