@@ -181,7 +181,9 @@ def build_network(nm, rxn_set, network, fba_dropdown):
 
 # Generates all initial data for building the app
 #nm, network = read_model("./models/E_rectale_MM/", "C")
-mr = ModelReader.reader_from_path("./models/E_rectale_MM/")
+#mr = ModelReader.reader_from_path("/Users/chrispowers/projects/ETH_Modelling/GEM-HS/model-hs.yaml")
+#mr = ModelReader.reader_from_path("./models/E_rectale_MM/")
+mr = ModelReader.reader_from_path("./models/iGEM_bin526_curated")
 nm = mr.create_model()
 
 pathway_list, rxn_set = get_pathway_list(nm, "All")
@@ -256,7 +258,8 @@ body_layout = dbc.Container(
                         ##### Filter / Explore metabolic models
                         Use these filters to highlight reactions and compounds associated with different reactions
                         Try exploring different visualisation options.
-                        Note that the E rectale model is currently loaded
+
+                        The current visualization represents a draft model of Reinekea sp.
                         -----
                         """
                                 ),
@@ -531,7 +534,8 @@ def display_nodedata(datalist):
 )
 def filter_nodes(pathways_dropdown, element_dropdown, compounds_dropdown, fba_dropdown):
 
-        nm, network = read_model("./models/E_rectale_MM/", element_dropdown)
+        nm, network = read_model("/Users/chrispowers/projects/ETH_Modelling/GEM-HS/model-hs.yaml", element_dropdown)
+        #nm, network = read_model("./models/E_rectale_MM/", element_dropdown)
         pathway_list, rxn_set = get_pathway_list(nm, pathways_dropdown)
 
         if isinstance(compounds_dropdown, str):
@@ -556,7 +560,9 @@ def Run_FBA(fba_dropdown):
   if not isinstance(fba_dropdown, list):
       objective=str(fba_dropdown)
       # First read in the base model
-      mr = ModelReader.reader_from_path('../../ETH_Modelling/GEM-HS/E_rectale_MM/')
+      #mr = ModelReader.reader_from_path('../../ETH_Modelling/GEM-HS/E_rectale_MM/')
+      #mr = ModelReader.reader_from_path("/Users/chrispowers/projects/ETH_Modelling/GEM-HS/model-hs.yaml")
+      mr = ModelReader.reader_from_path("./models/iGEM_bin526_curated")
       nm = mr.create_model()
       mm = nm.create_metabolic_model()
 
