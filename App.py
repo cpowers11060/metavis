@@ -101,6 +101,97 @@ def get_compounds_list(nm):
         compounds_list.append(i.id)
     return compounds_list
 
+def bfs_compounds(start, end, network, rxn_listm, rxn_set):
+
+    # initialize useful variables
+    depth_start = {start:0}
+    depth_end={end:0}
+    i=1
+    frontier_start=[start]
+    frontier_end=[end]
+    parent_start={}
+    parent_start[start]="none"
+    parent_end={}
+    parent_end[end]="none"
+    frontier_check="False"
+    move_start={}
+    move_end={}
+    final_list={}
+    while frontier_check=="False":
+        next=[]
+        for u in frontier_start:
+            adj={}
+            for rxn in network[0]:
+                for cpd in network[0][rxn][0]:
+                    for j in cpd:
+                        if j.name in frontier_start:
+                            for k in cpd:
+                                adj[k.name]=rxn.id
+            for v in adj:
+                if v not in depth_start:
+                    depth_start[v]=i
+                    parent_start[v]=u
+                    next.append(v)
+                    move_start[v]=adj[v]
+                if v in depth_end:
+                    frontier_check="True"
+                    middle=v
+        frontier_start=next
+        next=[]
+        for u in frontier_end:
+            adj={}
+            for rxn in network[0]:
+                for cpd in network[0][rxn][0]:
+                    for j in cpd:
+                        if j.name in frontier_end:
+                            for k in cpd:
+                                adj[k.name]=rxn.id
+            for v in adj:
+                if v not in depth_end:
+                    depth_end[v]=i
+                    parent_end[v]=u
+                    next.append(v)
+                    move_end[v]=adj[v]
+                if v in depth_start and frontier_check!="True":
+                    frontier_check="True"
+                    middle=v
+        frontier_end=next
+        i+=1
+
+        if i > 20:
+            quit()
+    # collect the rxns from the start frontier into a final list of rxns
+    i=depth_start[middle]
+    j=1
+    final_list[i]=move_start[middle]
+    parent=parent_start[middle]
+    while parent!=start:
+        i-=1
+        j+=1
+        final_list[i]=move_start[parent]
+        parent=parent_start[parent]
+
+    # Checks to make sure the solution isnt a 0 path solution
+    if depth_end[middle] > 0:
+        # Collects the moves from the end frontier into a final list of moves
+        j+=1
+        final_list[j]=move_end[middle]
+        parent=parent_end[middle]
+        while parent!=end:
+            j+=1
+            final_list[j]=move_end[parent]
+            parent=parent_end[parent]
+    sorted_list=[]
+    # Sorts the moves by their index and store them in a final list
+    for k in range(1,len(final_list)+1):
+        sorted_list.append(final_list[k])
+
+    return(sorted_list)
+    raise NotImplementedError
+
+
+
+
 # Useful function to build the subset network. Returns nodes and edges
 # from the network associated with the rxn_set of interest
 def build_network(nm, rxn_set, network, fba_dropdown):
@@ -181,7 +272,7 @@ def build_network(nm, rxn_set, network, fba_dropdown):
 
 # Generates all initial data for building the app
 #nm, network = read_model("./models/E_rectale_MM/", "C")
-#mr = ModelReader.reader_from_path("/Users/chrispowers/projects/ETH_Modelling/GEM-HS/model-hs.yaml")
+#mr = ModelReader.reader_from_path("/Users/chrispowers/projects/ETH_Modelling/GEM-HS/model.yaml")
 #mr = ModelReader.reader_from_path("./models/E_rectale_MM/")
 mr = ModelReader.reader_from_path("./models/iGEM_bin526_curated")
 nm = mr.create_model()
@@ -383,6 +474,44 @@ body_layout = dbc.Container(
                                                         ]
                                                 ),
                                                 dbc.Badge(
+                                                        "Compound 1:", color="info", className="mr-1"),
+                                                dbc.FormGroup(
+                                                        [
+                                                                dcc.Dropdown(
+                                                                        id="filter1_dropdown",
+                                                                        options=[
+                                                                                {
+                                                                                        "label": i,
+                                                                                        "value": i,
+                                                                                }
+                                                                                for i in list(compounds_list)
+                                                                        ],
+                                                                        value=compounds_list,
+                                                                        multi=False,
+                                                                        style={"width": "100%"},
+                                                                ),
+                                                        ]
+                                                ),
+                                                dbc.Badge(
+                                                        "Compound 2:", color="info", className="mr-1"),
+                                                dbc.FormGroup(
+                                                        [
+                                                                dcc.Dropdown(
+                                                                        id="filter2_dropdown",
+                                                                        options=[
+                                                                                {
+                                                                                        "label": i,
+                                                                                        "value": i,
+                                                                                }
+                                                                                for i in list(compounds_list)
+                                                                        ],
+                                                                        value=compounds_list,
+                                                                        multi=False,
+                                                                        style={"width": "100%"},
+                                                                ),
+                                                        ]
+                                                ),
+                                                dbc.Badge(
                                                         "Flux Analysis:", color="info", className="mr-1"),
                                                 dbc.FormGroup(
                                                         [
@@ -530,28 +659,35 @@ def display_nodedata(datalist):
                 Input("element_dropdown", "value"),
                 Input("compounds_dropdown", "value"),
                 Input("fba_dropdown", "value"),
+                Input("filter1_dropdown", "value"),
+                Input("filter2_dropdown", "value"),
         ],
 )
-def filter_nodes(pathways_dropdown, element_dropdown, compounds_dropdown, fba_dropdown):
+def filter_nodes(pathways_dropdown, element_dropdown, compounds_dropdown, fba_dropdown, filter1_dropdown, filter2_dropdown):
 
-        #nm, network = read_model("/Users/chrispowers/projects/ETH_Modelling/GEM-HS/model-hs.yaml", element_dropdown)
-        #nm, network = read_model("./models/E_rectale_MM/", element_dropdown)
-        nm, network = read_model("./models/iGEM_bin526_curated", element_dropdown)
-        pathway_list, rxn_set = get_pathway_list(nm, pathways_dropdown)
+    #nm, network = read_model("/Users/chrispowers/projects/ETH_Modelling/GEM-HS/model.yaml", element_dropdown)
+    #nm, network = read_model("./models/E_rectale_MM/", element_dropdown)
+    nm, network = read_model("./models/iGEM_bin526_curated", element_dropdown)
+    pathway_list, rxn_set = get_pathway_list(nm, pathways_dropdown)
 
-        if isinstance(compounds_dropdown, str):
-            rxn_list = []
-            for rxn in network[0]:
-                for cpd in network[0][rxn][0]:
 
-                    if cpd[0].name == compounds_dropdown and rxn.id in rxn_set:
+    if isinstance(filter1_dropdown, str) and isinstance(filter2_dropdown, str):
+        rxn_list = set()
+        cpd_list = [filter1_dropdown, filter2_dropdown]
+        rxn_list = bfs_compounds(filter1_dropdown, filter2_dropdown, network, rxn_list, rxn_set)
+    elif isinstance(compounds_dropdown, str):
+        rxn_list = []
+        for rxn in network[0]:
+            for cpd in network[0][rxn][0]:
+                for i in cpd:
+                    if i.name == compounds_dropdown and rxn.id in rxn_set:
                         rxn_list.append(rxn.id)
-        else:
-            rxn_list = rxn_set
-        nodes, edges = build_network(nm, rxn_list, network, fba_dropdown)
-        elements=nodes+edges
+    else:
+        rxn_list = rxn_set
+    nodes, edges = build_network(nm, rxn_list, network, fba_dropdown)
+    elements=nodes+edges
 
-        return elements
+    return elements
 
 
 @app.callback(
