@@ -38,6 +38,7 @@ import dash_bootstrap_components as dbc
 from dash.dependencies import Input, Output, State
 import dash_cytoscape as cyto
 import re
+import pandas as pd
 
 el='C'
 pathway='All'
@@ -121,7 +122,6 @@ def bfs_compounds(start, end, network, rxn_listm, rxn_set):
     final_list={}
 
     while frontier_check=="False":
-        print("frontier start: ", frontier_start)
         next=[]
         for u in frontier_start:
             adj={}
@@ -140,10 +140,6 @@ def bfs_compounds(start, end, network, rxn_listm, rxn_set):
                 if (v, r) in depth_end and v not in generic:
                     frontier_check="True"
                     middle=(v, r)
-            print("depth_start: ", depth_start)
-            print("parent_start: ", parent_start)
-            print("next: ", next)
-            print("move_start: ", move_start)
         frontier_start=next
         next=[]
         for u in frontier_end:
@@ -164,12 +160,9 @@ def bfs_compounds(start, end, network, rxn_listm, rxn_set):
                     frontier_check="True"
                     middle=(v, r)
         frontier_end=next
-        print("frontier_start", frontier_start)
-        print("frontier_end", frontier_end)
         i+=1
         if i > 50:
-            print("FAILED TO FIND MIDDLE")
-            quit()
+            return("Failed to find middle")
     # collect the rxns from the start frontier into a final list of rxns
     i=depth_start[middle]
 
@@ -178,7 +171,7 @@ def bfs_compounds(start, end, network, rxn_listm, rxn_set):
     parent=parent_start[middle]
     while parent!=(start, "none"):
         i-=1
-        j+=0
+        j+=1
         final_list[i]=move_start[parent]
         parent=parent_start[parent]
     print(final_list)
@@ -283,10 +276,12 @@ def build_network(nm, rxn_set, network, fba_dropdown):
 
 
 # Generates all initial data for building the app
+model="/Users/chrispowers/projects/ETH_Modelling/GEM-HS/B_theta_isol/"
+model="./models/iGEM_bin526_curated"
 #nm, network = read_model("./models/E_rectale_MM/", "C")
 #mr = ModelReader.reader_from_path("/Users/chrispowers/projects/ETH_Modelling/GEM-HS/model.yaml")
 #mr = ModelReader.reader_from_path("./models/E_rectale_MM/")
-mr = ModelReader.reader_from_path("./models/iGEM_bin526_curated")
+mr = ModelReader.reader_from_path(model)
 nm = mr.create_model()
 
 pathway_list, rxn_set = get_pathway_list(nm, "All")
@@ -576,6 +571,12 @@ body_layout = dbc.Container(
                                                                 )
                                                         ]
                                                 ),
+                                                html.Div(
+                                                [
+                                                html.Button("Download TSV", id="btn_tsv"),
+                                                dcc.Download(id="download"),
+                                                ]
+                                                ),
                                         ],
                                         sm=12,
                                         md=4,
@@ -677,16 +678,15 @@ def display_nodedata(datalist):
 )
 def filter_nodes(pathways_dropdown, element_dropdown, compounds_dropdown, fba_dropdown, filter1_dropdown, filter2_dropdown):
 
-    #nm, network = read_model("/Users/chrispowers/projects/ETH_Modelling/GEM-HS/model.yaml", element_dropdown)
-    #nm, network = read_model("./models/E_rectale_MM/", element_dropdown)
-    nm, network = read_model("./models/iGEM_bin526_curated", element_dropdown)
+    nm, network = read_model(model, element_dropdown)
     pathway_list, rxn_set = get_pathway_list(nm, pathways_dropdown)
-
 
     if isinstance(filter1_dropdown, str) and isinstance(filter2_dropdown, str):
         rxn_list = set()
         cpd_list = [filter1_dropdown, filter2_dropdown]
         rxn_list = bfs_compounds(filter1_dropdown, filter2_dropdown, network, rxn_list, rxn_set)
+        if rxn_list is str:
+            raise PreventUpdate
     elif isinstance(compounds_dropdown, str):
         rxn_list = []
         for rxn in network[0]:
@@ -709,9 +709,7 @@ def Run_FBA(fba_dropdown):
   if not isinstance(fba_dropdown, list):
       objective=str(fba_dropdown)
       # First read in the base model
-      #mr = ModelReader.reader_from_path('../../ETH_Modelling/GEM-HS/E_rectale_MM/')
-      #mr = ModelReader.reader_from_path("/Users/chrispowers/projects/ETH_Modelling/GEM-HS/model-hs.yaml")
-      mr = ModelReader.reader_from_path("./models/iGEM_bin526_curated")
+      nm, network = read_model(model, element_dropdown)
       nm = mr.create_model()
       mm = nm.create_metabolic_model()
 
@@ -727,6 +725,50 @@ def Run_FBA(fba_dropdown):
   else:
       return("More than one reaction selected")
 
+@app.callback(
+    Output("download", "data"),
+    [Input("btn_tsv", "n_clicks"),
+    Input("pathways_dropdown", "value"),
+    Input("element_dropdown", "value"),
+    Input("compounds_dropdown", "value"),
+    Input("fba_dropdown", "value"),
+    Input("filter1_dropdown", "value"),
+    Input("filter2_dropdown", "value"),
+    ],
+    prevent_initial_call=True,
+)
+def func(n_clicks, pathways_dropdown, element_dropdown, compounds_dropdown, fba_dropdown, filter1_dropdown, filter2_dropdown):
+    if n_clicks is not None:
+        nm, network = read_model(model, element_dropdown)
+        pathway_list, rxn_set = get_pathway_list(nm, pathways_dropdown)
+
+        if isinstance(filter1_dropdown, str) and isinstance(filter2_dropdown, str):
+            rxn_list = set()
+            cpd_list = [filter1_dropdown, filter2_dropdown]
+            rxn_list = bfs_compounds(filter1_dropdown, filter2_dropdown, network, rxn_list, rxn_set)
+            if rxn_list is str:
+                raise PreventUpdate
+        elif isinstance(compounds_dropdown, str):
+            rxn_list = []
+            for rxn in network[0]:
+                for cpd in network[0][rxn][0]:
+                    for i in cpd:
+                        if i.name == compounds_dropdown and rxn.id in rxn_set:
+                            rxn_list.append(rxn.id)
+        else:
+            rxn_list = rxn_set
+        id=[]
+        name=[]
+        equation=[]
+        for rxn in nm.reactions:
+            if rxn.id in rxn_list:
+                id.append(rxn.id)
+                name.append(rxn.name)
+                equation.append(str(rxn.properties["equation"]))
+        df = pd.DataFrame({"id": id, "name": name, "equation": equation})
+        return(dcc.send_data_frame(df.to_csv, "exported_rxns.csv"))
+
+    # return dcc.send_data_frame(df.to_csv, "mydf.csv")
 
 if __name__ == '__main__':
     app.run_server(debug=True)
