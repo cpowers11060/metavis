@@ -37,7 +37,7 @@ import dash_html_components as html
 import dash_bootstrap_components as dbc
 from dash.dependencies import Input, Output, State
 import dash_cytoscape as cyto
-
+import re
 
 el='C'
 pathway='All'
@@ -104,38 +104,46 @@ def get_compounds_list(nm):
 def bfs_compounds(start, end, network, rxn_listm, rxn_set):
 
     # initialize useful variables
-    depth_start = {start:0}
-    depth_end={end:0}
+    generic=['h2o', 'h', 'accoa', 'coa', 'nad', 'nadh', 'nadp', 'nadph', 'pi', 'co2', 'ppi', 'q8h2', 'q8', 'atp', 'adp', 'gtp', 'gdp', 'utp', 'udp', 'ttp', 'tdp']
+    depth_start = {(start, "none"):0}
+    depth_end={(end, "none"):0}
     i=1
-    frontier_start=[start]
-    frontier_end=[end]
+
+    frontier_start=[(start, "none")]
+    frontier_end=[(end, "none")]
     parent_start={}
-    parent_start[start]="none"
+    parent_start[(start, "none")]="none"
     parent_end={}
-    parent_end[end]="none"
+    parent_end[(end, "none")]="none"
     frontier_check="False"
     move_start={}
     move_end={}
     final_list={}
+
     while frontier_check=="False":
+        print("frontier start: ", frontier_start)
         next=[]
         for u in frontier_start:
             adj={}
             for rxn in network[0]:
                 for cpd in network[0][rxn][0]:
                     for j in cpd:
-                        if j.name in frontier_start:
+                        if j.name==u[0]:
                             for k in cpd:
                                 adj[k.name]=rxn.id
-            for v in adj:
-                if v not in depth_start:
-                    depth_start[v]=i
-                    parent_start[v]=u
-                    next.append(v)
-                    move_start[v]=adj[v]
-                if v in depth_end:
+            for v, r in adj.items():
+                if (v, r) not in depth_start and v not in generic:
+                    depth_start[(v, r)]=i
+                    parent_start[(v, r)]=u
+                    next.append((v, r))
+                    move_start[(v, r)]=adj[v]
+                if (v, r) in depth_end and v not in generic:
                     frontier_check="True"
-                    middle=v
+                    middle=(v, r)
+            print("depth_start: ", depth_start)
+            print("parent_start: ", parent_start)
+            print("next: ", next)
+            print("move_start: ", move_start)
         frontier_start=next
         next=[]
         for u in frontier_end:
@@ -143,41 +151,44 @@ def bfs_compounds(start, end, network, rxn_listm, rxn_set):
             for rxn in network[0]:
                 for cpd in network[0][rxn][0]:
                     for j in cpd:
-                        if j.name in frontier_end:
+                        if j.name==u[0]:
                             for k in cpd:
                                 adj[k.name]=rxn.id
-            for v in adj:
-                if v not in depth_end:
-                    depth_end[v]=i
-                    parent_end[v]=u
-                    next.append(v)
-                    move_end[v]=adj[v]
-                if v in depth_start and frontier_check!="True":
+            for v, r in adj.items():
+                if (v, r) not in depth_end and v not in generic:
+                    depth_end[(v, r)]=i
+                    parent_end[(v, r)]=u
+                    next.append((v, r))
+                    move_end[(v, r)]=adj[v]
+                if (v, r) in depth_start and frontier_check!="True" and v not in generic:
                     frontier_check="True"
-                    middle=v
+                    middle=(v, r)
         frontier_end=next
+        print("frontier_start", frontier_start)
+        print("frontier_end", frontier_end)
         i+=1
-
-        if i > 20:
+        if i > 50:
+            print("FAILED TO FIND MIDDLE")
             quit()
     # collect the rxns from the start frontier into a final list of rxns
     i=depth_start[middle]
+
     j=1
     final_list[i]=move_start[middle]
     parent=parent_start[middle]
-    while parent!=start:
+    while parent!=(start, "none"):
         i-=1
-        j+=1
+        j+=0
         final_list[i]=move_start[parent]
         parent=parent_start[parent]
-
+    print(final_list)
     # Checks to make sure the solution isnt a 0 path solution
     if depth_end[middle] > 0:
         # Collects the moves from the end frontier into a final list of moves
         j+=1
         final_list[j]=move_end[middle]
         parent=parent_end[middle]
-        while parent!=end:
+        while parent!=(end, "none"):
             j+=1
             final_list[j]=move_end[parent]
             parent=parent_end[parent]
@@ -185,9 +196,10 @@ def bfs_compounds(start, end, network, rxn_listm, rxn_set):
     # Sorts the moves by their index and store them in a final list
     for k in range(1,len(final_list)+1):
         sorted_list.append(final_list[k])
-
+    print(final_list)
+    print(sorted_list)
     return(sorted_list)
-    raise NotImplementedError
+    #raise NotImplementedError
 
 
 
