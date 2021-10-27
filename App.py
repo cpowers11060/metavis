@@ -40,6 +40,9 @@ import dash_cytoscape as cyto
 import re
 import pandas as pd
 
+# enable svg export
+cyto.load_extra_layouts()
+
 el='C'
 pathway='All'
 
@@ -299,10 +302,11 @@ server = app.server
 
 # Set styles for the app
 styles = {
-        'pre': {
+        'output': {
                 'border': 'thin lightgrey solid',
                 'overflowX': 'scroll'
-        }
+        },
+        'tab': {'height': 'calc(98vh - 115px)'}
 }
 col_swatch = px.colors.qualitative.Dark24
 default_stylesheet = [
@@ -351,235 +355,208 @@ body_layout = dbc.Container(
         [
                 dbc.Row(
                         [
-                                dcc.Markdown(
-                                        """
+                        dcc.Markdown(
+                        """
                         -----
                         ##### Filter / Explore metabolic models
-                        Use these filters to highlight reactions and compounds associated with different reactions
+                        Use these filters to highlight reactions and compounds associated with different reactions.
                         Try exploring different visualisation options.
-
                         The current visualization represents a draft model of Reinekea sp.
+
                         -----
                         """
                                 ),
-                        ]
-                ),
-                dbc.Row(
-                        [
-                                dbc.Col(
-                                        [
-                                                dbc.Row(
-                                                        [
-                                                            cyto.Cytoscape(id = 'net',
-                                                            layout={'name':'cose'},
-                                                            style={'width': '500px', 'height': '500px'},
-                                                            elements=nodes+edges,
-                                                            stylesheet=[
+                        dbc.Col([
+                        dbc.Row([
+                                dbc.Row([
+                                        dbc.Alert(
+                                                id="node-data",
+                                                children="Click on a node to see its details here",
+                                                color="secondary",
+                                        ),
+                                        dbc.Alert(
+                                                id="edge-data",
+                                                children="Click on an edge to see its details here",
+                                                color="secondary",)
+                                ]),
+                                dbc.Col([
+                                                cyto.Cytoscape(id = 'net',
+                                                layout={'name':'cose'},
+                                                style={'width': '500px', 'height': '500px'},
+                                                elements=nodes+edges,
+                                                stylesheet=[{
+                                                            'selector': 'node',
+                                                            'style': {
+                                                                    'background-color': '#BFD7B5',
+                                                                    'label': 'data(label)'}},
                                                                     {
-                                                                            'selector': 'node',
-                                                                            'style': {
-                                                                                    'background-color': '#BFD7B5',
-                                                                                    'label': 'data(label)'}},
+                                                                    "selector": "edge",
+                                                                    "style": {
+                                                                            "width": 1,
+                                                                            "curve-style": "bezier"}},
                                                                     {
-                                                                            "selector": "edge",
-                                                                            "style": {
-                                                                                    "width": 1,
-                                                                                    "curve-style": "bezier"}},
-                                                                    {
-                                                                            "selector": "[flux != 0]",
-                                                                            "style": {
-                                                                                    "line-color": "blue"
+                                                                    "selector": "[flux != 0]",
+                                                                    "style": {
+                                                                            "line-color": "blue"
                                                                             }
                                                                     }
                                                             ],
                                                             minZoom=0.06
-                                                            )
-                                                        ]
-                                                ),
+                                                            )],sm=12,md=8,),
 
-                                        ],
-                                        sm=12,
-                                        md=8,
-                                ),
-                                dbc.Col(
-                                        [
-
-                                                dbc.Row(
-                                                        [
-                                                                dbc.Alert(
-                                                                        id="node-data",
-                                                                        children="Click on a node to see its details here",
-                                                                        color="secondary",
-                                                                )
-                                                        ]
-                                                ),
-                                                dbc.Row(
-                                                        [
-                                                                dbc.Alert(
-                                                                        id="edge-data",
-                                                                        children="Click on an edge to see its details here",
-                                                                        color="secondary",
-                                                                )
-                                                        ]
-                                                ),
-                                                dbc.Badge(
-                                                        "Pathways:", color="info", className="mr-1"
-                                                ),
-                                                dbc.FormGroup(
-                                                        [
-                                                                dcc.Dropdown(
-                                                                        id="pathways_dropdown",
-                                                                        options=[
-                                                                                {
-                                                                                        "label": i,
-                                                                                        "value": i,
-                                                                                }
-                                                                                for i in list(pathway_list)
-                                                                        ],
-                                                                        value=pathway_list,
-                                                                        multi=False,
-                                                                        style={"width": "100%"},
-                                                                ),
-                                                        ]
-                                                ),
-                                                dbc.Badge(
-                                                        "Element Transfer Networks:", color="info", className="mr-1"
-                                                ),
-                                                dbc.FormGroup(
-                                                        [
-                                                                dcc.Dropdown(
-                                                                        id="element_dropdown",
-                                                                        options=[
-                                                                                {
-                                                                                        "label": i,
-                                                                                        "value": i,
-                                                                                }
-                                                                                for i in ["C","N","S","P"]
-                                                                        ],
-                                                                        value=["C","N","S","P"],
-                                                                        multi=False,
-                                                                        style={"width": "100%"},
-                                                                ),
-                                                        ]
-                                                ),
-                                                dbc.Badge(
-                                                        "Compound Search:", color="info", className="mr-1"),
-                                                dbc.FormGroup(
-                                                        [
-                                                                dcc.Dropdown(
-                                                                        id="compounds_dropdown",
-                                                                        options=[
-                                                                                {
-                                                                                        "label": i,
-                                                                                        "value": i,
-                                                                                }
-                                                                                for i in list(compounds_list)
-                                                                        ],
-                                                                        value=compounds_list,
-                                                                        multi=False,
-                                                                        style={"width": "100%"},
-                                                                ),
-                                                        ]
-                                                ),
-                                                dbc.Row(
-                                                        [
-                                                                dbc.Alert(
-                                                                        id="comp-search",
-                                                                        children="Select two compounds below to see the three shortest paths",
-                                                                        color="secondary",
-                                                                )
-                                                        ]
-                                                ),
-                                                dbc.Badge(
-                                                        "Compound 1:", color="info", className="mr-1"),
-                                                dbc.FormGroup(
-                                                        [
-                                                                dcc.Dropdown(
-                                                                        id="filter1_dropdown",
-                                                                        options=[
-                                                                                {
-                                                                                        "label": i,
-                                                                                        "value": i,
-                                                                                }
-                                                                                for i in list(compounds_list)
-                                                                        ],
-                                                                        value=compounds_list,
-                                                                        multi=False,
-                                                                        style={"width": "100%"},
-                                                                ),
-                                                        ]
-                                                ),
-                                                dbc.Badge(
-                                                        "Compound 2:", color="info", className="mr-1"),
-                                                dbc.FormGroup(
-                                                        [
-                                                                dcc.Dropdown(
-                                                                        id="filter2_dropdown",
-                                                                        options=[
-                                                                                {
-                                                                                        "label": i,
-                                                                                        "value": i,
-                                                                                }
-                                                                                for i in list(compounds_list)
-                                                                        ],
-                                                                        value=compounds_list,
-                                                                        multi=False,
-                                                                        style={"width": "100%"},
-                                                                ),
-                                                        ]
-                                                ),
-                                                dbc.Badge(
-                                                        "Flux Analysis:", color="info", className="mr-1"),
-                                                dbc.FormGroup(
-                                                        [
-                                                                dcc.Dropdown(
-                                                                        id="fba_dropdown",
-                                                                        options=[
-                                                                                {
-                                                                                        "label": i,
-                                                                                        "value": i,
-                                                                                }
-                                                                                for i in list(rxns)
-                                                                        ],
-                                                                        value=rxns,
-                                                                        multi=False,
-                                                                        style={"width": "100%"},
-                                                                ),
-                                                        ]
-                                                ),
-                                                dbc.Row(
-                                                        [
-                                                                dbc.Alert(
-                                                                        id="fba-data",
-                                                                        children="Select a reaction to see the flux here",
-                                                                        color="secondary",
-                                                                )
-                                                        ]
-                                                ),
-                                                dbc.Col(
+                        ]),
+                        ]),
+                        dbc.Col(
+                                [
+                                        dbc.Badge(
+                                                "Pathways:", color="info", className="mr-1"
+                                        ),
+                                        dbc.FormGroup(
                                                 [
-                                                html.Div(
+                                                        dcc.Dropdown(
+                                                                id="pathways_dropdown",
+                                                                options=[
+                                                                        {
+                                                                                "label": i,
+                                                                                "value": i,
+                                                                        }
+                                                                        for i in list(pathway_list)
+                                                                ],
+                                                                value=pathway_list,
+                                                                multi=False,
+                                                                style={"width": "100%"},
+                                                        ),
+                                                ]
+                                        ),
+                                        dbc.Badge(
+                                                "Element Transfer Networks:", color="info", className="mr-1"
+                                        ),
+                                        dbc.FormGroup(
                                                 [
-                                                html.Button("Download TSV", id="btn_tsv"),
-                                                dcc.Download(id="download"),
+                                                        dcc.Dropdown(
+                                                                id="element_dropdown",
+                                                                options=[
+                                                                        {
+                                                                                "label": i,
+                                                                                "value": i,
+                                                                        }
+                                                                        for i in ["C","N","S","P"]
+                                                                ],
+                                                                value=["C","N","S","P"],
+                                                                multi=False,
+                                                                style={"width": "100%"},
+                                                        ),
                                                 ]
-                                                ),
-                                                # html.Div(
-                                                # [
-                                                # html.Button("Download Image", id="btn_dnld"),
-                                                # dcc.Download(id="download_image"),
-                                                # ]
-                                                # ),
+                                        ),
+                                        dbc.Badge(
+                                                "Compound Search:", color="info", className="mr-1"),
+                                        dbc.FormGroup(
+                                                [
+                                                        dcc.Dropdown(
+                                                                id="compounds_dropdown",
+                                                                options=[
+                                                                        {
+                                                                                "label": i,
+                                                                                "value": i,
+                                                                        }
+                                                                        for i in list(compounds_list)
+                                                                ],
+                                                                value=compounds_list,
+                                                                multi=False,
+                                                                style={"width": "100%"},
+                                                        ),
                                                 ]
-                                                )
+                                        ),
+                                        dbc.Row(
+                                                [
+                                                        dbc.Alert(
+                                                                id="comp-search",
+                                                                children="Select two compounds below to see the three shortest paths",
+                                                                color="secondary",
+                                                        )
+                                                ]
+                                        ),
+                                        dbc.Badge(
+                                                "Compound 1:", color="info", className="mr-1"),
+                                        dbc.FormGroup(
+                                                [
+                                                        dcc.Dropdown(
+                                                                id="filter1_dropdown",
+                                                                options=[
+                                                                        {
+                                                                                "label": i,
+                                                                                "value": i,
+                                                                        }
+                                                                        for i in list(compounds_list)
+                                                                ],
+                                                                value=compounds_list,
+                                                                multi=False,
+                                                                style={"width": "100%"},
+                                                        ),
+                                                ]
+                                        ),
+                                        dbc.Badge(
+                                                "Compound 2:", color="info", className="mr-1"),
+                                        dbc.FormGroup(
+                                                [
+                                                        dcc.Dropdown(
+                                                                id="filter2_dropdown",
+                                                                options=[
+                                                                        {
+                                                                                "label": i,
+                                                                                "value": i,
+                                                                        }
+                                                                        for i in list(compounds_list)
+                                                                ],
+                                                                value=compounds_list,
+                                                                multi=False,
+                                                                style={"width": "100%"},
+                                                        ),
+                                                ]
+                                        ),
+                                        dbc.Badge(
+                                                "Flux Analysis:", color="info", className="mr-1"),
+                                        dbc.FormGroup(
+                                                [
+                                                        dcc.Dropdown(
+                                                                id="fba_dropdown",
+                                                                options=[
+                                                                        {
+                                                                                "label": i,
+                                                                                "value": i,
+                                                                        }
+                                                                        for i in list(rxns)
+                                                                ],
+                                                                value=rxns,
+                                                                multi=False,
+                                                                style={"width": "100%"},
+                                                        ),
+                                                ]
+                                        ),
+                                        dbc.Alert(
+                                                id="fba-data",
+                                                children="Select a reaction to see the flux here",
+                                                color="secondary",
+                                        ),
+                                        dbc.Col([
+                                            html.Div([
+                                            html.Button("Download TSV", id="btn_tsv"),
+                                            dcc.Download(id="download"),
+                                        ]),
+                                            html.Div([
+                                            html.Button("Download png", id="btn-get-png"),
+                                            dcc.Download(id="downloadpng"),
+                                        ]),
+                                        ]),
 
 
-                                        ],
-                                        sm=12,
-                                        md=4,
-                                ),
-                        ]
-                ),
+                                ],
+                                sm=12,
+                                md=4,
+                        ),
+
+                        ]),
+
                 dbc.Row(
                         [
                                 dcc.Markdown(
@@ -780,19 +757,17 @@ def func(n_clicks, pathways_dropdown, element_dropdown, compounds_dropdown, fba_
         df = pd.DataFrame({"id": id, "name": name, "equation": equation})
         return(dcc.send_data_frame(df.to_csv, "exported_rxns.csv"))
 
-    # return dcc.send_data_frame(df.to_csv, "mydf.csv")
-
-# @app.callback(
-#     Output("download", "data"),
-#     [Input("btn_dnld", "n_clicks"),
-#     ],
-#     State("net", "value"),
-#     prevent_initial_call=True,
-# )
-# def func(n_clicks, img):
-#     if nclicks is not None:
-#         return(dcc.send_file(img, "exported_img.png"))
-
+@app.callback(
+    Output("net", "generateImage"),
+    [Input('btn-get-png', 'n_clicks')
+    ],
+    prevent_initial_call=True,
+)
+def get_image(n_clicks):
+    if n_clicks is not None:
+        ftype = "png"
+        action = "download"
+        return {'type':ftype, 'action':action}
 
 if __name__ == '__main__':
     app.run_server(debug=True)
