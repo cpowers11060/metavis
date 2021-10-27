@@ -167,7 +167,8 @@ def bfs_compounds(start, end, network, rxn_list, rxn_set, middle2, middle3):
         frontier_end=next
         i+=1
         if i > 50:
-            return([])
+            print("HERE")
+            return([], [])
     # collect the rxns from the start frontier into a final list of rxns
     i=depth_start[middle]
 
@@ -194,7 +195,7 @@ def bfs_compounds(start, end, network, rxn_list, rxn_set, middle2, middle3):
     # Sorts the moves by their index and store them in a final list
     for k in range(1,len(final_list)+1):
         sorted_list.append(final_list[k])
-
+    print(middle)
     return(middle, sorted_list)
     #raise NotImplementedError
 
@@ -382,7 +383,7 @@ body_layout = dbc.Container(
                                 dbc.Col([
                                                 cyto.Cytoscape(id = 'net',
                                                 layout={'name':'cose'},
-                                                style={'width': '500px', 'height': '500px'},
+                                                style={'width': '600px', 'height': '600px'},
                                                 elements=nodes+edges,
                                                 stylesheet=[{
                                                             'selector': 'node',
@@ -669,7 +670,7 @@ def filter_nodes(pathways_dropdown, element_dropdown, compounds_dropdown, fba_dr
             middle4, rxn_list3 = bfs_compounds(filter1_dropdown, filter2_dropdown, network, rxn_list, rxn_set, middle2, middle3)
             rxn_list = rxn_list1 + rxn_list2 + rxn_list3
             if len(rxn_list)==0:
-                raise PreventUpdate
+                return []
         elif isinstance(compounds_dropdown, str):
             rxn_list = []
             for rxn in network[0]:
