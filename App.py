@@ -57,8 +57,8 @@ def read_model(model_path, el):
                 if (float(v)).is_integer()==False or float(v) > 10:
                     excluded_reactions.append(rxn.id)
         network = make_network_dict(nm, mm, subset=None, method='fpp',
-                                                                element=el, excluded_reactions=excluded_reactions,
-                                                                reaction_dict={}, analysis=None)
+                                    element=el, excluded_reactions=excluded_reactions,
+                                    reaction_dict={}, analysis=None)
         return nm, network
 
 
@@ -102,10 +102,12 @@ def get_compounds_list(nm):
         compounds_list.append(i.id)
     return compounds_list
 
-def bfs_compounds(start, end, network, rxn_listm, rxn_set):
+def bfs_compounds(start, end, network, rxn_list, rxn_set, middle2, middle3):
 
     # initialize useful variables
-    generic=['h2o', 'h', 'accoa', 'coa', 'nad', 'nadh', 'nadp', 'nadph', 'pi', 'co2', 'ppi', 'q8h2', 'q8', 'atp', 'adp', 'gtp', 'gdp', 'utp', 'udp', 'ttp', 'tdp']
+    generic=['h2o', 'h', 'accoa', 'coa', 'nad', 'nadh', 'nadp', 'nadph', 'pi', \
+             'co2', 'ppi', 'q8h2', 'q8', 'atp', 'adp', 'gtp', 'gdp', 'utp', \
+             'udp', 'ttp', 'tdp']
     depth_start = {(start, "none"):0}
     depth_end={(end, "none"):0}
     i=1
@@ -132,12 +134,12 @@ def bfs_compounds(start, end, network, rxn_listm, rxn_set):
                             for k in cpd:
                                 adj[k.name]=rxn.id
             for v, r in adj.items():
-                if (v, r) not in depth_start and v not in generic:
+                if (v, r) not in depth_start and v not in generic and (v, r) != middle2 and (v, r) != middle3:
                     depth_start[(v, r)]=i
                     parent_start[(v, r)]=u
                     next.append((v, r))
                     move_start[(v, r)]=adj[v]
-                if (v, r) in depth_end and v not in generic:
+                if (v, r) in depth_end and v not in generic and (v, r) != middle2 and (v, r) != middle3:
                     frontier_check="True"
                     middle=(v, r)
         frontier_start=next
@@ -151,18 +153,18 @@ def bfs_compounds(start, end, network, rxn_listm, rxn_set):
                             for k in cpd:
                                 adj[k.name]=rxn.id
             for v, r in adj.items():
-                if (v, r) not in depth_end and v not in generic:
+                if (v, r) not in depth_end and v not in generic and (v, r) != middle2 and (v, r) != middle3:
                     depth_end[(v, r)]=i
                     parent_end[(v, r)]=u
                     next.append((v, r))
                     move_end[(v, r)]=adj[v]
-                if (v, r) in depth_start and frontier_check!="True" and v not in generic:
+                if (v, r) in depth_start and frontier_check!="True" and v not in generic and (v, r) != middle2  and (v, r) != middle3:
                     frontier_check="True"
                     middle=(v, r)
         frontier_end=next
         i+=1
         if i > 50:
-            return("Failed to find middle")
+            return([])
     # collect the rxns from the start frontier into a final list of rxns
     i=depth_start[middle]
 
@@ -174,7 +176,7 @@ def bfs_compounds(start, end, network, rxn_listm, rxn_set):
         j+=1
         final_list[i]=move_start[parent]
         parent=parent_start[parent]
-    print(final_list)
+
     # Checks to make sure the solution isnt a 0 path solution
     if depth_end[middle] > 0:
         # Collects the moves from the end frontier into a final list of moves
@@ -189,9 +191,8 @@ def bfs_compounds(start, end, network, rxn_listm, rxn_set):
     # Sorts the moves by their index and store them in a final list
     for k in range(1,len(final_list)+1):
         sorted_list.append(final_list[k])
-    print(final_list)
-    print(sorted_list)
-    return(sorted_list)
+
+    return(middle, sorted_list)
     #raise NotImplementedError
 
 
@@ -231,13 +232,13 @@ def build_network(nm, rxn_set, network, fba_dropdown):
                 rxn_num=0
                 for cpd in network[0][rxn][0]:
                     nodes.append({'data':{'id':str(cpd[0]),
-                                                'label': name[str(cpd[0])[0:(str(cpd[0]).find('['))]],
-                                                'formula': formula[str(cpd[0])[0:(str(cpd[0]).find('['))]]
-                                                }})
+                                  'label': name[str(cpd[0])[0:(str(cpd[0]).find('['))]],
+                                  'formula': formula[str(cpd[0])[0:(str(cpd[0]).find('['))]]
+                                  }})
                     nodes.append({'data':{'id':str(cpd[1]),
-                                                'label': name[str(cpd[1])[0:(str(cpd[1]).find('['))]],
-                                                'formula': formula[str(cpd[1])[0:(str(cpd[1]).find('['))]]
-                                                }})
+                                  'label': name[str(cpd[1])[0:(str(cpd[1]).find('['))]],
+                                  'formula': formula[str(cpd[1])[0:(str(cpd[1]).find('['))]]
+                                  }})
                     if  'pathways' in rxn.properties:
                         path = rxn.properties['pathways']
                     elif  'subsystem' in rxn.properties:
@@ -276,7 +277,7 @@ def build_network(nm, rxn_set, network, fba_dropdown):
 
 
 # Generates all initial data for building the app
-model="/Users/chrispowers/projects/ETH_Modelling/GEM-HS/B_theta_isol/"
+#model="/Users/chrispowers/projects/ETH_Modelling/GEM-HS/B_theta_isol/"
 model="./models/iGEM_bin526_curated"
 #nm, network = read_model("./models/E_rectale_MM/", "C")
 #mr = ModelReader.reader_from_path("/Users/chrispowers/projects/ETH_Modelling/GEM-HS/model.yaml")
@@ -480,6 +481,15 @@ body_layout = dbc.Container(
                                                                 ),
                                                         ]
                                                 ),
+                                                dbc.Row(
+                                                        [
+                                                                dbc.Alert(
+                                                                        id="comp-search",
+                                                                        children="Select two compounds below to see the three shortest paths",
+                                                                        color="secondary",
+                                                                )
+                                                        ]
+                                                ),
                                                 dbc.Badge(
                                                         "Compound 1:", color="info", className="mr-1"),
                                                 dbc.FormGroup(
@@ -546,37 +556,24 @@ body_layout = dbc.Container(
                                                                 )
                                                         ]
                                                 ),
-
-
-                                                dbc.Badge(color="info", className="mr-1"),
-                                                dbc.FormGroup(
-                                                        [
-                                                                dbc.Container(
-                                                                        [
-                                                                                dbc.Checkbox(
-                                                                                        id="show_edges_radio",
-                                                                                        className="form-check-input",
-                                                                                        checked=True,
-                                                                                ),
-                                                                                dbc.Label(
-                                                                                        "Show Reactions",
-                                                                                        html_for="show_edges_radio",
-                                                                                        className="form-check-label",
-                                                                                        style={
-                                                                                                "color": "DarkSlateGray",
-                                                                                                "fontSize": 12,
-                                                                                        },
-                                                                                ),
-                                                                        ]
-                                                                )
-                                                        ]
-                                                ),
+                                                dbc.Col(
+                                                [
                                                 html.Div(
                                                 [
                                                 html.Button("Download TSV", id="btn_tsv"),
                                                 dcc.Download(id="download"),
                                                 ]
                                                 ),
+                                                # html.Div(
+                                                # [
+                                                # html.Button("Download Image", id="btn_dnld"),
+                                                # dcc.Download(id="download_image"),
+                                                # ]
+                                                # ),
+                                                ]
+                                                )
+
+
                                         ],
                                         sm=12,
                                         md=4,
@@ -675,35 +672,45 @@ def display_nodedata(datalist):
                 Input("filter1_dropdown", "value"),
                 Input("filter2_dropdown", "value"),
         ],
+        prevent_initial_call=True,
 )
 def filter_nodes(pathways_dropdown, element_dropdown, compounds_dropdown, fba_dropdown, filter1_dropdown, filter2_dropdown):
 
-    nm, network = read_model(model, element_dropdown)
-    pathway_list, rxn_set = get_pathway_list(nm, pathways_dropdown)
+    if isinstance(pathways_dropdown, str) or isinstance(element_dropdown, str) \
+    or isinstance(compounds_dropdown, str) or isinstance(fba_dropdown, str) \
+    or (isinstance(filter1_dropdown, str) and isinstance(filter1_dropdown, str)):
+        nm, network = read_model(model, element_dropdown)
+        pathway_list, rxn_set = get_pathway_list(nm, pathways_dropdown)
 
-    if isinstance(filter1_dropdown, str) and isinstance(filter2_dropdown, str):
-        rxn_list = set()
-        cpd_list = [filter1_dropdown, filter2_dropdown]
-        rxn_list = bfs_compounds(filter1_dropdown, filter2_dropdown, network, rxn_list, rxn_set)
-        if rxn_list is str:
-            raise PreventUpdate
-    elif isinstance(compounds_dropdown, str):
-        rxn_list = []
-        for rxn in network[0]:
-            for cpd in network[0][rxn][0]:
-                for i in cpd:
-                    if i.name == compounds_dropdown and rxn.id in rxn_set:
-                        rxn_list.append(rxn.id)
-    else:
-        rxn_list = rxn_set
-    nodes, edges = build_network(nm, rxn_list, network, fba_dropdown)
-    elements=nodes+edges
+        if isinstance(filter1_dropdown, str) and isinstance(filter2_dropdown, str):
+            rxn_list = set()
+            cpd_list = [filter1_dropdown, filter2_dropdown]
+            middle2 = []
+            middle3 = []
+            middle2, rxn_list1 = bfs_compounds(filter1_dropdown, filter2_dropdown, network, rxn_list, rxn_set, middle2, middle3)
+            middle3, rxn_list2 = bfs_compounds(filter1_dropdown, filter2_dropdown, network, rxn_list, rxn_set, middle2, middle3)
+            middle4, rxn_list3 = bfs_compounds(filter1_dropdown, filter2_dropdown, network, rxn_list, rxn_set, middle2, middle3)
+            rxn_list = rxn_list1 + rxn_list2 + rxn_list3
+            if len(rxn_list)==0:
+                raise PreventUpdate
+        elif isinstance(compounds_dropdown, str):
+            rxn_list = []
+            for rxn in network[0]:
+                for cpd in network[0][rxn][0]:
+                    for i in cpd:
+                        if i.name == compounds_dropdown and rxn.id in rxn_set:
+                            rxn_list.append(rxn.id)
+        else:
+            rxn_list = rxn_set
+        nodes, edges = build_network(nm, rxn_list, network, fba_dropdown)
+        elements=nodes+edges
 
-    return elements
+        return elements
 
 
 @app.callback(
-        Output("fba-data", "children"), [Input("fba_dropdown", "value")]
+        Output("fba-data", "children"), [Input("fba_dropdown", "value")],
+        prevent_initial_call=True,
 )
 def Run_FBA(fba_dropdown):
   if not isinstance(fba_dropdown, list):
@@ -745,7 +752,12 @@ def func(n_clicks, pathways_dropdown, element_dropdown, compounds_dropdown, fba_
         if isinstance(filter1_dropdown, str) and isinstance(filter2_dropdown, str):
             rxn_list = set()
             cpd_list = [filter1_dropdown, filter2_dropdown]
-            rxn_list = bfs_compounds(filter1_dropdown, filter2_dropdown, network, rxn_list, rxn_set)
+            middle2 = []
+            middle3 = []
+            middle2, rxn_list1 = bfs_compounds(filter1_dropdown, filter2_dropdown, network, rxn_list, rxn_set, middle2, middle3)
+            middle3, rxn_list2 = bfs_compounds(filter1_dropdown, filter2_dropdown, network, rxn_list, rxn_set, middle2, middle3)
+            middle4, rxn_list3 = bfs_compounds(filter1_dropdown, filter2_dropdown, network, rxn_list, rxn_set, middle2, middle3)
+            rxn_list = rxn_list1 + rxn_list2 + rxn_list3
             if rxn_list is str:
                 raise PreventUpdate
         elif isinstance(compounds_dropdown, str):
@@ -769,6 +781,18 @@ def func(n_clicks, pathways_dropdown, element_dropdown, compounds_dropdown, fba_
         return(dcc.send_data_frame(df.to_csv, "exported_rxns.csv"))
 
     # return dcc.send_data_frame(df.to_csv, "mydf.csv")
+
+# @app.callback(
+#     Output("download", "data"),
+#     [Input("btn_dnld", "n_clicks"),
+#     ],
+#     State("net", "value"),
+#     prevent_initial_call=True,
+# )
+# def func(n_clicks, img):
+#     if nclicks is not None:
+#         return(dcc.send_file(img, "exported_img.png"))
+
 
 if __name__ == '__main__':
     app.run_server(debug=True)
