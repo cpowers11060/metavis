@@ -541,7 +541,7 @@ body_layout = dbc.Container(
                                         ),
                                         dbc.Col([
                                             html.Div([
-                                            html.Button("Download TSV", id="btn_tsv"),
+                                            html.Button("Download CSV", id="btn_tsv"),
                                             dcc.Download(id="download"),
                                         ]),
                                             html.Div([
