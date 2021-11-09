@@ -68,34 +68,32 @@ def read_model(model_path, el):
 # Builds a reaction set from a model based on a pathway of interest
 def get_pathway_list(nm, pathway):
         pathway_list=set()
+        rxn_set=set()
+        for path in pathway:
+            if path != "All":
 
-        if isinstance(pathway, list) or pathway == None:
-            pathway = "All"
-        if pathway != "All":
-            rxn_set=set()
-            for i in nm.reactions:
+                for i in nm.reactions:
 
-                if 'pathways' in i.properties:
-                    for j in i.properties['pathways']:
-                        pathway_list.add(j)
-                    if pathway in i.properties['pathways']:
-                        rxn_set.add(i.id)
-                elif  'subsystem' in i.properties:
-                    pathway_list.add(i.properties['subsystem'])
-                    if pathway in i.properties['subsystem']:
-                        rxn_set.add(i.id)
+                    if 'pathways' in i.properties:
+                        for j in i.properties['pathways']:
+                            pathway_list.add(j)
+                        if path in i.properties['pathways']:
+                            rxn_set.add(i.id)
+                    elif  'subsystem' in i.properties:
+                        pathway_list.add(i.properties['subsystem'])
+                        if path in i.properties['subsystem']:
+                            rxn_set.add(i.id)
 
-        else:
-            rxn_set=set()
-            for i in nm.reactions:
+            else:
+                for i in nm.reactions:
 
-                if  'pathways' in i.properties:
-                    for j in i.properties['pathways']:
-                        pathway_list.add(j)
-                elif  'subsystem' in i.properties:
-                    pathway_list.add(i.properties['subsystem'])
+                    if  'pathways' in i.properties:
+                        for j in i.properties['pathways']:
+                            pathway_list.add(j)
+                    elif  'subsystem' in i.properties:
+                        pathway_list.add(i.properties['subsystem'])
 
-                rxn_set.add(i.id)
+                    rxn_set.add(i.id)
         pathway_list=["All"] + list(pathway_list)
         return pathway_list, rxn_set
 
@@ -167,7 +165,6 @@ def bfs_compounds(start, end, network, rxn_list, rxn_set, middle2, middle3):
         frontier_end=next
         i+=1
         if i > 50:
-            print("HERE")
             return([], [])
     # collect the rxns from the start frontier into a final list of rxns
     i=depth_start[middle]
@@ -195,7 +192,6 @@ def bfs_compounds(start, end, network, rxn_list, rxn_set, middle2, middle3):
     # Sorts the moves by their index and store them in a final list
     for k in range(1,len(final_list)+1):
         sorted_list.append(final_list[k])
-    print(middle)
     return(middle, sorted_list)
     #raise NotImplementedError
 
@@ -423,8 +419,9 @@ body_layout = dbc.Container(
                                                                         }
                                                                         for i in list(pathway_list)
                                                                 ],
-                                                                value=pathway_list,
-                                                                multi=False,
+                                                                value=pathway_list[0],
+                                                                multi=True,
+                                                                placeholder="",
                                                                 style={"width": "100%"},
                                                         ),
                                                 ]
@@ -653,8 +650,8 @@ def display_nodedata(datalist):
         prevent_initial_call=True,
 )
 def filter_nodes(pathways_dropdown, element_dropdown, compounds_dropdown, fba_dropdown, filter1_dropdown, filter2_dropdown):
-
-    if isinstance(pathways_dropdown, str) or isinstance(element_dropdown, str) \
+    if isinstance(pathways_dropdown, list) \
+    or isinstance(element_dropdown, str) \
     or isinstance(compounds_dropdown, str) or isinstance(fba_dropdown, str) \
     or (isinstance(filter1_dropdown, str) and isinstance(filter1_dropdown, str)):
         nm, network = read_model(model, element_dropdown)
